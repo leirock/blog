@@ -108,7 +108,7 @@ server:
 
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier
-all_minifier: false
+all_minifier: true
 html_minifier:
   silent: true
 css_minifier:
