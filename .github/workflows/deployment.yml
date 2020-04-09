@@ -1,0 +1,110 @@
+name: Deployment
+
+on:
+  push:
+    branches: [master] # only push events on source branch trigger deployment
+
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+#    - name: Setup Node.js
+#      uses: actions/setup-node@v1
+#      with:
+#        node-version: '12.x'
+
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.8'
+
+    # https://github.com/actions/cache/blob/master/examples.md#node---yarn
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Yarn cache
+      uses: actions/cache@v1
+      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      with:
+        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Get pip cache
+      id: pip-cache
+      run: |
+        python -c "from pip._internal.locations import USER_CACHE_DIR; print('::set-output name=dir::' + USER_CACHE_DIR)"
+
+    - name: Get coscmd's requirements
+      run: wget https://raw.githubusercontent.com/tencentyun/coscmd/master/requirements.txt
+
+    - name: Pip cache
+      uses: actions/cache@v1
+      with:
+        path: ${{ steps.pip-cache.outputs.dir }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+#    - name: Fix Wrong Update Time
+#      run: |
+#        find source/_posts -name '*.md' | while read file
+#        do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
+#        done
+
+    - name: Install dependencies & Generate static files
+      run: |
+        node -v
+        export PATH="$PATH:$(yarn global bin)"
+        yarn global add hexo-cli
+        yarn install
+        sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
+        yarn build
+
+    - name: Setup coscmd
+      env:
+        SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+        SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+        BUCKET: ${{ secrets.COS_BUCKET }} #bucket name with qcloud_user_id
+        REGION: ${{ secrets.COS_REGION }} #eg. ap-shanghai
+      run: |
+        pip install -U coscmd
+        coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION -m 30
+
+    - name: Deploy assets to cos
+      run: |
+        coscmd upload -rs --delete public/css assets/blog-css
+        coscmd upload -rs --delete public/js assets/js
+        coscmd upload -rs --delete source/images assets/images
+        coscmd upload -rs --delete source/live2d assets/live2d
+        rm -rf public/css public/js public/images public/live2d
+
+    - name: Deploy to server
+      uses: easingthemes/ssh-deploy@v2.0.9
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-avz --delete"
+        SOURCE: "public/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
+
+    - name: Telegram notification
+      if: cancelled() == false
+      uses: xinthink/action-telegram@v1.1
+      with:
+        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
+        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
+        jobStatus: ${{ job.status }}
+        skipSuccess: false

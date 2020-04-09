@@ -1,0 +1,21 @@
+zh-CN:
+  menu:
+    home: 博客首页
+    overview: 文章总览
+    series: 专栏文章
+    tags: 各种标签
+    photos: 光影留痕
+    more: 关于更多
+    share: 好物分享
+    friends: 小伙伴们
+    homepage: English
+  post:
+    post_lang: 中文/
+    link_lang: English
+  counter:
+    tag_cloud:
+      other: <i class="fas fa-tags"></i> 目前共计 %d 个标签
+    categories:
+      other: <i class="fas fa-th"></i> 目前共计 %d 个分类
+  reward:
+    donate: <i class="fas fa-qrcode" style="font-size:1.7em;line-height:1.2em;"></i>

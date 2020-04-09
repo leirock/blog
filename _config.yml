@@ -1,0 +1,460 @@
+# ************************************************************************************************************
+# ************************************************************************************************************
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+# ************************************************************************************************************
+# ************************************************************************************************************
+
+# Site
+title: 班班碎碎念
+subtitle: 无曰已是 无曰遂真
+description: 目前坐标香港，喜欢看一些纪录片和美剧，也喜欢折腾数码产品。有时会看看书、玩玩游戏，没事胡思乱想碎碎念。本站主要记录一些日常生活、碎碎念与科研随笔。
+keywords: [班班, 碎碎念, 博客, blog]
+author: 班班
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://blog.dlzhang.com
+root: /
+permalink: /posts/:year/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: overview/tags
+archive_dir: archives
+category_dir: overview
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - README.md
+  - 404.html
+  - js/**
+  - live2d/**
+
+# Writing
+new_post_name: :year/:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: true
+  tab_replace: true
+  wrap: true
+  hljs: false
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 15
+  order_by: -date
+  
+# Category & Tag
+default_category: 碎碎念
+category_map:
+  学术向: academic
+  碎碎念: ramble
+  观察者: viewpoint
+  随手记: note
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: false
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 20
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Hexo server module
+## Use `hexo server`
+server:
+  ip: 127.0.0.1
+
+# Minifier & Optimization plugin
+## See: https://github.com/chenzhutian/hexo-all-minifier
+all_minifier: false
+html_minifier:
+  silent: true
+css_minifier:
+  silent: true
+js_minifier:
+  silent: true
+image_minifier:
+  enable: false
+
+
+# ************************************************************************************************************
+# ************************************************************************************************************
+# Theme Core Configuration Settings
+# See: https://theme-next.org/docs/theme-settings/
+# ************************************************************************************************************
+# ************************************************************************************************************
+
+theme_config:
+
+  minify: true
+
+  # Create your custom files in site directory `source/_data` and uncomment needed files below.
+  custom_file_path:
+    head: source/_data/head.swig
+  #  header: source/_data/header.swig
+  #  sidebar: source/_data/sidebar.swig
+    postMeta: source/_data/post-meta.swig
+  #  postBodyEnd: source/_data/post-body-end.swig
+  #  footer: source/_data/footer.swig
+    bodyEnd: source/_data/body-end.swig
+    variable: source/_data/variables.styl
+    mixin: source/_data/mixins.styl
+    style: source/_data/styles.styl
+
+  # ---------------------------------------------------------------
+  # Scheme & Color Settings
+  # ---------------------------------------------------------------
+
+  scheme: Gemini
+  darkmode: true
+
+  # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
+  android_chrome_color: "#6c599f"
+
+  # Color style: Day of Mourning
+  gray: false
+
+  # ---------------------------------------------------------------
+  # Site Information Settings
+  # See: https://theme-next.org/docs/getting-started/
+  # ---------------------------------------------------------------
+
+  favicon:
+    small: https://web-1256060851.file.myqcloud.com/assets/img/favicon-16x16.png
+    medium: https://web-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
+    apple_touch_icon: https://web-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
+    safari_pinned_tab: https://web-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
+
+  footer:
+    since: 2015
+    icon:
+      name: fas fa-heart
+      animated: true
+      color: "#f06292"
+    powered: false
+
+  # ----------------------------------------------------------------
+  # Menu Settings
+  # ---------------------------------------------------------------
+
+  menu:
+    home: / || fas fa-home
+    overview: 
+      default: /overview/ || fas fa-th
+      series: series/ || fas fa-cube
+      tags: tags/ || fas fa-tags
+    photos: /photos/ || fas fa-camera-retro
+    more:
+      default: /more/ || fas fa-location-arrow
+      share: share/ || fas fa-share-alt
+      friends: friends/ || fas fa-heart
+    homepage: https://dlzhang.com || fas fa-globe
+
+  # ---------------------------------------------------------------
+  # Sidebar Settings
+  # See: https://theme-next.org/docs/theme-settings/sidebar
+  # ---------------------------------------------------------------
+
+  # Sidebar Avatar
+  avatar:
+    url: https://web-1256060851.file.myqcloud.com/images/blog-avatar.jpg
+    rounded: true
+
+  # Posts / Categories / Tags in sidebar.
+  site_state: false
+
+  social:
+    微博: https://weibo.com/1156774800 || fab fa-weibo
+    Twitter: https://twitter.com/lei2rock || fab fa-twitter
+    GitHub: https://github.com/lei2rock || fab fa-github
+    RSS: /atom.xml || fas fa-rss
+
+  social_icons:
+    icons_only: true
+
+  # Table of Contents in the Sidebar
+  toc:
+    # Automatically add list number to toc.
+    number: false
+
+  # ---------------------------------------------------------------
+  # Post Settings
+  # See: https://theme-next.org/docs/theme-settings/posts
+  # ---------------------------------------------------------------
+
+  read_more_btn: false
+
+  post_meta:
+    item_text: false
+    updated_at:
+      enable: false
+
+  # Use icon instead of the symbol # to indicate the tag at the bottom of the post
+  tag_icon: true
+
+  reward_settings:
+    # If true, reward will be displayed in every article by default.
+    enable: true
+    comment: 🍭 支持一根棒棒糖！
+
+  reward:
+    wechatpay: https://web-1256060851.file.myqcloud.com/images/wechat-pay.jpg
+    alipay: https://web-1256060851.file.myqcloud.com/images/alipay.jpg
+
+  # Dependencies: https://github.com/tea3/hexo-related-popular-posts
+  related_posts:
+    enable: true
+    title: 相关推荐 # Custom header, leave empty to use the default one
+
+  # Post edit
+  post_edit:
+    enable: true
+    url: https://github.com/lei2rock/blog/tree/src/source/ # Link for view source
+
+  # ---------------------------------------------------------------
+  # Custom Page Settings
+  # See: https://theme-next.org/docs/theme-settings/custom-pages
+  # ---------------------------------------------------------------
+
+  # TagCloud settings for tags page.
+  tagcloud:
+    min: 12 # Minimun font size in px
+    max: 30 # Maxium font size in px
+    start: "#aaa" # Start color (hex, rgba, hsla or color keywords)
+    end: "#111" # End color (hex, rgba, hsla or color keywords)
+    amount: 200 # Amount of tags, change it if you have more than 200 tags
+
+  # ---------------------------------------------------------------
+  # Misc Theme Settings
+  # ---------------------------------------------------------------
+
+  codeblock:
+    # Code Highlight theme
+    # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
+    # See: https://github.com/chriskempson/tomorrow-theme
+    highlight_theme: night bright
+    # Add copy button on codeblock
+    copy_button:
+      enable: true
+      # Show text copy result.
+      show_result: true
+      # Available values: default | flat | mac
+      style: mac
+
+  back2top:
+    enable: true
+    # Back to top in sidebar.
+    sidebar: false
+    # Scroll percent label in b2t button.
+    scrollpercent: true
+
+  # ---------------------------------------------------------------
+  # Font Settings
+  # See: https://theme-next.org/docs/theme-settings/#Fonts-Customization
+  # ---------------------------------------------------------------
+
+  font:
+    enable: true
+
+    # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
+    host:
+
+    # Font options:
+    # `external: true` will load this font family from `host` above.
+    # `family: Times New Roman`. Without any quotes.
+    # `size: x.x`. Use `em` as unit. Default: 1 (16px)
+
+    # Global font settings used for all elements inside <body>.
+    global:
+      external: true
+      family: EB Garamond
+      size:
+
+    # Font settings for site title (.site-title).
+    title:
+      external: true
+      family: Long Cang
+      size: 2
+
+    # Font settings for headlines (<h1> to <h6>).
+    headings:
+      external: true
+      family: Noto Serif SC
+      size: 1.48
+
+    # Font settings for posts (.post-body).
+    posts:
+      external: true
+      family:
+
+    # Font settings for <code> and code blocks.
+    codes:
+      external: true
+      family:
+
+  # ---------------------------------------------------------------
+  # SEO Settings
+  # ---------------------------------------------------------------
+
+  google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
+  disable_baidu_transformation: true
+  baidu_site_verification: wvc37nzEad
+
+  # ---------------------------------------------------------------
+  # Third Party Plugins & Services Settings
+  # See: https://theme-next.org/docs/third-party-services/
+  # ---------------------------------------------------------------
+
+  math:
+    # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
+    mathjax:
+      enable: true
+
+  pjax: true
+  fancybox: true
+  lazyload: true
+  pangu: true
+
+  # ---------------------------------------------------------------
+  # Comments Settings
+  # See: https://theme-next.org/docs/third-party-services/comments
+  # ---------------------------------------------------------------
+
+  comments:
+    lazyload: true
+
+  valine:
+    enable: true
+    appid: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # Your leancloud application appid
+    appkey: 5jRfX3rExENmJqhdzkRqPndP # Your leancloud application appkey
+    placeholder: 来这里留下你的想法与观点～（回复提醒通过邮件发送） # Comment box placeholder
+    avatar: wavatar # Gravatar style
+    guest_info: nick,mail # Custom comment header, nick,mail,link 
+    pageSize: 5 # Pagination size
+    language: zh-cn # Language, available values: en, zh-cn
+    visitor: false # Article reading statistic
+    comment_count: true # If false, comment count will only be displayed in post page, not in home page
+    recordIP: true # Whether to record the commenter IP
+    serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+    #post_meta_order: 0
+
+  # ---------------------------------------------------------------
+  # Statistics and Analytics
+  # See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+  # ---------------------------------------------------------------
+
+  # Google Analytics
+  google_analytics:
+    tracking_id: UA-141207776-1
+
+  # Do not enable both `valine.visitor` and `leancloud_visitors`.
+  leancloud_visitors:
+    enable: true
+    app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
+    app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
+    # Required for apps from CN region
+    server_url: # <your server url>
+    security: false
+
+  # ---------------------------------------------------------------
+  # Search Services
+  # See: https://theme-next.org/docs/third-party-services/search-services
+  # ---------------------------------------------------------------
+
+  # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+  local_search:
+    enable: true
+
+  # ---------------------------------------------------------------
+  # Tags Settings
+  # See: https://theme-next.org/docs/tag-plugins/
+  # ---------------------------------------------------------------
+
+  # Note tag (bs-callout)
+  note:
+    style: simple
+    icons: true
+
+  # Tabs tag
+  tabs:
+    transition:
+      tabs: true
+      labels: true
+
+  # ---------------------------------------------------------------
+  # Animation Settings
+  # ---------------------------------------------------------------
+
+  # Use velocity to animate everything.
+  motion:
+    enable: false
+
+  #! ---------------------------------------------------------------
+  #! CDN: https://theme-next.org/docs/advanced-settings
+  #! ---------------------------------------------------------------
+
+  vendors:
+
+    anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
+
+    fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+
+    mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+    pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+
+    jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+    fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+    fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
+
+    lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
+
+    pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
+
+    # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
+    valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
+
+  # Assets
+  assets: https://web-1256060851.file.myqcloud.com/assets
