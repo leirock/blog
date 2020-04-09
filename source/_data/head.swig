@@ -1,7 +1,7 @@
 <script type="text/javascript">
 // Live2d
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "{{ theme.js + '/../live2d/'}}";
+const live2d_path = "/live2d/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
