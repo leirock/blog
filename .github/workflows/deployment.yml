@@ -85,7 +85,7 @@ jobs:
       run: |
         coscmd upload -rs --delete public/css assets/blog-css
         coscmd upload -rs --delete public/js assets/js
-        coscmd upload -rs --delete source/images assets/images
+        coscmd upload -rs --delete source/images assets/img
         coscmd upload -rs --delete source/live2d assets/live2d
         rm -rf public/css public/js public/images public/live2d
 
