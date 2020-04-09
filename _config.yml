@@ -457,4 +457,6 @@ theme_config:
     valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
 
   # Assets
-  assets: https://web-1256060851.file.myqcloud.com/assets
+  css: https://web-1256060851.file.myqcloud.com/assets/blog-css
+  js: https://web-1256060851.file.myqcloud.com/assets/js
+  images: https://web-1256060851.file.myqcloud.com/assets/img

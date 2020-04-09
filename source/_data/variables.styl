@@ -41,7 +41,11 @@ $font-family-posts            = $font-family-base;
 $font-family-headings         = $font-family-base;
 
 // Image assets CDN url
-$img-cdn-url                  = hexo-config('assets') + '/' + hexo-config('images') + '/';
+if (hexo-config('images') == 'images') {
+  $img-cdn-url = '../' + hexo-config('images')  + '/';
+} else {
+  $img-cdn-url = hexo-config('images') + '/';
+}
 $site-brand-bg-url            = $img-cdn-url + "header-bg.jpg";
 $body-bg-url                  = $img-cdn-url + "body-bg.png";
 $body-bg-gray-url             = $img-cdn-url + "body-bg-gray.png";
