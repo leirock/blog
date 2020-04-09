@@ -162,10 +162,10 @@ theme_config:
   # ---------------------------------------------------------------
 
   favicon:
-    small: https://web-1256060851.file.myqcloud.com/images/assets/favicon-16x16.png
-    medium: https://web-1256060851.file.myqcloud.com/images/assets/favicon-32x32.png
-    apple_touch_icon: https://web-1256060851.file.myqcloud.com/images/assets/apple-touch-icon.png
-    safari_pinned_tab: https://web-1256060851.file.myqcloud.com/images/assets/safari-pinned-tab.svg
+    small: https://web-1256060851.file.myqcloud.com/assets/img/favicon-16x16.png
+    medium: https://web-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
+    apple_touch_icon: https://web-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
+    safari_pinned_tab: https://web-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
 
   footer:
     since: 2015
@@ -457,6 +457,6 @@ theme_config:
     valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
 
   # Assets
-  css: css
-  js: js
-  images: https://web-1256060851.file.myqcloud.com/images/assets
+  css: https://web-1256060851.file.myqcloud.com/assets/blog-css
+  js: https://web-1256060851.file.myqcloud.com/assets/js
+  images: https://web-1256060851.file.myqcloud.com/assets/img

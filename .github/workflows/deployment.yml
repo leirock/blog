@@ -83,8 +83,10 @@ jobs:
 
     - name: Deploy assets to cos
       run: |
+        coscmd upload -rs --delete public/css assets/blog-css
+        coscmd upload -rs --delete public/js assets/js
         coscmd upload -rs --delete source/images assets/img
-        rm -rf public/images
+        rm -rf public/css public/js public/images
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.0.9
