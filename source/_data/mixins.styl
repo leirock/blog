@@ -1,0 +1,30 @@
+btn-shadow-only() {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+btn-shadow-hover-only() {
+  -webkit-box-shadow: $box-shadow-hover;
+  -moz-box-shadow: $box-shadow-hover;
+  box-shadow: $box-shadow-hover;
+}
+
+btn-shadow() {
+  btn-shadow-only();
+  the-transition-ease-out();
+
+  &:hover {
+    btn-shadow-hover-only();
+    background: $btn-default-hover-bg !important;
+  }
+}
+
+selection-color() {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--blockquote-color);
+}
+
+myradius() {
+  border-radius: $myradius;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /page/
+
+Sitemap: https://blog.dlzhang.com/sitemap.xml
