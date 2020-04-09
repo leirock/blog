@@ -1,10 +1,10 @@
 {% if page.type === 'picture' %}
 <script src="//cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
-<script src="/photos.js"></script>
+<script src=" {{ url_for(theme.js) + '/photos.js' }}  "></script>
 {% endif %}
 
 {% if page.type === 'friends' %}
-<script src="/friends.js"></script>
+<script src=" {{ url_for(theme.js) + '/friends.js' }}  "></script>
 {% endif %}
 
 <script type="text/javascript">
