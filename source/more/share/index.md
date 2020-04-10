@@ -1,6 +1,5 @@
 ---
 title: 好物分享
-comments: true
 toc:
   enable: false
 ---

@@ -1,6 +1,5 @@
 ---
 title: 关于更多
-comments: true
 toc:
   enable: false
 ---

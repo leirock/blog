@@ -1,7 +1,6 @@
 ---
 title: 光影留痕
 type: picture
-comments: true
 ---
 
 <style>
