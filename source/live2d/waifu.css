@@ -71,6 +71,14 @@
 	color: #0099cc;
 }
 
+/* Darkmode Begin */
+@media (prefers-color-scheme: dark) {
+	#waifu-tips span {
+		color: greenyellow;
+	}
+}
+/* Darkmode End */
+
 #waifu #live2d {
 	cursor: grab;
 	height: 300px;
