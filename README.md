@@ -7,7 +7,7 @@
 <a href="https://github.com/lei2rock/blog/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/blog/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
 </p>
 
-The `src` branch of this repository contains all source files of my blog.
+This repository contains all source files of my blog.
 
 All articles and photos provided in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). For commercial use, please contact me by email first.
 
