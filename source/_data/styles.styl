@@ -337,22 +337,6 @@ blockquote p,
   display: none !important;
 }
 
-/* comment-文字颜色 */
-.v p, //评论正文
-.v a, //超链接
-.v em, //斜体
-.v .vwrap .vheader .vinput { //输入框
-  color: var(--text-color) !important;
-}
-
-/* comment-按钮 */
-.v .vlist .vcard .vh .vmeta .vat, //回复按钮
-.v .vwrap .vedit .vctrl span, //表情按钮
-.v .vinfo .col, //预览按钮
-.v .vinfo .vcount .vnum { //评论框下评论数
-  color: var(--blockquote-color) !important;
-}
-
 /* comment-查看更多、评论按钮 */
 .v .vbtn {
   border: none !important;
@@ -361,43 +345,18 @@ blockquote p,
   btn-shadow();
 }
 
-/* comment-MD图标 */
-.v .vwrap .vcontrol .col svg {
-  fill: var(--blockquote-color) !important;
-  opacity: .75;
-}
-
-/* comment-输入框 */
+/* comment-输入框背景图片 */
 textarea#veditor.veditor.vinput {
   background: url($comment-bg-url) 100% 100% no-repeat;
-  color: var(--text-color);
 }
 
-/* comment-行内代码背景 */
-.v code {
-  color: var(--text-color) !important;
-  background-color: inherit !important;
-}
-
-/* comment-代码块背景 */
-.v pre {
-  background-color: black !important;
-}
-
-/* comment-代码块代码颜色 */
-.v pre code {
-  color: $mywhite-code !important;
-}
-
-/* comment-长回复隐藏 */
+/* comment-超链接颜色 */
 @media (prefers-color-scheme: dark) {
-  .v .vlist .vcard .vcontent.expand {
-    &:before {
-      background: linear-gradient(180deg, hsla(0, 0%, 0%, 0), hsla(210, 29%, 20%, .9)) !important;
-    }
-    &:after {
-      color: var(--text-color) !important;
-      background: hsla(210, 29%, 20%, .9) !important;
+  .v a {
+    color: #929298 !important;
+
+    &:hover {
+      color: #ef2f11 !important;
     }
   }
 }

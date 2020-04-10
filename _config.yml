@@ -448,8 +448,7 @@ theme_config:
 
     pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
 
-    # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-    valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
+    valine: //cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
 
   # Assets
   css: https://web-1256060851.file.myqcloud.com/assets/blog-css
