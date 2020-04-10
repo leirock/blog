@@ -248,11 +248,6 @@ theme_config:
     enable: true
     title: 相关推荐 # Custom header, leave empty to use the default one
 
-  # Post edit
-  post_edit:
-    enable: true
-    url: https://github.com/lei2rock/blog/tree/src/source/ # Link for view source
-
   # ---------------------------------------------------------------
   # Custom Page Settings
   # See: https://theme-next.org/docs/theme-settings/custom-pages
