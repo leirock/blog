@@ -60,6 +60,9 @@
 		"selector": ".menu-item-share a",
 		"text": ["在书籍和纪录片里发现更大、更有趣的世界～", "快捡起当泡面盖的 Kindle 来看书吧～", "探索自然奥秘，感受社会历史脉搏，看这些纪录片就对了。"]
 	}, {
+		"selector": ".menu-item-lab a",
+		"text": ["这里有一些实验性的应用与服务介绍哦～", "想看看我正在使用什么应用与服务吗？"]
+	}, {
 		"selector": ".menu-item-homepage a",
 		"text": ["Welcome to visit my homepage in English.", "要不要去我的英文主页看看呢，excited！"]
 		}, {
@@ -93,9 +96,6 @@
 		"selector": ".highlight .table-container, .gist",
 		"text": ["GitHub！我是新手！", "PHP 是最好的语言！"]
 	}, {
-		"selector": ".container a[href^='http'], .nav-link .nav-text",
-		"text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛吧。"]
-	}, {
 		"selector": "a[href^='mailto']",
 		"text": ["邮件我会及时回复的！", "点击就可以发送邮件啦～"]
 	}, {
@@ -116,6 +116,12 @@
 	}, {
 		"selector": "a[itemprop='discussionUrl']",
 		"text": ["要去看看评论吗？", "快来看看大家都评论了什么！", "小伙伴们留下了 {text} 条评论。"]
+	}, {
+		"selector": ".beian a",
+		"text": ["我也是有户口的人哦。", "我的主人可是遵纪守法的好主人。"]
+	}, {
+		"selector": ".container a[href^='http'], .nav-link .nav-text",
+		"text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛吧。", "到 <span>{text}</span> 看看吧。"]
 	}, {
 		"selector": ".back-to-top",
 		"text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]

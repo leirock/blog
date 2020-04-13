@@ -1,52 +1,52 @@
 [
 	{
-		"nickname": "moliu",
+		"name": "moliu",
 		"avatar": "https://cdn.jsdelivr.net/gh/moliusmile/moliusmile.github.io/aboutme/Denise2.jpg",
-		"site": "https://shuxinyang.com"
+		"link": "https://shuxinyang.com"
 	},
 	{
-		"nickname": "miyehn",
+		"name": "miyehn",
 		"avatar": "https://i.loli.net/2020/03/08/Gz8eBg1X7Zb6TWn.jpg",
-		"site": "https://miyehn.me/blog"
+		"link": "https://miyehn.me/blog"
 	},
 	{
-		"nickname": "阿十九",
+		"name": "阿十九",
 		"avatar": "https://cdn.jsdelivr.net/gh/ashijiu/ashijiu.github.io/images/mao.jpg",
-		"site": "https://blog.ashijiu.com"
+		"link": "https://blog.ashijiu.com"
 	},
 	{
-		"nickname": "枫糖",
+		"name": "枫糖",
 		"avatar": "https://cdn.jsdelivr.net/gh/maplesugarr/blog-assets/imgs/maple-leaf-avatar.jpg",
-		"site": "https://blog.maplesugar.space"
+		"link": "https://blog.maplesugar.space"
 	},
 	{
-		"nickname": "元哥的日记",
+		"name": "元哥的日记",
 		"avatar": "https://liyuanimage.oss-cn-beijing.aliyuncs.com/img/20191219220643.jpeg",
-		"site": "https://leeee.top"
+		"link": "https://leeee.top"
 	},
 	{
-		"nickname": "Lan Ling",
+		"name": "Lan Ling",
 		"avatar": "https://cdn.jsdelivr.net/gh/muyuuuu/muyuuuu.github.io/images/avatar.gif",
-		"site": "https://muyuuuu.github.io"
+		"link": "https://muyuuuu.github.io"
 	},
 	{
-		"nickname": "人间白玉楼",
+		"name": "人间白玉楼",
 		"avatar": "https://gallery.vksir.zone/images/2020/03/12/vksir.jpg",
-		"site": "https://www.vksir.zone"
+		"link": "https://www.vksir.zone"
 	},
 	{
-		"nickname": "荷戟独彷徨",
+		"name": "荷戟独彷徨",
 		"avatar": "https://cdn.jsdelivr.net/gh/guanqr/blog/static/icons/apple-touch-icon.png",
-		"site": "https://guanqr.com"
+		"link": "https://guanqr.com"
 	},
 	{
-		"nickname": "志军的博客",
+		"name": "志军的博客",
 		"avatar": "https://www.azjhong.com/images/hires_3769461-os.png",
-		"site": "https://www.azjhong.com"
+		"link": "https://www.azjhong.com"
 	},
 	{
-		"nickname": "米米的博客",
+		"name": "米米的博客",
 		"avatar": "https://gravatar.loli.net/avatar/f56980e9dc026727282a04eea02b4f4d?s=256",
-		"site": "https://zhangshuqiao.org"
+		"link": "https://zhangshuqiao.org"
 	}
 ]

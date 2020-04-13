@@ -9,7 +9,7 @@
 # Site
 title: 班班碎碎念
 subtitle: 无曰已是 无曰遂真
-description: 目前坐标香港，喜欢看一些纪录片和美剧，也喜欢折腾数码产品。有时会看看书、玩玩游戏，没事胡思乱想碎碎念。本站主要记录一些日常生活、碎碎念与科研随笔。
+description: '@lei2rock<br>日常生活、碎碎念与科研随笔记录'
 keywords: [班班, 碎碎念, 博客, blog]
 author: 班班
 language: zh-CN
@@ -66,7 +66,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 15
+  per_page: 10
   order_by: -date
   
 # Category & Tag
@@ -100,11 +100,6 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
-# Hexo server module
-## Use `hexo server`
-server:
-  ip: 127.0.0.1
 
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier
@@ -175,6 +170,17 @@ theme_config:
       color: "#f06292"
     powered: false
 
+  # Creative Commons 4.0 International License.
+  # See: https://creativecommons.org/share-your-work/licensing-types-examples
+  # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+  # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+  # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+  creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: true
+    language: deed.zh
+
   # ----------------------------------------------------------------
   # Menu Settings
   # ---------------------------------------------------------------
@@ -186,10 +192,11 @@ theme_config:
       series: series/ || fas fa-cube
       tags: tags/ || fas fa-tags
     photos: /photos/ || fas fa-camera-retro
+    share: /share/ || fas fa-share-alt
     more:
       default: /more/ || fas fa-location-arrow
-      share: share/ || fas fa-share-alt
       friends: friends/ || fas fa-heart
+      lab: lab/ || fas fa-flask
     homepage: https://dlzhang.com || fas fa-globe
 
   # ---------------------------------------------------------------
@@ -448,7 +455,7 @@ theme_config:
 
     pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
 
-    valine: //cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
+    valine: //cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js
 
   # Assets
   css: https://web-1256060851.file.myqcloud.com/assets/blog-css

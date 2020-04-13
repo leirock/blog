@@ -27,7 +27,7 @@ if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	sed -i "" 's#https://web-1256060851.file.myqcloud.com/assets/blog-css#css#g' _config.yml
 	sed -i "" 's#https://web-1256060851.file.myqcloud.com/assets/js#js#g' _config.yml
 	sed -i "" '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
-	printf "\033[32mINFO \033[0m Hexo will also run at \033[4mhttp://local.dlzhang.com:4000\033[0m . Press Ctrl+C to stop.\n"
+	printf "\033[32mINFO \033[0m Hexo will also run at \033[4mhttp://local.zdl.one:4000\033[0m . Press Ctrl+C to stop.\n"
 	hexo s
 	hexo clean
 	sed -i "" 's#css: css#css: https://web-1256060851.file.myqcloud.com/assets/blog-css#g' _config.yml
@@ -53,7 +53,7 @@ else
 			echo " "
 			git add .
 			git commit -m "Update next"
-			git push origin src
+			git push origin master
 			echo " "
 			printf "\033[32mINFO \033[0m 提交 GitHub 完毕！\n"
 			sleep 1s
