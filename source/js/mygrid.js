@@ -1,10 +1,10 @@
 // 获取网页不含域名的路径
 var windowPath = window.location.pathname; 
-// 友链信息json文件路径
+// 友链信息文件路径
 var FriendDataPath = '/more/friends/friendslist.json';
-// 实验项目信息json文件路径
+// 实验室项目信息文件路径
 var ProjectDataPath = '/more/lab/projectslist.json'; 
-// 图片名称尺寸信息json文件路径
+// 图片信息文件路径
 var imgDataPath = '/photos/photoslist.json'; 
 // 图片访问路径
 var imgPath = 'https://web-1256060851.file.myqcloud.com/images/photos/';  
@@ -22,12 +22,11 @@ if (windowWidth < 768) {
 // 腾讯云图片处理样式（根据图片显示宽度）
 var imgStyle = '!' + imageWidth + 'x';
 
-
-// 卡片
-if (windowPath.indexOf("more") > 0 ) {
-    if (windowPath.indexOf("friends") > 0 ) {
+// 链接卡片（友链、实验室页面）
+if (windowPath.indexOf('more') > 0 ) {
+    if (windowPath.indexOf('friends') > 0 ) {
         var LinkDataPath = FriendDataPath;
-    } else if (windowPath.indexOf("lab") > 0 ) {
+    } else if (windowPath.indexOf('lab') > 0 ) {
         var LinkDataPath = ProjectDataPath;
     }
     link = {
@@ -43,15 +42,14 @@ if (windowPath.indexOf("more") > 0 ) {
                 name = data[i].name;
                 avatar = data[i].avatar;
                 link = data[i].link;
-                li  += '<div class="card">' +
-                    '<a href="' + link + '" target="_blank">' +
-                        '<div class="thumb" style="background: url( '+ avatar +');">' + 
+                li += '<div class="card">' +
+                        '<a href="' + link + '" target="_blank">' +
+                            '<div class="thumb" style="background: url(' + avatar + ');">' + '</div>' +
+                        '</a>' +
+                        '<div class="card-header">' +
+                            '<div><a href="' + link + '" target="_blank">' + name + '</a></div>' +
                         '</div>' +
-                    '</a>' +
-                    '<div class="card-header">' +
-                        '<div><a href="' + link + '" target="_blank">' + name + '</a></div>' +
-                        '</div>' +
-                    '</div>';
+                      '</div>';
             }
             $(".MyGrid").append(li);
         }
@@ -59,8 +57,8 @@ if (windowPath.indexOf("more") > 0 ) {
     link.init();
 }
 
-// 图片卡片
-if (windowPath.indexOf("photos") > 0 ) {
+// 图片卡片（照片页面）
+if (windowPath.indexOf('photos') > 0 ) {
     var LinkDataPath = imgDataPath;
     photo = {
         page: 1,
@@ -85,10 +83,10 @@ if (windowPath.indexOf("photos") > 0 ) {
                 li += '<div class="card" style="width:' + imageWidth + 'px" >' +
                         '<div class="ImageInCard" style="height:'+ imageWidth * imageY / imageX + 'px">' +
                             '<a data-fancybox="gallery" href="' + imgPath + imgNameWithPattern + '" data-caption="' + imgName + '" title="' +  imgName + '">' +
-                            '<img data-src="' + imgPath + imgNameWithPattern + imgStyle + ' " src="' + imgPath + imgNameWithPattern + imgStyle + ' " data-loaded="true">' +
+                                '<img data-src="' + imgPath + imgNameWithPattern + imgStyle + '" src="' + imgPath + imgNameWithPattern + imgStyle + '" data-loaded="true">' +
                             '</a>' +
                         '</div>' +
-                    '</div>'
+                      '</div>'
             }
             $(".MyGrid").append(li);
             this.minigrid();
@@ -101,7 +99,7 @@ if (windowPath.indexOf("photos") > 0 ) {
             });
             grid.mount();
             $(window).resize(function() {
-            grid.mount();
+                grid.mount();
             });
         }
     }
