@@ -1,6 +1,6 @@
 zh-CN:
   menu:
-    home: 博客首页
+    home: 本站首页
     overview: 文章总览
     series: 专栏文章
     tags: 各种标签
@@ -8,6 +8,7 @@ zh-CN:
     more: 关于更多
     share: 好物分享
     friends: 小伙伴们
+    lab: 实验室
     homepage: English
   post:
     post_lang: 中文/

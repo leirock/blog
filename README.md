@@ -3,7 +3,7 @@
 <p align="center">
 <br>
 <a href="https://hexo.io"><img src="https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square"></a>
-<a href="https://theme-next.org"><img src="https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square"></a>
+<a href="https://github.com/theme-next/hexo-theme-next"><img src="https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square"></a>
 <a href="https://github.com/lei2rock/blog/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/blog/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
 </p>
 
