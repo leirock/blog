@@ -2,7 +2,7 @@
 title: 部署 RSS 订阅服务 FreshRSS
 categories: [随手记]
 tags: [服务器, Linux, RSS]
-date: 2020-04-15 20:30:37
+date: 2020-04-15 20:30:45
 ---
 
 RSS 订阅我之前是使用 Inoreader，但是免费版的即使是在 Reeder 客户端下浏览依然是有广告植入的，而且听闻最近在境内已经无法访问了，所以就考虑自建一个。一开始考虑的是 Tiny Tiny RSS，这个之前在腾讯云的学生机上就尝试搭建过。但是订阅源的自动刷新一直搞不定，看了很多教程也没有成功，而且界面设置什么的都不是很喜欢，就放弃了。继续寻找之下找到了 FreshRSS，自带支持 Reeder 客户端访问，不像 Tiny Tiny RSS 还需要安装 fever 插件。<!-- more -->
@@ -41,7 +41,7 @@ chmod -R 777 ./data
 
 先设置好语言，检查完毕没有缺少的组件和权限后，如下图所示设置数据库（用户名、数据库名根据之前创建的信息填写）：
 
-![数据库配置](https://web-1256060851.file.myqcloud.com/images/2020/部署RSS订阅服务FreshRSS/db_settings.jpg!500x)
+![数据库配置](https://web-1256060851.file.myqcloud.com/images/2020/部署RSS订阅服务FreshRSS/db_settings.jpg!400x)
 
 之后就是设置好自己的用户名密码，完成安装就可以进入 FreshRSS 界面进行登录操作了。
 

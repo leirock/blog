@@ -5,15 +5,7 @@ tags: [服务器, Linux, 宝塔面板]
 date: 2020-04-15 18:30:37
 ---
 
-近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。<!-- more -->
-
-主要会分为以下几个部分记录：
-
-- 升级 Debian 系统并安装和配置宝塔面板（本文）；
-- Hexo 静态博客通过 GitHub Actions 部署到服务器（本文）；
-- [部署 RSS 订阅服务 FreshRSS](/posts/2020/部署RSS订阅服务FreshRSS/)；
-- [部署 RSSHub 和自动签到 Docker 应用](/posts/2020/宝塔面板部署RSSHub和自动签到Docker应用/)；
-- [部署看板娘组件 Live2D API](/posts/2020/部署看板娘组件Live2D-API/)。
+近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。主要会分为几个部分记录，你可以访问我的「[云服务器](/overview/series/)」专栏查看相关文章。<!-- more -->
 
 ## 1. 系统升级到 Debian 10
 
@@ -94,56 +86,3 @@ pip install oss2
 {% endnote %}
 
 软件安装完毕后，可以进入「面板设置」，修改默认的访问端口、登录用户名密码等信息，还可以为面板绑定访问域名并添加 SSL 证书。
-
-## 3. 通过 GitHub Actions 部署 Hexo
-
-在服务器上部署 Hexo 静态博客有两种方案，一是直接把源代码推送到服务器上，然后在服务器上安装 Node.js 和 hexo-cli，从而直接在服务器上构建网页文件并部署；二是依旧按照之前部署到对象存储的方案，用 GitHub 作为源代码托管，然后用 GitHub Actions 构建网页文件，再同步到服务器的网站根目录下。
-
-这里，我选择后一种方案，这样修改的地方比较少，也比较方便。首先，修改原来的 GitHub Actions 脚本，删去部署到阿里云 OSS 的内容，添加如下内容：
-
-```yaml
-- name: Deploy to server
-  uses: easingthemes/ssh-deploy@v2.0.9
-  env:
-    SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # 配置在服务器上公钥所对应的私钥
-    ARGS: "-avz --delete"
-    SOURCE: "public/" # 要同步到服务器的目录
-    REMOTE_HOST: ${{ secrets.REMOTE_HOST }} # 服务器 IP 地址
-    REMOTE_PORT: ${{ secrets.REMOTE_PORT }} # SSH 连接端口
-    REMOTE_USER: ${{ secrets.REMOTE_USER }} # 服务器 SSH 连接用户名，如 root
-    TARGET: ${{ secrets.REMOTE_TARGET }} # 服务器上对应网站的根目录
-```
-
-对于上述变量，我们直接添加在代码仓库设置的 Secrets 中即可。对于阿里云轻量应用服务器，可以在控制台很容易地生成密钥对，并下载由于连接服务器的私钥（生成后重启一下服务器）。
-
-设置好 GitHub Actions 各项参数之后，需要在宝塔面板上创建网站，并设置域名等内容，这里就不详细介绍。如果需要 Let's Encrypt SSL 通配符证书，可能还需要进行 DNS 解析认证，这就需要我们去域名解析提供商那边获取一个可以编辑 DNS 解析记录的 token，方便宝塔面板自动配置解析记录。
-
-最后，因为 GitHub Actions 同步到服务器网站目录过程中用到了 rsync 这一数据镜像备份工具，所以需要先在服务器上安装好 rsync：
-
-```sh
-apt-get install rsync
-```
-
----
-
-**备注**：如果服务器提供商的控制台没有自动配置密钥对的功能，可以在服务器上手动生成。
-
-```sh
-# 进入用户 SSH 密钥存储目录
-cd ~/.ssh
-# 列出目录中内容，确认是否已拥有密钥
-ls
-# 生成 SSH 密钥
-ssh-keygen
-```
-
-首先 `ssh-keygen` 会确认密钥的存储位置（默认是 `.ssh/id_rsa`），然后它会要求你输入两次密钥口令。 如果你不想在使用密钥时输入口令，将其留空即可。
-
-```sh
-# 将公钥内容写入 authorized_keys
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-# 列出私钥的内容
-cat ~/.ssh/id_rsa
-```
-
-最后，我们把私钥的内容复制到 GitHub 代码仓库设置的 Secrets 中 `SSH_PRIVATE_KEY` 变量内即可。
