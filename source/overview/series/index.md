@@ -23,7 +23,7 @@ comments: false
 
 ## 云服务器
 
-- [部署看板娘组件 Live2D API](/posts/2020/部署看板娘组件Live2D-API/)
+- [服务器部署 Hexo 博客和看板娘 Live2D API](/posts/2020/服务器部署Hexo博客和看板娘Live2D-API/)
 - [宝塔面板部署 RSSHub 和自动签到 Docker 应用](/posts/2020/宝塔面板部署RSSHub和自动签到Docker应用/)
 - [部署 RSS 订阅服务 FreshRSS](/posts/2020/部署RSS订阅服务FreshRSS/)
 - [升级到 Debian 10 并安装宝塔面板](/posts/2020/升级到Debian10并安装宝塔面板/)
