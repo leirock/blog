@@ -5,7 +5,7 @@ comments: false
 
 <style>.post-body a {border-bottom:none;}</style>
 
-<center><i class="fas fa-cube"></i> 目前共计 5 个专栏</center>
+<center><i class="fas fa-cube"></i> 目前共计 6 个专栏</center>
 
 ## 政策讨论
 
@@ -20,6 +20,11 @@ comments: false
 - [我在台湾过新年](/posts/2017/我在台湾过新年/)
 - [春节澳门游计划](/posts/2016/春节澳门游计划/)
 - [从紫金港到紫荆花盛开的地方](/posts/2013/从紫金港到紫荆花盛开的地方/)
+
+## 云服务器
+
+- [部署 RSS 订阅服务 FreshRSS](/posts/2020/部署RSS订阅服务FreshRSS/)
+- [升级到 Debian 10 并安装宝塔面板](/posts/2020/升级到Debian10并安装宝塔面板/)
 
 ## 博客搭建
 
