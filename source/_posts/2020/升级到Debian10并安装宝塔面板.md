@@ -11,9 +11,9 @@ date: 2020-04-15 18:30:37
 
 - 升级 Debian 系统并安装和配置宝塔面板（本文）；
 - Hexo 静态博客通过 GitHub Actions 部署到服务器（本文）；
-- 搭建 FreshRSS 资讯订阅服务；
-- Docker 部署 RSSHub 和自动签到服务；
-- Live2D API 的部署和博客加入看板娘插件。
+- [部署 RSS 订阅服务 FreshRSS](/posts/2020/部署RSS订阅服务FreshRSS/)；
+- [部署 RSSHub 和自动签到 Docker 应用](/posts/2020/宝塔面板部署RSSHub和自动签到Docker应用/)；
+- [部署看板娘组件 Live2D API](/posts/2020/部署看板娘组件Live2D-API/)。
 
 ## 1. 系统升级到 Debian 10
 
