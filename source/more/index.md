@@ -29,4 +29,4 @@ toc:
 　<i class="fab fa-fw fa-twitter"></i> [Twitter](https://twitter.com/lei2rock)
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)
 
-![微信公众号：班班碎碎念](https://web-1256060851.file.myqcloud.com/images/wechat-channel.jpg!150x)
+![微信公众号：班班碎碎念](https://web-1256060851.file.myqcloud.com/images/qrcode/wechat-channel.jpg!150x)
