@@ -8,40 +8,41 @@ date: 2018-06-11 12:24:01
 要展示自己拍摄的照片，可以给博客添加一个瀑布流的相册页面。本文适用于 Hexo 4.2.0 / NexT 7.8.0，参考了 [asdfv1929 的方法](https://asdfv1929.github.io/2018/05/26/next-add-photos/)。<!-- more -->
 
 ## 1. json 文件处理图片信息
+
 在博客根目录的 `/scripts/` 文件夹下新建一个 `phototool.js` 文件，内容如下。主要功能是访问照片文件夹，获取每张照片的大小和文件名，并生成对应的 `json` 文件：
 
 ```js /scripts/phototool.js
 "use strict";
-    const fs = require("fs");
-    const sizeOf = require('image-size');
-    //本地照片所在目录
-    const path = "source/photos/images"; 
-    //要放置生成的照片信息文件目录，建议直接放在 source/photos/ 文件夹下
-    const output = "source/photos/photoslist.json";
-    var dimensions;
-    fs.readdir(path, function (err, files) {
-        if (err) {
+const fs = require("fs");
+const sizeOf = require('image-size');
+//本地照片所在目录
+const path = "source/photos/images"; 
+//要放置生成的照片信息文件目录，建议直接放在 source/photos/ 文件夹下
+const output = "source/photos/photoslist.json";
+var dimensions;
+fs.readdir(path, function (err, files) {
+    if (err) {
+        return;
+    }
+    let arr = [];
+    (function iterator(index) {
+        if (index == files.length) {
+            fs.writeFileSync(output, JSON.stringify(arr, null, "\t"));
             return;
         }
-        let arr = [];
-        (function iterator(index) {
-            if (index == files.length) {
-                fs.writeFileSync(output, JSON.stringify(arr, null, "\t"));
+        fs.stat(path + "/" + files[index], function (err, stats) {
+            if (err) {
                 return;
             }
-            fs.stat(path + "/" + files[index], function (err, stats) {
-                if (err) {
-                    return;
-                }
-                if (stats.isFile()) {
-                    dimensions = sizeOf(path + "/" + files[index]);
-                    console.log(dimensions.width, dimensions.height);
-                    arr.push(dimensions.width + '.' + dimensions.height + ' ' + files[index]);
-                }
-                iterator(index + 1);
-            })
-        }(0));
-    });
+            if (stats.isFile()) {
+                dimensions = sizeOf(path + "/" + files[index]);
+                console.log(dimensions.width, dimensions.height);
+                arr.push(dimensions.width + '.' + dimensions.height + ' ' + files[index]);
+            }
+            iterator(index + 1);
+        })
+    }(0));
+});
 ```
 
 创建好并把照片放在目录后，执行以下命令：
