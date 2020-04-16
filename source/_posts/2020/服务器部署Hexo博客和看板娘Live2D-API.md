@@ -14,11 +14,11 @@ date: 2020-04-15 19:45:00
 
 ```yaml
 - name: Deploy to server
-  uses: easingthemes/ssh-deploy@v2.0.9
+  uses: easingthemes/ssh-deploy@v2.1.2
   env:
-    SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # 配置在服务器上公钥所对应的私钥
     ARGS: "-avz --delete"
     SOURCE: "public/" # 要同步到服务器的目录
+    SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # 配置在服务器上公钥所对应的私钥
     REMOTE_HOST: ${{ secrets.REMOTE_HOST }} # 服务器 IP 地址
     REMOTE_PORT: ${{ secrets.REMOTE_PORT }} # SSH 连接端口
     REMOTE_USER: ${{ secrets.REMOTE_USER }} # 服务器 SSH 连接用户名，如 root
