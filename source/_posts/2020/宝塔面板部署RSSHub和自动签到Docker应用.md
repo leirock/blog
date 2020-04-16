@@ -72,9 +72,7 @@ exit
 
 如果不希望别人访问我们的签到网站注册账号，可以把 `/web/handlers/login.py` 文件第 66-130 行的代码注释掉（前后均写上 `'''`）。
 
-签到模板可以从 [qiandao.today](https://qiandao.today) 下载，具体使用方法可以查阅官方文档。对于需要获取 Cookies 进行签到的网站，我们可以安装 Chrome 扩展应用 [GetCookies](https://chrome.google.com/webstore/detail/cookies-get-assistant/ljjpkibacifkfolehlgaolibbnlapkme)。但是，这里下载安装的只限用于 qiandao.today 这个网站。
-
-如果我们要在自己搭建的签到网站获取 Cookies，可以：
+签到模板可以从 [qiandao.today](https://qiandao.today) 下载，具体使用方法可以查阅官方文档。对于需要获取 Cookies 进行签到的网站，我们可以安装 Chrome 扩展应用 [GetCookies](https://chrome.google.com/webstore/detail/cookies-get-assistant/ljjpkibacifkfolehlgaolibbnlapkme)。但是，这里下载安装的只限用于 qiandao.today 这个网站。如果我们要在自己搭建的签到网站获取 Cookies，可以：
 
 - 从 GitHub 下载[该项目的源代码](https://github.com/acgotaku/GetCookies)；
 - 全局搜索 `qiandao.today`，替换为自己的签到网站域名并保存；

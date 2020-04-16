@@ -56,7 +56,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 
 {% note info %}
 
-**注意**：如果发现下载安装时候无法连接到宝塔的下载地址（特别是境外服务器），可能需要先在首页的「Linux 工具箱」中修改一下「DNS 设置」，例如把 1.1.1.1 或者 8.8.8.8 加入 DNS 解析服务器列表。
+**注意**：如果发现下载时无法连接到宝塔的下载地址（特别是境外服务器），可能需要先在首页的「Linux 工具箱」中临时修改一下「DNS 设置」，例如使用 1.1.1.1 或者 8.8.8.8。
 
 {% endnote %}
 
