@@ -83,10 +83,10 @@ jobs:
 
     - name: Deploy assets to cos
       run: |
-        coscmd upload -rs --delete public/css assets/blog-css
-        coscmd upload -rs --delete public/js assets/js
-        coscmd upload -rs --delete source/images assets/img
-        coscmd upload -rs --delete source/live2d assets/live2d
+        coscmd upload -rs --delete public/css assets/blog-css -f
+        coscmd upload -rs --delete public/js assets/js -f
+        coscmd upload -rs --delete source/images assets/img -f
+        coscmd upload -rs --delete source/live2d assets/live2d -f
         rm -rf public/css public/js public/images public/live2d
 
     - name: Telegram notification
