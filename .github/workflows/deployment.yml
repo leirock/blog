@@ -89,17 +89,6 @@ jobs:
         coscmd upload -rs --delete source/live2d assets/live2d
         rm -rf public/css public/js public/images public/live2d
 
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.1.2
-      env:
-        ARGS: "-avz --delete"
-        SOURCE: "public/"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.REMOTE_TARGET }}
-
     - name: Telegram notification
       if: cancelled() == false
       uses: xinthink/action-telegram@v1.1

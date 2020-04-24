@@ -175,7 +175,7 @@ theme_config:
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   creative_commons:
     license: by-nc-sa
-    sidebar: true
+    sidebar: false
     post: true
     language: deed.zh
 
