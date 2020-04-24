@@ -5,7 +5,7 @@ tags: [服务器, Docker, RSS]
 date: 2020-04-15 23:30:50
 ---
 
-使用宝塔面板下部署 Docker 应用还是挺容易的，首先需要安装 Docker 管理器。不过这个管理器在 Safari 浏览器中似乎有 bug，无法进行点击操作，但是在 Chrome 浏览器中可以正常操作。本文将通过这个 Docker 管理器来安装 RSSHub 这一 RSS 生成器和一个自动签到应用。<!-- more -->
+使用宝塔面板下部署 Docker 应用还是挺容易的，首先需要安装 Docker 管理器。不过这个管理器在 Safari 浏览器中似乎有 bug，无法进行点击操作，但是在 Chrome 浏览器中可以正常操作。本文将通过这个 Docker 管理器来安装 RSSHub 这一 RSS 生成器和一个自动签到应用。<!--more-->
 
 ## 1. RSSHub：万物皆可 RSS
 
