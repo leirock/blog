@@ -1,4 +1,4 @@
-# <div align="center"><a title="Donglei's blog repository" href="https://github.com/lei2rock/blog"><img align="center" height="100" src="https://user-images.githubusercontent.com/19180725/77292857-12320000-6d1c-11ea-87cf-9408f6f76a79.png"></a></div>
+# <div align="center"><a title="Donglei's blog mirror" href="https://github.com/lei2rock/blog"><img align="center" height="100" src="https://user-images.githubusercontent.com/19180725/77292857-12320000-6d1c-11ea-87cf-9408f6f76a79.png"></a></div>
 
 <p align="center">
 <br>
@@ -7,7 +7,7 @@
 <a href="https://github.com/lei2rock/blog/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/blog/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
 </p>
 
-This repository contains all source files of my blog.
+This repository contains all source files of the Hexo mirror site of my blog.
 
 All articles and photos provided in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). For commercial use, please contact me by email first.
 
