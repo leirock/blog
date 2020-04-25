@@ -21,11 +21,6 @@ jobs:
 #      with:
 #        node-version: '12.x'
 
-    - name: Setup Python
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
-
     # https://github.com/actions/cache/blob/master/examples.md#node---yarn
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
