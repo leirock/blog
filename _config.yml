@@ -194,6 +194,7 @@ theme_config:
       default: /more/ || fas fa-location-arrow
       friends: friends/ || fas fa-heart
       lab: lab/ || fas fa-flask
+    博客源站: https://blog.dlzhang.com || fas fa-feather-alt
     homepage: https://dlzhang.com || fas fa-globe
 
   # ---------------------------------------------------------------
