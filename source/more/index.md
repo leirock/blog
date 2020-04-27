@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![浙江大学紫金港校区·启真湖](https://web-1256060851.file.myqcloud.com/images/photos/浙大_新雪初霁_东教学楼.jpg!500x)
+![浙江大学紫金港校区·启真湖](https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/photos/浙大_新雪初霁_东教学楼.jpg!500x)
 
 {% centerquote %}
 大不自多，海纳江河。
@@ -29,4 +29,4 @@ toc:
 　<i class="fab fa-fw fa-twitter"></i> [Twitter](https://twitter.com/lei2rock)
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)
 
-![微信公众号：班班碎碎念](https://web-1256060851.file.myqcloud.com/images/qrcode/wechat-channel.jpg!150x)
+![微信公众号：班班碎碎念](https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/qrcode/wechat-channel.jpg!150x)

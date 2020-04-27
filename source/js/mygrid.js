@@ -7,7 +7,7 @@ var ProjectDataPath = '/more/lab/projectslist.json';
 // 图片信息文件路径
 var imgDataPath = '/photos/photoslist.json'; 
 // 图片访问路径
-var imgPath = 'https://web-1256060851.file.myqcloud.com/images/photos/';  
+var imgPath = 'https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/photos/';  
 // 图片显示数量
 var imgMaxNum = 50; 
 // 获取窗口宽度（以确定图片显示宽度）
