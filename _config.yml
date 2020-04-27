@@ -204,7 +204,7 @@ theme_config:
 
   # Sidebar Avatar
   avatar:
-    url: https://web-1256060851.file.myqcloud.com/images/blog-avatar.jpg
+    url: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/blog-avatar.jpg
     rounded: true
 
   # Posts / Categories / Tags in sidebar.
@@ -245,8 +245,8 @@ theme_config:
     comment: 🍭 支持一根棒棒糖！
 
   reward:
-    wechatpay: https://web-1256060851.file.myqcloud.com/images/qrcode/wechat-pay.jpg
-    alipay: https://web-1256060851.file.myqcloud.com/images/qrcode/alipay.jpg
+    wechatpay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/qrcode/wechat-pay.jpg
+    alipay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/qrcode/alipay.jpg
 
   # Dependencies: https://github.com/tea3/hexo-related-popular-posts
   related_posts:

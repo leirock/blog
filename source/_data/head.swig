@@ -1,7 +1,7 @@
 <script type="text/javascript">
 // Live2d
 // 注意：live2d_path 参数应使用绝对路径
-//const live2d_path = "https://web-1256060851.file.myqcloud.com/assets-hexo/live2d/";
+//const live2d_path = "https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/live2d/";
 const live2d_path = "/live2d/";
 
 // 封装异步加载资源的方法
