@@ -2,6 +2,7 @@
 title: Apply for PhD：为什么与怎么样
 categories: [学术向]
 tags: [PhD, 申请季]
+cid: 67
 date: 2016-04-07 22:54:42
 ---
 

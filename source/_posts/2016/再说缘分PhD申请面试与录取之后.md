@@ -2,6 +2,7 @@
 title: 再说缘分：PhD 申请面试与录取之后
 categories: [学术向]
 tags: [PhD, 申请季]
+cid: 59
 date: 2016-04-07 23:00:42
 ---
 

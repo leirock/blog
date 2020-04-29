@@ -2,6 +2,7 @@
 title: 服务器部署 Hexo 博客和看板娘 Live2D API
 categories: [随手记]
 tags: [服务器, Hexo, GitHub Actions]
+cid: 101
 date: 2020-04-15 19:45:00
 ---
 

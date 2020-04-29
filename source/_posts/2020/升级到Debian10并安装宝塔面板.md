@@ -2,10 +2,11 @@
 title: 升级到 Debian 10 并安装宝塔面板
 categories: [随手记]
 tags: [服务器, Linux, 宝塔面板]
+cid: 105
 date: 2020-04-15 18:30:37
 ---
 
-近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。主要会分为几个部分记录，你可以访问我的「[云服务器](/overview/series/)」专栏查看相关文章。<!--more-->
+近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。<!--more-->
 
 ## 1. 系统升级到 Debian 10
 
@@ -50,7 +51,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 
 在浏览器登录宝塔面板后，就会跳出推荐安装套件的窗口。选择 LNMP 套件极速安装，版本上因为我的机器内存只有 1G，所以就选择了 MySQL 5.5 的版本，其他都选择了最新版本。
 
-![推荐安装套件](https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/2020/升级到Debian10并安装宝塔面板/LNMP.jpg!500x)
+![推荐安装套件](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/LNMP.jpg!500x)
 
 {% note info %}
 
