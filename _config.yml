@@ -375,7 +375,7 @@ theme_config:
     guest_info: nick,mail # Custom comment header, nick,mail,link 
     pageSize: 5 # Pagination size
     language: zh-cn # Language, available values: en, zh-cn
-    visitor: false # Article reading statistic
+    visitor: true # Article reading statistic
     comment_count: true # If false, comment count will only be displayed in post page, not in home page
     recordIP: true # Whether to record the commenter IP
     serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
@@ -389,15 +389,6 @@ theme_config:
   # Google Analytics
   google_analytics:
     tracking_id:
-
-  # Do not enable both `valine.visitor` and `leancloud_visitors`.
-  leancloud_visitors:
-    enable: false
-    app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
-    app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
-    # Required for apps from CN region
-    server_url: # <your server url>
-    security: false
 
   # ---------------------------------------------------------------
   # Search Services
