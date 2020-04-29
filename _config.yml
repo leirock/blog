@@ -19,7 +19,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.dlzhang.com
 root: /
-permalink: /posts/:year/:title/
+permalink: /archives/:cid/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,7 +29,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: overview/tags
-archive_dir: archives
+archive_dir: overview/timeline
 category_dir: overview
 code_dir: downloads/code
 i18n_dir: :lang
@@ -188,6 +188,7 @@ theme_config:
     overview: 
       default: /overview/ || fas fa-th
       tags: tags/ || fas fa-tags
+      timeline: timeline/ || fas fa-archive
     photos: /photos/ || fas fa-camera-retro
     share: /share/ || fas fa-share-alt
     more:
@@ -204,17 +205,17 @@ theme_config:
 
   # Sidebar Avatar
   avatar:
-    url: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/blog-avatar.jpg
+    url: https://cdn.v2ex.com/gravatar/cc763511474fe24ffcc80257fb7cb970?s=200
     rounded: true
 
   # Posts / Categories / Tags in sidebar.
   site_state: false
 
   social:
-    微博: https://weibo.com/1156774800 || fab fa-weibo
+    微博: https://weibo.com/7216640993 || fab fa-weibo
     Twitter: https://twitter.com/lei2rock || fab fa-twitter
     GitHub: https://github.com/lei2rock || fab fa-github
-    RSS: /atom.xml || fas fa-rss
+    RSS: https://blog.dlzhang.com/feed || fas fa-rss
 
   social_icons:
     icons_only: true
@@ -245,8 +246,8 @@ theme_config:
     comment: 🍭 支持一根棒棒糖！
 
   reward:
-    wechatpay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/qrcode/wechat-pay.jpg
-    alipay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/qrcode/alipay.jpg
+    wechatpay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/qrcode/wechat-pay.jpg
+    alipay: https://web-1256060851.cos.ap-shanghai.myqcloud.com/qrcode/alipay.jpg
 
   # Dependencies: https://github.com/tea3/hexo-related-popular-posts
   related_posts:
@@ -284,7 +285,7 @@ theme_config:
       style: mac
 
   back2top:
-    enable: true
+    enable: false
     # Back to top in sidebar.
     sidebar: false
     # Scroll percent label in b2t button.
@@ -338,9 +339,9 @@ theme_config:
   # SEO Settings
   # ---------------------------------------------------------------
 
-  google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
+  google_site_verification:
   disable_baidu_transformation: true
-  baidu_site_verification: wvc37nzEad
+  baidu_site_verification:
 
   # ---------------------------------------------------------------
   # Third Party Plugins & Services Settings
@@ -387,11 +388,11 @@ theme_config:
 
   # Google Analytics
   google_analytics:
-    tracking_id: UA-141207776-1
+    tracking_id:
 
   # Do not enable both `valine.visitor` and `leancloud_visitors`.
   leancloud_visitors:
-    enable: true
+    enable: false
     app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
     app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
     # Required for apps from CN region

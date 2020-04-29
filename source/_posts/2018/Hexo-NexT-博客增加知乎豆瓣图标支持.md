@@ -2,12 +2,13 @@
 title: Hexo NexT 博客增加知乎豆瓣图标支持
 categories: [随手记]
 tags: [blog, CSS, 技术]
+cid: 86
 date: 2018-06-13 04:21:54
 ---
 
 因为 Hexo NexT 原始主题是采用了 Font Awesome 图标，并未包含如知乎、豆瓣这类中国大陆的社交网站图标。所以需要加入另一种图标的支持，使得博客可以显示出知乎、豆瓣这类的图标。<!--more-->
 
-- 感谢评论区 jqgsninimo 提供的[改进](/posts/89dad1c1/#5c23395f1579a3005f18ede7)，方法更佳简单明了，本文已经更新该方法。 
+- 感谢评论区 jqgsninimo 提供的改进，方法更佳简单明了，本文已经更新该方法。 
 - CSS 自定义文件指 `/source/_data/styles.styl`
 - 本文适用于 Hexo 4.2.0 / NexT 7.7.1
 
@@ -15,11 +16,11 @@ date: 2018-06-13 04:21:54
 
 首先，前往 [阿里巴巴矢量库](http://www.iconfont.cn/) 挑选需要的图标，在图标上点击 <i class="fas fa-shopping-cart"></i> 加入购物车。
 
-![阿里巴巴矢量库](https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/2018/Hexo-NexT-博客增加知乎豆瓣图标支持/iconfont.png!500x)
+![阿里巴巴矢量库](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2018/06/iconfont.png!500x)
 
 然后，点击页面右上方 <i class="fas fa-shopping-cart"></i> 进入购物车，选择「下载代码」。
 
-![购物车下载代码](https://web-1256060851.cos.ap-shanghai.myqcloud.com/images/2018/Hexo-NexT-博客增加知乎豆瓣图标支持/download.png!300x)
+![购物车下载代码](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2018/06/download.png!300x)
 
 将下载的文件解压后，找到 `iconfont.css` 文件，打开后将其中的所有内容都复制加入到主题 CSS 自定义文件中的任意位置。这里需要修改部分内容，使得图标样式可以和主题样式保持一致。在这样设置好以后，就可以在博客需要额外图标的地方使用 `<i class="iconfont icon-xxx"></i>` 的进行引用了。
 
