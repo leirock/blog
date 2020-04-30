@@ -16,13 +16,13 @@ date: 2020-04-30 17:00:00
 
 以上大部分内容通过加入 CSS 和 JS 文件，或者添加插件的方式即可完成，不过有几个样式或功能还需要一点点额外的配置：
 
-（1）删除首页中间标题：`/usr/themes/handsome/index.php` 删除以下代码
+- **删除首页中间标题**：`/usr/themes/handsome/index.php` 删除以下代码
 
 ```php
 <h1 class="m-n font-thin text-black l-h"><?php $this->options->title(); ?></h1>
 ```
 
-（2）添加今日诗词布局（需要配合 JS 文件加载今日诗词 SDK）：在上述标签下方找到以下代码
+- **添加今日诗词布局**（需要配合 JS 文件加载今日诗词 SDK）：在上述标签下方找到以下代码
 
 ```php
 echo '加载中……';
@@ -48,7 +48,7 @@ echo '
 </div>';
 ```
 
-（3）文章结尾显示标签：`/usr/themes/handsomepost.php` 打赏模块结尾添加以下代码
+- **文章结尾显示标签**：`/usr/themes/handsomepost.php` 打赏模块结尾添加以下代码
 
 ```php
 <!--生成当前文章标签-->
@@ -58,7 +58,7 @@ echo '
 </div>
 ```
 
-（4）页脚更改：`/usr/themes/handsome/component/footer.php` 第 5-13 行代码
+- **页脚更改**：`/usr/themes/handsome/component/footer.php` 第 5-13 行代码
 
 ```php
 <div class="wrapper bg-light">
@@ -89,7 +89,7 @@ echo '
 
 然后就可以直接在主题的「开发者设置」里添加需要的内容了，不会受到原本页脚内容的局限。
 
-（5）自定义翻译：修改 `/usr/themes/handsome/lang/` 文件夹的内容。
+- **自定义翻译**：修改 `/usr/themes/handsome/lang/` 文件夹的内容。
 
 ### 1.2 PJAX 回调函数
 
