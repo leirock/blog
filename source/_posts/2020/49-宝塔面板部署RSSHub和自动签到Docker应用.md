@@ -12,6 +12,8 @@ date: 2020-04-15 23:30:50
 
 因为有些网站或者媒体没有主动提供 RSS 订阅链接，所以我们就可以依靠 RSSHub 这一个开源、简单易用、易于扩展的 RSS 生成器，给任何奇奇怪怪的内容生成 RSS 订阅源。
 
+### 1.1 Docker 部署
+
 首先，打开 Docker 管理器，在「镜像管理」中获取官方库镜像 `diygod/rsshub`。
 
 ![获取镜像](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/docker_mirror.jpg!500x)
@@ -38,6 +40,41 @@ git clone https://github.com/diygod/rsshub.git rsshub
 ![反向代理](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/reverse_proxy.jpg!500x)
 
 这样，我们的 RSSHub 就完成了搭建，具体的配置和路由可以参见 [RSSHub 文档](https://docs.rsshub.app)。
+
+### 1.2 Docker Compose 部署
+
+当然，我们也可以通过 Docker Compose 部署 RSSHub，部署步骤很简单，直接参考 RSSHub 文章介绍即可。部署完毕后也会显示在上面提及的 Docker 管理器中。
+
+当然首先需要先安装  Docker Compose，参照[文档说明](https://docs.docker.com/compose/install/)：
+
+```shell
+# 下载 Docker Compose 稳定发布版
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# 设置访问权限
+sudo chmod +x /usr/local/bin/docker-compose
+
+# 查看安装版本
+docker-compose --version
+```
+
+接下来安装RSSHub：
+
+```shell
+# 下载 docker-compose.yml
+wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+
+# 创建 volume 持久化 Redis 缓存
+docker volume create redis-data
+
+# 启动 Docker
+docker-compose up -d
+
+# 更新：先执行以下命令删除旧容器，然后重复上述安装步骤
+docker-compose down
+```
+
+如果要添加配置，可以修改 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) 中的 `environment` 进行配置。
 
 ## 2. 自动签到应用
 

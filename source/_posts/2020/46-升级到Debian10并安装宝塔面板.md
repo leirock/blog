@@ -62,6 +62,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 安装完推荐套件后，继续在「软件商店」中安装其他需要的软件，我们这里选择安装：
 
 - [运行环境] Docker 管理器：方便后续安装 RSSHub 和自动签到服务；
+- [运行环境] PM2 管理器：Nodejs 服务可以通过其管理，如果安装 Nodejs 失败，可以使用 `nvm` 手动安装，方法参考 [nvm-sh/nvm](https://github.com/nvm-sh/nvm) 的说明，可能需要指定好路径才能正确使用（具体可以参考 [解决 nvm command not found 问题的方法](https://www.cnblogs.com/weifeng1463/p/11321432.html)）；
 - [系统工具] 日志清理工具：可以一键清理指定日志和系统垃圾；
 - [插件] 阿里云 OSS：将网站或数据库打包备份到阿里云 OSS 对象存储空间，在阿里云同一地域下的云产品之间还可以通过内网地址连接，既能提高连接速度，也能减少流量费用；
 - [第三方应用] Nginx 免费防火墙。
@@ -85,3 +86,5 @@ pip install oss2
 {% endnote %}
 
 软件安装完毕后，可以进入「面板设置」，修改默认的访问端口、登录用户名密码等信息，还可以为面板绑定访问域名并添加 SSL 证书。
+
+对于 FTP 工具，本地可以使用 FileZilla 软件，使用方法可以参考宝塔面板的[论坛帖子](https://www.bt.cn/bbs/thread-43162-1-1.html)。
