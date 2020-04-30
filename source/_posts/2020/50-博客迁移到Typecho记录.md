@@ -6,7 +6,7 @@ pid: 50
 date: 2020-04-30 17:00:00
 ---
 
-拥有一台自己的服务器之后就想着要搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定将我的 Hexo 博客迁移到 Typecho  Handsome 了。目前基本上完成了配置、美化、速度优化等工作，算是完成了迁移过程了。<!--more-->
+拥有一台自己的服务器之后就想着要搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定将我的 Hexo 博客迁移到 Typecho  Handsome 了。目前基本上完成了配置、美化、速度优化等工作。<!--more-->
 
 ## 1. Typecho 的个性化
 
@@ -14,7 +14,7 @@ date: 2020-04-30 17:00:00
 
 主要的自定义工作我都通过加入自定义 CSS 和 JS 文件来完成了，具体代码可以参考我的 GitHub 项目 [Typecho-Assets](https://github.com/lei2rock/Typecho-Assets) 和 [BanbanStyle 插件](https://github.com/lei2rock/Typecho-Plugin-BanbanStyle)。其中包含了比如随机彩色标签云、中英文字符件自动添加空格（pangu.js）、macOS 风格代码框、今日诗词、看板娘组件等等。
 
-以上大部分内容通过加入 CSS 和 JS 文件，或者添加插件的方式即可完成，不过有几个样式或功能还需要一点点额外的配置：
+有几个样式或功能还需要一点点额外的配置：
 
 - **删除首页中间标题**：`/usr/themes/handsome/index.php` 删除以下代码
 
@@ -93,7 +93,7 @@ echo '
 
 ### 1.2 PJAX 回调函数
 
-如果开启了 PJAX，一些每次刷新页面都要更新的脚本也需要加入回调，目前我根据自定义的 JS 文件设置了以下回调函数。其中最后一条是因为开启了图片延迟加载后，相册页缩略图无法显示，所以进行的修补。
+如果开启了 PJAX，一些每次刷新页面都要执行的脚本需要加入回调。目前我根据自定义的 JS 文件设置了以下回调函数。其中最后一条是因为开启了图片延迟加载后，相册页缩略图无法显示。
 
 ```javascript
 // pangu.js
@@ -126,7 +126,7 @@ $(".album-thumb img").lazyload({
 
 ### 1.3 FancyBox 缩略图
 
-就如我在用 Hexo 时候进行的修改一样，我希望在使用 FancyBox 时候预览的缩略图是小图，点开后可以加载原图，这样就需要修改 `/usr/themes/handsome/assets/js/core.min.js` 文件。因为是经过压缩后的版本，所以先恢复回有缩进的版本，然后修改 `seFancyBox` 函数的定义。
+就如在用 Hexo 时候进行的修改一样，我希望在使用 FancyBox 时候预览的缩略图是小图，点开后可以加载原图，这样就需要修改 `/usr/themes/handsome/assets/js/core.min.js` 文件。因为是经过压缩后的版本，所以先恢复回有缩进的版本，然后修改 `seFancyBox` 函数的定义。
 
 找到 `seFancyBox` 函数最后一句：
 
@@ -144,7 +144,7 @@ g = g.replace(/![0-9]{3,}x/,"");
 
 ## 2. Valine 评论迁移 Typecho
 
-之前是使用 Valine 搭配 LeanCloud 的评论系统，要迁移到 Typecho 还是蛮复杂的，毕竟没有现成的工具，而且评论的 id 和文章的 id 与 Typecho 格式也不一致。目前是参考一个 [Valine 转 Wordpress 评论的脚本](https://veltlion.github.io/valine-to-wxr/)，自己修改了代码。这个 Shell 脚本需要先安装 `jq` 这个 JSON 文件处理包，然后可以实现 JSON 转为 SQL 文件。
+之前是使用 Valine 搭配 LeanCloud 的评论系统，要迁移到 Typecho 还是蛮复杂的，毕竟没有现成的工具，而且评论的 id 和文章的 id 与 Typecho 格式也不一致。目前是参考一个 [Valine 转 Wordpress 评论的脚本](https://veltlion.github.io/valine-to-wxr/)，自己修改了代码。脚本需要先安装 `jq` 这个 JSON 文件处理包，然后可以实现 JSON 转为 SQL 文件。
 
 ```bash
 #!/usr/bin/env bash
@@ -242,16 +242,21 @@ Handsome 主题内置了一个「时光机」功能，可以类似微博、微�
 
 ### 4.1 多平台发布动态
 
-Handsome 开发者提供了一个微信公众号发布的渠道，但是这样需要用到别人的服务，而且后期如果要添加新的网站等都需要提供该平台修改，不是很方便。既然有自己的服务器，还有自己的微信公众号，那就不如自己搭建一个，显然是更加方便的。已经有人开发了相应的项目，我们只需要拿过来部署即可。
+Handsome 开发者提供了一个微信公众号发布的渠道，但是这样需要用到别人的服务，而且后期如果要添加新的网站等都需要在该平台修改，不是很方便。既然有自己的服务器，还有自己的微信公众号，那就不如自己搭建一个。
 
 1. 首先下载 [wechat_for_handsome](https://github.com/iLay1678/wechat_for_handsome) 项目到自己服务器目录，我们可以添加一个新的网站和域名来部署，同时需要创建一个对应的数据库。
-2. 在安装该服务前，我们需要先去微信公众号后台获取必要的设置参数。在微信公众号后台「开发-基本配置」处获取 AppID 和 AppSecret。然后我们参照微信公众号的[文档](https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html)，使用刚才获得的两个参数在 [微信公众平台接口调试工具](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=基础支持&form=获取access_token接口%20/token) 获取 `access_token`。
-3. 接下来回到微信公众号后台「开发-基本配置」处启用服务器配置。服务器地址（URL）填写为「项目域名/server.php」；令牌（Token）就是第二步得到的 `access_token`；消息加解密密钥（EncodingAESKey）可以随机生成但是一定要记录，因为我们还需要在项目安装时候填写；消息加解密方式可以选择「安全模式」。因为还没有在服务器上安装，所以先不要提交，先放一边，进入下一步。
-4. 回到之前添加的站点，访问「项目域名/install.php」进入安装步骤。依次输入要求的几个参数，这些我们都通过上面的几个步骤获得了，设置完毕后安装即可。这样就可以回到第三步的公众号服务器配置，提交验证。
-5. 然后向公众号发送「绑定」，点击链接填写相关信息进行绑定，绑定完毕就可以参考主题文档的发布动态了。如果没有反应，可能是刚刚验证完毕，稍微等一会儿就好。其中，时光机的 `cid` 可以在后台独立页面管理处获得，验证编码可以在主题设置处自行设置一个当作访问密码。
-6. 如果公众号启用了「服务器配置」后，自定义的菜单不见了，可以在功能插件设置处重新启用即可。Chrome 扩展发布动态的方法可以直接参考主题文档配置。
 
-![服务器配置](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/wechat-channel-server.jpg!600x)
+2. 在安装该服务前，我们需要先去微信公众号后台获取必要的设置参数。在微信公众号后台「开发-基本配置」处获取 AppID 和 AppSecret。然后我们参照微信公众号的[文档](https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html)，使用刚才获得的两个参数在 [微信公众平台接口调试工具](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=基础支持&form=获取access_token接口%20/token) 获取 `access_token`。
+
+   ![服务器配置](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/wechat-channel-server.jpg!600x)
+
+3. 接下来回到微信公众号后台「开发-基本配置」处启用服务器配置。服务器地址（URL）填写为「项目域名/server.php」；令牌（Token）就是第二步得到的 `access_token`；消息加解密密钥（EncodingAESKey）可以随机生成但是一定要记录，因为我们还需要在项目安装时候填写；消息加解密方式可以选择「安全模式」。因为还没有在服务器上安装，所以先不要提交，放一边，进入下一步。
+
+4. 回到之前添加的站点，访问「项目域名/install.php」进入安装步骤。依次输入要求的几个参数，这些我们都通过上面的几个步骤获得了，设置完毕后安装即可。这样就可以回到第三步的公众号服务器配置，提交验证。
+
+5. 然后向公众号发送「绑定」，点击链接填写相关信息进行绑定，绑定完毕就可以参考主题文档的说明发布动态了。如果没有反应，可能是刚刚验证完毕，稍微等一会儿就好。其中，时光机的 `cid` 可以在后台独立页面管理处获得，验证编码可以在主题设置处自行设置一个当作访问密码。
+
+6. 如果公众号启用了「服务器配置」后，自定义的菜单不见了，可以在功能插件设置处重新启用即可。Chrome 扩展发布动态的方法可以直接参考主题文档配置。
 
 ### 4.2 添加 RSS 订阅源
 
@@ -263,7 +268,7 @@ Handsome 开发者提供了一个微信公众号发布的渠道，但是这样�
 https://cors-anywhere.herokuapp.com/https://rsshub.app/weibo/user/{weibo_user_id}
 ```
 
-当然，可能通过访问 herokuapp.com 来获取订阅源速度比较慢，那就可以自行部署这个 [CORS Anywhere 服务](https://github.com/Rob--W/cors-anywhere)。方法也很简单，以使用宝塔面板为例，因为部署该项目使用的是 Nodejs 环境，需要先安装 Nodejs，方法可以我之前的文章。
+当然，可能通过访问 herokuapp.com 来获取订阅源速度比较慢，那就可以自行部署这个 [CORS Anywhere 服务](https://github.com/Rob--W/cors-anywhere)。方法也很简单，以使用宝塔面板为例，因为部署该项目使用的是 Nodejs 环境，需要先安装 Nodejs，方法可以参考我之前的文章。
 
 然后下载上述项目源码到需要部署的服务器目录，项目根目录下创建环境变量设置文件 `.env`，编辑文件添加环境变量（具体含义用法见该项目文档），例如：
 
@@ -284,7 +289,7 @@ npm install
 npm install dotenv --save # 调用环境变量文件需要的依赖
 ```
 
-修改启动文 `server.js` ，在最开头加入以下内容，以便在最开始就引入环境变量文件的参数：
+修改启动文件 `server.js`，在最开头加入以下内容，以便在最开始就引入环境变量文件的参数：
 
 ```js
 // Import .env
@@ -298,7 +303,7 @@ dotenv.config('./env');
 node server.js
 ```
 
-最后，为访问设置反向代理，使得可以通过域名访问该服务。
+最后，为服务设置反向代理，使得可以通过域名访问该服务。
 
 ## 5. 访问速度与安全
 
@@ -308,13 +313,13 @@ node server.js
 
 而如果选择 Cloudflare 的 CDN，似乎对境内访问有「云减速」的效果。如果是 DNS 双线解析，境内直接访问服务器，境外访问 Cloudflare 的 CDN（可以通过 Cloudflare Partner 面板实现 CNAME 接入）， 可以让海外访问走 CDN，不过感觉对境内一样是源站访问的话用 CDN 意义不算很大。而且，因为目前服务器和我同地域，访问延迟特别低，体验很好，加上 Cloudflare 的 CDN，纵使是境外也感觉有「云减速」的效果，似乎没有给我选择最近的节点或者是回源获取资源了吧。
 
-反正结果几番尝试，最后还是只选择了静态资源中的主题资源因为变动不是很大，直接放到了 GitHub，借助 jsDelivr 的 CDN 进行分发。自定义的静态文件虽然也放到了 GitHub，但主要是版本控制的目的，毕竟 jsDelivr 的 CDN 缓存刷新速度不是那么快的。我采用 GitHub Actions 同步到腾讯云对象存储中，直接用对象存储到链接进行访问，感觉这样并没有比采用加速域名走 CDN 慢。
+反正经过几番尝试，最后还是只选择了主题的静态文件直接放到 GitHub，借助 jsDelivr 的 CDN 进行分发。自定义的静态文件也放到了 GitHub，但主要是版本控制的目的，毕竟 jsDelivr 的 CDN 缓存刷新速度不是那么快的。我采用 GitHub Actions 同步到腾讯云对象存储中，直接用对象存储的链接进行访问，感觉这样并没有比采用加速域名走 CDN 慢。
 
 目前没有用 memcached 或者 redis 作内容缓存，其一是并没有很大的并发需求，其二是 Typecho 没有好用的插件（或多或少有一些问题）。
 
 ### 5.2 Google BBR
 
-Google BBR 是一个 TCP 加速优化工具，可用于优化TCP连接，根据介绍开启可以加快访问的网速，这里参考了 [Rat 介绍的方法](https://www.moerats.com/archives/297/)。
+Google BBR 是一个 TCP 加速优化工具，可用于优化TCP连接，根据介绍开启可以加快访问的网速，这里参考了 [Rat 介绍的方法](https://www.moerats.com/archives/297/)：
 
 ```shell
 # 修改系统变量
@@ -349,14 +354,14 @@ tcp_bbr                20480  14
 
 宝塔面板安装最新版本，Nginx 安装 1.17 版本的话，应该已经支持了 TLS 1.3 协议，可以在 [ssllabs.com](https://www.ssllabs.com/ssltest/) 或者 [myssl.com](https://myssl.com/) 测试一下自己的站点。为了在上述测试中实现 A+ 的评级，获得 SSL 证书后，我还在 Nginx 中进行了如下的设置。
 
-禁用 TLS 1.1 协议：删除服务器所有网站 Nginx 配置文件中的 `TLSv1.1`
+禁用 TLS 1.1 协议：删除服务器所有网站 Nginx 配置文件中的 `TLSv1.1`。
 
 ```diff
 -ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
 +ssl_protocols TLSv1.2 TLSv1.3;
 ```
 
-使用 HSTS：在服务器所有网站 Nginx 配置文件中的 Server 括号内添加如下内容（如在 SSL 配置下方添加）
+使用 HSTS：在服务器所有网站 Nginx 配置文件中的 Server 括号内添加如下内容（如在 SSL 配置下方添加）。
 
 ```nginx
 #HSTS
