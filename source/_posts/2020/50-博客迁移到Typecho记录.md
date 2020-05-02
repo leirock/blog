@@ -222,7 +222,6 @@ UPDATE typecho_contents t1 SET t1.commentsNum = (select count(*) from typecho_co
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [BanbanStyle](https://github.com/lei2rock/Typecho-Plugin-BanbanStyle) | 为我自己的博客设置而开发的插件，功能见 GitHub 项目介绍       |
 | [CommentToMail](https://github.com/JoyChou93/CommentToMail)  | 评论邮件通知，可以参考我的邮件模板：[通知博主](https://github.com/lei2rock/Typecho-Assets/plugins/CommentToMail/owner.html)、[通知访客](https://github.com/lei2rock/Typecho-Assets/plugins/CommentToMail/guest.html) |
-| [EditorMD](https://github.com/DT27/EditorMD)                 | 比原生更好用的 Markdown 编辑器（可以只使用编辑器功能）       |
 | Handsome                                                     | Handsome 主题配套插件                                        |
 | [Sitemap](https://github.com/bayunjiang/typecho-sitemap)     | 自动生成网站地图                                             |
 | [cosUploadV5](https://github.com/dishcheng/cosUploadV5)      | 上传文件、图片到腾讯云对象存储并提供链接                     |
@@ -235,6 +234,7 @@ UPDATE typecho_contents t1 SET t1.commentsNum = (select count(*) from typecho_co
 | [Comment2Wechat](https://github.com/YianAndCode/Comment2Wechat) | 评论推送至微信，依托 Server 酱实现                           |
 | [Comment2Telegram](https://github.com/MoeLoli/Comment2Telegram) | 评论推送至 Telegram，支持回复评论、通过评论、垃圾评论和删除评论 |
 | [macOScode](https://github.com/lei2rock/Typecho-Plugin-macOScode) | 自己开发的实现 macOS 风格代码框，应该只适配 Handsome 主题    |
+| [EditorMD](https://github.com/DT27/EditorMD)                 | 比原生更好用的 Markdown 编辑器（可以只使用编辑器功能）       |
 
 ## 4. Handsome 主题时光机
 

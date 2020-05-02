@@ -80,38 +80,76 @@ docker-compose down
 
 [qiandao.today](https://qiandao.today) 这个网站提供了自动签到的服务，上面提供了许多网站自动签到的模板。我们也可以利用公开的源代码自己搭建一个这样的自动签到应用。
 
-同样的方法，打开 Docker 管理器，在「镜像管理」中获取官方库镜像 `fangzhengjin/qiandao`。
+### 2.1 部署容器
 
-然后，在「容器列表」创建新的 Docker 容器，并设置：
+这里采用 Docker Compose 部署的方法，比较方便快捷。首先创建一个 `docker-compose.yml`（目录任意，为方便管理可以放在站点的目录下）：
 
-- 容器端口 80 映射到服务器端口 1300；
-- 服务器目录 `/www/wwwroot/qiandao/` 可以读写容器目录 `/usr/src/app/`；
-- CPU 权重改为 30。
+```yaml
+version: '3'
 
-然后，我们创建一个新的网站，不需要创建新的数据库，PHP 设置为纯静态。把文章根目录下的文件都清空，然后把自动签到应用源代码拉取到网站根目录 `/www/wwwroot/qiandao/`，并创建一个 `database.db` 文件。
+services:
+    qiandao:
+        image: fangzhengjin/qiandao #容器镜像
+        container_name: qiandao #设置容器名称
+        restart: always #表示重启 docker 后自动重启该容器
+        ports:
+            - '1300:80' #表示容器的 80 端口映射到服务器的 1300 端口
+```
 
-```sh
-cd /www/wwwroot/
-git clone https://github.com/fangzhengjin/qiandao.git qiandao
-cd qiandao
-touch database.db
+该目录下执行以下命令可以：启动、停止、移除容器。
+
+```shell
+# 启动
+docker-compose up -d
+
+# 停止（不需要在该目录下执行）
+docker stop qiandao
+
+# 移除
+docker-compose down
 ```
 
 接下来我们按照前面介绍的方法设置反向代理，这样就可以访问之前设置的域名注册账号，再把该账号设置为管理员：
 
-```sh
+```shell
 # 进入容器管理（也可通过宝塔面板 Docker 管理器进入）
 docker exec -it qiandao /bin/bash
+
 # 设置站点管理员（邮箱需要已注册）
 python ./chrole.py admin@example.com admin
+
 # 退出容器管理
 exit
 ```
 
-如果不希望别人访问我们的签到网站注册账号，可以把 `/web/handlers/login.py` 文件第 66-130 行的代码注释掉（前后均写上 `'''`）。
+### 2.2 获取 Cookies
 
 签到模板可以从 [qiandao.today](https://qiandao.today) 下载，具体使用方法可以查阅官方文档。对于需要获取 Cookies 进行签到的网站，我们可以安装 Chrome 扩展应用 [GetCookies](https://chrome.google.com/webstore/detail/cookies-get-assistant/ljjpkibacifkfolehlgaolibbnlapkme)。但是，这里下载安装的只限用于 qiandao.today 这个网站。如果我们要在自己搭建的签到网站获取 Cookies，可以：
 
 - 从 GitHub 下载[该项目的源代码](https://github.com/acgotaku/GetCookies)；
 - 全局搜索 `qiandao.today`，替换为自己的签到网站域名并保存；
 - 在 Chrome 浏览器的扩展程序管理页面（chrome://extensions），选择「加载已解压的扩展程序」，将刚才已经编辑过的扩展程序文件夹上传安装即可。
+
+### 2.3 配置与备份数据
+
+如果不希望别人访问我们的签到网站注册账号，可以把 `/web/handlers/login.py` 文件第 66-130 行的代码注释掉（前后均写上 `'''`）。编辑好该文件后，在该文件目录执行以下命令把文件复制到容器内：
+
+```shell
+# 把文件复制到容器内
+docker cp login.py qiandao:/usr/src/app/web/handlers/
+
+# 重启容器
+docker restart qiandao
+```
+
+要备份我们的数据信息，可以执行如下命令，建议恢复数据库后立即重启容器（方法同上）。
+
+```shell
+# 将容器中的数据库文件复制到当前目录
+docker cp qiandao:/usr/src/app/database.db .
+
+# 将备份的数据库复制到容器中（当前目录的 database.db 文件）
+docker cp database.db qiandao:/usr/src/app/
+```
+
+调整相关配置，可以修改 `config.py` 文件，复制到容器方法和备份数据库文件到方法一样。
