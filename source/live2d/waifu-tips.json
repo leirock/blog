@@ -36,8 +36,8 @@
 		"selector": ".menu-item-categories a",
 		"text": ["文章都分类好啦～", "点击来查看文章分类哦。"]
 	}, {
-		"selector": ".menu-item-archives a",
-		"text": ["翻页比较麻烦吗，那就来看看文章归档吧。", "文章目录都整理在这里啦！"]
+		"selector": ".menu-item-timeline a",
+		"text": ["翻页比较麻烦吗，那就来看看文章时间轴吧。", "文章目录都整理在这里啦！"]
 	}, {
 		"selector": ".menu-item-friends a",
 		"text": ["这是我的朋友们哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看吗？", "要去拜访一下我的朋友们吗？"]
@@ -48,9 +48,6 @@
 		"selector": ".menu-item-overview a",
 		"text": ["想快速了解所有的分类、标签、专栏吗？点击这里就对了！", "文章都整理在这里啦！"]
 	}, {
-		"selector": ".menu-item-series a",
-		"text": ["这里根据不同的主题归纳了文章哦～", "点击来查看各种有趣的专栏吧。"]
-	}, {
 		"selector": ".menu-item-photos a",
 		"text": ["光阴流转，光影留痕，来欣赏美丽的照片吧～"]
 	}, {
@@ -58,10 +55,7 @@
 		"text": ["这里有一些关于我家主人的秘密哦，要不要看看呢？", "来这里发现更多有趣好玩的东西吧！"]
 	}, {
 		"selector": ".menu-item-share a",
-		"text": ["在书籍和纪录片里发现更大、更有趣的世界～", "快捡起当泡面盖的 Kindle 来看书吧～", "探索自然奥秘，感受社会历史脉搏，看这些纪录片就对了。"]
-	}, {
-		"selector": ".menu-item-lab a",
-		"text": ["这里有一些实验性的应用与服务介绍哦～", "想看看我正在使用什么应用与服务吗？"]
+		"text": ["快捡起当泡面盖的 Kindle 来看书吧～", "探索自然奥秘，感受社会历史脉搏，看这些纪录片就对了。", "想看看我正在使用什么应用与服务吗？"]
 	}, {
 		"selector": ".menu-item-homepage a",
 		"text": ["Welcome to visit my homepage in English.", "要不要去我的英文主页看看呢，excited！"]

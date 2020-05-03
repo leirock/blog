@@ -1,9 +1,7 @@
 // 获取网页不含域名的路径
 var windowPath = window.location.pathname; 
 // 友链信息文件路径
-var FriendDataPath = '/more/friends/friendslist.json';
-// 实验室项目信息文件路径
-var ProjectDataPath = 'https://web-1256060851.cos.ap-shanghai.myqcloud.com/pages/lab/projectslist.json'; 
+var FriendDataPath = '/friends/friendslist.json';
 // 图片信息文件路径
 var imgDataPath = '/photos/photoslist.json'; 
 // 图片访问路径
@@ -22,13 +20,9 @@ if (windowWidth < 768) {
 // 腾讯云图片处理样式（根据图片显示宽度）
 var imgStyle = '!' + imageWidth + 'x';
 
-// 链接卡片（友链、实验室页面）
-if (windowPath.indexOf('more') > 0 ) {
-    if (windowPath.indexOf('friends') > 0 ) {
-        var LinkDataPath = FriendDataPath;
-    } else if (windowPath.indexOf('lab') > 0 ) {
-        var LinkDataPath = ProjectDataPath;
-    }
+// 链接卡片（友链）
+if (windowPath.indexOf('friends') > 0 ) {
+    var LinkDataPath = FriendDataPath;
     link = {
         init: function () {
             var that = this;
