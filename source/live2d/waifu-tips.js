@@ -160,7 +160,7 @@ function loadWidget(config) {
 			// 首次访问加载 指定模型 的 指定材质
 			modelId = 1; // 模型 ID
 			const sample = arr => arr[Math.floor(Math.random() * arr.length)]; // 随机材质 ID
-			modelTexturesId = sample([35,36,52,53]); // 材质 ID
+			modelTexturesId = sample([26,35,36,52,53]); // 材质 ID
 		//}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath)

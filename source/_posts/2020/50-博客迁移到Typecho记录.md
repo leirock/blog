@@ -102,14 +102,9 @@ pangu.spacingPage();
 // colorful tag cloud
 colorful_tags();
 
-// Project List
-if ($("div").hasClass("MyGrid")) {
-    get_project(document.querySelector('.MyGrid').id);
-}
-
 // macOS 代码框
 if (typeof Prism !== 'undefined') {
-		Prism.highlightAll(true,null);
+    Prism.highlightAll(true,null);
 }
 
 // 今日诗词
@@ -142,7 +137,7 @@ g = g.replace(/![0-9]{3,}x/,"");
 
 然后再对 `core.min.js` 文件进行压缩保存即可。
 
-## 2. Valine 评论迁移 Typecho
+## 2. Valine 评论迁移到 Typecho
 
 之前是使用 Valine 搭配 LeanCloud 的评论系统，要迁移到 Typecho 还是蛮复杂的，毕竟没有现成的工具，而且评论的 id 和文章的 id 与 Typecho 格式也不一致。目前是参考一个 [Valine 转 Wordpress 评论的脚本](https://veltlion.github.io/valine-to-wxr/)，自己修改了代码。脚本需要先安装 `jq` 这个 JSON 文件处理包，然后可以实现 JSON 转为 SQL 文件。
 

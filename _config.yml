@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.dlzhang.com
+url: https://mirror.zdl.one
 root: /
 permalink: /posts/:pid/
 permalink_defaults:
@@ -192,11 +192,8 @@ theme_config:
       timeline: timeline/ || fas fa-archive
     photos: /photos/ || fas fa-camera-retro
     share: /share/ || fas fa-share-alt
-    more:
-      default: /more/ || fas fa-location-arrow
-      friends: friends/ || fas fa-heart
-      lab: lab/ || fas fa-flask
-    blog: https://blog.dlzhang.com || fas fa-feather-alt
+    more: /more/ || fas fa-location-arrow
+    friends: friends/ || fas fa-heart
     homepage: https://dlzhang.com || fas fa-globe
 
   # ---------------------------------------------------------------
