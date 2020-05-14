@@ -27,7 +27,7 @@ toc:
 名称：班班碎碎念
 简介：无曰已是 无曰遂真
 网址：https://blog.dlzhang.com
-标识：https://gravatar.loli.net/avatar/cc763511474fe24ffcc80257fb7cb970?size=512
+标识：https://cdn.v2ex.com/gravatar/cc763511474fe24ffcc80257fb7cb970?size=512
 {% endnote %}
 
 请注意，本站将会定期清理长时间无法访问的友链，请您务必确保域名解析正确、https 证书有效且服务器工作正常。若由于此原因导致友情链接失效，本站恕不另行通知。
