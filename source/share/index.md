@@ -127,7 +127,7 @@ toc:
 
 我部署的 [服务运行状态](https://status.zdl.one) 由 Uptime Robot 提供间隔为五分钟的监测服务。如果您发现某个项目运行状态异常，也欢迎及时通知我。
 
-| 项目                | 教程                                   | 相关链接                                                     |
+| 项目                | 功能                                   | 相关链接                                                     |
 | ------------------- | -------------------------------------- | ------------------------------------------------------------ |
 | Hexo                | 静态博客生成工具                       | [搭建记录](https://blog.dlzhang.com/tag/Hexo/) · [个人主页](https://dlzhang.com/) · [博客镜像站](https://mirror.zdl.one) |
 | Valine Admin        | Valine 评论后台管理                    | [GitHub](https://github.com/DesertsP/Valine-Admin)           |
