@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![浙江大学紫金港校区·启真湖](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/浙大_新雪初霁_东教学楼.jpg!500x)
+![中国历史文化名村·浦江嵩溪](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/songxi.jpg!600x)
 
 {% centerquote %}
 大不自多，海纳江河。
@@ -14,13 +14,13 @@ toc:
 知其不二兮，尔听斯聪。
 {% endcenterquote %}
 
-我是班班，目前坐标香港，喜欢看一些纪录片和美剧，也喜欢折腾数码产品。有时会看看书、玩玩游戏，没事胡思乱想碎碎念。标题下方句子摘自马一浮作词的[《浙江大学校歌》](https://music.163.com/#/song?id=480235092)。
+　　我是班班，目前坐标香港，喜欢看一些纪录片和美剧，也喜欢折腾数码产品。有时会看看书、玩玩游戏，没事胡思乱想碎碎念。我希望通过这个平台分享自己的日常生活、观点想法。
 
-我希望通过这个平台分享自己的日常生活、观点想法。博客的文章主要分为[四大类](/overview/)：「学术向」、「碎碎念」、「观察者」与「随手记」。「学术向」涵盖了经济学、法律等学科的学术性文章；「碎碎念」主要分享自己的日常生活经历等有趣的内容；「观察者」发布一些自己对社会议题、热点事件的观点想法；「随手记」收录一些笔记、备忘性质的文章。
+　　博客的文章主要分为[四大类](/overview/)：「学术向」、「碎碎念」、「观察者」与「随手记」。「学术向」涵盖了经济学、法律等学科的学术性文章；「碎碎念」主要分享自己的日常生活经历等有趣的内容；「观察者」发布一些自己对社会议题、热点事件的观点想法；「随手记」收录一些笔记、备忘性质的文章。
 
 ### 源代码与著作权
 
-如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/lei2rock/blog)提出 Issue 或直接修改相关文件后提交 Pull request。除特别声明外，博客中的所有作品均采用[<i class="fab fa-creative-commons"></i> BY-NC-SA 4.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。如需转载，请注明出处；如需商业性使用，请先邮件联络获得书面许可。
+　　如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的[代码仓库](https://github.com/lei2rock/blog)提出 Issue 或直接修改相关文件后提交 Pull request。除特别声明外，博客中的所有作品均采用[<i class="fab fa-creative-commons"></i> BY-NC-SA 4.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。如需转载，请注明出处；如需商业性使用，请先邮件联络获得书面许可。
 
 ### 在这里发现更多
 

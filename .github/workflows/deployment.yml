@@ -2,7 +2,7 @@ name: Deployment
 
 on:
   push:
-    branches: [hexo] # only push events on source branch trigger deployment
+    branches: [master] # only push events on source branch trigger deployment
 
 jobs:
   hexo-deployment:

@@ -133,7 +133,7 @@ avatar:
   # If true, the avatar will be dispalyed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
-  rotated: true
+  rotated: false
 
 # Posts / Categories / Tags in sidebar.
 site_state: false
@@ -350,8 +350,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: tomorrow-night-bright
-    dark: tomorrow-night-bright
+    light: tomorrow
+    dark: tomorrow-night
   prism:
     light: prism
     dark: prism-dark
