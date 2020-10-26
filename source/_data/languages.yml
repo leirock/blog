@@ -1,3 +1,4 @@
+# language
 zh-CN:
   menu:
     home: 本站首页
@@ -6,13 +7,20 @@ zh-CN:
     tags: 各种标签
     timeline: 时间轴
     photos: 光影留痕
-    more: 关于更多
+    about: 关于更多
     share: 好物分享
     friends: 小伙伴们
     lab: 实验室
     blog: 博客源站
-    homepage: English
+  sidebar:
+    overview: 博主简介
+    toc: 文章目录
   post:
+    posted: ' '
+    in: 分类：
+    views: 阅读
+    comments:
+      valine: 评论
     post_lang: 中文/
     link_lang: English
   counter:

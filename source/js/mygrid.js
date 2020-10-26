@@ -5,7 +5,7 @@ var FriendDataPath = '/friends/friendslist.json';
 // 图片信息文件路径
 var imgDataPath = '/photos/photoslist.json'; 
 // 图片访问路径
-var imgPath = 'https://web-1256060851.cos.ap-shanghai.myqcloud.com/pages/photos/';  
+var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';  
 // 图片显示数量
 var imgMaxNum = 50; 
 // 获取窗口宽度（以确定图片显示宽度）
@@ -15,7 +15,7 @@ var windowWidth = window.innerWidth
 if (windowWidth < 768) {
     var imageWidth = 145; // 图片显示宽度(手机)
 } else {
-    var imageWidth = 215; // 图片显示宽度
+    var imageWidth = 210; // 图片显示宽度
 }
 // 腾讯云图片处理样式（根据图片显示宽度）
 var imgStyle = '!' + imageWidth + 'x';

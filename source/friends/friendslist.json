@@ -48,5 +48,40 @@
 		"name": "米米的博客",
 		"avatar": "https://gravatar.loli.net/avatar/f56980e9dc026727282a04eea02b4f4d?s=256",
 		"link": "https://zhangshuqiao.org"
+	},
+	{
+		"name": "ZZONN",
+		"avatar": "https://cdn.jsdelivr.net/gh/lcorel/lcorel.github.io/images/avatar2.gif",
+		"link": "https://blog.zzonn.com"
+	},
+	{
+		"name": "Abalone",
+		"avatar": "https://abalone.life/avatar",
+		"link": "https://abalone.life"
+	},
+	{
+		"name": "YD's blog",
+		"avatar": "https://cdn.ydchen.cn/typora20200628094101.jpg",
+		"link": "https://ydchen.cn"
+	},
+	{
+		"name": "先谢郭嘉",
+		"avatar": "https://cdn.jsdelivr.net/gh/xiejiabin1/images/favicon.jpg",
+		"link": "https://xiejiabin.online"
+	},
+	{
+		"name": "Willow の空间",
+		"avatar": "https://unsplash.it/100/100?image=1005",
+		"link": "http://blog.haozz.site"
+	},
+	{
+		"name": "Ljcbaby 的小屋",
+		"avatar": "https://cdn.jsdelivr.net/gh/ljcbaby/Static/logo/0.png",
+		"link": "https://www.ljcbaby.top"
+	},
+	{
+		"name": "Daman's Blog",
+		"avatar": "https://ae01.alicdn.com/kf/U2ebdbb0ad7c84a9695715a75e3b7359ec.jpg",
+		"link": "https://www.damanyang.cn"
 	}
 ]

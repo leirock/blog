@@ -115,8 +115,7 @@ toc:
 ## 本站使用的技术与服务
 
 - 框架主题：[Hexo](https://hexo.io/) 静态博客框架 + [NexT Gemini](https://github.com/theme-next/hexo-theme-next) 主题
-- 访客分析：[Google Analytics](https://analytics.google.com)
-- 浏览统计：[hexo-leancloud-counter](https://github.com/LEAFERx/hexo-leancloud-counter)
+- 访客分析：[Google Analytics](https://analytics.google.com) + [Valine](https://valine.js.org)
 - 评论留言：[Valine](https://valine.js.org)
 - 静态存储：[腾讯云对象存储（COS）](https://cloud.tencent.com/product/cos)
 - 构建部署：[GitHub Actions](https://github.com/features/actions)
@@ -129,14 +128,13 @@ toc:
 
 | 项目                | 功能                                   | 相关链接                                                     |
 | ------------------- | -------------------------------------- | ------------------------------------------------------------ |
-| Hexo                | 静态博客生成工具                       | [搭建记录](https://blog.dlzhang.com/tag/Hexo/) · [个人主页](https://dlzhang.com/) · [博客镜像站](https://mirror.zdl.one) |
+| Hexo                | 静态博客生成工具                       | [搭建记录](/overview/tags/Hexo/) |
 | Valine Admin        | Valine 评论后台管理                    | [GitHub](https://github.com/DesertsP/Valine-Admin)           |
-| 自动签到            | 自动签到服务                           | [搭建记录 ](https://blog.dlzhang.com/posts/49/)· [Demo](https://qiandao.today) · [GitHub](https://github.com/binux/qiandao) |
-| FreshRSS            | RSS 订阅器                     | [搭建记录](https://blog.dlzhang.com/posts/48/) · [GitHub](https://github.com/FreshRSS/FreshRSS) |
-| RSSHub              | RSS 订阅源生成器                       | [搭建记录](https://blog.dlzhang.com/posts/49/) · [Demo](https://docs.rsshub.app/) · [GitHub](https://github.com/DIYgod/RSSHub) |
-| Live2D Widget       | 看板娘组件                             | [搭建记录](https://blog.dlzhang.com/posts/47/) · [前端代码](https://github.com/stevenjoezhang/live2d-widget) · [后端 API](https://github.com/fghrsh/live2d_api) |
-| CORS Anywhere       | 跨域访问                           | [搭建记录](https://blog.dlzhang.com/posts/50/) · [Demo](https://cors-anywhere.herokuapp.com) · [GitHub](https://github.com/Rob--W/cors-anywhere) |
-| Wechat for Handsome | 公众号发表 Typecho Handsome 时光机动态 | [搭建记录](https://blog.dlzhang.com/posts/50/) · [GitHub](https://github.com/iLay1678/wechat_for_handsome) |
+| 自动签到            | 自动签到服务                           | [搭建记录 ](/posts/49/)· [Demo](https://qiandao.today) · [GitHub](https://github.com/binux/qiandao) |
+| FreshRSS            | RSS 订阅器                     | [搭建记录](/posts/48/) · [GitHub](https://github.com/FreshRSS/FreshRSS) |
+| RSSHub              | RSS 订阅源生成器                       | [搭建记录](/posts/49/) · [Demo](https://docs.rsshub.app/) · [GitHub](https://github.com/DIYgod/RSSHub) |
+| Live2D Widget       | 看板娘组件                             | [搭建记录](/posts/47/) · [前端代码](https://github.com/stevenjoezhang/live2d-widget) · [后端 API](https://github.com/fghrsh/live2d_api) |
+| CORS Anywhere       | 跨域访问                           | [搭建记录](/posts/50/) · [Demo](https://cors-anywhere.herokuapp.com) · [GitHub](https://github.com/Rob--W/cors-anywhere) |
 
 <!-- endtab -->
 
