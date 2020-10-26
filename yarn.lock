@@ -2277,10 +2277,10 @@ hexo-generator-feed@^3.0.0:
     hexo-util "^2.1.0"
     nunjucks "^3.0.0"
 
-hexo-generator-index@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-generator-index/-/hexo-generator-index-2.0.0.tgz#15e71f4d28ee9d2172e2d77e8d1dba04882edc8f"
-  integrity sha512-q/29Vj9BZs0dwBcF+s9IT8ymS4aYZsDwBEYDnh96C8tsX+KPY5v6TzCdttz58BchifaJpP/l9mi6u9rZuYqA0g==
+hexo-generator-indexed@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/hexo-generator-indexed/-/hexo-generator-indexed-1.2.1.tgz#7e9142f4799745b51635bd582276d402730570d3"
+  integrity sha512-MhbdYMbJlFjoLar4BMTIpsOqIvAxxsh40aCxz8GpB1fujhkIkyBB05ZJQWuZfIYjUZ0lZNk+v4wsO7ZW3cTvcg==
   dependencies:
     hexo-pagination "1.0.0"
     timsort "^0.3.0"
