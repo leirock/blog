@@ -16,11 +16,11 @@ date: 2020-04-15 23:30:50
 
 首先，打开 Docker 管理器，在「镜像管理」中获取官方库镜像 `diygod/rsshub`。
 
-![获取镜像](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/docker_mirror.jpg!500x)
+![获取镜像](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/2020/04/docker_mirror.jpg!500x)
 
 然后，在「容器列表」创建新的 Docker 容器：
 
-![创建 RSSHub 容器](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/rsshub_docker.jpg!400x)
+![创建 RSSHub 容器](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/2020/04/rsshub_docker.jpg!400x)
 
 这里我们设置了：
 
@@ -37,7 +37,7 @@ git clone https://github.com/diygod/rsshub.git rsshub
 
 最后，设置反向代理，以便我们可以通过域名来访问该服务：
 
-![反向代理](https://web-1256060851.cos.ap-shanghai.myqcloud.com/posts/2020/04/reverse_proxy.jpg!500x)
+![反向代理](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/2020/04/reverse_proxy.jpg!500x)
 
 这样，我们的 RSSHub 就完成了搭建，具体的配置和路由可以参见 [RSSHub 文档](https://docs.rsshub.app)。
 

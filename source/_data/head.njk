@@ -1,8 +1,8 @@
 <script type="text/javascript">
 // Live2d
 // 注意：live2d_path 参数应使用绝对路径
-//const live2d_path = "https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/live2d/";
-const live2d_path = "/live2d/";
+const live2d_path = "https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/live2d/";
+//const live2d_path = "/live2d/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -35,7 +35,7 @@ if (screen.width >= 768) {
 	]).then(() => {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			apiPath: "https://api.zdl.one/live2d/", // https://live2d.fghrsh.net/api/
+			apiPath: "https://api.dlzhang.com/live2d/", // https://live2d.fghrsh.net/api/
 			//cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 		});
 	});
@@ -66,9 +66,7 @@ console.log(`
 // End Live2d Code
 
 window.addEventListener('load', () => {
-	console.log('\n%c班班碎碎念', 'text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);\
-font-size: 4em;');
-	console.log('\n%cBanban Ramble%cv3.0.0%c\n', 'padding: 8px; background: #3f5973; font-weight: bold; font-size: large; color: white;', 'padding: 8px; background: #649ab6; font-size: large; color: #eee;','');
+	console.log('\n%c醉里挑灯赏猫%cv3.1.0%c\n', 'padding: 8px; background: #3f5973; font-weight: bold; font-size: large; color: white;', 'padding: 8px; background: #649ab6; font-size: large; color: #eee;','');
 	console.log(`页面加载完毕消耗了${Math.round(performance.now() * 100) / 100}ms`);
 });
 

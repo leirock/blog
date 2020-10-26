@@ -1,7 +1,7 @@
 ---
 title: Hexo NexT 博客增加瀑布流相册页面
 categories: [科技树]
-tags: [JavaScript, blog, 技术]
+tags: [JavaScript, Hexo]
 pid: 31
 date: 2018-06-11 12:24:01
 ---

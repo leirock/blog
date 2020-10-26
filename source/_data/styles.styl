@@ -1,6 +1,4 @@
-/***********************************************************/
 /************************* Header **************************/
-/***********************************************************/
 
 /* header-隐藏顶部线条 */
 .headband {
@@ -8,7 +6,7 @@
 }
 
 /* header-顶部空白 */
-.header {
+.header, .main-inner {
   margin-top: 10px;
 
   +mobile() {
@@ -16,9 +14,14 @@
   }
 }
 
-/* header-顶部圆角 */
-.header-inner {
-  myradius();
+/* 圆角 */
+.header-inner, ///顶部圆角
+.sidebar-inner { //侧边头像圆角
+  border-radius: $myradius;
+}
+
+.site-brand-container {
+  border-radius: $myradius $myradius 0 0;
 
   +mobile() {
     border-radius: 0 0 $myradius $myradius;
@@ -53,9 +56,7 @@ if (hexo-config('gray')) {
   }
 }
 
-/***********************************************************/
 /************************ Sidebar **************************/
-/***********************************************************/
 
 /* sidebar-标题背景 */
 .site-brand-container {
@@ -65,7 +66,7 @@ if (hexo-config('gray')) {
 }
 
 /* sidebar-标题 */
-.site-subtitle {
+.site-title {
   font-weight: bold;
 }
 
@@ -74,6 +75,7 @@ if (hexo-config('gray')) {
   font-weight: bold;
   font-family: $font-family-quote;
   color: var(--brand-color);
+  font-size: 0.9em;
 }
 
 /* sidebar-站点描述介绍 */
@@ -81,30 +83,17 @@ if (hexo-config('gray')) {
   color: var(--blockquote-color);
 }
 
-/* sidebar-侧边背景 */
-.sidebar {
-  background: transparent;
+/* sidebar-二级菜单圆角 */
+.sub-menu {
+  border-radius: $myradius !important;
 }
 
-/* sidebar-圆角 */
-.sidebar-inner, //侧边
-.sub-menu { //二级菜单
-  myradius();
-}
-
-/* sidebar-隐藏归档菜单 */
-.menu-item-archives {
-  display: none !important;
-}
-
-/***********************************************************/
 /************************** Post ***************************/
-/***********************************************************/
 
 /* post-文章卡片圆角 */
 .post-block,
 .post-block+.post-block {
-  myradius();
+  border-radius: $myradius !important;
 }
 
 /* post-首页文章标题 */
@@ -116,7 +105,7 @@ if (hexo-config('gray')) {
 
 /* post-首页文章信息 */
 .index .post-meta {
-  text-align: left;
+  justify-content: left;
 }
 
 /* post-文章标题 */
@@ -130,8 +119,8 @@ if (hexo-config('gray')) {
 }
 
 /* post-文章信息 */
-.posts-expand .post-meta {
-  margin-bottom: 20px;
+.posts-expand .post-header {
+  margin-bottom: 25px;
 }
 
 /* post-段后距 */
@@ -177,29 +166,13 @@ code {
   color: var(--text-color);
 }
 
-/* post-代码块 */
-.highlight-container {
-  background: $btn-default-bg;
-}
-
 /* post-引用与 note 字体 */
 blockquote p,
 .post-body .note {
   font-family: $font-family-quote;
 }
 
-/***********************************************************/
 /************************ Button ***************************/
-/***********************************************************/
-
-/* button-back2top */
-.back-to-top {
-  background: $btn-default-bg;
-  opacity: .8;
-  font-weight: bold;
-  font-size: 1em;
-  border-radius: 1em;
-}
 
 /* button-reward */
 .reward-container button {
@@ -222,15 +195,13 @@ blockquote p,
   selection-color();
 }
 
-/***********************************************************/
 /****************** Pagination & Footer ********************/
-/***********************************************************/
 
 /* pagination-删去页码框 */
 .pagination {
-  border: none;
-  background: none;
-  box-shadow: none;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* pagination-页码按钮 */
@@ -238,7 +209,7 @@ blockquote p,
 .pagination .next,
 .pagination .page-number {
   border: none;
-  border-radius: 50%;
+  border-radius: 16px;
 
   &:hover {
     color: white;
@@ -259,9 +230,11 @@ blockquote p,
   color: var(--blockquote-color);
 }
 
-/***********************************************************/
+.footer {
+  margin: 20px 0 15px 0;
+}
+
 /************************ Overview *************************/
-/***********************************************************/
 
 /* categories */
 +mobile() {
@@ -325,13 +298,16 @@ blockquote p,
   }
 }
 
-/***********************************************************/
-/*********** Valine Comment (with darkmode) ****************/
-/***********************************************************/
+/* archive */
+.posts-collapse .post-content .collection-title {
+  display: none;
+}
+
+/************************* Valine ************************/
 
 /* comment-圆角 */
 .comments {
-  myradius();
+  border-radius: $myradius !important;
 }
 
 /* comment-不显示 OS 浏览器 */
@@ -350,15 +326,4 @@ blockquote p,
 /* comment-输入框背景图片 */
 textarea#veditor.veditor.vinput {
   background: url($comment-bg-url) 100% 100% no-repeat;
-}
-
-/* comment-超链接颜色 */
-@media (prefers-color-scheme: dark) {
-  .v a {
-    color: #929298 !important;
-
-    &:hover {
-      color: #ef2f11 !important;
-    }
-  }
 }
