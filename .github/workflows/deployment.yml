@@ -70,7 +70,6 @@ jobs:
         coscmd upload -rs --delete public/js assets/js -f
         coscmd upload -rs --delete source/images assets/images -f
         coscmd upload -rs --delete source/live2d assets/live2d -f
-        rm -rf public/css/ public/js/ public/images/ public/live2d/
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.2
