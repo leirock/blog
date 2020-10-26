@@ -22,11 +22,11 @@ jobs:
         node-version: '12.x'
   
     - name: Setup Python
-    uses: actions/setup-python@v1
-    with:
-      python-version: '3.x'
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
 
-    - name: Yarn cache
+    - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
 
     - name: Get pip cache
