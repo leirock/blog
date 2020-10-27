@@ -146,7 +146,7 @@ social:
   微博: https://weibo.com/7216640993 || fab fa-weibo
   Twitter: https://twitter.com/lei2rock || fab fa-twitter
   GitHub: https://github.com/lei2rock || fab fa-github
-  RSS: https://blog.dlzhang.com/feed || fas fa-rss
+  RSS: /atom.xml || fas fa-rss
 
 social_icons:
   enable: true
