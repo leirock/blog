@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /page/
+Disallow: /images/
 
 Sitemap: https://blog.dlzhang.com/sitemap.xml

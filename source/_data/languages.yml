@@ -3,15 +3,12 @@ zh-CN:
   menu:
     home: 本站首页
     overview: 文章总览
-    series: 专栏文章
     tags: 各种标签
     timeline: 时间轴
     photos: 光影留痕
     about: 关于更多
     share: 好物分享
     friends: 小伙伴们
-    lab: 实验室
-    blog: 博客源站
   sidebar:
     overview: 博主简介
     toc: 文章目录

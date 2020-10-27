@@ -35,7 +35,7 @@ if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	echo " "
 	exec ${HexoPath}/hexo.sh
 else
-	if [ "$answer" == "0" ]; then
+	if [ "$answer" == "2" ]; then
 		echo " "
 		printf "\033[32mINFO \033[0m 准备切换到 Homepage ...\n"
 		sleep 1s
