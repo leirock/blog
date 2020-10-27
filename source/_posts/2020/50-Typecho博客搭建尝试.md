@@ -1,12 +1,12 @@
 ---
-title: 博客迁移到 Typecho 记录
+title: Typecho 博客搭建尝试
 categories: [科技树]
 tags: [Typecho, 服务器]
 pid: 50
 date: 2020-04-30 17:00:00
 ---
 
-拥有一台自己的服务器之后就想着要搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定将我的 Hexo 博客迁移到 Typecho  Handsome 了。目前基本上完成了配置、美化、速度优化等工作。<!--more-->
+拥有一台自己的服务器之后就尝试搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定尝试将我的 Hexo 博客迁移到 Typecho  Handsome 了。（20201027更新：感觉还是喜欢 Hexo 的博客，就转回去了，期间半年的评论数据大概有四五十条记录，似乎没有特别的价值就懒得从 Typecho 那边转到 Valine 评论里面了。）<!--more-->
 
 ## 1. Typecho 的个性化
 
@@ -347,18 +347,9 @@ tcp_bbr                20480  14
 
 ### 5.3 TLS 与 HSTS
 
-宝塔面板安装最新版本，Nginx 安装 1.17 版本的话，应该已经支持了 TLS 1.3 协议，可以在 [ssllabs.com](https://www.ssllabs.com/ssltest/) 或者 [myssl.com](https://myssl.com/) 测试一下自己的站点。为了在上述测试中实现 A+ 的评级，获得 SSL 证书后，我还在 Nginx 中进行了如下的设置。
-
-禁用 TLS 1.1 协议：删除服务器所有网站 Nginx 配置文件中的 `TLSv1.1`。
+宝塔面板安装最新版本，Nginx 安装 1.17 版本的话，应该已经支持了 TLS 1.3 协议，可以在 [ssllabs.com](https://www.ssllabs.com/ssltest/) 或者 [myssl.com](https://myssl.com/) 测试一下自己的站点。为了在上述测试中实现 A 的评级，获得 SSL 证书后，我还在 Nginx 中禁用了 TLS 1.1 协议：删除服务器所有网站 Nginx 配置文件中的 `TLSv1.1`。
 
 ```diff
 -ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
 +ssl_protocols TLSv1.2 TLSv1.3;
-```
-
-使用 HSTS：在服务器所有网站 Nginx 配置文件中的 Server 括号内添加如下内容（如在 SSL 配置下方添加）。
-
-```nginx
-#HSTS
-add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
 ```
