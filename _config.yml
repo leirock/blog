@@ -112,7 +112,9 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  - type: git
+    repo: https://GH_TOKEN@github.com/github_usename/github_repo.git
+    branch: master
 
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier
@@ -125,3 +127,7 @@ js_minifier:
   silent: true
 image_minifier:
   enable: false
+
+server:
+  port: 4000
+  ip: 127.0.0.1

@@ -22,8 +22,8 @@ custom_file_path:
   head: source/_data/head.njk
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
-  postMeta: source/_data/post-meta.njk
-  #postBodyEnd: source/_data/post-body-end.njk
+  #postMeta: source/_data/post-meta.njk
+  postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
@@ -89,8 +89,11 @@ menu:
     tags: tags/ || fas fa-tags
     timeline: timeline/ || fas fa-archive
   photos: /photos/ || fas fa-camera-retro
-  share: /share/ || fas fa-share-alt
-  about: /about/ || fas fa-location-arrow
+  more:
+    default: /more/ || fas fa-location-arrow
+    book: /book/ || fas fa-book
+    documentary: /documentary/ || fas fa-video
+    code: /code/ || fas fa-flask
   friends: friends/ || fas fa-heart
 
 # Enable / Disable menu icons / item badges.
@@ -259,13 +262,13 @@ tag_icon: true
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
-  enable: true
+  enable: false
   animation: false
-  comment: 🍭 支持一根棒棒糖！
+  #comment: Buy me a coffee
 
 reward:
-  wechatpay: https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-pay.jpg
-  alipay: https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/alipay.jpg
+  #wechatpay: /images/wechatpay.png
+  #alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
