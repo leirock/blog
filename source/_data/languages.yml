@@ -20,8 +20,6 @@ zh-CN:
     views: 阅读
     comments:
       valine: 评论
-    post_lang: 中文/
-    link_lang: English
   counter:
     tag_cloud:
       other: <i class="fas fa-tags"></i> 目前共计 %d 个标签

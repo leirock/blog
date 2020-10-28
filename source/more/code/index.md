@@ -8,17 +8,15 @@ title: 代码实验
 
 ## 本站使用的技术与服务
 
-- 框架主题：[Hexo](https://hexo.io/) 静态博客框架 + [NexT Gemini](https://github.com/theme-next/hexo-theme-next) 主题
-- 访客分析：[Google Analytics](https://analytics.google.com) + [Valine](https://valine.js.org)
+- 框架主题：[Hexo](https://hexo.io/) 静态博客框架 + [NexT Gemini](https://github.com/next-theme/hexo-theme-next) 主题
+- 访客分析：[Google Analytics](https://analytics.google.com)
 - 评论留言：[Valine](https://valine.js.org)
 - 静态存储：[腾讯云对象存储（COS）](https://cloud.tencent.com/product/cos)
 - 构建部署：[GitHub Actions](https://github.com/features/actions)
 
 ## 部署的服务
 
-这些是我自己搭建并正在运行的服务，由于服务器运行能力有限，暂时不会对外开放提供服务。我会把这些项目的搭建过程发布在日志中，如果您对其中的某个项目感兴趣，您也可以自行尝试搭建。
-
-我部署的 [服务运行状态](https://status.dlzhang.com) 由 Uptime Robot 提供间隔为五分钟的监测服务。如果您发现某个项目运行状态异常，也欢迎及时通知我。
+这些是我自己搭建并正在运行的服务，这些项目的搭建过程发布在日志中，如果您对其中的某个项目感兴趣，也可以自行尝试搭建。[服务运行状态](https://status.dlzhang.com) 由 Uptime Robot 提供间隔为五分钟的监测服务。
 
 | 项目                | 功能                                   | 相关链接                                                     |
 | ------------------- | -------------------------------------- | ------------------------------------------------------------ |
