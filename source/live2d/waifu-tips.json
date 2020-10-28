@@ -54,12 +54,15 @@
 		"selector": ".menu-item-more a",
 		"text": ["这里有一些关于我家主人的秘密哦，要不要看看呢？", "来这里发现更多有趣好玩的东西吧！"]
 	}, {
-		"selector": ".menu-item-share a",
-		"text": ["快捡起当泡面盖的 Kindle 来看书吧～", "探索自然奥秘，感受社会历史脉搏，看这些纪录片就对了。", "想看看我正在使用什么应用与服务吗？"]
+		"selector": ".menu-item-book a",
+		"text": ["快捡起当泡面盖的 Kindle 来看书吧～"]
 	}, {
-		"selector": ".menu-item-homepage a",
-		"text": ["Welcome to visit my homepage in English.", "要不要去我的英文主页看看呢，excited！"]
-		}, {
+		"selector": ".menu-item-documentary a",
+		"text": ["探索自然奥秘，感受社会历史脉搏，看这些纪录片就对了。"]
+	}, {
+		"selector": ".menu-item-code a",
+		"text": ["想看看我正在使用什么应用与服务吗？"]
+	}, {
 		"selector": ".menu-item a",
 		"text": ["快看看这里都有什么呢？"]
 	}, {
@@ -120,11 +123,14 @@
 		"selector": ".back-to-top",
 		"text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]
 	}, {
+		"selector": ".moon-menu-icon, .moon-menu-text",
+		"text": ["点它就可以快速回到顶部或者到达底部哦！", "又回到最初的起点～", "要回到开始的地方么？"]
+	}, {
 		"selector": ".popular-posts-header",
 		"text": ["看完了意犹未尽？不妨来看看其他相关的文章吧。"]
 	}, {
-		"selector": ".reward-container",
-		"text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱吧～"]
+		"selector": ".reward-container, .donations",
+		"text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "为我发电，支持更好的创作～"]
 	}, {
 		"selector": "#qr img[alt*='微信支付']",
 		"text": ["这是我的微信赞赏码～"]
