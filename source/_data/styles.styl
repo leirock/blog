@@ -159,6 +159,12 @@ p {
   box-shadow: $image-box-shadow;
 }
 
+/* post-引用与 note 字体 */
+blockquote p,
+.post-body .note {
+  font-family: $font-family-quote;
+}
+
 /* post-行内代码 */
 code {
   font-size: 85%;
@@ -166,33 +172,46 @@ code {
   color: var(--text-color);
 }
 
-/* post-引用与 note 字体 */
-blockquote p,
-.post-body .note {
-  font-family: $font-family-quote;
-}
-
 /************************ Button ***************************/
 
-/* button-reward */
-.reward-container button {
-  height: 35px;
-  width: 35px;
-  padding: 1.5px 0 0;
-  background: $btn-default-bg;
-  border-radius: 5px;
-  border: none;
-  color: #fff !important;
-  btn-shadow();
+.donations {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.donation-label {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-size: 0.95em;
+}
+
+.afdian-button {
+  color: white;
+  background-color: rgb(148, 108, 230);
+}
+
+.button {
+  align-items: center;
+  box-shadow: $box-shadow;
+  font-size: 1rem;
+  height: 2.5em;
+  line-height: 1.5;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-color: transparent;
+  padding: 0.5em 0.75em;
+  border-radius: 4px;
+}
+
+a.afdian-button.button:hover {
+  color: white;
+  border-color: transparent;
 }
 
 /* 修改选中字符的颜色 */
 ::selection {
-  selection-color();
-}
-
-::-moz-selection {
-  selection-color();
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--blockquote-color);
 }
 
 /****************** Pagination & Footer ********************/
@@ -296,11 +315,6 @@ blockquote p,
     color: var(--text-color) !important;
     background: $btn-default-bg;
   }
-}
-
-/* archive */
-.posts-collapse .post-content .collection-title {
-  display: none;
 }
 
 /************************* Valine ************************/

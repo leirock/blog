@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "dlzhang-blog",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "build": "hexo generate"
