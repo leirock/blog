@@ -52,6 +52,7 @@ jobs:
         yarn global add hexo-cli
         yarn install
         sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
+        rm -f node_modules/hexo-theme-next/source/images
         yarn build
 
     - name: Setup coscmd
@@ -70,6 +71,7 @@ jobs:
         coscmd upload -rs --delete public/js assets/js -f
         coscmd upload -rs --delete source/images assets/images -f
         coscmd upload -rs --delete source/live2d assets/live2d -f
+        rm -f public/js public/images public/live2d
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.2
