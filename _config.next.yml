@@ -238,12 +238,6 @@ motion:
 #! See: https://theme-next.js.org/docs/advanced-settings/vendors
 #! ==============================================================
 
-vendors:
-  # The CDN provider of NexT internal scripts.
-  # Available values: local | jsdelivr | unpkg | cdnjs
-  # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: jsdelivr
-
 # Assets
 css: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/css-blog
 js: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/js
