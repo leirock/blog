@@ -27,7 +27,6 @@ toc:
 　<i class="fas fa-fw fa-envelope"></i> idonglei (at) foxmail.com
 　<i class="fas fa-fw fa-globe"></i> [个人主页](https://dlzhang.com)
 　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/7216640993)
-　<i class="fab fa-fw fa-twitter"></i> [Twitter](https://twitter.com/lei2rock)
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)
 
 ![微信公众号：班班碎碎念](https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.jpg!150x)
