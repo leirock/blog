@@ -72,7 +72,6 @@ site_state: false
 
 social:
   微博: https://weibo.com/7216640993 || fab fa-weibo
-  Twitter: https://twitter.com/lei2rock || fab fa-twitter
   GitHub: https://github.com/lei2rock || fab fa-github
   RSS: /atom.xml || fas fa-rss
 
