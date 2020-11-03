@@ -273,9 +273,9 @@ aws-sign2@~0.7.0:
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
 aws4@^1.8.0:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
-  integrity sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
+  integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -542,6 +542,14 @@ cacheable-request@^2.1.1:
     lowercase-keys "1.0.0"
     normalize-url "2.0.1"
     responselike "1.0.2"
+
+call-bind@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.0.tgz#24127054bb3f9bdcb4b1fb82418186072f77b8ce"
+  integrity sha512-AEXsYIyyDY3MCzbwdhzG3Jx1R0J2wetQyUynn6dYHAO+bg8l1k7jwZtRv4ryryFs7EP+NDlikJlVe59jr0cM2w==
+  dependencies:
+    function-bind "^1.1.1"
+    get-intrinsic "^1.0.0"
 
 camel-case@^4.0.0, camel-case@^4.1.1:
   version "4.1.1"
@@ -1402,7 +1410,7 @@ es-abstract@^1.17.0-next.1, es-abstract@^1.17.2:
     string.prototype.trimend "^1.0.1"
     string.prototype.trimstart "^1.0.1"
 
-es-abstract@^1.18.0-next.0, es-abstract@^1.18.0-next.1:
+es-abstract@^1.18.0-next.1:
   version "1.18.0-next.1"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.18.0-next.1.tgz#6e3a0a4bda717e5023ab3b8e90bec36108d22c68"
   integrity sha512-I4UGspA0wpZXWENrdA0uHbnhte683t3qT/1VFH9aX2dA5PPSf6QW5HHXf5HImaqPmjXaVeVk4RGWnaylmV7uAA==
@@ -1867,6 +1875,15 @@ gapitoken@~0.1.2:
     jws "~3.0.0"
     request "^2.54.0"
 
+get-intrinsic@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.0.1.tgz#94a9768fcbdd0595a1c9273aacf4c89d075631be"
+  integrity sha512-ZnWP+AmS1VUaLgTRy47+zKtjTxz+0xMpx3I52i+aalBK1QP19ggLF3Db89KJX7kjfOfP2eoa01qc++GwPgufPg==
+  dependencies:
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+
 get-proxy@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/get-proxy/-/get-proxy-2.1.0.tgz#349f2b4d91d44c4d4d4e9cba2ad90143fac5ef93"
@@ -2259,14 +2276,14 @@ hexo-generator-searchdb@^1.3.3:
   dependencies:
     nunjucks "^3.2.2"
 
-hexo-generator-seo-friendly-sitemap@^0.0.25:
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/hexo-generator-seo-friendly-sitemap/-/hexo-generator-seo-friendly-sitemap-0.0.25.tgz#73a02197bc65a38738a0d3927128e2e48ceb29ce"
-  integrity sha512-SjAOFJ80yynWWPx7WENWVXYDoMOEI/xETM/6YE36DQJEFMDfQDx0p8gpuMZR1XTcMaEu4WtWG16dk1vwtyW+DA==
+hexo-generator-seo-friendly-sitemap@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/hexo-generator-seo-friendly-sitemap/-/hexo-generator-seo-friendly-sitemap-0.1.1.tgz#73d566d55e57f2ceb458e8353c14c02dcb5fbcb4"
+  integrity sha512-3fWgV5uVDhrF+ZcRh8Bbbp7Rtv/bUJpVIs1FBB+aIbTx/0kiqvvQNH+pQ+b15XrlNU9iWwarCJ/2oP7PVYpIAQ==
   dependencies:
     bluebird "3.5.4"
     ejs "2.6.1"
-    lodash "4.17.11"
+    lodash "4.17.12"
     moment "2.24.0"
     pretty-data "0.40.0"
     url-join "4.0.0"
@@ -2350,9 +2367,9 @@ hexo-server@^2.0.0:
     serve-static "^1.14.1"
 
 hexo-theme-next@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.0.1.tgz#608e085e4f6d8cbd0f0adad0d5e6e7c5ccfb1577"
-  integrity sha512-0ljbi7RmX1NXUR4Kt3z+Mlpd5ODkW8XV2IQvQxDHin3PTzVVfFudRmUpCb+4c7oMThu+/WIvJuQgK93kUEMFXA==
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.0.2.tgz#6f9ee15e231241c209ac2fe687b764ed00a926e7"
+  integrity sha512-rTqJoD0FNt6lVvU5MTfYVltNOIfOJSDjO3MdAYknPcOogtoqGu8UypiEz8bYwFNNwIRsFExJUl7IBsVrMlOR4Q==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.4.0"
@@ -3079,10 +3096,10 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+lodash@4.17.12:
+  version "4.17.12"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.12.tgz#a712c74fdc31f7ecb20fe44f157d802d208097ef"
+  integrity sha512-+CiwtLnsJhX03p20mwXuvhoebatoh5B3tt+VvYlrPgZC1g36y+RRbkufX95Xa+X4I59aWEacDFYwnJZiyBh9gA==
 
 lodash@^2.4.1:
   version "2.4.2"
@@ -3604,12 +3621,12 @@ object-visit@^1.0.0:
     isobject "^3.0.0"
 
 object.assign@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.1.tgz#303867a666cdd41936ecdedfb1f8f3e32a478cdd"
-  integrity sha512-VT/cxmx5yaoHSOTSyrCygIDFco+RsibY2NM0a4RdEeY/4KgqezwFtK1yr3U67xYhqJSlASm2pKhLVzPj2lr4bA==
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.2.tgz#0ed54a342eceb37b38ff76eb831a0e788cb63940"
+  integrity sha512-ixT2L5THXsApyiUPYKmW+2EHpXXe5Ii3M+f4e+aJFAHao5amFRW6J0OO6c/LU8Be47utCx2GL89hxGB6XSmKuQ==
   dependencies:
+    call-bind "^1.0.0"
     define-properties "^1.1.3"
-    es-abstract "^1.18.0-next.0"
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
