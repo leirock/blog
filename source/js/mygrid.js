@@ -1,7 +1,7 @@
 // 获取网页不含域名的路径
 var windowPath = window.location.pathname; 
 // 友链信息文件路径
-var FriendDataPath = '/friends/friendslist.json';
+var FriendDataPath = '/more/friends/friendslist.json';
 // 图片信息文件路径
 var imgDataPath = '/photos/photoslist.json'; 
 // 图片访问路径

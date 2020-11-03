@@ -1,5 +1,5 @@
 ---
-title: 小伙伴们
+title: 朋友们
 type: friends
 toc:
   enable: false

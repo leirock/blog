@@ -1,6 +1,6 @@
 {
   "name": "dlzhang-blog",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": true,
   "scripts": {
     "build": "hexo generate"
@@ -16,7 +16,7 @@
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-indexed": "^1.2.1",
     "hexo-generator-searchdb": "^1.3.3",
-    "hexo-generator-seo-friendly-sitemap": "^0.0.25",
+    "hexo-generator-seo-friendly-sitemap": "^0.1.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-related-popular-posts": "^5.0.1",
     "hexo-renderer-ejs": "^1.0.0",
