@@ -10,15 +10,12 @@ echo " "
 printf "\033[32mBlog 根目录："${HexoPath}"\033[0m"
 echo " "
 echo " "
-echo "[1] 本地预览"
-echo "[2] 切换到 Homepage"
-echo " "
-printf "请选择需要的功能，默认选择[1]"
+printf "按回车开始本地预览"
 echo " "
 echo " "
 printf "选择："
 read answer
-if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
+if [ "$answer" == "" ]; then
 	echo " "
 	printf "\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
@@ -29,17 +26,9 @@ if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	echo " "
 	exec ${HexoPath}/hexo.sh
 else
-	if [ "$answer" == "2" ]; then
-		echo " "
-		printf "\033[32mINFO \033[0m 准备切换到 Homepage ...\n"
-		sleep 1s
-		echo " "
-		exec ${HexoPath}/../homepage/hexo.sh
-	else
-		echo " "
-		printf "\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
-		sleep 1s
-		echo " "
-		exec ${HexoPath}/hexo.sh
-	fi
+	echo " "
+	printf "\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
+	sleep 1s
+	echo " "
+	exec ${HexoPath}/hexo.sh
 fi
