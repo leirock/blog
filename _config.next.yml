@@ -34,10 +34,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/images/favicon-16x16.png
-  medium: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/images/favicon-32x32.png
-  apple_touch_icon: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/images/apple-touch-icon.png
-  safari_pinned_tab: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/images/safari-pinned-tab.svg
+  small: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-16x16.png
+  medium: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-32x32.png
+  apple_touch_icon: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/apple-touch-icon.png
+  safari_pinned_tab: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/safari-pinned-tab.svg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -235,6 +235,6 @@ motion:
   enable: false
 
 #Assets
-css: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/css
-js: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/js
-images: https://cdn.jsdelivr.net/gh/lei2rock/blog@public/images
+css: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/css
+js: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/js
+images: https://cdn.jsdelivr.net/gh/lei2rock/blog@assets/images
