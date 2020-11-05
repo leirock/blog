@@ -46,14 +46,13 @@ favicon:
 menu:
   home: / || fas fa-home
   overview: 
-    default: /overview/ || fas fa-th
+    default: /overview/ || fas fa-archive
     tags: tags/ || fas fa-tags
-    timeline: timeline/ || fas fa-archive
+    timeline: timeline/ || fas fa-stream
+  sharelist: /sharelist/ || fas fa-list-ul
   photos: /photos/ || fas fa-camera-retro
   more:
     default: /more/ || fas fa-location-arrow
-    book: book/ || fas fa-book
-    documentary: documentary/ || fas fa-video
     code: code/ || fas fa-flask
     friends: friends/ || fas fa-heart
 

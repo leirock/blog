@@ -3,13 +3,11 @@ zh-CN:
   menu:
     home: 本站首页
     overview: 文章总览
-    tags: 各种标签
     timeline: 时间轴
     photos: 光影留痕
+    sharelist: 分享清单
     more: 关于更多
     friends: 朋友们
-    book: 阅读书单
-    documentary: 纪录片
     code: 代码实验
   sidebar:
     overview: 博主简介
