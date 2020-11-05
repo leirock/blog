@@ -5,7 +5,7 @@
 # Site
 title: 醉里挑灯赏猫
 subtitle: 班班的碎碎念
-description: '美食/夜猫子/轻音乐/美剧/纪录片/文明VI / Steam/微信读书'
+description: '阅读/美食/夜猫子/轻音乐/美剧/纪录片/文明VI / Steam'
 keywords: [班班, 醉里挑灯赏猫, 博客, blog]
 author: 班班
 language: zh-CN
@@ -74,9 +74,9 @@ index_generator:
 default_category: 碎碎念
 category_map:
   学术向: academic
-  碎碎念: ramble
+  碎碎念: life
   观察者: viewpoint
-  科技树: technology
+  科技树: tech
 tag_map:
 
 # Metadata elements
