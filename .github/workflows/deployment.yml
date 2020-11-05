@@ -35,18 +35,7 @@ jobs:
         rm -rf public/images
         cp -rf source/images public/
 
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.1.2
-      env:
-        ARGS: "-avz --delete"
-        SOURCE: "public/"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.REMOTE_TARGET }}
-
-    - name: Deploy to Github
+    - name: Deploy to Github for CDN
       env:
         GIT_NAME: lei2rock
         GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
@@ -57,7 +46,20 @@ jobs:
         git config --global user.name $GIT_NAME
         git config --global user.email $GIT_EMAIL
         git commit -m "Site deployed by GitHub Actions"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:public
+        git push --force --quiet "https://$GH_TOKEN@$REPO" master:assets
+        rm -rf css js images live2d
+        cd ../
+
+    - name: Deploy to server
+      uses: easingthemes/ssh-deploy@v2.1.2
+      env:
+        ARGS: "-avz --delete"
+        SOURCE: "public/"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
 
     - name: Telegram notification
       if: cancelled() == false

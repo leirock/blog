@@ -1,7 +1,7 @@
 "use strict";
 const fs = require("fs");
 const sizeOf = require('image-size');
-const path = "/Users/lei2rock/OneDrive - HKUST Connect/03_Library/02_Images/blog/photos";
+const path = "/Users/lei2rock/Git/qcloud_cos/pages/photos";
 const output = "source/photos/photoslist.json";
 var dimensions;
 fs.readdir(path, function (err, files) {
