@@ -46,6 +46,19 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
 
+    - name: Deploy to Github
+      env:
+        GIT_NAME: lei2rock
+        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+        REPO: github.com/lei2rock/blog
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        cd ./public && git init && git add .
+        git config --global user.name $GIT_NAME
+        git config --global user.email $GIT_EMAIL
+        git commit -m "Site deployed by GitHub Actions"
+        git push --force --quiet "https://$GH_TOKEN@$REPO" master:public
+
     - name: Telegram notification
       if: cancelled() == false
       uses: xinthink/action-telegram@v1.1
