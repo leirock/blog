@@ -24,7 +24,7 @@ toc:
 
 ### 在这里发现更多
 
-　<i class="fas fa-fw fa-envelope"></i> idonglei (at) foxmail.com
+　<i class="fas fa-fw fa-envelope"></i> lei2rock (at) outlook.com
 　<i class="fas fa-fw fa-globe"></i> [个人主页](https://dlzhang.com)
 　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/7216640993)
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)

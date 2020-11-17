@@ -36,7 +36,7 @@ jobs:
         cp -rf source/images public/
 
     - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.1.2
+      uses: easingthemes/ssh-deploy@v2.1.5
       env:
         ARGS: "-avz --delete"
         SOURCE: "public/"
