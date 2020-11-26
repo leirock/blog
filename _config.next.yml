@@ -180,35 +180,18 @@ lazyload: true
 pangu: true
 
 # ---------------------------------------------------------------
-# Comments Settings
-# See: https://theme-next.js.org/docs/third-party-services/comments
-# ---------------------------------------------------------------
-
-# Valine
-# For more information: https://valine.js.org, https://github.com/xCss/Valine
-valine:
-  enable: true
-  appId: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # Your leancloud application appid
-  appKey: 5jRfX3rExENmJqhdzkRqPndP # Your leancloud application appkey
-  serverURLs: # When the custom domain name is enabled, fill it in here
-  placeholder: 来这里留下你的想法与观点，邮件通知回复～（昵称中输入 QQ 号可读取 QQ 昵称和邮箱） # Comment box placeholder
-  avatar: wavatar # Gravatar style
-  meta: [nick, mail, link] # Custom comment header
-  pageSize: 10 # Pagination size
-  lang: zh-cn # Language, available values: en, zh-cn
-  visitor: true # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: true # Whether to record the commenter IP
-  enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: [mail] # Set required fields: [nick] | [nick, mail]
-
-# ---------------------------------------------------------------
 # Statistics and Analytics
 # See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
 # ---------------------------------------------------------------
 
 google_analytics:
   tracking_id: UA-141207776-1 # <app_id>
+
+leancloud_visitors:
+  enable: true
+  app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
+  app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
+  security: false
 
 # ---------------------------------------------------------------
 # Search Services
