@@ -130,15 +130,3 @@ image_minifier:
 server:
   port: 4000
   ip: 127.0.0.1
-
-disqusapi:
-  enable: true
-  api: https://api.dlzhang.com/disqus  # Your server endpoint
-  forum: dlzhang-blog # Your disqus shortname
-  mode: 2
-  timeout: 2000
-  emojipreview: true
-  relatedtype: Related
-  cdn:
-    css: https://cdn.jsdelivr.net/gh/KaitoHH-forked-repo/disqus-php-api@1.1.2/dist/iDisqus.min.css
-    js: https://cdn.jsdelivr.net/gh/KaitoHH-forked-repo/disqus-php-api@1.1.2/dist/iDisqus.min.js

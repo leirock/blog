@@ -2212,11 +2212,6 @@ hexo-cli@^4.0.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-disqus-php-api@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/hexo-disqus-php-api/-/hexo-disqus-php-api-1.1.2.tgz#c253d7a4efb14ea52af4979b7cb79e7d1245965d"
-  integrity sha512-oCdIieFFlIZRtL0PaKtRCJNE2TTVsyr3evh3hBrghLeYMHuv+Pfhrfs0a3Twrc6Ca+PRhe2OiO6OGupzPFNEig==
-
 hexo-front-matter@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hexo-front-matter/-/hexo-front-matter-2.0.0.tgz#03f39a9eedb16c5448dbb3bec7dff2c4e224006c"
