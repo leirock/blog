@@ -108,13 +108,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  - type: git
-    repo: https://GH_TOKEN@github.com/github_usename/github_repo.git
-    branch: master
-
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier
 all_minifier: true
@@ -127,6 +120,40 @@ js_minifier:
 image_minifier:
   enable: false
 
+# Hexo Server
 server:
   port: 4000
   ip: 127.0.0.1
+
+# MiniValine Comment
+# See: https://minivaline.js.org/docs/cn/
+minivaline:
+  enable: true
+  mode: xCss # DesertsP or xCss
+  placeholder: 欢迎留下你的评论～ # Comment box placeholder
+  maxNest: 4 # Sub-comment maximum nesting depth.
+  pageSize: 6 # Pagination size.
+  lazyload: true
+  barrager: false # Comment barrage.
+  visitor: false # Visit statistics
+  closeUA: true # Turn off UA detection.
+  dark: true # Dark mode
+  backend: waline
+  serverURLs: https://waline.dlzhang.com # Waline server url
+  tagMeta: ["管理员", "小伙伴", "访客"] # The String Array of Words to show Flag (only three)
+  master:  # The MD5 String Array of master Email to show master Flag.
+    - cc763511474fe24ffcc80257fb7cb970
+  friends: [] # The MD5 String Array of friends Email to show friends Flag.
+  # MiniValine's display language depends on user's browser or system environment
+  # Available values: en  | zh-CN | (and many more)
+  lang: zh-CN
+  cdn: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+  # Expression Url.
+  # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
+  emoticonUrl:
+    - https://cdn.jsdelivr.net/npm/alus@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest

@@ -332,27 +332,21 @@ a.afdian-button:hover {
   }
 }
 
-/************************* Valine ************************/
+/************************* Comment ************************/
 
 /* comment-圆角 */
 .comments {
   border-radius: $myradius !important;
 }
 
-/* comment-不显示 OS 浏览器 */
-.v .vsys {
-  display: none !important;
-}
-
-/* comment-查看更多、评论按钮 */
-.v .vbtn {
-  border: none !important;
-  color: white !important;
-  background: $btn-default-bg !important;
-  btn-shadow();
-}
-
 /* comment-输入框背景图片 */
-textarea#veditor.veditor.vinput {
-  background: url($comment-bg-url) 100% 100% no-repeat;
+.veditor {
+	background-image: url($comment-bg-url) !important;
+	background-repeat: no-repeat !important;
+	background-position: right !important;
+}
+
+.veditor:focus{
+	background-position-y: 200px !important;
+	transition: all 0.2s ease-in-out 0s !important;
 }
