@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  hexo-deployment:
+  deploy (12.x):
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
@@ -47,6 +47,7 @@ jobs:
 
     - name: Create CDN files
       run: |
+        mkdir cdn
         cp -r public/css cdn/css
         cp -r public/js cdn/js
         cp -r public/images cdn/images
