@@ -1,8 +1,9 @@
-name: Deployment
+name: Blog@lei2rock
 
 on:
   push:
-    branches: [master] # only push events on source branch trigger deployment
+    branches:
+      - master
 
 jobs:
   hexo-deployment:
@@ -13,8 +14,6 @@ jobs:
     steps:
     - name: Checkout source
       uses: actions/checkout@v2
-#     with:
-#       submodules: true
 
     - name: Setup Node.js
       uses: actions/setup-node@v1
@@ -33,7 +32,7 @@ jobs:
         sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
         yarn build
         rm -rf public/images
-        cp -rf source/images public/
+        cp -r source/images public/images
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
@@ -46,18 +45,22 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
 
-    - name: Deploy to Github for CDN
-      env:
-        GIT_NAME: lei2rock
-        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        REPO: github.com/lei2rock/blog
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    - name: Create CDN files
       run: |
-        cd ./public && git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
-        git commit -m "Site deployed by GitHub Actions"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:assets
+        cp -r public/css cdn/css
+        cp -r public/js cdn/js
+        cp -r public/images cdn/images
+        cp -r public/live2d cdn/live2d
+        touch cdn/README.md && echo "# CDN for my blog" > cdn/README.md
+
+    - name: Deploy to Github for CDN
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GH_TOKEN }}
+        external_repository: lei2rock/blog-cdn
+        publish_branch: master
+        publish_dir: ./cdn
+        commit_message: ${{ github.event.head_commit.message }}
 
     - name: Telegram notification
       if: cancelled() == false

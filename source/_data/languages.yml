@@ -9,17 +9,13 @@ zh-CN:
     more: 关于更多
     friends: 朋友们
     code: 代码实验
-  sidebar:
-    overview: 博主简介
-    toc: 文章目录
   post:
-    posted: ' '
     in: 分类：
     views: 阅读
-    comments:
-      valine: 评论
   counter:
     tag_cloud:
       other: <i class="fas fa-tags"></i> 目前共计 %d 个标签
     categories:
       other: <i class="fas fa-th"></i> 目前共计 %d 个分类
+  state:
+    posts: 文章

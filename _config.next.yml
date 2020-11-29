@@ -34,10 +34,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-16x16.png
-  medium: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-32x32.png
-  apple_touch_icon: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/apple-touch-icon.png
-  safari_pinned_tab: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/safari-pinned-tab.svg
+  small: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/favicon-16x16.png
+  medium: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/favicon-32x32.png
+  apple_touch_icon: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/apple-touch-icon.png
+  safari_pinned_tab: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/safari-pinned-tab.svg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -48,8 +48,8 @@ menu:
   overview: 
     default: /overview/ || fas fa-archive
     tags: tags/ || fas fa-tags
+    sharelist: /sharelist/ || fas fa-list-ul
     timeline: timeline/ || fas fa-stream
-  sharelist: /sharelist/ || fas fa-list-ul
   photos: /photos/ || fas fa-camera-retro
   more:
     default: /more/ || fas fa-location-arrow
@@ -67,7 +67,7 @@ avatar:
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
-site_state: false
+site_state: true
 
 social:
   微博: https://weibo.com/7216640993 || fab fa-weibo
@@ -218,6 +218,6 @@ motion:
   enable: false
 
 #Assets
-css: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/css
-js: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/js
-images: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images
+css: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/css
+js: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/js
+images: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images
