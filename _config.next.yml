@@ -39,6 +39,11 @@ favicon:
   apple_touch_icon: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/apple-touch-icon.png
   safari_pinned_tab: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn@latest/images/safari-pinned-tab.svg
 
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -69,6 +74,7 @@ site_state: true
 
 social:
   微博: https://weibo.com/7216640993 || fab fa-weibo
+  哔哩哔哩: https://space.bilibili.com/7454906 || czs-bilibili
   GitHub: https://github.com/lei2rock || fab fa-github
   RSS: /atom.xml || fas fa-rss
 
@@ -109,14 +115,13 @@ post_meta:
   updated_at:
     enable: false
 
+# Post wordcount display settings
+# Dependencies: https://github.com/next-theme/hexo-word-counter
+symbols_count_time:
+  separated_meta: false
+
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
-
-# Related popular posts
-# Dependencies: https://github.com/tea3/hexo-related-popular-posts
-related_posts:
-  enable: true
-  title: 相关推荐 # Custom header, leave empty to use the default one
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -185,11 +190,15 @@ pangu: true
 google_analytics:
   tracking_id: UA-141207776-1 # <app_id>
 
-leancloud_visitors:
+# Show Views / Visitors of the website / page with busuanzi.
+busuanzi_count:
   enable: true
-  app_id: Ip1k7AAnh6WzVr5w5u4KwhJm-MdYXbMMI # <your app id>
-  app_key: eucPODrRm3KT172pkgEj8DU8 # <your app key>
-  security: false
+  total_visitors: false
+  total_visitors_icon: fa fa-user
+  total_views: false
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye
 
 # ---------------------------------------------------------------
 # Search Services
