@@ -30,12 +30,17 @@ jobs:
         yarn global add hexo-cli
         yarn install
 
-    - name: Generate Hexo site
+    - name: Generate Hexo site & Create CDN files
       run: |
         sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
         yarn build
-        rm -rf public/images
-        cp -r source/images public/images
+        mkdir cdn
+        cp -r public/css cdn/css
+        cp -r public/js cdn/js
+        cp -r source/images cdn/images
+        cp -r source/live2d cdn/live2d
+        touch cdn/README.md && echo "# CDN for my blog" > cdn/README.md
+        rm -rf public/images public/css public/js public/live2d
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
@@ -47,15 +52,6 @@ jobs:
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
-
-    - name: Create CDN files
-      run: |
-        mkdir cdn
-        cp -r public/css cdn/css
-        cp -r public/js cdn/js
-        cp -r public/images cdn/images
-        cp -r public/live2d cdn/live2d
-        touch cdn/README.md && echo "# CDN for my blog" > cdn/README.md
 
     - name: Deploy to Github for CDN
       uses: peaceiris/actions-gh-pages@v3
