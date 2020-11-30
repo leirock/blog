@@ -125,6 +125,17 @@ server:
   port: 4000
   ip: 127.0.0.1
 
+# Hexo Word Counter
+# See: https://theme-next.js.org/docs/theme-settings/posts.html#Post-Wordcount
+symbols_count_time:
+  symbols: true
+  time: false
+  total_symbols: false
+  total_time: false
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+
 # MiniValine Comment
 # See: https://minivaline.js.org/docs/cn/
 minivaline:
