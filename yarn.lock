@@ -2309,7 +2309,7 @@ hexo-log@^2.0.0:
   dependencies:
     chalk "^4.0.0"
 
-hexo-next-minivaline@^5.2.0:
+hexo-next-minivaline@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/hexo-next-minivaline/-/hexo-next-minivaline-5.3.0.tgz#a0ef2e6cdcab4328c45afa46a56795c0d3e9d927"
   integrity sha512-PfgxLs1XPA4/7aCbaRCwu7M0qy7Wyc63cP2jrdetJW1sR9Ns29TozRWgnVCAYcW2yTzpV5lz6COftasmbjyMAA==
@@ -2341,7 +2341,7 @@ hexo-renderer-ejs@^1.0.0:
   dependencies:
     ejs "^2.6.1"
 
-hexo-renderer-marked@^3.0.0:
+hexo-renderer-marked@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/hexo-renderer-marked/-/hexo-renderer-marked-3.3.0.tgz#54bce9f00d356c71392b2fc3a881df7ff6dae8bd"
   integrity sha512-U2EomSjsrixQXqqpZ3hYThLpKLg4RSC5hC6dwr/SZG/1LxKKfMoLA48wKgx+xSgzkydye0IBDJ+UAQPLaTfCdw==
@@ -2349,7 +2349,7 @@ hexo-renderer-marked@^3.0.0:
     hexo-util "^2.1.0"
     marked "^1.0.0"
 
-hexo-renderer-stylus@^2.0.0:
+hexo-renderer-stylus@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/hexo-renderer-stylus/-/hexo-renderer-stylus-2.0.1.tgz#c65566e97e9058a52e46c82b0c45cf561f4b94cb"
   integrity sha512-1S4AG8RtzWqVrqKIYv2AJ4UYms5SHDjkdYS7IiGwgUejL24agbTktpAbnH2cG1JWZ15SRqYN0UGB9aAoSAgvEA==
@@ -2371,7 +2371,12 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@^8.0.1:
+hexo-tag-friends@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/hexo-tag-friends/-/hexo-tag-friends-0.3.4.tgz#ca8ed62ce0e120384300581a7fcb78659e0bde37"
+  integrity sha512-UqpAraZv+p4zuV5d+mdlSoOQsSlDaxFhM/m0yW5BZ3dosrNzSbXsUsQwWw0m3YZ+o813bTTJ2ZsgbRRJbqahQg==
+
+hexo-theme-next@^8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.0.2.tgz#6f9ee15e231241c209ac2fe687b764ed00a926e7"
   integrity sha512-rTqJoD0FNt6lVvU5MTfYVltNOIfOJSDjO3MdAYknPcOogtoqGu8UypiEz8bYwFNNwIRsFExJUl7IBsVrMlOR4Q==
@@ -2523,7 +2528,7 @@ ignore@^5.1.1:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-image-size@^0.9.2:
+image-size@^0.9.3:
   version "0.9.3"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.9.3.tgz#f7efce6b0a1649b44b9bc43b9d9a5acf272264b6"
   integrity sha512-5SakFa79uhUVSjKeQE30GVzzLJ0QNzB53+I+/VD1vIesD6GP6uatWIlgU0uisFNLt1u0d6kBydp7yfk+lLJhLQ==

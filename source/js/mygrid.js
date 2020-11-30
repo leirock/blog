@@ -1,57 +1,24 @@
-// 获取网页不含域名的路径
+// window path without domain
 var windowPath = window.location.pathname; 
-// 友链信息文件路径
-var FriendDataPath = '/more/friends/friendslist.json';
-// 图片信息文件路径
+// img info file path
 var imgDataPath = '/photos/photoslist.json'; 
-// 图片访问路径
+// img storage path
 var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';  
-// 图片显示数量
-var imgMaxNum = 50; 
-// 获取窗口宽度（以确定图片显示宽度）
+// max img number
+var imgMaxNum = 50;
+// window width (to decide img width)
 var windowWidth = window.innerWidth
 || document.documentElement.clientWidth
 || document.body.clientWidth;
 if (windowWidth < 768) {
-    var imageWidth = 145; // 图片显示宽度(手机)
+    var imageWidth = 145; // img width (mobile)
 } else {
-    var imageWidth = 210; // 图片显示宽度
+    var imageWidth = 210; // img width
 }
-// 腾讯云图片处理样式（根据图片显示宽度）
+// Tencent Cloud img style (based on img width)
 var imgStyle = '!' + imageWidth + 'x';
 
-// 链接卡片（友链）
-if (windowPath.indexOf('friends') > 0 ) {
-    var LinkDataPath = FriendDataPath;
-    link = {
-        init: function () {
-            var that = this;
-            $.getJSON(LinkDataPath, function (data) {
-                that.render(data);
-            });
-        },
-        render: function (data) {
-            var html, name, avatar, link, li = "";
-            for (var i = 0; i < data.length; i++) {
-                name = data[i].name;
-                avatar = data[i].avatar;
-                link = data[i].link;
-                li += '<div class="card">' +
-                        '<a href="' + link + '" target="_blank">' +
-                            '<div class="thumb" style="background: url(' + avatar + ');">' + '</div>' +
-                        '</a>' +
-                        '<div class="card-header">' +
-                            '<div><a href="' + link + '" target="_blank">' + name + '</a></div>' +
-                        '</div>' +
-                      '</div>';
-            }
-            $(".MyGrid").append(li);
-        }
-    }
-    link.init();
-}
-
-// 图片卡片（照片页面）
+// generate img card
 if (windowPath.indexOf('photos') > 0 ) {
     var LinkDataPath = imgDataPath;
     photo = {
