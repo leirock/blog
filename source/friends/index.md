@@ -10,7 +10,7 @@ toc:
 </style>
 <!-- CSS Code End -->
 
-如果您有意交换友情链接，敬请先将本站添加友链，然后在评论区留言，本站目前仅接受个人博客网站的友链申请。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务。如果需要更新博客信息，请留言回复。本站信息如下：
+如果您有意交换友情链接，敬请先将本站添加友链，然后在评论区留言，本站目前仅接受个人博客网站的友链申请。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务，并需要支持 https 访问。如需更新信息，请留言回复。本站信息如下：
 
 {% note success %}
 名称：醉里挑灯赏猫（或 班班碎碎念）
@@ -36,7 +36,7 @@ ZZONN | https://blog.zzonn.com | https://cdn.jsdelivr.net/gh/lcorel/lcorel.githu
 Abalone | https://abalone.life | https://abalone.life/avatar | 捣鼓在0与1之间的憨憨
 YD's blog | https://ydchen.cn | https://cdn.ydchen.cn/typora20200628094101.jpg | Delving into knowns and unknowns.
 先谢郭嘉 | https://xiejiabin.online | https://cdn.jsdelivr.net/gh/xiejiabin1/images/favicon.jpg | Code changes the world
-Willow の空间 | http://haozz.site | http://haozz.site/images/hikingMan.jpg | 技术｜笔记｜成长
+Willow の空间 | http://haozz.site | https://s1.ax1x.com/2020/11/02/B0xZad.jpg | 技术｜笔记｜成长
 Ljcbaby 的小屋 | https://www.ljcbaby.top | https://cdn.jsdelivr.net/gh/ljcbaby/Static/logo/0.png | 宁静的栖身之地
 Daman's Blog | https://damanyang.cn | https://ae01.alicdn.com/kf/U2ebdbb0ad7c84a9695715a75e3b7359ec.jpg | Creative Objective Developing Expression
 {% endfriendsgrid %}
