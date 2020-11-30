@@ -1,10 +1,7 @@
 ---
 title: 分享清单
+comments: false
 ---
-
-> 分享一些自己搜集整理的或有趣、或实用、或好玩的清单列表，也欢迎在下方评论区分享你的最爱。
-
-<br>
 
 　<i class="fas fa-book-open"></i> [阅读书单](/posts/51/)
 

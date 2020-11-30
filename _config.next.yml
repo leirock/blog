@@ -14,7 +14,7 @@ custom_file_path:
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
+  footer: source/_data/footer.njk
   bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
   mixin: source/_data/mixins.styl
@@ -51,10 +51,8 @@ menu:
     sharelist: /sharelist/ || fas fa-list-ul
     timeline: timeline/ || fas fa-stream
   photos: /photos/ || fas fa-camera-retro
-  more:
-    default: /more/ || fas fa-location-arrow
-    code: code/ || fas fa-flask
-    friends: friends/ || fas fa-heart
+  more: /more/ || fas fa-location-arrow
+  friends: friends/ || fas fa-heart
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -189,8 +187,8 @@ google_analytics:
 
 leancloud_visitors:
   enable: true
-  app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
-  app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
+  app_id: Ip1k7AAnh6WzVr5w5u4KwhJm-MdYXbMMI # <your app id>
+  app_key: eucPODrRm3KT172pkgEj8DU8 # <your app key>
   security: false
 
 # ---------------------------------------------------------------
