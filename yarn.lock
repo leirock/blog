@@ -1645,9 +1645,9 @@ hexo-tag-friends@^0.3.4:
   integrity sha512-UqpAraZv+p4zuV5d+mdlSoOQsSlDaxFhM/m0yW5BZ3dosrNzSbXsUsQwWw0m3YZ+o813bTTJ2ZsgbRRJbqahQg==
 
 hexo-theme-next@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.0.2.tgz#6f9ee15e231241c209ac2fe687b764ed00a926e7"
-  integrity sha512-rTqJoD0FNt6lVvU5MTfYVltNOIfOJSDjO3MdAYknPcOogtoqGu8UypiEz8bYwFNNwIRsFExJUl7IBsVrMlOR4Q==
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.1.0.tgz#fc12ef9e6f3fe33a2c3bbf972f1e546047e34cd4"
+  integrity sha512-msxTbPsu95UljHZGXxo/PSJMKOc9amBVgK4B2Yi4tLduOuEpOTCieLiOnfz1e7ywBYlmqS86oPxXrQXc6q9yiQ==
 
 hexo-util@2.1.0:
   version "2.1.0"
