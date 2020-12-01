@@ -190,16 +190,6 @@ pangu: true
 google_analytics:
   tracking_id: UA-141207776-1 # <app_id>
 
-# Show Views / Visitors of the website / page with busuanzi.
-busuanzi_count:
-  enable: true
-  total_visitors: false
-  total_visitors_icon: fa fa-user
-  total_views: false
-  total_views_icon: fa fa-eye
-  post_views: true
-  post_views_icon: far fa-eye
-
 # ---------------------------------------------------------------
 # Search Services
 # See: https://theme-next.js.org/docs/third-party-services/search-services
