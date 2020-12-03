@@ -1,4 +1,28 @@
+<span style="margin-top:25px; color:var(--blockquote-color); font-size:0.85em">
+    {%- if post.update %}
+    <span class="post-end-item" title="update">
+        {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
+        <span class="post-end-item-icon" style="margin-right: 3px">
+            <i class="far fa-fw fa-calendar-check"></i>
+        </span>
+        <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
+            <span class="post-end-item-text">更新时间：{{ date(post.update) }}</span>
+        </time>
+    </span><br>
+    {%- endif %}
+    <span class="post-end-item" title="copyright"">
+        <span class="post-end-item-icon" style="margin-right: 3px">
+            <i class="fab fa-fw fa-creative-commons"></i>
+        </span>
+        <span class="post-end-item-text">署名-非商业性使用-相同方式共享 4.0（CC BY-NC-SA 4.0）许可协议</span>
+    </span>
+</span>
 <div class="donations">
     <div class="donation-label">喜欢这篇文章？为什么不考虑赞赏一下作者呢？</div>
-    <a class="afdian-button" href="https://afdian.net/@lei2rock" rel="nofollow noopener noreferrer" target="_blank">爱发电</a>
+    <a class="afdian-button" href="https://afdian.net/@lei2rock" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fas fa-fw fa-bolt"></i>爱发电
+    </a>
+    <a class="paypal-button" href="https://paypal.me/lei2rock" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-fw fa-paypal"></i>Paypal
+    </a>
 </div>
