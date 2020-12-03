@@ -4,6 +4,8 @@ categories: [学术向]
 tags: [知乎, 申请季]
 pid: 29
 date: 2017-12-15 21:00:00
+origin: 知乎 Live
+origin_url: https://www.zhihu.com/lives/922106856669868032
 ---
 
 ## Live 简介
@@ -36,5 +38,3 @@ date: 2017-12-15 21:00:00
   - Research Assistant 职位与 MSc 深造
   - 博士生的科研、助教工作（TA）与日常
   - 七年之后：留港还是回去
-
-[参与知乎 Live](https://www.zhihu.com/lives/922106856669868032)
