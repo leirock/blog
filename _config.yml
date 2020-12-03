@@ -144,9 +144,9 @@ minivaline:
   placeholder: 欢迎留下你的评论～ # Comment box placeholder
   maxNest: 4 # Sub-comment maximum nesting depth.
   pageSize: 6 # Pagination size.
-  lazyload: true
+  lazyload: false
   barrager: false # Comment barrage.
-  visitor: false # Visit statistics
+  visitor: true # Visit statistics
   closeUA: true # Turn off UA detection.
   dark: true # Dark mode
   backend: waline
