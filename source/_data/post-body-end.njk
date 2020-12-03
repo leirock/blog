@@ -1,22 +1,43 @@
+{#####################}
+{### POST END ITEM ###}
+{#####################}
 <span style="margin-top:25px; color:var(--blockquote-color); font-size:0.85em">
     {%- if post.update %}
-    <span class="post-end-item" title="update">
-        {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
-        <span class="post-end-item-icon" style="margin-right: 3px">
-            <i class="far fa-fw fa-calendar-check"></i>
-        </span>
-        <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
-            <span class="post-end-item-text">更新时间：{{ date(post.update) }}</span>
-        </time>
-    </span><br>
+        <span class="post-end-item" title="update">
+            {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
+            <span class="post-end-item-icon" style="margin-right: 3px">
+                <i class="far fa-fw fa-calendar-check"></i>
+            </span>
+            <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
+                <span class="post-end-item-text">更新时间：{{ date(post.update) }}</span>
+            </time>
+        </span><br>
     {%- endif %}
-    <span class="post-end-item" title="copyright"">
-        <span class="post-end-item-icon" style="margin-right: 3px">
-            <i class="fab fa-fw fa-creative-commons"></i>
+    {%- if post.origin %}
+        <span class="post-end-item" title="origin">
+            <span class="post-end-item-icon" style="margin-right: 3px">
+                <i class="fas fa-fw fa-feather"></i>
+            </span>
+            {%- if post.origin_url %}
+                本文发表于<a target="_blank" rel="noopener" href="{{ post.origin_url }}" data-pjax-state="" style="color:var(--blockquote-color)"> {{ post.origin }} </a>
+            {% else %}
+                <span class="post-end-item-text">本文发表于 {{ post.origin }} </span>
+            {%- endif %}
+        </span><br>
+    {%- endif %}
+    {%- if post.copyright !== false %}
+        <span class="post-end-item" title="copyright"">
+            <span class="post-end-item-icon" style="margin-right: 3px">
+                <i class="fab fa-fw fa-creative-commons"></i>
+            </span>
+            <span class="post-end-item-text">采用署名-非商业性使用-相同方式共享 4.0（CC BY-NC-SA 4.0）许可协议</span>
         </span>
-        <span class="post-end-item-text">署名-非商业性使用-相同方式共享 4.0（CC BY-NC-SA 4.0）许可协议</span>
-    </span>
+    {%- endif %}
 </span>
+
+{#################}
+{### DONATIONS ###}
+{#################}
 <div class="donations">
     <div class="donation-label">喜欢这篇文章？为什么不考虑赞赏一下作者呢？</div>
     <a class="afdian-button" href="https://afdian.net/@lei2rock" rel="nofollow noopener noreferrer" target="_blank">

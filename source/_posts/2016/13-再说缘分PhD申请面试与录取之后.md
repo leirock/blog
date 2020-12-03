@@ -4,6 +4,8 @@ categories: [学术向]
 tags: [PhD, 申请季]
 pid: 13
 date: 2016-04-07 23:00:42
+origin: 微信公众号 · 班班碎碎念
+origin_url: https://mp.weixin.qq.com/s/FmmC05tC1EbJQsf43926Og
 ---
 
 提交申请之后，其实主要就两件事情，其一是检查自己的材料是否提交齐全；其二是等待面试通知和参加面试。
