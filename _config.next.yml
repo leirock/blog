@@ -39,11 +39,6 @@ favicon:
   apple_touch_icon: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn/images/apple-touch-icon.png
   safari_pinned_tab: //cdn.jsdelivr.net/gh/lei2rock/blog-cdn/images/safari-pinned-tab.svg
 
-creative_commons:
-  license: by-nc-sa
-  post: true
-  language: deed.zh
-
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
