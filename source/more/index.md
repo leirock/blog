@@ -30,7 +30,6 @@ toc:
 ### 在这里发现更多
 
 　<i class="fas fa-fw fa-envelope"></i> lei2rock (at) outlook.com
-　<i class="fas fa-fw fa-globe"></i> [个人主页](https://dlzhang.com)
 　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/7216640993)
 　<i class="fa-fw czs-bilibili"></i> [哔哩哔哩](https://space.bilibili.com/7454906)
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)
