@@ -2,20 +2,10 @@
 {### POST END ITEM ###}
 {#####################}
 <span style="margin-top:30px; color:var(--blockquote-color); font-size:0.85em">
-    <span class="post-end-item" title="view">
-        <span class="post-end-item-icon" style="margin-right: 3px">
-            <i class="fas fa-fw fa-eye"></i>
-        </span>
-        <span class="post-end-item-text">浏览：
-            <span id="/posts/{{ post.pid }}/" class="leancloud_visitors">
-                <span class="leancloud-visitors-count"></span>
-            </span>
-        </span>
-    </span>
     {%- if post.update %}
         <span class="post-end-item" title="update">
             {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
-            <span class="post-end-item-icon" style="margin-right: 3px">｜<i class="far fa-fw fa-calendar-check"></i></span>
+            <span class="post-end-item-icon" style="margin-right: 3px"><i class="far fa-fw fa-calendar-check"></i></span>
             <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
                 <span class="post-end-item-text">更新时间：{{ date(post.update) }}</span>
             </time>

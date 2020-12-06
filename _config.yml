@@ -18,8 +18,8 @@ root: /
 permalink: /posts/:pid/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -71,7 +71,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: 碎碎念
+default_category: life
 category_map:
   学术向: academic
   碎碎念: life
@@ -125,46 +125,16 @@ server:
   port: 4000
   ip: 127.0.0.1
 
-# Hexo Word Counter
-# See: https://theme-next.js.org/docs/theme-settings/posts.html#Post-Wordcount
-symbols_count_time:
-  symbols: true
-  time: false
-  total_symbols: false
-  total_time: false
-  exclude_codeblock: false
-  awl: 4
-  wpm: 275
-
-# MiniValine Comment
-# See: https://minivaline.js.org/docs/cn/
-minivaline:
+# Waline
+# For more information: https://waline.js.org, https://github.com/lizheming/waline
+waline:
   enable: true
-  mode: xCss # DesertsP or xCss
-  placeholder: 欢迎留下你的评论～ # Comment box placeholder
-  maxNest: 4 # Sub-comment maximum nesting depth.
-  pageSize: 6 # Pagination size.
-  lazyload: false
-  barrager: false # Comment barrage.
-  visitor: true # Visit statistics
-  closeUA: true # Turn off UA detection.
-  dark: true # Dark mode
-  backend: waline
-  serverURLs: https://waline.dlzhang.com # Waline server url
-  tagMeta: ["管理员", "小伙伴", "访客"] # The String Array of Words to show Flag (only three)
-  master:  # The MD5 String Array of master Email to show master Flag.
-    - cc763511474fe24ffcc80257fb7cb970
-  friends: [] # The MD5 String Array of friends Email to show friends Flag.
-  # MiniValine's display language depends on user's browser or system environment
-  # Available values: en  | zh-CN | (and many more)
-  lang: zh-CN
-  cdn: https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
-  # Expression Url.
-  # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
-  emoticonUrl:
-    - https://cdn.jsdelivr.net/npm/alus@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
-    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+  serverURL: https://walinedash-6gnyek4g54f1eaf7-1256060851.ap-shanghai.service.tcloudbase.com # Waline server address url
+  placeholder: 来这里留下你的想法与观点～ # Comment box placeholder
+  avatar: wavatar # Gravatar style
+  meta: [nick, mail, link] # Custom comment header
+  pageSize: 10 # Pagination size
+  lang: zh-cn # Language, available values: en, zh-cn
+  # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
+  visitor: true # Article reading statistic
+  requiredFields: [nick, mail] # Set required fields: [nick] | [nick, mail]

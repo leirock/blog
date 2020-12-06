@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@next-theme/utils@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@next-theme/utils/-/utils-1.1.0.tgz#3fc818b310dae1f4c4d8d87afb32d408ec11e1ad"
+  integrity sha512-wAVzW/gd81NsaK6yoXDid2y9CPWtPhCbyM68B+ryc622oaivtHMc3MY2IwUnStm/nl1do+vGPiaeR55OEGCOmw==
+  dependencies:
+    js-yaml "3.14.0"
+    lodash "4.17.19"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"
@@ -50,6 +58,13 @@
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@waline/hexo-next@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-1.0.1.tgz#5c5fa5035864ff158e0d8d870936d8a4034b0b71"
+  integrity sha512-68fvIEm3Pwez/CWjYc05wQB/0pVaKSKJEzjd7/8JoScLnjjCxl8MuTjLMAK3qL6DZ+ar1dCS6twDydG2xBo9Ag==
+  dependencies:
+    "@next-theme/utils" "^1.1.0"
 
 JSONStream@^1.0.7:
   version "1.3.5"
@@ -820,12 +835,12 @@ dom-serializer@0:
     entities "^2.0.0"
 
 dom-serializer@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-1.1.0.tgz#5f7c828f1bfc44887dc2a315ab5c45691d544b58"
-  integrity sha512-ox7bvGXt2n+uLWtCRLybYx60IrOlWL/aCebWJk1T0d4m3y2tzf4U3ij9wBMUb6YJZpz06HCCYuyCDveE2xXmzQ==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-1.2.0.tgz#3433d9136aeb3c627981daa385fc7f32d27c48f1"
+  integrity sha512-n6kZFH/KlCrqs/1GHMOd5i2fd/beQHuehKdWvNNffbGHTr/almdhuVvTVFb3V7fglz+nC50fFusu3lY33h12pA==
   dependencies:
     domelementtype "^2.0.1"
-    domhandler "^3.0.0"
+    domhandler "^4.0.0"
     entities "^2.0.0"
 
 dom-serializer@~0.1.1:
@@ -1599,11 +1614,6 @@ hexo-log@^2.0.0:
   dependencies:
     chalk "^4.0.0"
 
-hexo-next-minivaline@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/hexo-next-minivaline/-/hexo-next-minivaline-5.3.0.tgz#a0ef2e6cdcab4328c45afa46a56795c0d3e9d927"
-  integrity sha512-PfgxLs1XPA4/7aCbaRCwu7M0qy7Wyc63cP2jrdetJW1sR9Ns29TozRWgnVCAYcW2yTzpV5lz6COftasmbjyMAA==
-
 hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
@@ -1656,21 +1666,6 @@ hexo-theme-next@^8.0.2:
   resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.1.0.tgz#fc12ef9e6f3fe33a2c3bbf972f1e546047e34cd4"
   integrity sha512-msxTbPsu95UljHZGXxo/PSJMKOc9amBVgK4B2Yi4tLduOuEpOTCieLiOnfz1e7ywBYlmqS86oPxXrQXc6q9yiQ==
 
-hexo-util@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.1.0.tgz#2c691a034a05d4ed254696c2e99d7cb686fdd350"
-  integrity sha512-TXt6z7rj5BEDig7aZZjfHa7qFKGOtUlQoVHvQh0GS99fGp1JxWbllosI173kOcrzor/uubtGk+5nRzhELZyeZw==
-  dependencies:
-    bluebird "^3.5.2"
-    camel-case "^4.0.0"
-    cross-spawn "^7.0.0"
-    deepmerge "^4.2.2"
-    highlight.js "^10.0.0"
-    htmlparser2 "^4.0.0"
-    prismjs "^1.17.1"
-    strip-indent "^3.0.0"
-    striptags "^3.1.1"
-
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
@@ -1685,13 +1680,6 @@ hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
     prismjs "^1.17.1"
     strip-indent "^3.0.0"
     striptags "^3.1.1"
-
-hexo-word-counter@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/hexo-word-counter/-/hexo-word-counter-0.0.2.tgz#8da66f33f3b27881e8429076d80647cc8309567a"
-  integrity sha512-QCYQaxUQh0n9bxmD2FkZ3Vgz7mpJOs1XRZtiZNhrSxW+gSoFxg22EC09VvV9V7Vt3H9vfsHdvNKH6PoZ8k1h0w==
-  dependencies:
-    hexo-util "2.1.0"
 
 hexo@^5.0.0:
   version "5.2.0"
@@ -1722,9 +1710,9 @@ hexo@^5.0.0:
     warehouse "^4.0.0"
 
 highlight.js@^10.0.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.4.0.tgz#ef3ce475e5dfa7a48484260b49ea242ddab823a0"
-  integrity sha512-EfrUGcQ63oLJbj0J0RI9ebX6TAITbsDBLbsjr881L/X5fMO9+oadKzEF21C7R3ULKG6Gv3uoab2HiqVJa/4+oA==
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.4.1.tgz#d48fbcf4a9971c4361b3f95f302747afe19dbad0"
+  integrity sha512-yR5lWvNz7c85OhVAEAeFhVCc/GV4C30Fjzc/rCP0aCWzc1UUOPUk55dK/qdwTZHBvMZo+eZ2jpk62ndX/xMFlg==
 
 hosted-git-info@^2.1.4:
   version "2.8.8"
@@ -1984,9 +1972,9 @@ is-natural-number@^4.0.1:
   integrity sha1-q5124dtM7VHjXeDHLr7PCfc0zeg=
 
 is-negative-zero@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/is-negative-zero/-/is-negative-zero-2.0.0.tgz#9553b121b0fac28869da9ed459e20c7543788461"
-  integrity sha1-lVOxIbD6wohp2p7UWeIMdUN4hGE=
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/is-negative-zero/-/is-negative-zero-2.0.1.tgz#3de746c18dda2319241a53675908d8f766f11c24"
+  integrity sha512-2z6JzQvZRa9A2Y7xC6dQQm4FSTSTNWjKIYYTt4246eMTJmIo0Q+ZyOsU66X8lxK1AbB92dFeglPLrhwpeRKO6w==
 
 is-number@^7.0.0:
   version "7.0.0"
@@ -2088,7 +2076,7 @@ jpegtran-bin@^5.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
-js-yaml@^3.12.0, js-yaml@^3.13.1:
+js-yaml@3.14.0, js-yaml@^3.12.0, js-yaml@^3.13.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
   integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
@@ -2133,6 +2121,11 @@ lodash@4.17.12:
   version "4.17.12"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.12.tgz#a712c74fdc31f7ecb20fe44f157d802d208097ef"
   integrity sha512-+CiwtLnsJhX03p20mwXuvhoebatoh5B3tt+VvYlrPgZC1g36y+RRbkufX95Xa+X4I59aWEacDFYwnJZiyBh9gA==
+
+lodash@4.17.19:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 lodash@^4.15.0:
   version "4.17.20"
