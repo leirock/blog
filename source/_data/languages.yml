@@ -19,5 +19,3 @@ zh-CN:
       other: <i class="fas fa-th"></i> 目前共计 %d 个分类
   state:
     posts: 文章
-  symbols_count_time:
-    count: 字数
