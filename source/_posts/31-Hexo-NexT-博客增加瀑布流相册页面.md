@@ -7,7 +7,7 @@ date: 2018-06-11 12:24:01
 update: 2020-10-27 23:30:00
 ---
 
-![](https://cos.dlzhang.com/posts/31/album.jpg!550x)
+![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/31/album.jpg!550x)
 
 要展示自己拍摄的照片，可以给博客添加一个瀑布流的相册页面。本文适用于 Hexo 4.2.0 / NexT 7.8.0，参考了 [asdfv1929 的方法](https://asdfv1929.github.io/2018/05/26/next-add-photos/)。<!--more-->
 

@@ -3,7 +3,7 @@ var windowPath = window.location.pathname;
 // img info file path
 var imgDataPath = '/photos/photoslist.json'; 
 // img storage path
-var imgPath = 'https://cos.dlzhang.com/pages/photos/';  
+var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';  
 // max img number
 var imgMaxNum = 50;
 // window width (to decide img width)
