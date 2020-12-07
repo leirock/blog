@@ -4,6 +4,7 @@ type: friends
 toc:
   enable: false
 ---
+
 <!-- CSS Code -->
 <style>
 @media(prefers-color-scheme:dark){.link-grid-2 .link-item{background:#34495e;} .link-grid-2 .link-cover{opacity:.75;}}
@@ -12,7 +13,7 @@ toc:
 
 如果您有意交换友情链接，敬请先将本站添加友链，然后在评论区留言，本站目前仅接受个人博客网站的友链申请。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务，并需要支持 https 访问。如需更新信息，请留言回复。本站信息如下：
 
-{% note info no-icon %}
+{% note info %}
 名称：醉里挑灯赏猫（或 班班碎碎念）
 简介：班班的碎碎念（或其他你觉得合适的描述） 
 网址：https://blog.dlzhang.com

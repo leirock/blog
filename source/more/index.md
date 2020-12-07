@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![中国历史文化名村·浦江嵩溪](https://cos.dlzhang.com/pages/more/songxi.jpg!600x)
+![中国历史文化名村·浦江嵩溪](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/songxi.jpg!600x)
 
 {% centerquote %}
 大不自多，海纳江河。
@@ -25,7 +25,7 @@ toc:
 ### 订阅本站
 
 　<i class="fas fa-fw fa-rss"></i> [RSS](/atom.xml)
-　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://cos.dlzhang.com/qrcode/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">公众号：班班碎碎念</a>
+　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">公众号：班班碎碎念</a>
 
 ### 在这里发现更多
 

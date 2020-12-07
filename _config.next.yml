@@ -183,7 +183,7 @@ pangu: true
 # ---------------------------------------------------------------
 
 google_analytics:
-  tracking_id: UA-141207776-1 # <app_id>
+  tracking_id: UA-141207776-1
 
 # ---------------------------------------------------------------
 # Search Services
@@ -193,14 +193,6 @@ google_analytics:
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
-
-# ---------------------------------------------------------------
-# Tags Settings
-# See: https://theme-next.js.org/docs/tag-plugins/
-# ---------------------------------------------------------------
-
-note:
-  icons: true
 
 # ---------------------------------------------------------------
 # Animation Settings

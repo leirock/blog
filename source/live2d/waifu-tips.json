@@ -57,9 +57,6 @@
 		"selector": ".menu-item-sharelist a",
 		"text": ["一些或有趣、或实用、或好玩的清单列表哦～"]
 	}, {
-		"selector": ".menu-item-code a",
-		"text": ["想看看我正在使用什么应用与服务吗？"]
-	}, {
 		"selector": ".menu-item a",
 		"text": ["快看看这里都有什么呢？"]
 	}, {
