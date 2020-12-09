@@ -7,7 +7,7 @@ date: 2020-04-30 17:00:00
 update: 2020-10-27 19:00:00
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/typecho-handsome.png!550x)
+![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/typecho-handsome.png!600x)
 
 拥有一台自己的服务器之后就尝试搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定尝试将我的 Hexo 博客迁移到 Typecho  Handsome 了。<!--more-->
 

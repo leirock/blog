@@ -6,7 +6,7 @@ pid: 49
 date: 2020-04-15 23:30:50
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/docker.png!550x)
+![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/docker.png!600x)
 
 使用宝塔面板下部署 Docker 应用还是挺容易的，首先需要安装 Docker 管理器。不过这个管理器在 Safari 浏览器中似乎有 bug，无法进行点击操作，但是在 Chrome 浏览器中可以正常操作。本文将通过这个 Docker 管理器来安装 RSSHub 这一 RSS 生成器和一个自动签到应用。<!--more-->
 
