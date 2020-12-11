@@ -1,8 +1,5 @@
 ---
 title: 小伙伴们
-type: friends
-toc:
-  enable: false
 ---
 
 <!-- CSS Code -->
@@ -11,7 +8,9 @@ toc:
 </style>
 <!-- CSS Code End -->
 
-如果您有意交换友情链接，敬请先将本站添加友链，然后在评论区留言，本站目前仅接受个人博客网站的友链申请。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务，并需要支持 https 访问。如需更新信息，请留言回复。本站信息如下：
+如果您有意交换友情链接，敬请先添加本站友链，然后在评论区留言，目前仅接受个人博客申请。为了确保头像显示正确，建议使用 Gravatar 或者 jsDelivr 等服务，并需要支持 https 访问。
+
+请注意，本站将会定期清理长时间无法访问的友链。若由于此原因导致友情链接失效，本站恕不另行通知。如需更新信息，请留言回复。本站信息如下：
 
 {% note info %}
 名称：醉里挑灯赏猫（或 班班碎碎念）
@@ -19,8 +18,6 @@ toc:
 网址：https://blog.dlzhang.com
 标识：https://cdn.v2ex.com/gravatar/cc763511474fe24ffcc80257fb7cb970?size=512
 {% endnote %}
-
-请注意，本站将会定期清理长时间无法访问的友链，请您务必确保域名解析正确、https 证书有效且服务器工作正常。若由于此原因导致友情链接失效，本站恕不另行通知。
 
 {% friendsgrid style:2 shuffle:false %}
 moliu | https://shuxinyang.com | https://cdn.jsdelivr.net/gh/moliusmile/moliusmile.github.io/aboutme/Denise2.jpg | Have the courage to follow your heart and intuition.

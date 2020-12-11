@@ -34,7 +34,7 @@ if (windowPath.indexOf('photos') > 0 ) {
             var begin = (page - 1) * this.offset;
             var end = page * this.offset;
             if (begin >= data.length) return;
-            var html, imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
+            var imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
             for (var i = begin; i < end && i < data.length; i++) {
                 imgNameWithPattern = data[i].split(' ')[1];
                 imgName = imgNameWithPattern.split('.')[0]
