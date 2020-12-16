@@ -16,9 +16,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
-        node-version: '12.x'
+        node-version: '14'
   
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
@@ -33,7 +33,7 @@ jobs:
     - name: Generate Hexo site & Create CDN files
       run: |
         sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
-        yarn build
+        hexo generate
         mkdir cdn
         cp -r public/css cdn/css
         cp -r public/js cdn/js
