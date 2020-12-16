@@ -129,7 +129,7 @@ server:
 # For more information: https://waline.js.org, https://github.com/lizheming/waline
 waline:
   enable: true
-  serverURL: https://walinedash-6gnyek4g54f1eaf7-1256060851.ap-shanghai.service.tcloudbase.com # Waline server address url
+  serverURL: https://waline.dlzhang.com # Waline server address url
   placeholder: 来这里留下你的想法与观点～ # Comment box placeholder
   avatar: wavatar # Gravatar style
   meta: [nick, mail, link] # Custom comment header
