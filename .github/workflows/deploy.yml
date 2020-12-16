@@ -26,8 +26,8 @@ jobs:
     - name: Install dependencies
       run: |
         node -v
-        export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
+        echo "$(yarn global bin)" >> $GITHUB_PATH
         yarn install
 
     - name: Generate Hexo site & Create CDN files
