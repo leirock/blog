@@ -1,7 +1,13 @@
 {# Grid Styles #}
-{% if page.type in ['photos'] %}
-    <script src=" {{url_for(theme.js)+ '/mygrid.min.js' }} "></script>
-    <script src="//cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
+{% if page.type in ['friends', 'photos'] %}
+    <script src="https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
+
+    {% if page.type in ['photos'] %}
+        <script src=" {{url_for(theme.js)+ '/photos.min.js' }} "></script>
+    {% elseif page.type in ['friends'] %}
+        <script src=" {{url_for(theme.js)+ '/friends.min.js' }} "></script>
+    {% endif %}
+
 {% endif %}
 
 {# Comment Locating #}
