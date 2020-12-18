@@ -34,9 +34,8 @@ jobs:
         cp -r public/css cdn/css
         cp -r public/js cdn/js
         cp -r source/images cdn/images
-        cp -r source/live2d cdn/live2d
         touch cdn/README.md && echo "# CDN for my blog" > cdn/README.md
-        rm -rf public/images public/css public/js public/live2d
+        rm -rf public/images public/css public/js
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
