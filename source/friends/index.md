@@ -16,7 +16,7 @@ title: 小伙伴们
 名称：醉里挑灯赏猫（或 班班碎碎念）
 简介：班班的碎碎念（或其他你觉得合适的描述） 
 网址：https://blog.dlzhang.com
-标识：https://cdn.v2ex.com/gravatar/cc763511474fe24ffcc80257fb7cb970?size=512
+标识：https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?size=512
 {% endnote %}
 
 {% friendsgrid style:2 shuffle:false %}
@@ -29,7 +29,7 @@ miyehn | https://miyehn.me/blog | https://i.loli.net/2020/03/08/Gz8eBg1X7Zb6TWn.
 人间白玉楼 | https://www.vksir.zone | https://gallery.vksir.zone/images/2020/03/12/vksir.jpg | 行你所想
 荷戟独彷徨 | https://guanqr.com | https://cdn.jsdelivr.net/gh/guanqr/blog/static/icons/apple-touch-icon.png | 爱光学，爱生活，爱创造
 志军的博客 | https://www.azjhong.com | https://www.azjhong.com/images/hires_3769461-os.png | 简单抒发，快乐分享，感谢遇见
-米米的博客 | https://zhangshuqiao.org | https://cdn.v2ex.com/gravatar/f56980e9dc026727282a04eea02b4f4d?s=256 | 米米的博客！！
+米米的博客 | https://zhangshuqiao.org | https://sdn.geekzu.org/avatar/f56980e9dc026727282a04eea02b4f4d?s=256 | 米米的博客！！
 ZZONN | https://blog.zzonn.com | https://cdn.jsdelivr.net/gh/lcorel/lcorel.github.io/images/avatar2.gif | 记录生活，提高生产力
 Abalone | https://abalone.life | https://abalone.life/avatar | 捣鼓在0与1之间的憨憨
 YD's blog | https://ydchen.cn | https://cdn.ydchen.cn/typora20200628094101.jpg | Delving into knowns and unknowns.

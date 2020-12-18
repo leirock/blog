@@ -60,9 +60,9 @@
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
 "@waline/hexo-next@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-1.0.1.tgz#5c5fa5035864ff158e0d8d870936d8a4034b0b71"
-  integrity sha512-68fvIEm3Pwez/CWjYc05wQB/0pVaKSKJEzjd7/8JoScLnjjCxl8MuTjLMAK3qL6DZ+ar1dCS6twDydG2xBo9Ag==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-1.0.2.tgz#d21e6b26bc1b180b81b3a8a64cf02160759ee8a5"
+  integrity sha512-0Q0ANKJyIF8QRm/zARtmDPLHVlovocy9eoA+BHwHYZRDxVzytz8eJPzbm0xd8HTH6Aog+wh/wt/QdkifL1DGTg==
   dependencies:
     "@next-theme/utils" "^1.1.0"
 

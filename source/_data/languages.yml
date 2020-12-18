@@ -12,6 +12,8 @@ zh-CN:
     posted: 发布：
     in: 分类：
     views: 浏览
+    comments:
+      waline: 评论
   counter:
     tag_cloud:
       other: <i class="fas fa-tags"></i> 目前共计 %d 个标签
