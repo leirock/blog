@@ -1,9 +1,12 @@
 // photos list path
-var imgDataPath = '/photos/photoslist.json'; 
+var imgDataPath = '/photos/photoslist.json';
+
 // photos storage path
-var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';  
+var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';
+
 // max photo number
 var imgMaxNum = 50;
+
 // window width (to decide photo width)
 var windowWidth = window.innerWidth
 || document.documentElement.clientWidth
@@ -13,6 +16,7 @@ if (windowWidth < 768) {
 } else {
     var imageWidth = 210; // photo width
 }
+
 // Tencent Cloud imgage style (based on photo width)
 var imgStyle = '!' + imageWidth + 'x';
 

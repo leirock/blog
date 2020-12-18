@@ -1,8 +1,8 @@
-// friends list path
-var FriendDataPath = 'https://cdn.jsdelivr.net/gh/lei2rock/friends/friendslist.json';
+// friends list repo path
+var FriendDataPath = 'https://cdn.jsdelivr.net/gh/lei2rock/friends';
 
 // generate friends link grid
-var LinkDataPath = FriendDataPath;
+var LinkDataPath = FriendDataPath + '/friendslist.json';
 friend = {
     init: function () {
         var that = this;
@@ -18,7 +18,7 @@ friend = {
             url = data[i].url;
             li += '<div class="card">' +
                     '<a href="' + url + '" target="_blank">' +
-                        '<div class="thumb" style="background: url(https://cdn.jsdelivr.net/gh/lei2rock/friends/logo/' + logo + ');">' + '</div>' +
+                        '<div class="thumb" style="background: url(' + FriendDataPath + '/logo/' + logo + ');">' + '</div>' +
                     '</a>' +
                     '<div class="card-header">' +
                         '<div class="nowrap"><a href="' + url + '" target="_blank">' + name + '</a></div>' +
