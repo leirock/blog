@@ -1,25 +1,136 @@
-{# Grid Styles #}
-{% if page.type in ['friends', 'photos'] %}
-    <script src="https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
-
-    {% if page.type in ['photos'] %}
-        <script src=" {{url_for(theme.js)+ '/photos.min.js' }} "></script>
-    {% elseif page.type in ['friends'] %}
-        <script src=" {{url_for(theme.js)+ '/friends.min.js' }} "></script>
-    {% endif %}
-
+{########################}
+{### Comment Locating ###}
+{########################}
+{% if page.comments or post.comments %}
+<script type="text/javascript">
+if(window.location.hash){
+    var checkExist = setInterval(function() {
+        if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+        }
+    }, 100);
+}
+</script>
 {% endif %}
 
-{# Comment Locating #}
-{% if page.comments or post.comments %}
-    <script type="text/javascript">
-        if(window.location.hash){
-            var checkExist = setInterval(function() {
-                if ($(window.location.hash).length) {
-                    $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-                    clearInterval(checkExist);
-                }
-            }, 100);
+
+{####################}
+{### Friends Grid ###}
+{####################}
+{% if page.type in ['friends'] %}
+<script src="https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
+<script type="text/javascript">
+// friends repo CDN
+var FriendsPath = 'https://cdn.jsdelivr.net/gh/lei2rock/friends';
+// friends list file
+var FriendsList = FriendsPath + '/friendslist.json';
+// friends website logo folder
+var LogoPath = FriendsPath + '/logo/';
+// generate friends link grid
+friend = {
+    init: function () {
+        var that = this;
+        $.getJSON(FriendsList, function (data) {
+            that.render(data);
+        });
+    },
+    render: function (data) {
+        var name, logo, url, li = "";
+        for (var i = 0; i < data.length; i++) {
+            name = data[i].name;
+            logo = data[i].logo;
+            url = data[i].url;
+            li += '<div class="card">' +
+                    '<a href="' + url + '" target="_blank">' +
+                        '<div class="thumb" style="background: url(' + LogoPath + logo + ');">' + '</div>' +
+                    '</a>' +
+                    '<div class="card-header">' +
+                        '<div class="nowrap"><a href="' + url + '" target="_blank">' + name + '</a></div>' +
+                    '</div>' +
+                    '</div>';
         }
-    </script>
+        $(".FriendsGrid").append(li);
+    }
+}
+friend.init();
+</script>
+{% endif %}
+
+
+{###################}
+{### Photos Grid ###}
+{###################}
+{% if page.type in ['photos'] %}
+<script src="https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
+<script type="text/javascript">
+// photos list path
+var imgDataPath = '/photos/photoslist.json';
+
+// photos storage path
+var imgPath = 'https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/photos/';
+
+// max photo number
+var imgMaxNum = 50;
+
+// window width (to decide photo width)
+var windowWidth = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+if (windowWidth < 768) {
+    var imageWidth = 145; // photo width (mobile)
+} else {
+    var imageWidth = 210; // photo width
+}
+
+// Tencent Cloud imgage style (based on photo width)
+var imgStyle = '!' + imageWidth + 'x';
+
+// generate photo grid
+var LinkDataPath = imgDataPath;
+photo = {
+    page: 1,
+    offset: imgMaxNum,
+    init: function () {
+        var that = this;
+        $.getJSON(LinkDataPath, function (data) {
+            that.render(that.page, data);
+        });
+    },
+    render: function (page, data) {
+        var begin = (page - 1) * this.offset;
+        var end = page * this.offset;
+        if (begin >= data.length) return;
+        var imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
+        for (var i = begin; i < end && i < data.length; i++) {
+            imgNameWithPattern = data[i].split(' ')[1];
+            imgName = imgNameWithPattern.split('.')[0]
+            imageSize = data[i].split(' ')[0];
+            imageX = imageSize.split('.')[0];
+            imageY = imageSize.split('.')[1];
+            li += '<div class="card" style="width:' + imageWidth + 'px" >' +
+                    '<div class="ImageInCard" style="height:'+ imageWidth * imageY / imageX + 'px">' +
+                        '<a data-fancybox="gallery" href="' + imgPath + imgNameWithPattern + '" data-caption="' + imgName + '" title="' +  imgName + '">' +
+                            '<img data-src="' + imgPath + imgNameWithPattern + imgStyle + '" src="' + imgPath + imgNameWithPattern + imgStyle + '" data-loaded="true">' +
+                        '</a>' +
+                    '</div>' +
+                    '</div>'
+        }
+        $(".PhotoGrid").append(li);
+        this.minigrid();
+    },
+    minigrid: function() {
+        var grid = new Minigrid({
+            container: '.PhotoGrid',
+            item: '.card',
+            gutter: 12
+        });
+        grid.mount();
+        $(window).resize(function() {
+            grid.mount();
+        });
+    }
+}
+photo.init();
+</script>
 {% endif %}
