@@ -137,4 +137,5 @@ waline:
   lang: zh-cn # Language, available values: en, zh-cn
   # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
   visitor: true # Article reading statistic
+  comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   requiredFields: [nick, mail] # Set required fields: [nick] | [nick, mail]
