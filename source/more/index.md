@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![中国历史文化名村·浦江嵩溪](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/songxi.jpg!600x)
+![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/header.jpg!600x)
 
 {% centerquote %}
 大不自多，海纳江河。

@@ -165,7 +165,7 @@ blockquote p,
 
 /* post-行内代码 */
 code {
-  font-size: 85%;
+  font-size: .85em;
   background: none;
   color: var(--text-color);
 }
@@ -233,7 +233,7 @@ li {
 .pagination .next,
 .pagination .page-number {
   border: none;
-  border-radius: 16px;
+  border-radius: 1em;
 
   &:hover {
     color: white;
@@ -249,13 +249,9 @@ li {
 }
 
 /* footer */
-.footer,
-.footer a {
-  color: var(--blockquote-color);
-}
-
 .footer {
   margin: 20px 0 15px 0;
+  color: var(--blockquote-color);
 }
 
 /************************ Overview *************************/
@@ -338,9 +334,4 @@ li {
 .veditor:focus {
 	background-position-y: 200px !important;
 	transition: all 0.2s ease-in-out 0s !important;
-}
-
-/* comment-评论系统 */
-.vpower {
-  display: none !important;  
 }
