@@ -32,8 +32,6 @@ i18n_dir: :lang
 skip_render:
   - README.md
   - 404.html
-  - js/**
-  - live2d/**
 
 # Writing
 new_post_name: :year/:title.md # File name of new posts
