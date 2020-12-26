@@ -6,7 +6,7 @@ pid: 47
 date: 2020-04-15 19:45:00
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/47/live2d.png!600x)
+![](https://website-1256060851.file.myqcloud.com/posts/47/live2d.png!600x)
 
 在服务器上部署 Hexo 静态博客有两种方案，一是直接把源代码推送到服务器上，然后在服务器上安装 Node.js 和 hexo-cli，从而直接在服务器上构建网页文件并部署；二是依旧按照之前部署到对象存储的方案，用 GitHub 作为源代码托管，然后用 GitHub Actions 构建网页文件，再同步到服务器的网站根目录下。<!--more-->这里，我选择后一种方案，这样修改的地方比较少，也比较方便。
 

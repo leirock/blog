@@ -6,7 +6,7 @@ pid: 33
 date: 2018-06-15 21:24:43
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/33/battery.png!600x)
+![](https://website-1256060851.file.myqcloud.com/posts/33/battery.png!600x)
 
 刚才发现我的 MacBook Pro 电池显示「Battery is not charging」，而且电量也从100%下降到了92%，不过依然是显示「Power Source: Power Adapter」。<!--more-->
 
