@@ -6,7 +6,7 @@ pid: 49
 date: 2020-04-15 23:30:50
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/docker.png!600x)
+![](https://website-1256060851.file.myqcloud.com/posts/49/docker.png!600x)
 
 使用宝塔面板下部署 Docker 应用还是挺容易的，首先需要安装 Docker 管理器。不过这个管理器在 Safari 浏览器中似乎有 bug，无法进行点击操作，但是在 Chrome 浏览器中可以正常操作。本文将通过这个 Docker 管理器来安装 RSSHub 这一 RSS 生成器和一个自动签到应用。<!--more-->
 
@@ -18,11 +18,11 @@ date: 2020-04-15 23:30:50
 
 首先，打开 Docker 管理器，在「镜像管理」中获取官方库镜像 `diygod/rsshub`。
 
-![获取镜像](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/docker_mirror.jpg!500x)
+![获取镜像](https://website-1256060851.file.myqcloud.com/posts/49/docker_mirror.jpg!500x)
 
 然后，在「容器列表」创建新的 Docker 容器：
 
-![创建 RSSHub 容器](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/rsshub_docker.jpg!400x)
+![创建 RSSHub 容器](https://website-1256060851.file.myqcloud.com/posts/49/rsshub_docker.jpg!400x)
 
 这里我们设置了：
 
@@ -39,7 +39,7 @@ git clone https://github.com/diygod/rsshub.git rsshub
 
 最后，设置反向代理，以便我们可以通过域名来访问该服务：
 
-![反向代理](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/49/reverse_proxy.jpg!500x)
+![反向代理](https://website-1256060851.file.myqcloud.com/posts/49/reverse_proxy.jpg!500x)
 
 这样，我们的 RSSHub 就完成了搭建，具体的配置和路由可以参见 [RSSHub 文档](https://docs.rsshub.app)。
 
