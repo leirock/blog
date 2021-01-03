@@ -133,9 +133,11 @@ waline:
   avatarCDN: https://sdn.geekzu.org/avatar/
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
-  lang: zh-CN # Language, available values: en, zh-CN
   # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
   visitor: true # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   requiredFields: [nick, mail] # Set required fields: [nick] | [nick, mail]
   libUrl: # Set custom library cdn url
+  lang: zh-CN # Language, available values: en, zh-CN
+  langMode: 
+    admin: '可爱的博主'
