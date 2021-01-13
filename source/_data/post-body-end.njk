@@ -18,7 +18,7 @@
                 <i class="fas fa-fw fa-feather"></i>
             </span>
             {%- if post.origin_url %}
-                本文发表于<a target="_blank" rel="noopener" href="{{ post.origin_url }}" data-pjax-state="" style="color:var(--blockquote-color)"> {{ post.origin }} </a>
+                <span class="post-end-item-text">本文发表于 <a target="_blank" rel="noopener" href="{{ post.origin_url }}" data-pjax-state="" style="color:var(--blockquote-color)">{{ post.origin }}</a> </span>
             {% else %}
                 <span class="post-end-item-text">本文发表于 {{ post.origin }} </span>
             {%- endif %}
