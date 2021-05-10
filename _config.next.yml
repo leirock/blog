@@ -199,8 +199,3 @@ local_search:
 
 motion:
   enable: false
-
-#Assets
-css: https://cdn.jsdelivr.net/gh/lei2rock/CDN/css
-js: https://cdn.jsdelivr.net/gh/lei2rock/CDN/js
-images: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images

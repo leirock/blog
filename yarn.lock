@@ -59,10 +59,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
   integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
 
-"@waline/hexo-next@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-2.0.5.tgz#0b1db8d197645139d1b7c9e4919e1ce45f15e484"
-  integrity sha512-20/D4NEVB+pwIglPO9ZtxDQO9LV8wkOcMZrtqtelnS33BOaBFFhBqV/CFkT+s1VXAKBOs81jpmKKOBqe5Z4JMg==
+"@waline/hexo-next@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-1.0.8.tgz#444150b927fecdc29dcbfe201c796013b0d23c09"
+  integrity sha512-HmBVMjv52MyjGIsXPQlFFDrLK1DiF5ilmy70whgEsstkxFZCVmdlqlRSN42mH1X0a8GtHbMWWhF9+dccCaqofw==
   dependencies:
     "@next-theme/utils" "^1.1.0"
 
@@ -1523,10 +1523,10 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@^8.0.2:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.4.0.tgz#dc0887fea7da97c9507574045a45d46ecc6ad6b5"
-  integrity sha512-deqog5urkCC8uJ9g47bA3vFRJtgHlunKUyJlJWmPHtp4r8CaAa1plhspTV2EZHnZBowYcbBsDJ25xkjzhUZgUA==
+hexo-theme-next@8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.3.0.tgz#4078d4bbde9f300234f4bd6e2dcd30c4913a1a54"
+  integrity sha512-6JnAzQhnnqlDqA3FCinFJOl9Sp3+vRBG9BWeREq23L1vcI5OgkSNAeRDRwWaIULf4wesHF99HDtwBwFei6Mz+A==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.5.0"
