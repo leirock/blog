@@ -132,7 +132,7 @@ hexo.on('new', function(data){
 
 ```sh
 cd <blog-path>  #定位到 Hexo 博客目录
-git clone https://github.com/theme-next/hexo-theme-next /themes/next
+git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
 另一种是通过添加子模块的方法载入主题文件：
