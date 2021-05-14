@@ -19,10 +19,10 @@ if [ "$answer" == "" ]; then
 	echo " "
 	printf "\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
-#	sed -i "" '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
+#	sed -i "" '41s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
 	hexo s
 	hexo clean
-#	sed -i "" '26s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' node_modules/hexo-theme-next/source/js/utils.js
+#	sed -i "" '41s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' node_modules/hexo-theme-next/source/js/utils.js
 	echo " "
 	exec ${HexoPath}/hexo.sh
 else
