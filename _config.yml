@@ -139,7 +139,7 @@ waline:
   lang: zh-CN # Language, available values: en, zh-CN
   placeholder: 填写昵称、邮箱即可留下你的观点与想法，邮件通知新回复。 # Comment box placeholder
   langMode: 
-    admin: 可爱的博主
+    admin: 博主
     nick: 昵称（必填）
     mail: 邮箱（必填）
     link: 网址（http:// 选填）

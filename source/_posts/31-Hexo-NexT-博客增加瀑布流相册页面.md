@@ -4,12 +4,12 @@ categories: [科技树]
 tags: [JavaScript, Hexo]
 pid: 31
 date: 2018-06-11 12:24:01
-update: 2020-10-27 23:30:00
+update: 2021-05-14 23:30:00
 ---
 
 ![](https://website-1256060851.file.myqcloud.com/posts/31/album.jpg!600x)
 
-要展示自己拍摄的照片，可以给博客添加一个瀑布流的相册页面。本文适用于 Hexo 4.2.0 / NexT 7.8.0，参考了 [asdfv1929 的方法](https://asdfv1929.github.io/2018/05/26/next-add-photos/)。<!--more-->
+要展示自己拍摄的照片，可以给博客添加一个瀑布流的相册页面。本文适用于 Hexo 5.4.0 / NexT 8.3.0，最新的实现代码可以查看我的 [GitHub](https://github.com/lei2rock/PhotoGallery/)。<!--more-->
 
 ## 1. json 文件处理图片信息
 

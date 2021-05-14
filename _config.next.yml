@@ -50,7 +50,6 @@ menu:
     tags: tags/ || fas fa-tags
     sharelist: /sharelist/ || fas fa-list-ul
     timeline: timeline/ || fas fa-stream
-  photos: /photos/ || fas fa-camera-retro
   more: /more/ || fas fa-location-arrow
   friends: friends/ || fas fa-heart
 

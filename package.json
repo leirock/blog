@@ -9,7 +9,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "@waline/hexo-next": "^1.0.8",
+    "@waline/hexo-next": "^2.0.5",
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",
     "hexo-generator-archive": "^1.0.0",
@@ -23,6 +23,6 @@
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-theme-next": "8.3.0"
+    "hexo-theme-next": "^8.4.0"
   }
 }
