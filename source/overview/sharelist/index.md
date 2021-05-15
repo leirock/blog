@@ -5,7 +5,9 @@ comments: false
 
 　<i class="fas fa-book-open"></i> [阅读书单](/posts/51/)
 
-　<i class="fas fa-video"></i> [人文与社会纪实纪录片](/posts/52/)
+　<i class="fas fa-film"></i> [人文与社会纪实纪录片](/posts/52/)
+
+　<i class="fas fa-video"></i> [经典影视综艺](/posts/26/)
 
 　<i class="fas fa-laptop-code"></i> [实用软件应用](/posts/24/)
 
