@@ -137,9 +137,9 @@ waline:
   visitor: true # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   lang: zh-CN # Language, available values: en, zh-CN
-  placeholder: 填写昵称、邮箱即可留下你的观点与想法，邮件通知新回复。 # Comment box placeholder
+  placeholder: 在这里分享你的观点与想法～ 昵称、邮箱必填，邮件通知回复。 # Comment box placeholder
   langMode: 
     admin: 博主
-    nick: 昵称（必填）
-    mail: 邮箱（必填）
-    link: 网址（http:// 选填）
+    nick: 昵称*
+    mail: 邮箱*
+    link: 网址（http://）
