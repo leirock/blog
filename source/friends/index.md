@@ -10,6 +10,6 @@ comments: false
 </style>
 <!-- CSS Code End -->
 
-如果想要自己的网站出现在这个页面上（或者更新相关信息），请先阅读 <i class="fab fa-fw fa-github"></i>  [Lei2Rock/Friends](https://github.com/lei2rock/friends) 这个 GitHub 仓库的 README，符合条件的话，就可以按照要求申请交换友链啦！
+如果想要交换友链，或者更新相关的信息，请先阅读 [交换友链说明](https://github.com/lei2rock/friends) 。如果符合条件，就可以按照其要求申请交换友链。
 
 <div class="links-content"><div class="FriendsGrid"></div></div>
