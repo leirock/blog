@@ -27,7 +27,7 @@ custom_file_path:
 scheme: Gemini
 darkmode: true
 # Color style: Day of Mourning
-gray: false
+gray: true
 
 # ---------------------------------------------------------------
 # Site Information Settings
