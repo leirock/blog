@@ -16,8 +16,8 @@ zh-CN:
       waline: 评论
   counter:
     tag_cloud:
-      other: <i class="fas fa-tags"></i> 目前共计 %d 个标签
+      other: <i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签
     categories:
-      other: <i class="fas fa-th"></i> 目前共计 %d 个分类
+      other: <i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类
   state:
     posts: 文章
