@@ -28,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: yarn install
 
-    - name: Generate Hexo site & Create CDN files
+    - name: Generate Hexo site
       run: |
         sed -i '41s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
         yarn build
