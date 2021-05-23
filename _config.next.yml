@@ -27,17 +27,17 @@ custom_file_path:
 scheme: Gemini
 darkmode: true
 # Color style: Day of Mourning
-gray: true
+gray: false
 
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images/favicon-16x16.png
-  medium: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images/favicon-32x32.png
-  apple_touch_icon: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images/apple-touch-icon.png
-  safari_pinned_tab: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images/safari-pinned-tab.svg
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/safari-pinned-tab.svg
 
 # ---------------------------------------------------------------
 # Menu Settings

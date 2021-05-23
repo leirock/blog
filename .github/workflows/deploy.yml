@@ -20,7 +20,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '15.x'
+        node-version: '15.14.0'
   
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
