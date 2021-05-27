@@ -8,11 +8,11 @@ origin: 知乎 Live
 origin_url: https://www.zhihu.com/lives/922106856669868032
 ---
 
-## Live 简介
+## 一、Live 简介
 
 来香港学习之后，常有人向我咨询香港留学的情况，但很多是较为具体的问题，所以给出的相关建议和看法很难有普遍性。我在知乎、寄托论坛等地方也写过一些申请总结，不过这些很大程度上是我自己的申请过程总结。因此希望通过本次 Live，可以向你介绍一些我总结的申请香港商科与经济学研究生项目的经验以及常见问题，也谈谈在香港研究生学习生活的情况。<!--more-->
 
-## 内容大纲
+## 二、内容大纲
 
 ### 1. 概况
 
@@ -38,3 +38,7 @@ origin_url: https://www.zhihu.com/lives/922106856669868032
   - Research Assistant 职位与 MSc 深造
   - 博士生的科研、助教工作（TA）与日常
   - 七年之后：留港还是回去
+
+## 三、讲座录音
+
+  <iframe src="//player.bilibili.com/player.html?aid=803251607&bvid=BV1Cy4y1g78Q&cid=345033679&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
