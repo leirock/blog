@@ -1524,9 +1524,9 @@ hexo-server@^2.0.0:
     serve-static "^1.14.1"
 
 hexo-theme-next@^8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.4.0.tgz#dc0887fea7da97c9507574045a45d46ecc6ad6b5"
-  integrity sha512-deqog5urkCC8uJ9g47bA3vFRJtgHlunKUyJlJWmPHtp4r8CaAa1plhspTV2EZHnZBowYcbBsDJ25xkjzhUZgUA==
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.5.0.tgz#74bb34c3d2481d36bc5b1877bfc6104f4ac3484c"
+  integrity sha512-QqUiOiz+z2PbxL+f0Osgwd0BH7FkSb3F7QoSTS+IE+SIhXlJgW4gjlvfjYkZDC0/n4lGb7n7skco9vgMJTtxeQ==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.5.0"
@@ -2073,10 +2073,15 @@ micromatch@^4.0.2:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mime-db@1.47.0, "mime-db@>= 1.43.0 < 2", mime-db@^1.28.0:
+mime-db@1.47.0:
   version "1.47.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.47.0.tgz#8cb313e59965d3c05cfbf898915a267af46a335c"
   integrity sha512-QBmA/G2y+IfeS4oktet3qRZ+P5kPhCKRXxXnQEudYqUaEioAU1/Lq2us3D/t1Jfo4hE9REQPrbB7K5sOczJVIw==
+
+"mime-db@>= 1.43.0 < 2", mime-db@^1.28.0:
+  version "1.48.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
+  integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
 
 mime-types@~2.1.24:
   version "2.1.30"

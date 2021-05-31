@@ -30,7 +30,6 @@ category_dir: overview
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - README.md
   - 404.html
 
 # Writing
