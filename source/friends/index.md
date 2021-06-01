@@ -10,6 +10,6 @@ comments: false
 </style>
 <!-- CSS Code End -->
 
-如果想要交换友链，或者更新相关的信息，请先阅读 [交换友链说明](https://github.com/lei2rock/friends) 。如果符合条件，就可以按照其要求申请交换友链。
+如果想要交换友链，或者更新相关的信息，请先阅读[交换友链说明](https://github.com/lei2rock/friends) 。如果符合条件，就可以按照其要求申请交换友链。
 
 <div class="links-content"><div class="FriendsGrid"></div></div>

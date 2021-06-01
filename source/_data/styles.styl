@@ -325,6 +325,11 @@ li {
   border-radius: $myradius !important;
 }
 
+/* comment-评论超链接下划线 */
+.comments a {
+  border-bottom: none;  
+}
+
 /* comment-输入框背景图片 */
 .veditor {
 	background-image: url($comment-bg-url) !important;
@@ -339,4 +344,30 @@ li {
 .vcontent img[src^="https://img.t.sinajs.cn"] {
   width: 1.2em !important;
   display: inline !important;
+}
+
+/* comment-输入框黑暗模式 */
+@media (prefers-color-scheme: dark) {
+  body {
+    --waline-text-color: $text-color-dark !important;
+    --waline-bgcolor: $myblue-deep !important;
+    --waline-bgcolor-light: $myblue-deeper !important;
+  }
+}
+
+/* comment-登录按钮 */
+.v[data-class=v] .vbtn:hover {
+    border-color: $btn-default-hover-bg !important;
+    color: $btn-default-hover-bg !important;
+}
+
+/* comment-评论提交按钮 */
+.v[data-class=v] .vbtn.primary {
+  color: white !important;
+  border-color: $btn-default-bg !important;
+  background: $btn-default-bg !important;
+  &:hover {
+    border-color: $btn-default-hover-bg !important;
+    background: $btn-default-hover-bg !important;
+  }
 }
