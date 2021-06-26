@@ -1,6 +1,6 @@
 [![Generator Hexo](https://img.shields.io/badge/Generator-Hexo-blue?style=flat-square&logo=hexo)](https://hexo.io)
 [![Theme NexT](https://img.shields.io/badge/Theme-NexT-black?&style=flat-square&logo=github)](https://github.com/next-theme/hexo-theme-next)
-[![Build Status](https://img.shields.io/github/workflow/status/lei2rock/Blog/Blog@lei2rock?&label=GitHub+Actions&style=flat-square&logo=gitHub+actions)](https://github.com/lei2rock/Blog/actions?query=workflow%3ABlog@lei2rock)
+[![Build Status](https://img.shields.io/github/workflow/status/lei2rock/Blog/Deploy?&label=GitHub+Actions&style=flat-square&logo=gitHub+actions)](https://github.com/lei2rock/Blog/actions?query=workflow%3ADeploy)
 
 This repository contains all source files of my Hexo blog.
 
