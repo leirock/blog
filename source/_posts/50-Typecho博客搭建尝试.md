@@ -7,7 +7,7 @@ date: 2020-04-30 17:00:00
 update: 2020-10-27 19:00:00
 ---
 
-![](https://website-1256060851.file.myqcloud.com/posts/50/typecho-handsome.png!600x)
+![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/typecho-handsome.png!600x)
 
 拥有一台自己的服务器之后就尝试搞一个动态博客了，毕竟有后台管理会方便很多。看到 Typecho 原生支持 Markdown，而且有一个很漂亮、功能强大的主题 Handsome，就决定尝试将我的 Hexo 博客迁移到 Typecho  Handsome 了。<!--more-->
 
@@ -248,7 +248,7 @@ Handsome 开发者提供了一个微信公众号发布的渠道，但是这样�
 
 2. 在安装该服务前，我们需要先去微信公众号后台获取必要的设置参数。在微信公众号后台「开发-基本配置」处获取 AppID 和 AppSecret。然后我们参照微信公众号的[文档](https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html)，使用刚才获得的两个参数在 [微信公众平台接口调试工具](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=基础支持&form=获取access_token接口%20/token) 获取 `access_token`。
 
-   ![服务器配置](https://website-1256060851.file.myqcloud.com/posts/50/wechat-channel-server.jpg!600x)
+   ![服务器配置](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/wechat-channel-server.jpg!600x)
 
 3. 接下来回到微信公众号后台「开发-基本配置」处启用服务器配置。服务器地址（URL）填写为「项目域名/server.php」；令牌（Token）就是第二步得到的 `access_token`；消息加解密密钥（EncodingAESKey）可以随机生成但是一定要记录，因为我们还需要在项目安装时候填写；消息加解密方式可以选择「安全模式」。因为还没有在服务器上安装，所以先不要提交，放一边，进入下一步。
 
