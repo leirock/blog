@@ -7,8 +7,6 @@ date: 2018-06-13 04:21:54
 update: 2020-12-03 17:33:00
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/32/douban-zhihu.jpg!600x)
-
 因为 Hexo NexT 原始主题是采用了 Font Awesome 图标，并未包含如知乎、豆瓣这类中国大陆的社交网站图标。所以需要加入另一种图标的支持，使得博客可以显示出知乎、豆瓣这类的图标。<!--more-->
 
 - 感谢评论区 jqgsninimo 提供的改进，方法更佳简单明了，本文已经更新该方法。 
