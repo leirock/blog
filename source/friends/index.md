@@ -10,6 +10,6 @@ comments: false
 </style>
 <!-- CSS Code End -->
 
-如果想要交换友链，或者更新相关的信息，请先阅读[交换友链指南](guide/)。
+如果想要交换友链，或者更新相关的信息，请先阅读[交换友链指南](guide)。
 
 <div class="links-content"><div class="FriendsGrid"></div></div>
