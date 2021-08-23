@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/header.jpg!600x)
+![曲院风荷](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/header.jpg!650x)
 
 {% centerquote %}
 大不自多，海纳江河。
@@ -12,6 +12,7 @@ toc:
 形上谓道兮，形下谓器。
 礼主别异兮，乐主和同。
 知其不二兮，尔听斯聪。
+<p style="text-align:right">——马一浮《浙江大学校歌》</p>
 {% endcenterquote %}
 
 　　我是班班，欢迎访问我的博客。希望可以通过这个平台分享自己的一些生活日常、观点和想法。
