@@ -7,12 +7,10 @@ toc:
 ![曲院风荷](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/header.jpg!650x)
 
 {% centerquote %}
-大不自多，海纳江河。
-惟学无际，际于天地。
-形上谓道兮，形下谓器。
-礼主别异兮，乐主和同。
-知其不二兮，尔听斯聪。
-<p style="text-align:right">——马一浮《浙江大学校歌》</p>
+无曰已是，无曰遂真。
+靡革匪因，靡故匪新。
+何以新之，开物前民。
+嗟尔髦士，尚其有闻。
 {% endcenterquote %}
 
 　　我是班班，欢迎访问我的博客。希望可以通过这个平台分享自己的一些生活日常、观点和想法。
@@ -23,14 +21,9 @@ toc:
 
 　　欢迎您通过[<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@lei2rock) 或者[<font color=#0070ba><i class="fab fa-fw fa-paypal"></i>Paypal</font>](https://paypal.me/lei2rock)支持我更好地创作。
 
-### 订阅本站
-
-　<i class="fas fa-fw fa-rss"></i> [RSS](/atom.xml)
-　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">公众号：班班碎碎念</a>
-
 ### 在这里发现更多
 
-　<i class="fas fa-fw fa-envelope"></i> lei2rock (at) outlook.com
+　<i class="fas fa-fw fa-envelope"></i> lei2rock@outlook.com
 　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/7216640993)
-　<i class="fa-fw czs-bilibili"></i> [哔哩哔哩](https://space.bilibili.com/7454906)
+　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">公众号</a>
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/lei2rock)
