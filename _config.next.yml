@@ -64,11 +64,10 @@ avatar:
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
-site_state: true
+site_state: false
 
 social:
   微博: https://weibo.com/7216640993 || fab fa-weibo
-  哔哩哔哩: https://space.bilibili.com/7454906 || czs-bilibili
   GitHub: https://github.com/lei2rock || fab fa-github
   RSS: /atom.xml || fas fa-rss
 

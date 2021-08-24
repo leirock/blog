@@ -15,9 +15,9 @@ comments: false
 
 ### 2.1 将本站添加到自己的友链中
 你可以使用以下的信息：
-  - 名称：`醉里挑灯赏猫` 或 `班班碎碎念`
-  - 链接：`https://dlzhang.com` 或 `https://blog.dlzhang.com`
-  - 简介：`班班的碎碎念` 或 `无曰已是 无曰遂真`
+  - 名称：`醉里挑灯赏猫` 或 `班班碎碎念`，二选一
+  - 链接：`https://blog.dlzhang.com`
+  - 简介：`靡革匪因 靡故匪新`
   - Logo 标识
     - https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?size=512
     - 你可以自行修改链接中 `size=` 后面的数值来调整标识大小

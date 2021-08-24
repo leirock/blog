@@ -4,8 +4,8 @@
 
 # Site
 title: 醉里挑灯赏猫
-subtitle: 班班的碎碎念
-description: '美食/夜猫子/纪录片/文明VI'
+subtitle: ''
+description: '靡革匪因 靡故匪新'
 keywords: [班班, 醉里挑灯赏猫, 博客, blog]
 author: 班班
 language: zh-CN
@@ -123,7 +123,7 @@ server:
   ip: 127.0.0.1
 
 # Waline
-# For more information: https://waline.js.org, https://github.com/lizheming/waline
+# For more information: https://waline.js.org
 waline:
   enable: true
   serverURL: https://waline.dlzhang.com # Waline server address url
