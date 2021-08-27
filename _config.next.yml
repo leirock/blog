@@ -48,7 +48,6 @@ menu:
   overview: 
     default: /overview/ || fas fa-archive
     tags: tags/ || fas fa-tags
-    sharelist: /sharelist/ || fas fa-list-ul
     timeline: timeline/ || fas fa-stream
   more: /more/ || fas fa-location-arrow
   friends: friends/ || fas fa-heart

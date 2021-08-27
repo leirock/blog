@@ -4,7 +4,6 @@ zh-CN:
     home: 博客首页
     overview: 文章总览
     timeline: 时间轴
-    sharelist: 清单
     more: 关于更多
     friends: 小伙伴们
     search: 全站搜索
@@ -16,8 +15,10 @@ zh-CN:
       waline: 评论
   counter:
     tag_cloud:
-      other: <i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签
+      other: '<i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签'
     categories:
-      other: <i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类
+      other: '<i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类'
+    archive_posts:
+      other: '目前共计 %d 篇文章。'
   state:
     posts: 文章

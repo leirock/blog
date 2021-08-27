@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@next-theme/utils@^1.1.0":
+"@next-theme/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@next-theme/utils/-/utils-1.2.0.tgz#b062f56d768c7722ab878bf93afd0172d89d76b0"
   integrity sha512-SQcN24NC+aRSA+Lx3iw5kBjJrGhBUy922tkB8IcMGtzxwvRJmTNSqt+tknFpdV8bHLBav0UGU8HuXgCui05RNg==
@@ -60,16 +60,16 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "16.7.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.1.tgz#c6b9198178da504dfca1fd0be9b2e1002f1586f0"
-  integrity sha512-ncRdc45SoYJ2H4eWU9ReDfp3vtFqDYhjOsKlFFUDEn8V1Bgr2RjYal8YT5byfadWIRluhPFU6JiDOl0H6Sl87A==
+  version "16.7.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.4.tgz#68a9384694af63ceab8848e95d76d9a3519e84b6"
+  integrity sha512-25QXpDsTiDnl2rZGUenagVMwO46way8dOUdvoC3R3p+6TrbpxeJBo/v87BEG1IHI31Jhaa8lPeSHcqwxsVBeYQ==
 
 "@waline/hexo-next@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-2.0.5.tgz#0b1db8d197645139d1b7c9e4919e1ce45f15e484"
-  integrity sha512-20/D4NEVB+pwIglPO9ZtxDQO9LV8wkOcMZrtqtelnS33BOaBFFhBqV/CFkT+s1VXAKBOs81jpmKKOBqe5Z4JMg==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@waline/hexo-next/-/hexo-next-2.0.6.tgz#169e673d097d74e7fb11ff8e176ffde288f3e1c5"
+  integrity sha512-JOAkBFQoRBbThdBfM2lfZehT9fVTRxiOL2ieEAq3zIHW7L05piZj6F7kw1orxtw35ObI31oiTHfLRdtvDtJEng==
   dependencies:
-    "@next-theme/utils" "^1.1.0"
+    "@next-theme/utils" "^1.2.0"
 
 JSONStream@^1.0.7:
   version "1.3.5"
