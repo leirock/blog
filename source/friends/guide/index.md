@@ -32,7 +32,7 @@ comments: false
   - 长度应小于 16 个半角字符或 8 个全角字符，否则在展示时可能会被截断
 
 ### 2.3 提交申请
-- Fork [<i class="fab fa-fw fa-github"></i>友链代码仓库](https://github.com/lei2rock/Friends)（如果无法使用 GitHub，可以在[关于更多页面](/more)评论区留下上述信息）；
+- Fork [<i class="fab fa-fw fa-github"></i>友链代码仓库](https://github.com/leirock/friends)（如果无法使用 GitHub，可以在[关于更多页面](/more)评论区留下上述信息）；
 - 在仓库 `src/logo` 文件夹下添加 Logo 图片；
   - 文件名格式为 `[domain].[format]`，如 `example.com.png`，`blog.example.com.jpg`
 - 按照如下格式将网站信息添加到仓库 `src/friendslists.yml` 文件中：

@@ -66,8 +66,8 @@ avatar:
 site_state: false
 
 social:
-  微博: https://weibo.com/7216640993 || fab fa-weibo
-  GitHub: https://github.com/lei2rock || fab fa-github
+  微博: https://weibo.com/leirock || fab fa-weibo
+  GitHub: https://github.com/leirock || fab fa-github
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
