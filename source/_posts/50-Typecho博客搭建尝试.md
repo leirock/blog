@@ -15,7 +15,7 @@ update: 2020-10-27 19:00:00
 
 ### 1.1 自定义样式
 
-主要的自定义工作我都通过加入自定义 CSS 和 JS 文件来完成了，具体代码可以参考我的 GitHub 项目 [Typecho-Assets](https://github.com/lei2rock/Typecho-Assets) 和 [BanbanStyle 插件](https://github.com/lei2rock/Typecho-Plugin-BanbanStyle)。其中包含了比如随机彩色标签云、中英文字符件自动添加空格（pangu.js）、macOS 风格代码框、今日诗词、看板娘组件等等。
+主要的自定义工作我都通过加入自定义 CSS 和 JS 文件来完成了，具体代码可以参考我的 GitHub 项目 [Typecho-Assets](https://github.com/leirock/Typecho-Assets) 和 [BanbanStyle 插件](https://github.com/leirock/Typecho-Plugin-BanbanStyle)。其中包含了比如随机彩色标签云、中英文字符件自动添加空格（pangu.js）、macOS 风格代码框、今日诗词、看板娘组件等等。
 
 有几个样式或功能还需要一点点额外的配置：
 
@@ -146,7 +146,7 @@ g = g.replace(/![0-9]{3,}x/,"");
 
 ```bash
 #!/usr/bin/env bash
-# by @lei2rock
+# by @leirock
 # Valine to Typecho
 # 2020-04-22
 
@@ -212,26 +212,16 @@ UPDATE typecho_contents t1 SET t1.commentsNum = (select count(*) from typecho_co
 
 ## 3. 插件介绍
 
-介绍一下自己在用的插件，也推荐了一些其他不错的插件，都是在 GitHub 上开源免费的插件。
-
-### 3.1 在使用的插件
 
 | 插件                                                         | 介绍                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [BanbanStyle](https://github.com/lei2rock/Typecho-Plugin-BanbanStyle) | 为我自己的博客设置而开发的插件，功能见 GitHub 项目介绍       |
-| [CommentToMail](https://github.com/JoyChou93/CommentToMail)  | 评论邮件通知，可以参考我的邮件模板：[通知博主](https://github.com/lei2rock/Typecho-Assets/plugins/CommentToMail/owner.html)、[通知访客](https://github.com/lei2rock/Typecho-Assets/plugins/CommentToMail/guest.html) |
+| [CommentToMail](https://github.com/JoyChou93/CommentToMail)  | 评论邮件通知 |
 | Handsome                                                     | Handsome 主题配套插件                                        |
 | [Sitemap](https://github.com/bayunjiang/typecho-sitemap)     | 自动生成网站地图                                             |
 | [cosUploadV5](https://github.com/dishcheng/cosUploadV5)      | 上传文件、图片到腾讯云对象存储并提供链接                     |
-| [MemorialDay](https://github.com/lei2rock/Typecho-Plugin-MemorialDay) | 自己开发的哀悼日开启全站黑白滤镜                             |
-
-### 3.2 其他推荐的插件
-
-| 插件                                                         | 介绍                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [MemorialDay](https://github.com/leirock/Typecho-Plugin-MemorialDay) | 自己开发的哀悼日开启全站黑白滤镜                             |
 | [Comment2Wechat](https://github.com/YianAndCode/Comment2Wechat) | 评论推送至微信，依托 Server 酱实现                           |
 | [Comment2Telegram](https://github.com/MoeLoli/Comment2Telegram) | 评论推送至 Telegram，支持回复评论、通过评论、垃圾评论和删除评论 |
-| [macOScode](https://github.com/lei2rock/Typecho-Plugin-macOScode) | 自己开发的实现 macOS 风格代码框，应该只适配 Handsome 主题    |
 | [EditorMD](https://github.com/DT27/EditorMD)                 | 比原生更好用的 Markdown 编辑器（可以只使用编辑器功能）       |
 
 ## 4. Handsome 主题时光机
@@ -246,7 +236,7 @@ Handsome 开发者提供了一个微信公众号发布的渠道，但是这样�
 
 2. 在安装该服务前，我们需要先去微信公众号后台获取必要的设置参数。在微信公众号后台「开发-基本配置」处获取 AppID 和 AppSecret。然后我们参照微信公众号的[文档](https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html)，使用刚才获得的两个参数在 [微信公众平台接口调试工具](https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=基础支持&form=获取access_token接口%20/token) 获取 `access_token`。
 
-   ![服务器配置](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/wechat-channel-server.jpg!600x)
+![服务器配置](https://website-1256060851.cos.ap-hongkong.myqcloud.com/posts/50/wechat-channel-server.jpg!600x)
 
 3. 接下来回到微信公众号后台「开发-基本配置」处启用服务器配置。服务器地址（URL）填写为「项目域名/server.php」；令牌（Token）就是第二步得到的 `access_token`；消息加解密密钥（EncodingAESKey）可以随机生成但是一定要记录，因为我们还需要在项目安装时候填写；消息加解密方式可以选择「安全模式」。因为还没有在服务器上安装，所以先不要提交，放一边，进入下一步。
 
