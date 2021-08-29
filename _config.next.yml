@@ -45,10 +45,11 @@ favicon:
 
 menu:
   home: / || fas fa-home
-  overview: 
-    default: /overview/ || fas fa-archive
-    tags: tags/ || fas fa-tags
-    timeline: timeline/ || fas fa-stream
+  overview: /overview/ || fas fa-archive
+#  overview: 
+#    default: /overview/ || fas fa-archive
+#    tags: tags/ || fas fa-tags
+#    timeline: timeline/ || fas fa-stream
   about: /about/ || fas fa-location-arrow
   friends: friends/ || fas fa-heart
 

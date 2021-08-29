@@ -1,34 +1,46 @@
 #!/bin/sh
-echo "========================================================================================"
-echo "                                      Hexo Debug Menu"
-echo " "
-echo "                                       by @leirock"
-echo "========================================================================================"
 HexoPath=$(cd "$(dirname "$0")"; pwd)
 cd ${HexoPath}
-echo " "
-printf "\033[32mBlog 根目录："${HexoPath}"\033[0m"
-echo " "
-echo " "
-printf "按回车开始本地预览"
-echo " "
-echo " "
-printf "选择："
+function hexo_server(){
+	function open_url(){
+		sleep 2
+		open http://127.0.0.1:4000/
+	}
+    open_url &
+    hexo server
+	hexo clean
+}
+clear
+echo '==================== Hexo Utilities ===================='
+printf "常用:\n"
+printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
+printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 's' '(hexo server)' '预览并打开浏览器'
+printf "\n默认回车：只加载预览不打开浏览器\n"
+printf "\n\033[32mHexo 根目录："${HexoPath}"\033[0m\n"
+echo '--------------------------------------------------------'
+printf "\n选择："
 read answer
-if [ "$answer" == "" ]; then
-	echo " "
-	printf "\033[32mINFO \033[0m 启动本地预览...\n"
+if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
+	printf "\n\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
 #	sed -i "" '41s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
-	hexo s
-	hexo clean
+	if [ "$answer" == "" ]; then
+		hexo server
+		hexo clean
+	else
+		hexo_server
+	fi
 #	sed -i "" '41s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' node_modules/hexo-theme-next/source/js/utils.js
 	echo " "
 	exec ${HexoPath}/hexo.sh
 else
-	echo " "
-	printf "\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
-	sleep 1s
-	echo " "
-	exec ${HexoPath}/hexo.sh
+	if [ "$answer" == "u" ]; then
+		printf "\n\033[32mINFO \033[0m 开始更新依赖包...\n"
+		yarn upgrade
+		exec ${HexoPath}/hexo.sh
+	else
+		printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
+		sleep 1s
+		exec ${HexoPath}/hexo.sh
+	fi
 fi

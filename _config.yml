@@ -24,9 +24,9 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: overview/tags
-archive_dir: overview/timeline
-category_dir: overview
+tag_dir: tags
+archive_dir: timeline
+category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -147,3 +147,11 @@ waline:
     nick: 昵称*
     mail: 邮箱
     link: 网址（http://）
+
+# hexo-extend-theme
+# Replace any theme file in layout folder to a custom file.
+# For more information: https://github.com/jiangtj/hexo-extend-theme
+theme_plus:
+  views:
+    - path: 'page.njk'
+      file: 'custom/page.njk'
