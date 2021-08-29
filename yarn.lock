@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@jiangtj/hexo-extend-theme@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-extend-theme/-/hexo-extend-theme-0.2.4.tgz#689fdc37afac6d7a541744b7241cd8f7b7469772"
+  integrity sha512-5yxmVLW6qKxhjQ57LeSAFxmHD5s4+mjxUcrfu/LNz2ZSyHGFqWk8IMAgk9VIGdH6T8R+0Itxwdv7wbA6S8OuEQ==
+
 "@next-theme/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@next-theme/utils/-/utils-1.2.0.tgz#b062f56d768c7722ab878bf93afd0172d89d76b0"
@@ -60,9 +65,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "16.7.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.5.tgz#96142b243977b03d99c338fdb09241d286102711"
-  integrity sha512-E7SpxDXoHEpmZ9C1gSqwadhE6zPRtf3g0gJy9Y51DsImnR5TcDs3QEiV/3Q7zOM8LWaZp5Gph71NK6ElVMG1IQ==
+  version "16.7.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.6.tgz#8666478db8095aa66e25b7e469f3e7b53ea2855e"
+  integrity sha512-VESVNFoa/ahYA62xnLBjo5ur6gPsgEE5cNRy8SrdnkZ2nwJSW0kJ4ufbFr2zuU9ALtHM8juY53VcRoTA7htXSg==
 
 "@waline/hexo-next@^2.0.5":
   version "2.0.6"
@@ -882,9 +887,9 @@ domexception@^2.0.1:
     webidl-conversions "^5.0.0"
 
 domhandler@^4.0.0, domhandler@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-4.2.0.tgz#f9768a5f034be60a89a27c2e4d0f74eba0d8b059"
-  integrity sha512-zk7sgt970kzPks2Bf+dwT/PLzghLnsivb9CcxkvR8Mzr66Olr0Ofd8neSbglHJHaHa2MadfoSdNlKYAaafmWfA==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-4.2.2.tgz#e825d721d19a86b8c201a35264e226c678ee755f"
+  integrity sha512-PzE9aBMsdZO8TK4BnuJwH0QT41wgMbRzuZrHUcpYncEjmQazq8QEaBWgLG7ZyC/DAZKEgglpIA6j4Qn/HmxS3w==
   dependencies:
     domelementtype "^2.2.0"
 
