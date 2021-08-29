@@ -21,9 +21,14 @@ toc:
 
 　　如果你在浏览博客的过程中发现了任何问题，欢迎前往 GitHub 的代码仓库 [<i class="fab fa-fw fa-github"></i>leirock/blog](https://github.com/leirock/blog) 提交 Issues 或直接修改相关文件后提交 Pull Requests。
 
+### 订阅更新
+
+　<i class="fas fa-fw fa-rss"></i> [RSS](/atom.xml)
+　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">微信公众号</a>
+
+
 ### 在这里发现更多
 
 　<i class="fas fa-fw fa-envelope"></i> leirock (at) foxmail.com
 　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/leirock)
-　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">公众号</a>
 　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/leirock)
