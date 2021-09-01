@@ -3,7 +3,7 @@
 {#####################}
 <span style="margin-top:30px; color:var(--blockquote-color); font-size:0.85em">
     {%- if post.update %}
-        <span class="post-end-item" title="Last Update Time">
+        <span class="post-end-item" title="更新时间">
             {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
             <span class="post-end-item-icon" style="margin-right: 3px"><i class="far fa-fw fa-calendar-check"></i></span>
             <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
@@ -13,7 +13,7 @@
     {%- endif %}
     {%- if post.publication %}
         <br>
-        <span class="post-end-item" title="publication">
+        <span class="post-end-item" title="文章来源">
             <span class="post-end-item-icon" style="margin-right: 3px">
                 <i class="fas fa-fw fa-feather"></i>
             </span>
@@ -26,7 +26,7 @@
     {%- endif %}
     {%- if post.copyright !== false %}
         <br>
-        <span class="post-end-item" title="Copyright License">
+        <span class="post-end-item" title="著作权许可协议">
             <span class="post-end-item-icon" style="margin-right: 3px">
                 <i class="fab fa-fw fa-creative-commons"></i>
             </span>
