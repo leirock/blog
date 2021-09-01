@@ -27,6 +27,6 @@ toc:
 
 ### 在这里发现更多
 
-　<i class="fas fa-fw fa-envelope"></i> leirock@foxmail.com
-　<i class="fab fa-fw fa-weibo"></i> [微博](https://weibo.com/leirock)
-　<i class="fab fa-fw fa-github"></i> [GitHub](https://github.com/leirock)
+　<i class="fas fa-fw fa-envelope"></i> 邮箱: leirock@foxmail.com
+　<i class="fab fa-fw fa-weibo"></i> 微博: [@醉里挑灯赏猫](https://weibo.com/leirock)
+　<i class="fab fa-fw fa-github"></i> GitHub: [@leirock](https://github.com/leirock)
