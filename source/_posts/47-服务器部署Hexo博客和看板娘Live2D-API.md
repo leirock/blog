@@ -1,7 +1,7 @@
 ---
 title: 服务器部署 Hexo 博客和看板娘 Live2D API
 categories: [科技树]
-tags: [服务器, Hexo, 持续集成]
+tags: [服务器, 持续集成]
 pid: 47
 date: 2020-04-15 19:45:00
 ---

@@ -1,7 +1,7 @@
 ---
 title: Typecho 博客搭建尝试
 categories: [科技树]
-tags: [Typecho, 服务器]
+tags: [blog, 服务器]
 pid: 50
 date: 2020-04-30 17:00:00
 update: 2020-10-27 19:00:00

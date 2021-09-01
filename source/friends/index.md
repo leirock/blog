@@ -1,5 +1,5 @@
 ---
-title: 小伙伴们
+title: 友情链接
 type: friends
 comments: false
 ---
