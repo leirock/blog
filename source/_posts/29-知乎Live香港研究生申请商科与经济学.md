@@ -4,8 +4,8 @@ categories: [学术向]
 tags: [升学]
 pid: 29
 date: 2017-12-15 21:00:00
-origin: 知乎 Live
-origin_url: https://www.zhihu.com/lives/922106856669868032
+publication: 知乎 Live
+publication_url: https://www.zhihu.com/lives/922106856669868032
 ---
 
 ## 一、Live 简介

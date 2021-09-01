@@ -169,13 +169,6 @@ blockquote p,
   font-family: $font-family-quote;
 }
 
-/* post-行内代码 */
-code {
-  font-size: .85em;
-  background: none;
-  color: var(--text-color);
-}
-
 /* post-思源宋体列表打叉修复 */
 li {
   text-align: left;
@@ -200,22 +193,32 @@ li {
 /* button-reward */
 .donations {
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 25px;
+  margin-top: 3em;
 }
 
 .donation-label {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   letter-spacing: 1px;
   font-size: .9em;
   font-weight: bold;
-  color: var(--text-color);
 }
 
 .afdian-button {
-  donation-button();
-  font-size: .95em;
+  box-shadow: $box-shadow;
+  height: 2.5em;
+  line-height: 1.5;
+  box-sizing: border-box;
+  border-color: transparent;
+  padding: .5em .75em;
+  border-radius: 4px;
+  font-size: .9em;
+  color: white;
   background-color: #946ce6;
+
+  &:hover {
+    color: white;
+    border-color: transparent;
+  }
 }
 
 /* 修改选中字符的颜色 */

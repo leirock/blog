@@ -84,7 +84,7 @@ docker-compose down
 
 这里采用 Docker Compose 部署的方法，比较方便快捷。首先创建一个 `docker-compose.yml`（目录任意，为方便管理可以放在站点的目录下）：
 
-```yaml
+```yaml docker-compose.yml
 version: '3'
 
 services:

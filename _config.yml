@@ -5,7 +5,7 @@
 # Site
 title: 醉里挑灯赏猫
 subtitle: ''
-description: '靡革匪因 靡故匪新'
+description: '@LeiRock <br> 靡革匪因 靡故匪新'
 keywords: [班班, 醉里挑灯赏猫, 博客]
 author: 班班
 language: zh-CN
@@ -130,7 +130,7 @@ waline:
   avatar: wavatar # Gravatar style
   avatarCDN: https://sdn.geekzu.org/avatar/
   meta: [nick, mail, link] # Custom comment header
-  requiredMeta: [nick] # Set required fields: [nick] | [nick, mail]
+  requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 10 # Pagination size
   visitor: false # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
@@ -142,11 +142,11 @@ waline:
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
   ]
   locale:
-    placeholder: 在这里分享你的观点与想法～ 昵称必填，如希望获得回复提醒，请填写邮箱。 # Comment box placeholder
+    placeholder: 在这里分享你的观点与想法～ 昵称、邮箱必填，评论回复会通过邮件提醒。 # Comment box placeholder
     admin: 博主
     nick: 昵称*
-    mail: 邮箱
-    link: 网址（http://）
+    mail: 邮箱*
+    link: 网址（https://）
 
 # hexo-extend-theme
 # Replace any theme file in layout folder to a custom file.
