@@ -1,7 +1,7 @@
 ---
 title: 个人主页与 Hexo NexT 博客搭建记录
 categories: [科技树]
-tags: [Hexo]
+tags: [blog]
 pid: 30
 date: 2018-06-06 18:03:02
 ---

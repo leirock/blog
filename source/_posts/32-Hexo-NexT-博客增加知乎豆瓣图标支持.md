@@ -1,7 +1,7 @@
 ---
 title: Hexo NexT 博客增加知乎豆瓣图标支持
 categories: [科技树]
-tags: [CSS, Hexo]
+tags: [设计, blog]
 pid: 32
 date: 2018-06-13 04:21:54
 update: 2020-12-03 17:33:00

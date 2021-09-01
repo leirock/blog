@@ -7,7 +7,7 @@ zh-CN:
     overview: 文章总览
     timeline: 时间轴
     about: 关于更多
-    friends: 小伙伴们
+    friends: 友情链接
     search: 全站搜索
   post:
     posted: 发布：
@@ -24,7 +24,7 @@ zh-CN:
       other: '
 <div class="note success">
   <p>
-    目前共收录了 %d 篇文章。除了收录日常随笔、文摘之外，也收录了在知乎、微博等社交媒体平台发布的部分文字。<a href="/timeline"><i class="fas fa-fw fa-history"></i> 时间轴>>></a>
+    目前共收录了 %d 篇文章。除了收录日常随笔、文摘之外，也收录了在知乎、微博等社交媒体平台发布的部分文字。<a href="/timeline"><i class="fas fa-fw fa-history"></i> 文章时间轴>>></a>
   </p>
 </div>
 '
