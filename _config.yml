@@ -132,7 +132,7 @@ waline:
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick] # Set required fields: [nick] | [nick, mail]
   pageSize: 10 # Pagination size
-  visitor: true # Article reading statistic
+  visitor: false # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   dark: auto
   emoji:  [
