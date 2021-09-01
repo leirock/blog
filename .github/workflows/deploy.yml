@@ -37,7 +37,7 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        sed -i '41s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
+        sed -i '9s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/third-party/fancybox.js
         yarn build
 
     - name: Deploy to server

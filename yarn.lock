@@ -65,9 +65,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "16.7.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.8.tgz#2448be5f24fe6b77114632b6350fcd219334651e"
-  integrity sha512-8upnoQU0OPzbIkm+ZMM0zCeFCkw2s3mS0IWdx0+AAaWqm4fkBb0UJp8Edl7FVKRamYbpJC/aVsHpKWBIbiC7Zg==
+  version "16.7.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.10.tgz#7aa732cc47341c12a16b7d562f519c2383b6d4fc"
+  integrity sha512-S63Dlv4zIPb8x6MMTgDq5WWRJQe56iBEY0O3SOFA9JrRienkOVDXSXBjjJw6HTNQYSE2JI6GMCR6LVbIMHJVvA==
 
 "@waline/hexo-next@^2.0.5":
   version "2.0.6"
@@ -608,9 +608,9 @@ content-disposition@^0.5.2:
     safe-buffer "5.1.2"
 
 core-util-is@~1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
-  integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
+  integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
 cross-spawn@^5.0.1:
   version "5.1.0"
@@ -1644,9 +1644,9 @@ hexo-server@^2.0.0:
     serve-static "^1.14.1"
 
 hexo-theme-next@^8.4.0:
-  version "8.7.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.7.0.tgz#c0710d797a5746ccf0a8693c7a1cd9ec2e8d0697"
-  integrity sha512-lTrXk3kDBSy645iPImiPHieSIvZPzZDDbQZypD4O96ZlVIb9/PO9z7xzSNxROFm4LCyZMF2a8bJEuq5nVkxZRQ==
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.7.1.tgz#0c8a5ceda6baa7d77d5de925d36dd885db35b980"
+  integrity sha512-eJstBtUSyyLFJ8CpwkJ/1/XVuibaLzgVqPwZuh55kOGKubfJ6mSP/RFKex3kly5LCwCTZSSNGbuhNeJaz2Z67Q==
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0, hexo-util@^2.5.0:
   version "2.5.0"
