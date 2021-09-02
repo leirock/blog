@@ -10,9 +10,6 @@ zh-CN:
     friends: 友情链接
     search: 全站搜索
   post:
-    posted: 发布：
-    in: 分类：
-    views: 阅读
     comments:
       waline: 评论
   footer:
