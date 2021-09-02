@@ -7,7 +7,7 @@ toc:
 ---
 
 
-　　我是班班，欢迎访问我的博客。希望可以通过这个平台记录、分享一些生活感悟、观点想法。欢迎您通过[<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@leirock) 支持我更好地创作。
+　　我是班班，欢迎访问我的博客。希望可以通过这个平台记录、分享一些生活感悟、观点想法。欢迎您通过 [<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@leirock) 支持我更好地创作。
 
 　　除特别声明外，博客中的所有作品均为本人原创。您可以全文转载或基于文章进行二次创作，但请注明作者和出处；此外，请先邮件联络获得书面许可后，方可用于商业目的。详细的著作权许可协议请查阅 [<i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA 4.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。
 

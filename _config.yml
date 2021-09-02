@@ -155,3 +155,5 @@ theme_plus:
   views:
     - path: 'page.njk'
       file: 'custom/page.njk'
+    - path: 'archive.njk'
+      file: 'custom/archive.njk'
