@@ -1,5 +1,6 @@
 ---
 title: 友情链接
+description: 班班的朋友们
 type: friends
 comments: false
 ---

@@ -45,13 +45,12 @@ favicon:
 
 menu:
   home: / || fas fa-home
-  overview: /overview/ || fas fa-archive
+  overview: /overview/ || fas fa-tags
 #  overview: 
 #    default: /overview/ || fas fa-archive
 #    tags: tags/ || fas fa-tags
-#    timeline: timeline/ || fas fa-stream
-  about: /about/ || fas fa-location-arrow
-  friends: friends/ || fas fa-heart
+  timeline: timeline/ || fas fa-history
+  more: /more/ || fas fa-location-arrow
 
 # ---------------------------------------------------------------
 # Sidebar Settings

@@ -1,12 +1,12 @@
 # language
 zh-CN:
   title:
-    archive: 时间轴
+    archive: 时间轴线
   menu:
     home: 博客首页
-    overview: 文章总览
-    timeline: 时间轴
-    about: 关于更多
+    overview: 分类标签
+    timeline: 时间轴线
+    more: 发现更多
     friends: 友情链接
     search: 全站搜索
   post:
@@ -22,11 +22,3 @@ zh-CN:
       other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'
     categories:
       other: '<strong><i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类</strong>'
-    archive_posts:
-      other: '
-<div class="note success">
-  <p>
-    目前共收录了 %d 篇文章。除了收录日常随笔、文摘之外，也收录了在知乎、微博等社交媒体平台发布的部分文字。<a href="/timeline"><i class="fas fa-fw fa-history"></i> 文章时间轴>>></a>
-  </p>
-</div>
-'
