@@ -6,7 +6,8 @@
 }
 
 /* header-顶部空白 */
-.header, .main-inner {
+.header,
+.main-inner {
   margin-top: 10px;
 
   +mobile() {
@@ -151,16 +152,17 @@ p {
 
 /* post-超链接 */
 .post-body a {
-  border-bottom-color: $grey-light;
+  text-decoration-color: var(--text-color);
 
   &:hover {
-    border-bottom-color: var(--link-hover-color);
+    border-bottom-color: var(--text-color-dark);
   }
 }
 
 /* post-图片标题 */
 .post-body .image-caption {
   margin: 0 auto 15px;
+  font-weight: 400;
 }
 
 /* post-图片阴影 */
@@ -200,14 +202,17 @@ li {
   }
 }
 
-.post-body .link-grid .link-grid-container p:first-of-type {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #2bbc8a;
-}
+.post-body .link-grid .link-grid-container p {
 
-.post-body .link-grid .link-grid-container p:last-of-type {
-  font-size: .85em;
+  &:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2bbc8a;
+  }
+
+  &:last-of-type {
+    font-size: .85em;
+  }
 }
 
 /************************ Button ***************************/
@@ -425,8 +430,8 @@ li.category-list-item a {
 @media (prefers-color-scheme: dark) {
   body {
     --waline-text-color: $text-color-dark !important;
-    --waline-bgcolor: $myblue-deep !important;
-    --waline-bgcolor-light: $myblue-deeper !important;
+    --waline-bgcolor: $content-bg-color-dark !important;
+    --waline-bgcolor-light: $body-bg-color-dark !important;
   }
 }
 
@@ -441,8 +446,98 @@ li.category-list-item a {
   color: white !important;
   border-color: $btn-default-bg !important;
   background: $btn-default-bg !important;
+
   &:hover {
     border-color: $btn-default-hover-bg !important;
     background: $btn-default-hover-bg !important;
+  }
+}
+
+/************************* 卡片页面 (Friends/Lab) ************************/
+
+.post-body .mygrid {
+  gap: 1rem 1rem;
+  grid-gap: 1rem 1rem;
+}
+
+.post-body .mygrid .link-grid-container p:first-of-type {
+  color: var(--text-color);
+}
+
+.post-body .mygrid .link-grid-container {
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dashed #d3d3d4;
+
+  &:hover {
+    background: none;
+    color: var(--link-hover-color);
+  }
+
+  &:hover p:first-of-type {
+      color: var(--link-hover-color);
+    }
+}
+
+
+.post-body .mygrid .link-grid-container p {
+  margin: 0 1rem 0 5rem;
+  
+  &:first-of-type {
+    font-size: 1em;
+    margin-top: 3px;
+    white-space: nowrap; //禁止换行、超出隐藏
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:last-of-type {
+    font-size: 0.875em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 1;
+  }
+}
+
+.post-body .mygrid .link-grid-container .link-grid-image {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  height: 4rem;
+  padding: 0;
+  width: 4rem;
+}
+
+
+/************************* 特殊样式排版 ************************/
+
+/* 着重号 `{% dot 强调的文字 %}` */
+.emphasis-point {
+  font-style: normal;
+  text-emphasis: '•';
+  -webkit-text-emphasis: '•';
+  -moz-text-emphasis: '•';
+  text-emphasis-position: under;
+  -webkit-text-emphasis-position: under;
+  -moz-text-emphasis-position: under;
+}
+
+/* 分割线 `<hr>` 或 `***` 或 `---` */
+hr {
+  background-image: none;
+  height: 2em;
+  border: none;
+  margin: 1em 0 1em;
+  text-align: center;
+
+  &::after {
+    content: "···";
+    letter-spacing: 2em;
+    padding-left: 2em;
+    font-weight: bold;
   }
 }
