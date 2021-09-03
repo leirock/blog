@@ -19,3 +19,5 @@ zh-CN:
       other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'
     categories:
       other: '<strong><i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类</strong>'
+    archive_posts:
+      other: '<strong><i class="fas fa-fw fa-feather"></i> 目前共计 %d 篇文章</strong>'

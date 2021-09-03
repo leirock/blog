@@ -13,19 +13,6 @@
   {#####################}
   <div class="post-block">
     <div class="post-content">
-
-{#################}
-{#### 新增开始 ####}
-{#################}
-      <header class="post-header title">
-        <h1 class="post-title" itemprop="name headline">
-          {{ __('title.archive') }}
-        </h1>
-      </header>
-{#################}
-{#### 新增结束 ####}
-{#################}
-
       <div class="collection-title">
         {%- set posts_length = site.posts.length %}
         {%- if posts_length > 210 %}
@@ -41,7 +28,15 @@
         {% else %}
           {%- set cheers = 'um' %}
         {%- endif %}
-        <span class="collection-header">{{ __('cheers.' + cheers) }}! {{ _p('counter.archive_posts', site.posts.length) }} {{ __('keep_on') }}</span>
+
+{#################}
+{#### 修改开始 ####}
+{#################}
+        <span class="collection-header">{{ _p('counter.archive_posts', site.posts.length) }}</span>
+{#################}
+{#### 修改结束 ####}
+{#################}
+
       </div>
 
       {{ post_template.render(page.posts) }}
