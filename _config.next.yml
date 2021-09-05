@@ -90,7 +90,9 @@ footer:
     name: fas fa-heart
     animated: true
     color: "#f06292"
-  copyright: LeiRock
+
+  copyright: 纯粹
+
   # Powered by Hexo & NexT
   powered: true
 
@@ -149,7 +151,7 @@ font:
     family: EB Garamond, Noto Serif SC
   title:
     family: Long Cang
-    size: 2
+    size: 2.1
   headings:
     size: 1.5
 
