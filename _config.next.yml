@@ -67,7 +67,7 @@ site_state: false
 
 social:
   微博: https://weibo.com/leirock || fab fa-weibo
-  GitHub: https://github.com/leirock || fab fa-github
+  Telegram: https://t.me/LeileiRock || fab fa-telegram-plane
   RSS: /atom.xml || fas fa-rss
 
 social_icons:

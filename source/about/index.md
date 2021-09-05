@@ -16,11 +16,11 @@ toc:
 ### 订阅更新
 
 　<i class="fas fa-fw fa-rss"></i> [RSS](/atom.xml)
-　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://website-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">微信公众号</a>
+　<i class="fab fa-fw fa-weixin"></i> <a class="fancybox fancybox.image" href="https://web-1256060851.cos.ap-hongkong.myqcloud.com/qrcode/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念">微信公众号</a>
 
 
 ### 在这里发现更多
 
 　<i class="fas fa-fw fa-envelope"></i> 邮箱: leirock@foxmail.com
 　<i class="fab fa-fw fa-weibo"></i> 微博: [@醉里挑灯赏猫](https://weibo.com/leirock)
-　<i class="fab fa-fw fa-github"></i> GitHub: [@leirock](https://github.com/leirock)
+　<i class="fab fa-fw fa-telegram-plane"></i> Telegram: [@LeileiRock](https://t.me/LeileiRock)

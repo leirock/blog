@@ -12,8 +12,8 @@ comments: false
 {% endcenterquote %}
 
 {% linkgrid %}
-留言板 | /guestbook/ | 分享你的想法与观点 | https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/guestbook.png
-实验室 | /lab/ | 有趣的探索与尝试 | https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/lab.png
-关于本站 | /about/ | 关于本站与班班的介绍 | https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/about.png
-友情链接 | /friends/ | 班班的朋友们 | https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/friends.png
+留言板 | /guestbook/ | 分享你的想法与观点 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/guestbook.png
+实验室 | /lab/ | 有趣的探索与尝试 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/lab.png
+关于本站 | /about/ | 关于本站与班班的介绍 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/about.png
+友情链接 | /friends/ | 班班的朋友们 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/friends.png
 {% endlinkgrid %}
