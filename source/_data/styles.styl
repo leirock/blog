@@ -68,15 +68,15 @@ if (hexo-config('gray')) {
 
 /* sidebar-标题 */
 .site-title {
-  font-weight: bold;
+  /*font-weight: bold;*/
+  letter-spacing: 10px;
+  padding-left: 10px; //修正字间距导致的标题左移
 }
 
 /* sidebar-副标题 */
 .site-subtitle {
-  font-weight: bold;
-  font-family: $font-family-quote;
+  font-family: $font-family-sans;
   color: var(--brand-color);
-  font-size: .9em;
 }
 
 /* sidebar-站点描述介绍 */
@@ -143,6 +143,11 @@ p {
 /* post-正文字号 */
 .post-body {
   font-size: 1em;
+}
+
+/* post-正文一级标题下划线 */
+.post-body h2 {
+  border-bottom: 1px dotted #eee;
 }
 
 /* post-标签选择卡片加粗 */
@@ -277,7 +282,7 @@ li {
 .pagination .next,
 .pagination .page-number {
   border: none;
-  border-radius: 1em;
+  border-radius: $myradius;
 
   &:hover {
     color: white;
