@@ -13,7 +13,7 @@ zh-CN:
     comments:
       waline: 评论
   footer:
-    powered: Powered by <a style="border-bottom:none" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> <a style="border-bottom:none" target="_blank" rel="noopener" href="https://theme-next.js.org">NexT</a> · Modified by <a style="border-bottom:none" target="_blank" rel="noopener" href="https://dlzhang.com">LeiRock</a>
+    powered: Powered by <a style="border-bottom:none" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> <a style="border-bottom:none" target="_blank" rel="noopener" href="https://theme-next.js.org">NexT</a> · Modified by <a style="border-bottom:none" target="_blank" rel="noopener" href="https://dlzhang.com">Leirock</a>
   counter:
     tag_cloud:
       other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'

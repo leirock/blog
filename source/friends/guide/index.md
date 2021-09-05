@@ -13,10 +13,10 @@ title: 交换友链指南
 ### 2.1 添加本站友链
 
 {% note success %}
-名称：`醉里挑灯赏猫` 或 `班班碎碎念`，二选一
-简介：`靡革匪因 靡故匪新`
-链接：`https://blog.dlzhang.com`
+名称：{% label info@纯 粹 %}（或 {% label info@班班碎碎念 %} ）
+简介：{% label info@风吹过的起点 %}
 标识：https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?size=512
+链接：https://blog.dlzhang.com
 {% endnote %}
 
 ### 2.2 准备站点相关信息
