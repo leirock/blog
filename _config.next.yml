@@ -118,6 +118,10 @@ symbols_count_time:
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
 
+# Show previous post and next post in post footer if exists
+# Available values: left | right | false
+post_navigation: right
+
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # See: https://theme-next.js.org/docs/theme-settings/miscellaneous
