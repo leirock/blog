@@ -11,7 +11,7 @@ comments: true
 {% endcenterquote %}
 
 {% linkgrid %}
-运行状态监测 | https://status.dlzhang.com | 基于 UptimeRobot 的各部署站点运行状态监测 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/lab/status.png
+运行状态监测 | https://status.dlzhang.com | 基于 UptimeRobot 的各站点运行状态监测 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/lab/status.png
 含韵百科 | https://www.hanyunzhang.com | 基于 Vuepress 制作的全方位认识张含韵的百科站点 | https://cdn.jsdelivr.net/gh/leirock/HanyunWiki/docs/.vuepress/public/images/logo.png
 CV-Academic | https://github.com/leirock/CV-Academic | LaTex 学术简历模版 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/lab/tex.png
 beamer-sgp940 | https://github.com/leirock/beamer-sgp940 | LaTex 幻灯片模版 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/lab/tex.png
