@@ -9,13 +9,13 @@ minify: true
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  head: source/_data/head.njk
+  #head: source/_data/head.njk
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
-  bodyEnd: source/_data/body-end.njk
+  #bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
   mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
@@ -34,10 +34,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple-touch-icon.png
-  safari_pinned_tab: /images/safari-pinned-tab.svg
+  small: ./images/favicon-16x16-next.png
+  medium: ./images/favicon-32x32-next.png
+  apple_touch_icon: ./images/apple-touch-icon-next.png
+  safari_pinned_tab: ./images/safari-pinned-tab-next.svg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -45,12 +45,12 @@ favicon:
 
 menu:
   home: / || fas fa-home
-  overview: /overview/ || fas fa-tags
-#  overview: 
-#    default: /overview/ || fas fa-archive
-#    tags: tags/ || fas fa-tags
-  timeline: timeline/ || fas fa-history
-  more: /more/ || fas fa-location-arrow
+  overview: 
+    default: /overview/ || fas fa-archive
+    tags: tags/ || fas fa-tags
+    timeline: timeline/ || fas fa-stream
+  about: /about/ || fas fa-location-arrow
+  friends: friends/ || fas fa-heart
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -59,15 +59,15 @@ menu:
 
 # Sidebar Avatar
 avatar:
-  url: https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=200
+  url: /images/avatar.gif
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: false
 
 social:
-  微博: https://weibo.com/leirock || fab fa-weibo
-  Telegram: https://t.me/LeileiRock || fab fa-telegram-plane
+  微博: https://weibo.com || fab fa-weibo
+  GitHub: https://github.com || fab fa-github
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
@@ -91,10 +91,8 @@ footer:
     animated: true
     color: "#f06292"
 
-  copyright: 纯粹
-
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -106,7 +104,6 @@ read_more_btn: false
 
 # Post meta display settings
 post_meta:
-  item_text: false
   updated_at:
     enable: false
 
@@ -117,10 +114,6 @@ symbols_count_time:
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: true
-
-# Show previous post and next post in post footer if exists
-# Available values: left | right | false
-post_navigation: right
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -136,11 +129,11 @@ android_chrome_color: "#6c599f"
 codeblock:
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: atom-one-light
-    dark: atom-one-dark
+    light: tomorrow
+    dark: tomorrow-night
   copy_button:
     enable: true
-    style: flat
+    style: mac
 
 back2top:
   scrollpercent: true
@@ -155,17 +148,17 @@ font:
     family: EB Garamond, Noto Serif SC
   title:
     family: Long Cang
-    size: 2.2
+    size: 2
   headings:
-    size: 1.5
+    size: 1.48
 
 # ---------------------------------------------------------------
 # SEO Settings
 # See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
-google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
-baidu_site_verification: wvc37nzEad
+#google_site_verification:
+#baidu_site_verification:
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
@@ -179,6 +172,14 @@ pjax: true
 fancybox: true
 lazyload: true
 pangu: true
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+#google_analytics:
+#  tracking_id:
 
 # ---------------------------------------------------------------
 # Search Services
@@ -213,3 +214,5 @@ note:
 
 motion:
   enable: false
+
+images: /blog-sample/images

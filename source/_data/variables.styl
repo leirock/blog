@@ -5,21 +5,27 @@ $content-desktop-largest      = 55%;
 $myradius                     = 8px;
 
 // Color
-$text-color                   = #313135;
-$text-color-dark              = #d9dad3;
+$myblue-deepest               = #131d27;
+$myblue-deeper                = #15202b;
+$myblue-deep                  = #192734;
+$myblue                       = #3f5973;
+$myblue-light                 = #0477ab;
+$myblue-lighter               = #649ab6;
+$myblack                      = #1c1c21;
+$mywhite                      = #c9d1d9;
 
-$link-color                   = $text-color;
-$link-color-dark              = $text-color-dark;
+$text-color                   = $myblack;
+$link-color                   = $myblack;
+$link-hover-color             = $myblue-light;
+$btn-default-bg               = $myblue;
+$btn-default-hover-bg         = $myblue-lighter;
 
-$link-hover-color             = #0f6fbe;
-$link-hover-color-dark        = #5fb1dd;
-
-$btn-default-bg               = #3f5973;
-$btn-default-hover-bg         = #649ab6;
-
-$body-bg-color-dark           = #15202b;
-$content-bg-color-dark        = #192734;
-$menu-item-bg-color-dark      = #131d27;
+$body-bg-color-dark           = $myblue-deeper;
+$content-bg-color-dark        = $myblue-deep;
+$text-color-dark              = $mywhite;
+$link-color-dark              = $mywhite;
+$link-hover-color-dark        = white;
+$menu-item-bg-color-dark      = $myblue-deepest;
 
 // Shadow
 $image-box-shadow             = 0 5px 15px 0px rgba(0, 0, 0, .4);
@@ -27,11 +33,11 @@ $box-shadow                   = 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 
 $box-shadow-hover             = 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 
 // Font family
-$font-family-quote            = EB Garamond, STKaiti, KaiTi, SimKai, DFKai-SB, Noto Serif SC;
-$font-family-sans             = -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,Arial,sans-serif;
+$font-family-quote            = "EB Garamond", STKaiti, KaiTi, SimKai, DFKai-SB, "Noto Serif SC";
 
 // Image assets
-$site-brand-bg-url            = "/images/header-bg.jpg";
-$body-bg-url                  = "/images/body-bg.png";
-$body-bg-gray-url             = "/images/body-bg-gray.png";
-$comment-bg-url               = "/images/comment-bg.png";
+$img-cdn = hexo-config('root') + hexo-config('images')+'/';
+$site-brand-bg-url            = $img-cdn + "header-bg.jpg";
+$body-bg-url                  = $img-cdn + "body-bg.png";
+$body-bg-gray-url             = $img-cdn + "body-bg-gray.png";
+$comment-bg-url               = $img-cdn + "comment-bg.png";

@@ -1,5 +1,5 @@
 {
-  "name": "leirock-blog",
+  "name": "leirock-blog-sample",
   "version": "3.3.2",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "@jiangtj/hexo-extend-theme": "^0.2.4",
     "@waline/hexo-next": "^2.0.5",
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",

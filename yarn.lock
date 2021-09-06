@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@jiangtj/hexo-extend-theme@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-extend-theme/-/hexo-extend-theme-0.2.4.tgz#689fdc37afac6d7a541744b7241cd8f7b7469772"
-  integrity sha512-5yxmVLW6qKxhjQ57LeSAFxmHD5s4+mjxUcrfu/LNz2ZSyHGFqWk8IMAgk9VIGdH6T8R+0Itxwdv7wbA6S8OuEQ==
-
 "@next-theme/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@next-theme/utils/-/utils-1.2.0.tgz#b062f56d768c7722ab878bf93afd0172d89d76b0"
