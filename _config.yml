@@ -5,7 +5,7 @@
 # Site
 title: 示例
 subtitle: '班班博客的示例'
-description: '填写博客介绍'
+description: 'This is a dummy blog.'
 keywords: ''
 author: Leirock
 language: zh-CN
@@ -30,7 +30,6 @@ category_dir: overview
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - 404.html
 
 # Writing
 new_post_name: :year/:title.md # File name of new posts

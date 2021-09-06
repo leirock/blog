@@ -92,7 +92,7 @@ footer:
     color: "#f06292"
 
   # Powered by Hexo & NexT
-  powered: false
+  powered: true
 
 # ---------------------------------------------------------------
 # Post Settings
