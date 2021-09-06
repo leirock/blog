@@ -1,0 +1,54 @@
+{########################}
+{### Comment Locating ###}
+{########################}
+{% if page.comments or post.comments %}
+<script type="text/javascript">
+if(window.location.hash){
+    var checkExist = setInterval(function() {
+        if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+        }
+    }, 100);
+}
+</script>
+{% endif %}
+
+
+{####################}
+{### Friends Grid ###}
+{####################}
+<script{{ pjax }}  type="text/javascript">
+// friends repo CDN
+var FriendsPath = 'https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/friends';
+// friends list file
+var FriendsList = FriendsPath + '/friendslist.json';
+// friends website logo folder
+var LogoPath = FriendsPath + '/logo/';
+// generate friends link grid
+friend = {
+    init: function () {
+        var that = this;
+        $.getJSON(FriendsList, function (data) {
+            that.render(data);
+        });
+    },
+    render: function (data) {
+        var title, logo, url, description, li = "";
+        for (var i = 0; i < data.length; i++) {
+            title = data[i].title;
+            description = data[i].description;
+            logo = data[i].logo;
+            url = data[i].url;
+            li += '<div class="link-grid-container">' +
+                    '<object class="link-grid-image" data="' + LogoPath + logo + '"></object>' +
+                    '<p>' + title + '</p>' + 
+                    '<p>' + description + '</p>' + 
+                    '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
+                    '</div>';
+        }
+        $("#friends").append(li);
+    }
+}
+friend.init();
+</script>
