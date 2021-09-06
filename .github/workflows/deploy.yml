@@ -37,19 +37,15 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        sed -i '9s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/third-party/fancybox.js
         yarn build
 
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        ARGS: "-avz --delete"
-        SOURCE: "public/"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.REMOTE_TARGET }}
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GH_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./public
+        commit_message: ${{ github.event.head_commit.message }}
 
     - name: Telegram notification
       if: cancelled() == false

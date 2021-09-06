@@ -6,8 +6,7 @@
 }
 
 /* header-顶部空白 */
-.header,
-.main-inner {
+.header, .main-inner {
   margin-top: 10px;
 
   +mobile() {
@@ -68,15 +67,15 @@ if (hexo-config('gray')) {
 
 /* sidebar-标题 */
 .site-title {
-  /*font-weight: bold;*/
-  letter-spacing: 10px;
-  padding-left: 10px; //修正字间距导致的标题左移
+  font-weight: bold;
 }
 
 /* sidebar-副标题 */
 .site-subtitle {
-  font-family: $font-family-sans;
+  font-weight: bold;
+  font-family: $font-family-quote;
   color: var(--brand-color);
+  font-size: .9em;
 }
 
 /* sidebar-站点描述介绍 */
@@ -125,11 +124,6 @@ if (hexo-config('gray')) {
   }
 }
 
-/* post-页面描述 */
-.posts-expand .post-meta-container .post-description {
-  font-size: .95em;
-}
-
 /* post-文章信息 */
 .posts-expand .post-header {
   margin-bottom: 30px;
@@ -145,11 +139,6 @@ p {
   font-size: 1em;
 }
 
-/* post-正文一级标题下划线 */
-.post-body h2 {
-  border-bottom: 1px dotted #eee;
-}
-
 /* post-标签选择卡片加粗 */
 .post-body .tabs ul.nav-tabs li.tab a {
   font-weight: bold;
@@ -157,17 +146,16 @@ p {
 
 /* post-超链接 */
 .post-body a {
-  text-decoration-color: var(--text-color);
+  border-bottom-color: $grey-light;
 
   &:hover {
-    border-bottom-color: var(--text-color-dark);
+    border-bottom-color: var(--link-hover-color);
   }
 }
 
 /* post-图片标题 */
 .post-body .image-caption {
   margin: 0 auto 15px;
-  font-weight: 400;
 }
 
 /* post-图片阴影 */
@@ -181,6 +169,13 @@ blockquote p,
   font-family: $font-family-quote;
 }
 
+/* post-行内代码 */
+code {
+  font-size: .85em;
+  background: none;
+  color: var(--text-color);
+}
+
 /* post-思源宋体列表打叉修复 */
 li {
   text-align: left;
@@ -189,35 +184,6 @@ li {
 /* post-提示卡片图标位置 */
 .post-body .note:not(.no-icon)::before {
   top: .3em;
-}
-
-/* post-链接卡片样式 */
-.post-body .link-grid .link-grid-container {
-  border: 2px solid #ddd;
-  border-radius: $myradius;
-  box-shadow: .2rem .2rem 0.5rem rgba(0,0,0,0.2);
-
-  &:hover {
-    animation: none;
-  }
-
-  &:active {
-    box-shadow: none;
-    transform: none;
-  }
-}
-
-.post-body .link-grid .link-grid-container p {
-
-  &:first-of-type {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2bbc8a;
-  }
-
-  &:last-of-type {
-    font-size: .85em;
-  }
 }
 
 /************************ Button ***************************/
@@ -234,32 +200,22 @@ li {
 /* button-reward */
 .donations {
   text-align: center;
-  margin-top: 3em;
+  padding: 1.5rem;
+  margin-top: 25px;
 }
 
 .donation-label {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
   font-size: .9em;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .afdian-button {
-  box-shadow: $box-shadow;
-  height: 2.5em;
-  line-height: 1.5;
-  box-sizing: border-box;
-  border-color: transparent;
-  padding: .5em .75em;
-  border-radius: 4px;
-  font-size: .9em;
-  color: white;
+  donation-button();
+  font-size: .95em;
   background-color: #946ce6;
-
-  &:hover {
-    color: white;
-    border-color: transparent;
-  }
 }
 
 /* 修改选中字符的颜色 */
@@ -282,7 +238,7 @@ li {
 .pagination .next,
 .pagination .page-number {
   border: none;
-  border-radius: $myradius;
+  border-radius: 1em;
 
   &:hover {
     color: white;
@@ -305,7 +261,7 @@ li {
 
 /************************ Overview *************************/
 
-/* categories 
+/* categories */
 +mobile() {
   .category-all-page .category-list-item {
     margin: 10px 40px;
@@ -316,32 +272,33 @@ li {
   }
 }
 
-+tablet-desktop() {*/
-.category-all-page .category-list-item {
-  margin: 10px 12px;
-}
++tablet-desktop() {
+  .category-all-page .category-list-item {
+    margin: 10px 12px;
+  }
 
-ul.category-list {
-  text-align: center;
-}
+  ul.category-list {
+    text-align: center;
+  }
 
-li.category-list-item {
-  display: inline-block;
-}
+  li.category-list-item {
+    display: inline-block;
+  }
 
-li.category-list-item a {
-  line-height: 5;
-  word-break: keep-all;
-  padding: 10px 15px;
-  font-weight: bold;
-  color: white;
-  background: $btn-default-bg;
-  border-bottom: none;
-  border-radius: 15px;
-  btn-shadow();
+  li.category-list-item a {
+    line-height: 5;
+    word-break: keep-all;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: $btn-default-bg;
+    border-bottom: none;
+    border-radius: 15px;
+    btn-shadow();
 
-  &:hover {
-    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -366,7 +323,7 @@ li.category-list-item a {
   }
 }
 
-/************************* Comment ************************/
+/************************* Waline Comment ************************/
 
 /* comment-圆角 */
 .comments {
@@ -398,13 +355,9 @@ li.category-list-item a {
 @media (prefers-color-scheme: dark) {
   body {
     --waline-text-color: $text-color-dark !important;
-    --waline-bgcolor: $content-bg-color-dark !important;
-    --waline-bgcolor-light: $body-bg-color-dark !important;
+    --waline-bgcolor: $myblue-deep !important;
+    --waline-bgcolor-light: $myblue-deeper !important;
   }
-}
-
-.v[data-class=v] .vheader input {
-  font-size: .75em !important;
 }
 
 /* comment-登录按钮 */
@@ -418,98 +371,8 @@ li.category-list-item a {
   color: white !important;
   border-color: $btn-default-bg !important;
   background: $btn-default-bg !important;
-
   &:hover {
     border-color: $btn-default-hover-bg !important;
     background: $btn-default-hover-bg !important;
-  }
-}
-
-/************************* 卡片页面 (Friends/Lab) ************************/
-
-.post-body .mygrid {
-  gap: 1rem 1rem;
-  grid-gap: 1rem 1rem;
-}
-
-.post-body .mygrid .link-grid-container p:first-of-type {
-  color: var(--text-color);
-}
-
-.post-body .mygrid .link-grid-container {
-  box-shadow: none;
-  padding: 0;
-  border-radius: 0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px dashed #d3d3d4;
-
-  &:hover {
-    background: none;
-    color: var(--link-hover-color);
-  }
-
-  &:hover p:first-of-type {
-      color: var(--link-hover-color);
-    }
-}
-
-
-.post-body .mygrid .link-grid-container p {
-  margin: 0 1rem 0 5rem;
-  
-  &:first-of-type {
-    font-size: 1em;
-    margin-top: 3px;
-    white-space: nowrap; //禁止换行、超出隐藏
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &:last-of-type {
-    font-size: 0.875em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    opacity: 1;
-  }
-}
-
-.post-body .mygrid .link-grid-container .link-grid-image {
-  border: 1px solid #ddd;
-  border-radius: 0;
-  height: 4rem;
-  padding: 0;
-  width: 4rem;
-}
-
-
-/************************* 特殊样式排版 ************************/
-
-/* 着重号 `{% dot 强调的文字 %}` */
-.emphasis-point {
-  font-style: normal;
-  text-emphasis: '•';
-  -webkit-text-emphasis: '•';
-  -moz-text-emphasis: '•';
-  text-emphasis-position: under;
-  -webkit-text-emphasis-position: under;
-  -moz-text-emphasis-position: under;
-}
-
-/* 分割线 `<hr>` 或 `***` 或 `---` */
-hr {
-  background-image: none;
-  height: 2em;
-  border: none;
-  margin: 1em 0 1em;
-  text-align: center;
-
-  &::after {
-    content: "···";
-    letter-spacing: 2em;
-    padding-left: 2em;
-    font-weight: bold;
   }
 }

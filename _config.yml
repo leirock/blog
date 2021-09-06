@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 纯粹
-subtitle: '风吹过的起点'
-description: '爱美食/纪录片/夜猫子'
-keywords: [班班, Leirock, LeileiRock, Hexo, blog, 博客, 经济学, economics]
-author: 班班 Leirock
+title: 示例
+subtitle: '班班博客的示例'
+description: '填写博客介绍'
+keywords: ''
+author: Leirock
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://blog.dlzhang.com
-root: /
+url: https://leirock.github.io/blog-sample
+root: /blog-sample/
 permalink: /posts/:pid/
 permalink_defaults:
 pretty_urls:
@@ -24,9 +24,9 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: timeline
-category_dir: categories
+tag_dir: overview/tags
+archive_dir: overview/timeline
+category_dir: overview
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -64,16 +64,12 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 10
   order_by: -date
 
 # Category & Tag
 default_category: life
 category_map:
-  学术向: academic
-  碎碎念: life
-  观察者: viewpoint
-  科技树: tech
 tag_map:
 
 # Metadata elements
@@ -117,22 +113,17 @@ js_minifier:
 image_minifier:
   enable: false
 
-# Hexo Server
-server:
-  port: 4000
-  ip: 127.0.0.1
-
 # Waline
 # For more information: https://waline.js.org
 waline:
-  enable: true
-  serverURL: https://waline.dlzhang.com # Waline server address url
+  enable: false
+  serverURL: # Waline server address url
   avatar: wavatar # Gravatar style
-  avatarCDN: https://sdn.geekzu.org/avatar/
+  avatarCDN:
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 10 # Pagination size
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   dark: auto
   emoji:  [
@@ -142,18 +133,8 @@ waline:
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
   ]
   locale:
-    placeholder: 在这里分享你的观点与想法～ 昵称、邮箱必填，评论回复会通过邮件提醒。 # Comment box placeholder
+    placeholder: 在这里分享你的观点与想法～  # Comment box placeholder
     admin: 博主
-    nick: 昵称*
-    mail: 邮箱*
+    nick: 昵称
+    mail: 邮箱
     link: 网址
-
-# hexo-extend-theme
-# Replace any theme file in layout folder to a custom file.
-# For more information: https://github.com/jiangtj/hexo-extend-theme
-theme_plus:
-  views:
-    - path: 'page.njk'
-      file: 'custom/page.njk'
-    - path: 'archive.njk'
-      file: 'custom/archive.njk'
