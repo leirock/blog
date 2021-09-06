@@ -1,6 +1,5 @@
 [![Generator Hexo](https://img.shields.io/badge/Generator-Hexo-blue?style=flat-square&logo=hexo)](https://hexo.io)
 [![Theme NexT](https://img.shields.io/badge/Theme-NexT-black?&style=flat-square&logo=github)](https://github.com/next-theme/hexo-theme-next)
-[![Build Status](https://img.shields.io/github/workflow/status/leirock/blog/Deploy?&label=GitHub+Actions&style=flat-square&logo=gitHub+actions)](https://github.com/leirock/blog/actions?query=workflow%3ADeploy)
 
 This repository contains all source files of my blog.
 
