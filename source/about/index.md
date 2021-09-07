@@ -10,11 +10,11 @@ toc:
 
 　　您可以通过 [<i class="fas fa-fw fa-rss"></i> RSS](/atom.xml) 订阅本站的更新。同时，部分文章也会推送更新到 <a class="fancybox fancybox.image" href="https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：班班碎碎念" data-caption="微信公众号：班班碎碎念"><i class="fab fa-fw fa-weixin"></i> 微信公众号</a> 。由于编辑排版的问题，微信公众号可能不会在第一时间推送更新~~（Telegram 频道推送更新是个好主意）~~。
 
-　　如果您喜欢本站的设计，亦或是博客中的一些文字让您产生了共鸣，或者对您有一点微小的帮助，欢迎通过 [<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@leirock) 支持我更好地持续创作。
+　　如果您喜欢本站的设计，亦或是博客中的一些文字让您产生了共鸣，或者对您有一点微小的帮助，欢迎通过 [<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@leirock) 支持我更好地持续创作。本站通过 [Hexo](https://hexo.io) [NexT](https://theme-next.js.org) 构建，如果您在浏览本站的过程中发现了任何问题，请在[留言板](/guestbook)提出您宝贵的意见或建议。
 
-　　除特别声明外，博客中的所有作品均为本人原创。您可以全文转载或基于文章进行二次创作，但请注明作者和出处。此外，请先邮件联络获得书面许可后，方可用于商业目的。详细的著作权许可协议请查阅 [<i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA 4.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。
+## 著作权声明
 
-　　本站通过 [Hexo](https://hexo.io) [NexT](https://theme-next.js.org) 构建，如果您在浏览本站的过程中发现了任何问题，请在[留言板](/guestbook)提出您宝贵的意见或建议。
+　　除特别声明之外，本站的所有作品（包括但不限于文字、照片、视频）均为本人原创。如果{% dot 用于非商业目的 %}，您可以直接转载相关作品的全部或部分内容，但需注明作者和原始链接；如果{% dot 用于商业目的 %}，必须事先获得书面授权。未经本人允许，不得对作品内容进行修改演绎。对于本站所使用的其他文字或图片素材，如果您是相关作品的作者，并认为本站损害了您的权利，请立刻联络本人解决。
 
 ## 在这里发现更多
 
