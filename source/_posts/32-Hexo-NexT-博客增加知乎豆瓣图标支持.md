@@ -7,7 +7,7 @@ date: 2018-06-13 04:21:54
 update: 2020-12-03 17:33:00
 ---
 
-因为 Hexo NexT 原始主题是采用了 Font Awesome 图标，并未包含如知乎、豆瓣这类中国大陆的社交网站图标。所以需要加入另一种图标的支持，使得博客可以显示出知乎、豆瓣这类的图标。<!--more-->
+因为 Hexo NexT 原始主题是采用了 Font Awesome 图标，并未包含如知乎、豆瓣这类中国大陆的社交网站图标。所以需要加入另一种图标的支持，使得博客可以显示出知乎、豆瓣这类的图标。
 
 - 感谢评论区 jqgsninimo 提供的改进，方法更佳简单明了，本文已经更新该方法。 
 - CSS 自定义文件指 `/source/_data/styles.styl`
@@ -16,6 +16,8 @@ update: 2020-12-03 17:33:00
 {% note info %} 
 **更新**：NexT 8.1.0 版本下可以直接选择 [草莓图标库](https://github.com/xiangsudian/CaoMei) 方案或者参考主题文档关于 [Custom Icon Image](https://theme-next.js.org/docs/advanced-settings/custom-files.html#Custom-Icon-Image) 设置的说明。
 {% endnote %}
+
+<!--more-->
 
 ## 1. 下载图标
 

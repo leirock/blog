@@ -11,9 +11,9 @@ This is the essay of CUHK PhD level course *Industrial Organization*.
 本文是香港中文大学博士生课程 Industrial Organization 的课程论文。
 {% endnote %}
 
-**Abstract:** This article explores the facts during the anti-monopoly legislation in the US and China with historical evidences. Small and insufficient firms in the US were more active in lobbying the antitrust legislation, while in China, SOEs and multinational companies were more active. <!-- more -->The core problem in the US is whether the country needed an antitrust act at that time, but people in China concerned more about what should be included in the law. The effect of the implementation of the law in both countries is not as good as expected. The unclear definition of concepts in Sherman Act and the inefficient distribution of enforcement power in China are the reasons.
+**Abstract:** This article explores the facts during the anti-monopoly legislation in the US and China with historical evidences. Small and insufficient firms in the US were more active in lobbying the antitrust legislation, while in China, SOEs and multinational companies were more active. The core problem in the US is whether the country needed an antitrust act at that time, but people in China concerned more about what should be included in the law. The effect of the implementation of the law in both countries is not as good as expected. The unclear definition of concepts in Sherman Act and the inefficient distribution of enforcement power in China are the reasons.
 
-本文利用历史证据探索中美两国的反垄断法（反托拉斯法）立法过程。美国小型且发展较不足的公司会更积极地参与反托拉斯法的立法游说，而中国的国有企业和跨国公司在这方面则更为活跃。美国的核心问题是当时该国是否需要采取反托拉斯法，但是在中国的人们则是在关注这部法律中应该包含什么样的内容。两国反垄断法（反托拉斯法）的执行效果均不如预期，其原因分别是：美国在《谢尔曼法》中的概念定义不明确，而中国在执法权分配上效率低下。
+**摘要：**本文利用历史证据探索中美两国的反垄断法（反托拉斯法）立法过程。美国小型且发展较不足的公司会更积极地参与反托拉斯法的立法游说，而中国的国有企业和跨国公司在这方面则更为活跃。美国的核心问题是当时该国是否需要采取反托拉斯法，但是在中国的人们则是在关注这部法律中应该包含什么样的内容。两国反垄断法（反托拉斯法）的执行效果均不如预期，其原因分别是：美国在《谢尔曼法》中的概念定义不明确，而中国在执法权分配上效率低下。<!-- more -->
 
 ## 1. Introduction
 
