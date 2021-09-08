@@ -5,7 +5,7 @@ toc:
   enable: false
 ---
 
-![曲院风荷](https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/guestbook/quyuanfenghe.jpg!650x)
+![曲院风荷](https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/quyuanfenghe.jpg!650x)
 
 * * *
 
