@@ -14,7 +14,7 @@ comments: false
 {% linkgrid %}
 关于本站 | /about/ | 关于本站与班班的介绍 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/about.png
 探索实践 | /innovation/ | 有趣的探索与尝试 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/innovation.png
-知识仓库 | #" onclick="myAlert() | 记录知识 总结智慧 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/wiki.png
+知识仓库 <i class="fas fa-fw fa-external-link-alt" style="font-size: .8em"></i> | " onclick="myAlert() | 记录知识 总结智慧 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/wiki.png
 友情链接 | /friends/ | 班班的朋友们 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/friends.png
 {% endlinkgrid %}
 
