@@ -19,9 +19,3 @@ comments: false
 {% endlinkgrid %}
 
 
-<script>
-    function myAlert()
-    {
-        alert("您好，「知识库」正在建设中，敬请期待！");
-    }
-</script>
