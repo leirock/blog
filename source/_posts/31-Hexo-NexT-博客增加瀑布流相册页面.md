@@ -1,6 +1,6 @@
 ---
 title: Hexo NexT 博客增加瀑布流相册页面
-categories: [科技树]
+categories: [笔记本]
 tags: [设计, blog]
 pid: 31
 date: 2018-06-11 12:24:01

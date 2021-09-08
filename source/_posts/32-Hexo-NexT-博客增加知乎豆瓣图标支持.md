@@ -1,6 +1,6 @@
 ---
 title: Hexo NexT 博客增加知乎豆瓣图标支持
-categories: [科技树]
+categories: [笔记本]
 tags: [设计, blog]
 pid: 32
 date: 2018-06-13 04:21:54

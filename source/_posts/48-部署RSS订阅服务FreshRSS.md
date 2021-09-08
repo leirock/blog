@@ -1,6 +1,6 @@
 ---
 title: 部署 RSS 订阅服务 FreshRSS
-categories: [科技树]
+categories: [笔记本]
 tags: [服务器, RSS]
 pid: 48
 date: 2020-04-15 20:30:45

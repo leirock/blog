@@ -1,7 +1,7 @@
 ---
 title: Antimonopoly Law Legislation in China and USA
-categories: [学术向]
-tags: [反垄断, 法律]
+categories: [观察者]
+tags: [反垄断, 法律, 经济]
 pid: 18
 date: 2016-12-16 18:31:22
 ---

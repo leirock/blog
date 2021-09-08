@@ -70,10 +70,9 @@ index_generator:
 # Category & Tag
 default_category: life
 category_map:
-  学术向: academic
   碎碎念: life
   观察者: viewpoint
-  科技树: tech
+  笔记本: note
 tag_map:
 
 # Metadata elements

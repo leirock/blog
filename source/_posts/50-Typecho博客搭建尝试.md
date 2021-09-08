@@ -1,6 +1,6 @@
 ---
 title: Typecho 博客搭建尝试
-categories: [科技树]
+categories: [笔记本]
 tags: [blog, 服务器]
 pid: 50
 date: 2020-04-30 17:00:00
