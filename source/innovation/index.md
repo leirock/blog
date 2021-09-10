@@ -1,7 +1,6 @@
 ---
 title: 探索实践
 description: 有趣的探索与尝试
-comments: true
 ---
 
 {% centerquote %}

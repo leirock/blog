@@ -9,7 +9,7 @@ toc:
 
 * * *
 
-　　我是[班班](https://dlzhang.com)，欢迎访问我的博客。博客的名字「纯粹」，既是对自己行为处事的美好愿景，也是对这个博客的定位，亦即通过这个平台记录和分享一些纯粹的生活感悟、观点和想法。副标题「风卷过的起点」取自张韶涵的歌曲《起点》的最后一句歌词「风卷过的起点，有疲倦也有种新鲜，太舍不得昨天，就去完成一个更幸福的明天」。
+　　我是[班班](https://dlzhang.com)，欢迎访问我的博客。博客的名字「纯粹」，既是对自己行为处事的美好愿景，也是对这个博客的定位，亦即通过这个平台记录和分享一些纯粹的生活感悟、观点和想法。副标题「风卷过的起点」取自张韶涵的歌曲《起点》的最后一句歌词「风卷过的起点，有疲倦也有种新鲜，太舍不得昨天，就去完成一个更幸福的明天」。「[发现更多](/more/)」和「[探索实践](/innovation/)」页面开头的引用文字取自马一浮作词的《浙江大学校歌》中的歌词。
 
 　　您可以通过 [<i class="fas fa-fw fa-rss"></i> RSS](/atom.xml) 订阅本站的更新。同时，部分文章也会推送更新到 <a class="fancybox fancybox.image" href="https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点"><i class="fab fa-fw fa-weixin"></i> 微信公众号</a> 。由于编辑排版的问题，微信公众号可能不会在第一时间推送更新~~（Telegram 频道推送更新是个好主意）~~。
 
