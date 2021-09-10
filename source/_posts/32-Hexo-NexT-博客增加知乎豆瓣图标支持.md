@@ -16,7 +16,6 @@ update: 2020-12-03 17:33:00
 {% note info %} 
 **更新**：NexT 8.1.0 版本下可以直接选择 [草莓图标库](https://github.com/xiangsudian/CaoMei) 方案或者参考主题文档关于 [Custom Icon Image](https://theme-next.js.org/docs/advanced-settings/custom-files.html#Custom-Icon-Image) 设置的说明。
 {% endnote %}
-
 <!--more-->
 
 ## 1. 下载图标
