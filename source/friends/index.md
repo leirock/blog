@@ -18,8 +18,8 @@ description: 班班的朋友们
 ### 2.1 添加本站友链
 
 {% note success %}
-名称：{% label info@纯粹 %}（或 {% label info@班班碎碎念 %} ）
-简介：{% label info@风卷过的起点 %}
+名称：{% label info@纯粹 %}（或 {% label info@风卷过的起点 %} ）
+简介：{% label info@班班的碎碎念 %}
 标识：https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?size=512
 链接：https://blog.dlzhang.com
 {% endnote %}
