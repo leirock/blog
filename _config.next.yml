@@ -34,10 +34,11 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple-touch-icon.png
-  safari_pinned_tab: /images/safari-pinned-tab.svg
+  small: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon-16.png
+  medium: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon-32.png
+  apple_touch_icon: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/apple-touch-icon.png
+  safari_pinned_tab: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon.svg
+  android_manifest: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/manifest.webmanifest
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -59,7 +60,7 @@ menu:
 
 # Sidebar Avatar
 avatar:
-  url: https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=200
+  url: https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-256.png
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
