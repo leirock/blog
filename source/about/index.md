@@ -1,6 +1,6 @@
 ---
 title: 关于本站
-description: 关于本站与班班的介绍
+description: 关于本站的介绍
 toc:
   enable: false
 ---
