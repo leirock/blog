@@ -3,6 +3,6 @@
 
 This repository contains all source files of my blog.
 
-All articles and photos provided in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). For commercial use, please contact me by email first.
+- Assets (favicon, avatar, background images): [leirock/assets](https://github.com/leirock/assets)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+- Images and videos used in pages and posts: Tencent COS
