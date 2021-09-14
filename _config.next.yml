@@ -34,10 +34,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon-16.png
+  small: ''
   medium: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon-32.png
   apple_touch_icon: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/apple-touch-icon.png
-  safari_pinned_tab: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon.svg
+  safari_pinned_tab: ''
   android_manifest: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/manifest.webmanifest
 
 # ---------------------------------------------------------------
@@ -213,3 +213,5 @@ note:
 
 motion:
   enable: false
+
+images: https://cdn.jsdelivr.net/gh/leirock/assets@main/blog

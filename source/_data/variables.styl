@@ -31,7 +31,8 @@ $font-family-quote            = EB Garamond, STKaiti, KaiTi, SimKai, DFKai-SB, N
 $font-family-sans             = -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Source Han Sans SC,Noto Sans CJK SC,Microsoft YaHei,WenQuanYi Micro Hei,WenQuanYi Zen Hei,Helvetica Neue,Arial,sans-serif;
 
 // Image assets
-$site-brand-bg-url            = "/images/header-bg.jpg";
-$body-bg-url                  = "/images/body-bg.png";
-$body-bg-gray-url             = "/images/body-bg-gray.png";
-$comment-bg-url               = "/images/comment-bg.png";
+$images_cdn                   = hexo-config('images') + '/';
+$site-brand-bg-url            = $images_cdn + 'header-bg.jpg';
+$body-bg-url                  = $images_cdn + 'body-bg.png';
+$body-bg-gray-url             = $images_cdn + 'body-bg-gray.png';
+$comment-bg-url               = $images_cdn + 'comment-bg.png';
