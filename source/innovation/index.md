@@ -15,5 +15,5 @@ description: 有趣的探索与尝试
 CV-Academic | https://github.com/leirock/CV-Academic | LaTex 学术简历模版 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/innovation/tex.png
 beamer-sgp940 | https://github.com/leirock/beamer-sgp940 | LaTex 幻灯片模版 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/innovation/tex.png
 MemorialDay | https://github.com/leirock/Typecho-Plugin-MemorialDay | Typecho 插件：全站黑白滤镜 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/innovation/typecho.png
-HexoAlbum | https://github.com/leirock/HexoAlbum | 为 Hexo NexT 博客增加瀑布流相册页面 | /images/apple-touch-icon-next.png
+HexoAlbum | https://github.com/leirock/HexoAlbum | 为 Hexo NexT 博客增加瀑布流相册页面 | https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/innovation/next.png
 {% endlinkgrid %}
