@@ -146,6 +146,7 @@ waline:
     nick: 昵称*
     mail: 邮箱*
     link: 网址
+    login: 管理
 
 # hexo-extend-theme
 # Replace any theme file in layout folder to a custom file.
