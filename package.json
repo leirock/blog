@@ -9,12 +9,10 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "@jiangtj/hexo-extend-theme": "^0.2.4",
     "@waline/hexo-next": "^2.0.5",
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",
     "hexo-footnote": "^1.0.4",
-    "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-indexed": "^1.2.1",

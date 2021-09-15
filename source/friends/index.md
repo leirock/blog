@@ -44,7 +44,7 @@ description: 班班的朋友们
   logo: example.com.png #标识图片的文件名
   url: https://example.com #您的站点链接
 ```
-- 完成后，请新建一个 Pull Request，被批准合并后就会显示在[友链页面](/friends/)。
+- 完成后，请新建一个 Pull Request，被批准合并后就会显示在本页。
 
 {% note info %}
 如果无法使用 GitHub，可以在下方评论区留下您站点的相关信息。

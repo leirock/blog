@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@jiangtj/hexo-extend-theme@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-extend-theme/-/hexo-extend-theme-0.2.4.tgz#689fdc37afac6d7a541744b7241cd8f7b7469772"
-  integrity sha512-5yxmVLW6qKxhjQ57LeSAFxmHD5s4+mjxUcrfu/LNz2ZSyHGFqWk8IMAgk9VIGdH6T8R+0Itxwdv7wbA6S8OuEQ==
-
 "@next-theme/utils@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@next-theme/utils/-/utils-1.2.0.tgz#b062f56d768c7722ab878bf93afd0172d89d76b0"
@@ -148,9 +143,9 @@ ansi-regex@^2.0.0:
   integrity sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
 
 ansi-regex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
-  integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
+  integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
 ansi-styles@^2.2.1:
   version "2.2.1"
@@ -1559,13 +1554,6 @@ hexo-fs@^3.0.1, hexo-fs@^3.1.0:
     chokidar "^3.0.0"
     graceful-fs "^4.1.11"
     hexo-util "^2.0.0"
-
-hexo-generator-archive@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-generator-archive/-/hexo-generator-archive-1.0.0.tgz#ad2afb12232a65e2f8608fc1ca3f19162fb63786"
-  integrity sha512-24TeanDGpMBUIq37DHpSESQbeN6ssZ06edsGSI76tN4Yit50TgsgzP5g5DSu0yJk0jUtHJntysWE8NYAlFXibA==
-  dependencies:
-    hexo-pagination "1.0.0"
 
 hexo-generator-category@^1.0.0:
   version "1.0.0"

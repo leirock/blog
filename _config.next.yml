@@ -45,13 +45,15 @@ favicon:
 # ---------------------------------------------------------------
 
 menu:
-  home: / || fas fa-home
-  overview: /overview/ || fas fa-tags
+  life: /categories/life/ || fas fa-pizza-slice
+  viewpoint: /categories/viewpoint/ || fas fa-eye
+  note: /categories/note/ || fas fa-pencil-alt
+  tags: /tags/ || fas fa-tags
+  guestbook: /guestbook/ || fas fa-location-arrow
+  friends: /friends/ || fas fa-link
 #  overview: 
 #    default: /overview/ || fas fa-archive
-#    tags: tags/ || fas fa-tags
-  timeline: timeline/ || fas fa-history
-  more: /more/ || fas fa-location-arrow
+#    timeline: timeline/ || fas fa-history
 
 # ---------------------------------------------------------------
 # Sidebar Settings
