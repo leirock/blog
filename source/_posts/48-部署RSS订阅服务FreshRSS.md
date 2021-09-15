@@ -4,12 +4,19 @@ categories: [笔记本]
 tags: [服务器, RSS]
 pid: 48
 date: 2020-04-15 20:30:45
+update: 2021-09-15 22:18:00
 ---
 
 RSS 订阅我之前是使用 Inoreader，但是免费版的即使是在 Reeder 客户端下浏览依然是有广告植入的，而且听闻最近在境内已经无法访问了，所以就考虑自建一个。
 
 一开始考虑的是 Tiny Tiny RSS，这个之前在腾讯云的学生机上就尝试搭建过。但是订阅源的自动刷新一直搞不定，看了很多教程也没有成功，而且界面设置什么的都不是很喜欢，就放弃了。继续寻找之下找到了 FreshRSS，自带支持 Reeder 客户端访问，不像 Tiny Tiny RSS 还需要安装 fever 插件。
 <!--more-->
+
+{% note info %}
+
+**20210915 更新**：目前 FreshRSS 已经支持 Docker 安装，建议直接采用官方提供的 [`docker-compose.yml`](https://github.com/FreshRSS/FreshRSS/blob/edge/Docker/docker-compose.yml) 进行安装，数据库我也改用 SQLite 了，这样只需要把 `data/` 和 `extensions/` 文件夹备份起来就好，简单方便。
+
+{% endnote %}
 
 ## 1. 安装 FreshRSS
 
