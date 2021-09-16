@@ -229,6 +229,10 @@ li {
   font-weight: bold;
   font-size: 1em;
   border-radius: 1em;
+
+  &:hover {
+    color: #fff;  
+  }
 }
 
 /* button-reward */
@@ -393,11 +397,6 @@ li.category-list-item a {
 	transition: all .2s ease-in-out 0s !important;
 }
 
-.vcontent img[src^="https://img.t.sinajs.cn"] {
-  width: 1.2em !important;
-  display: inline !important;
-}
-
 /* comment-输入框黑暗模式 */
 @media (prefers-color-scheme: dark) {
   body {
@@ -407,11 +406,13 @@ li.category-list-item a {
   }
 }
 
-.v[data-class=v] .vheader input {
-  font-size: .75em !important;
+.v[data-class=v] .vheader input, 
+.v[data-class=v] .vheader label,
+.v[data-class=v] .vbtn {
+  font-size: .8em !important;
 }
 
-/* comment-登录按钮 */
+/* comment-管理登录按钮 */
 .v[data-class=v] .vbtn:hover {
     border-color: $btn-default-hover-bg !important;
     color: $btn-default-hover-bg !important;
