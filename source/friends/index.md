@@ -20,7 +20,7 @@ description: 班班的朋友们
 {% note success %}
 名称：{% label primary@纯粹 %} 或 {% label primary@风卷过的起点 %}
 简介：班班的碎碎念
-标识：https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-512.png
+标识：https://cdn.jsdelivr.net/gh/leirock/assets/avatar/avatar-512.png
 链接：https://blog.dlzhang.com
 {% endnote %}
 
