@@ -19,7 +19,7 @@ toc:
 
 　　您可以通过 [<i class="fas fa-fw fa-rss"></i> RSS](/atom.xml) 订阅更新，部分文章也会推送到 <a class="fancybox fancybox.image" href="https://web-1256060851.cos.ap-hongkong.myqcloud.com/pages/guestbook/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点"><i class="fab fa-fw fa-weixin"></i> 微信公众号</a> 。如果您喜欢本站的设计，亦或是博客中的一些文字让您产生了共鸣，或者对您有一点微小的帮助，欢迎通过 [<font color=#946ce6><i class="fas fa-fw fa-bolt"></i>爱发电</font>](https://afdian.net/@leirock) 支持我更好地持续创作。
 
-　　如需引用转载本站的作品（包括但不限于文字、照片、视频），请查阅[著作权声明](/copyright/)。如果您在浏览本站的过程中发现了任何问题，请在下方评论区留言或者在 GitHub 提出 [Issues](https://github.com/leirock/blog-sample/issues)。
+　　如需引用转载本站的作品（包括但不限于文字、照片、视频），请查阅[著作权声明](/copyright/)。如果您在浏览本站的过程中发现了任何问题，请在下方评论区留言或者在 GitHub 提出 [Issues](https://github.com/leirock/blog/issues)。
 
 ## 在这里发现更多
 
