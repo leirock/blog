@@ -13,8 +13,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://leirock.github.io/blog-sample
-root: /blog-sample/
+url: https://leirock.github.io/blog
+root: /blog/
 permalink: /posts/:pid/
 permalink_defaults:
 pretty_urls:
