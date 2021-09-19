@@ -138,7 +138,7 @@ waline:
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+    #'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
   ]
   locale:
     placeholder: 在这里分享你的观点与想法～ 昵称、邮箱必填，评论回复会通过邮件提醒。 # Comment box placeholder
