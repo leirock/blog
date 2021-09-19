@@ -157,3 +157,9 @@ theme_plus:
       file: 'custom/page.njk'
     - path: 'archive.njk'
       file: 'custom/archive.njk'
+
+# hexo-directory-category
+# For more information: https://github.com/zthxxx/hexo-directory-category
+auto_dir_categorize:
+	enable: true  # options:true, false; default is true
+	force: true # options:true, false; default is false

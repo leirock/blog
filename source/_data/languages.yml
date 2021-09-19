@@ -1,14 +1,13 @@
 # language
 zh-CN:
   menu:
-    home: 首页
-    friends: 朋友们
-    search: 搜文章
     life: 碎碎念
-    note: 笔记本
     viewpoint: 观察者
+    note: 笔记本
     tags: 标签云
     guestbook: 留言板
+    friends: 朋友们
+    search: 搜文章
   sidebar:
     overview: 作者信息
     toc: 文章目录
