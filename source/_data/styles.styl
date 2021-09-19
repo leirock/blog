@@ -103,19 +103,7 @@ if (hexo-config('gray')) {
   border-radius: $myradius !important;
 }
 
-/* post-首页文章标题 */
-.index .post-title {
-  text-align: left;
-  border-left: $btn-default-bg 8px solid;
-  padding-left: 10px;
-}
-
-/* post-首页文章信息 */
-.index .post-meta {
-  justify-content: left;
-}
-
-/* post-文章标题 */
+/* post-文章与页面标题 */
 .posts-expand .post-title {
   font-size: 1.35em;
   font-weight: bold;
@@ -125,14 +113,39 @@ if (hexo-config('gray')) {
   }
 }
 
-/* post-页面描述 */
-.posts-expand .post-meta-container .post-description {
-  font-size: .95em;
+/* post-文章标题 */
+.index .post-title,
+.post .post-title {
+  text-align: left;
+  border-left: $btn-default-bg 8px solid;
+  padding-left: 10px;
 }
 
 /* post-文章信息 */
+.index .post-meta,
+.post .post-meta {
+  justify-content: left;
+}
+
 .posts-expand .post-header {
   margin-bottom: 30px;
+}
+
+.posts-expand .post-meta-container {
+  /* 文字颜色 */
+  color: var(--text-color);
+  /* 时间下划线 */
+  time {
+    border-bottom: none;
+  }
+  /* 文章/页面描述 */
+  .post-description {
+    font-size: .95em;
+  }
+}
+
+.post-meta-item a {
+  border-bottom: none;
 }
 
 /* post-段后距 */
@@ -140,14 +153,13 @@ p {
   margin-bottom: 12px;
 }
 
-/* post-正文字号 */
 .post-body {
+/* post-正文字号 */
   font-size: 1em;
-}
-
 /* post-正文一级标题下划线 */
-.post-body h2 {
-  border-bottom: 1px dotted #eee;
+  h2 {
+    border-bottom: 1px dotted #eee;
+  }
 }
 
 /* post-标签选择卡片加粗 */
