@@ -1,6 +1,7 @@
 ---
 title: 友情链接
 description: 班班的朋友们
+comments: false
 ---
 
 <div id="friends" class="link-grid mygrid"></div>
@@ -47,5 +48,5 @@ description: 班班的朋友们
 - 完成后，请新建一个 Pull Request，被批准合并后就会显示在本页。
 
 {% note info %}
-如果无法使用 GitHub，可以在下方评论区留下您站点的相关信息。
+如果无法使用 GitHub，可以在[留言板](/guestbook/)留下上述信息。
 {% endnote %}
