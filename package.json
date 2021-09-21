@@ -12,7 +12,6 @@
     "@waline/hexo-next": "^2.0.5",
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",
-    "hexo-directory-category": "^1.1.4",
     "hexo-footnote": "^1.0.4",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",

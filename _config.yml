@@ -130,7 +130,7 @@ waline:
   avatarCDN: https://gravatar.loli.top/avatar/ # https://sdn.geekzu.org/avatar/
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
-  pageSize: 10 # Pagination size
+  pageSize: 5 # Pagination size
   visitor: false # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   dark: auto
@@ -147,6 +147,9 @@ waline:
     mail: 邮箱*
     link: 网址
     login: 管理
+
+
+##### 以下插件设置停用 #####
 
 # hexo-extend-theme
 # Replace any theme file in layout folder to a custom file.
