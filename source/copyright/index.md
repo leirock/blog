@@ -15,8 +15,8 @@ toc:
 
 引用转载本站中非本人原创的作品请查阅原作者的授权许可，属于本人原创的作品请遵循以下规范：
 
-- 「[碎碎念](/categories/life/)」与「[观察者](/categories/viewpoint/)」分类的作品：未经本人{% dot 书面授权 %}，不得转载引用；
+- 「[碎碎念](/life/)」与「[观察者](/viewpoint/)」分类的作品：未经本人{% dot 书面授权 %}，不得转载引用；
 
-- 「[笔记本](/categories/note/)」分类的作品：采用 [<i class="fab fa-fw fa-creative-commons"></i> 知识共享 署名-非商业性使用-禁止演绎 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 许可协议：如果用于{% dot 非商业 %}目的，您可以直接转载相关作品的全部或部分内容，但需注明作者和原始链接；如果用于{% dot 商业 %}目的，必须事先获得书面授权。
+- 「[笔记本](/note/)」分类的作品：采用 [<i class="fab fa-fw fa-creative-commons"></i> 知识共享 署名-非商业性使用-禁止演绎 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 许可协议：如果用于{% dot 非商业 %}目的，您可以直接转载相关作品的全部或部分内容，但需注明作者和原始链接；如果用于{% dot 商业 %}目的，必须事先获得书面授权。
 
 以上任何原创作品，未经本人允许，不得对作品内容进行修改演绎。

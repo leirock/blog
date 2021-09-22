@@ -279,6 +279,11 @@ li {
 }
 
 /* 修改选中字符的颜色 */
+::-moz-selection { /* Code for Firefox */
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--blockquote-color);
+}
+
 ::selection {
   background: rgba(0, 149, 255, 0.2);
   color: var(--blockquote-color);

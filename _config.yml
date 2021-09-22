@@ -26,7 +26,7 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: timeline
-category_dir: categories
+category_dir: ''
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
