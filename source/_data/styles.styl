@@ -105,7 +105,7 @@ if (hexo-config('gray')) {
 
 /* post-文章与页面标题 */
 .posts-expand .post-title {
-  font-size: 1.35em;
+  font-size: 1.4em;
   font-weight: bold;
 
   +mobile() {
@@ -153,13 +153,9 @@ p {
   margin-bottom: 12px;
 }
 
-.post-body {
 /* post-正文字号 */
+.post-body {
   font-size: 1em;
-/* post-正文一级标题下划线 */
-  h2 {
-    border-bottom: 1px dotted #eee;
-  }
 }
 
 /* post-标签选择卡片加粗 */
@@ -191,6 +187,11 @@ p {
 blockquote p,
 .post-body .note {
   font-family: $font-family-quote;
+}
+
+/* post-引用字体颜色 */
+blockquote {
+  color: var(--text-color);
 }
 
 /* post-思源宋体列表打叉修复 */
