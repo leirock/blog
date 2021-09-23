@@ -4,7 +4,7 @@ toc:
   enable: false
 ---
 
-![曲院风荷](https://web-1256060851.cos.ap-hongkong.myqcloud.com/page/guestbook/quyuanfenghe.jpg!650x)
+![曲院风荷](https://web-1256060851.cos.ap-hongkong.myqcloud.com/page/guestbook/quyuanfenghe.jpg#650x)
 
 {% centerquote %}
 无曰已是，无曰遂真。

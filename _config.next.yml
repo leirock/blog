@@ -217,4 +217,13 @@ note:
 motion:
   enable: false
 
+# ---------------------------------------------------------------
+# CDN Settings
+# See: https://theme-next.js.org/docs/advanced-settings/vendors
+# ---------------------------------------------------------------
+
+vendors:
+  # The CDN provider of NexT internal scripts.
+  internal: jsdelivr
+
 images: https://cdn.jsdelivr.net/gh/leirock/assets@main/blog

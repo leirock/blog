@@ -37,7 +37,6 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        sed -i '9s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/third-party/fancybox.js
         yarn build
         rm -rf public/images public/img
 
