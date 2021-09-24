@@ -126,8 +126,7 @@ server:
 waline:
   enable: true
   serverURL: https://waline.dlzhang.com # Waline server address url
-  avatar: mp # Gravatar style
-  avatarCDN: https://gravatar.loli.top/avatar/ # https://sdn.geekzu.org/avatar/
+  avatar: '' # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 5 # Pagination size
