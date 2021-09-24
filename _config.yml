@@ -133,6 +133,7 @@ waline:
   pageSize: 5 # Pagination size
   visitor: false # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
+  copyright: false
   dark: auto
   emoji:  [
     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',

@@ -98,7 +98,7 @@ footer:
   copyright: 纯粹
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
 # ---------------------------------------------------------------
 # Post Settings
