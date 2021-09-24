@@ -15,36 +15,33 @@ if(window.location.hash){
 
 {### Friends Grid ###}
 <script{{ pjax }}  type="text/javascript">
-// friends repo CDN
-var FriendsPath = 'https://web-1256060851.cos.ap-hongkong.myqcloud.com/page/friends';
-// friends list file
-var FriendsList = FriendsPath + '/friendslist.json';
-// friends website logo folder
-//var LogoPath = FriendsPath + '/logo/';
-// generate friends link grid
-friend = {
-    init: function () {
-        var that = this;
-        $.getJSON(FriendsList, function (data) {
-            that.render(data);
-        });
-    },
-    render: function (data) {
-        var title, logo, url, description, li = "";
-        for (var i = 0; i < data.length; i++) {
-            title = data[i].title;
-            description = data[i].description;
-            logo = data[i].logo;
-            url = data[i].url;
-            li += '<div class="link-grid-container">' +
-                    '<object class="link-grid-image" data="' + logo + '"></object>' +
-                    '<p>' + title + '</p>' + 
-                    '<p>' + description + '</p>' + 
-                    '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
-                    '</div>';
+var el = document.getElementById('friendslink');
+if (el != undefined) {
+    var friendsList = el.getAttribute('list');
+    friend = {
+        init: function () {
+            var that = this;
+            $.getJSON(friendsList, function (data) {
+                that.render(data);
+            });
+        },
+        render: function (data) {
+            var title, logo, url, description, li = "";
+            for (var i = 0; i < data.length; i++) {
+                title = data[i].title;
+                description = data[i].description;
+                logo = data[i].logo;
+                url = data[i].url;
+                li += '<div class="link-grid-container">' +
+                        '<object class="link-grid-image" data="' + logo + '"></object>' +
+                        '<p>' + title + '</p>' + 
+                        '<p>' + description + '</p>' + 
+                        '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
+                        '</div>';
+            }
+            $("#friendslink").append(li);
         }
-        $("#friends").append(li);
     }
+    friend.init();
 }
-friend.init();
 </script>
