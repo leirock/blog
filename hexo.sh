@@ -23,14 +23,12 @@ read answer
 if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 	printf "\n\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
-# 	sed -i "" '9s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/third-party/fancybox.js
 	if [ "$answer" == "" ]; then
 		hexo server
 		hexo clean
 	else
 		hexo_server
 	fi
-# 	sed -i "" '9s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' node_modules/hexo-theme-next/source/js/third-party/fancybox.js
 	echo " "
 	exec ${HexoPath}/hexo.sh
 else
