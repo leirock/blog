@@ -19,32 +19,33 @@ comments: false
 ### 2.1 添加本站友链
 
 {% note success %}
-名称：{% label primary@纯粹 %} 或 {% label primary@风卷过的起点 %}
+#### 本站信息
+名称：纯粹
 简介：班班的碎碎念
 标识：https://cdn.jsdelivr.net/gh/leirock/assets/avatar/avatar-512.png
 链接：https://blog.dlzhang.com
 {% endnote %}
 
-### 2.2 准备站点标识图片
+### 2.2 优化标识图片
 
 为了提高图片加载速度，建议优化标识图片：
 
-- 采用中心对称图形，如正方形、圆形、菱形等；
 - 打开 [压缩图](https://www.yasuotu.com) 上传自己的头像，将图片尺寸调整到 96px 后下载;
-- 将压缩后的图片上传到 [去不图床](https://7bu.top) 并使用此图片链接作为头像。
+- 将压缩后的图片上传到 [去不图床](https://7bu.top) 并使用此图片链接作为站点标识。
 
 ### 2.3 提交申请
 
 - Fork [<i class="fab fa-fw fa-github"></i>友链代码仓库](https://github.com/leirock/friends)；
 - 按照如下格式将网站信息添加到 `friendslists.yml` 文件的末尾：
 ```yaml
-- title: 站点名称 #您的站点名称
-  descriprion: 站点介绍 #您的站点简介
+- title: 站点名称 #填写站点名称
+  descriprion: 站点简介 #填写站点简介
   logo: https://bu.dusays.com/2021/09/24/c9764a44cf8b7.png #标识图片链接
-  url: https://example.com #您的站点链接
+  url: https://example.com #填写站点链接
 ```
 - 完成后，请新建一个 Pull Request，被批准合并后就会显示在本页。
 
 {% note info %}
+#### 提示
 如果无法使用 GitHub，可以在[留言板](/guestbook/)留下上述信息。
 {% endnote %}
