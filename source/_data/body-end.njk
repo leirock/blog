@@ -20,7 +20,7 @@ var FriendsPath = 'https://web-1256060851.cos.ap-hongkong.myqcloud.com/page/frie
 // friends list file
 var FriendsList = FriendsPath + '/friendslist.json';
 // friends website logo folder
-var LogoPath = FriendsPath + '/logo/';
+//var LogoPath = FriendsPath + '/logo/';
 // generate friends link grid
 friend = {
     init: function () {
@@ -37,7 +37,7 @@ friend = {
             logo = data[i].logo;
             url = data[i].url;
             li += '<div class="link-grid-container">' +
-                    '<object class="link-grid-image" data="' + LogoPath + logo + '"></object>' +
+                    '<object class="link-grid-image" data="' + logo + '"></object>' +
                     '<p>' + title + '</p>' + 
                     '<p>' + description + '</p>' + 
                     '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +

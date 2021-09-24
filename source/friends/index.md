@@ -25,24 +25,22 @@ comments: false
 链接：https://blog.dlzhang.com
 {% endnote %}
 
-### 2.2 准备站点相关信息
+### 2.2 准备站点标识图片
 
-请准备好您站点的上述信息，其中对于标识图片有以下要求：
+为了提高图片加载速度，建议优化标识图片：
 
-- 中心对称图形，如正方形、圆形、菱形等；
-- 长度与宽度应小于 `512px`，文件大小应小于 1 MiB；
-- 使用常见图形文件格式（如 `png`、`jpg`、`svg` 等）;
-- 文件名格式为 `[domain].[format]`，如 `example.com.png`，`blog.example.com.jpg`。
+- 采用中心对称图形，如正方形、圆形、菱形等；
+- 打开 [压缩图](https://www.yasuotu.com) 上传自己的头像，将图片尺寸调整到 96px 后下载;
+- 将压缩后的图片上传到 [去不图床](https://7bu.top) 并使用此图片链接作为头像。
 
 ### 2.3 提交申请
 
 - Fork [<i class="fab fa-fw fa-github"></i>友链代码仓库](https://github.com/leirock/friends)；
-- 在仓库 `src/logo` 文件夹下添加标识图片；
-- 按照如下格式将网站信息添加到 `src/friendslists.yml` 文件的末尾：
+- 按照如下格式将网站信息添加到 `friendslists.yml` 文件的末尾：
 ```yaml
 - title: 站点名称 #您的站点名称
   descriprion: 站点介绍 #您的站点简介
-  logo: example.com.png #标识图片的文件名
+  logo: https://bu.dusays.com/2021/09/24/c9764a44cf8b7.png #标识图片链接
   url: https://example.com #您的站点链接
 ```
 - 完成后，请新建一个 Pull Request，被批准合并后就会显示在本页。
