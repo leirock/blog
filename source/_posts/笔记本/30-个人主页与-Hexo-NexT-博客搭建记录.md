@@ -26,7 +26,7 @@ date: 2018-06-06 18:03:02
 ### 2.1 环境配置
 
 {% note info %}
-#### 提示
+##### 提示
 macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在终端输入 `xcode-select --install`，然后根据提示安装。
 {% endnote %}
 
@@ -146,7 +146,7 @@ git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 下载主题文件后，打开博客根目录下的站点配置文件（`/_config.yml`），找到 `theme` 键值，将值修改为 `next` 即可。
 
 {% note warning %}
-#### 注意
+##### 注意
 图片图标文件可以放到 `/themes/next/source/images/`（默认图标放在这里）或者 `/source/` 目录下。如果图标文件放至在 `/themes/next/source/images/` 目录下，务必注意不要和目录下的默认图标文件名一样，否则在生成静态文件的时候会被默认文件会覆盖。
 {% endnote %}
 

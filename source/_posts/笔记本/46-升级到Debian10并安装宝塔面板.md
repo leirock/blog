@@ -55,7 +55,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 ![推荐安装套件](https://web-1256060851.cos.ap-hongkong.myqcloud.com/post/46/LNMP.jpg#500x)
 
 {% note info %}
-#### 注意
+##### 注意
 如果发现下载时无法连接到宝塔的下载地址（特别是境外服务器），可能需要先在首页的「Linux 工具箱」中临时修改一下「DNS 设置」，例如使用 1.1.1.1 或者 8.8.8.8。
 {% endnote %}
 
@@ -80,7 +80,7 @@ pip install oss2
 - redis：内容缓存
 
 {% note info %}
-#### 注意
+##### 注意
 内存只有 1G 的服务器可能无法安装 fileinfo，这时候需要我们在「Linux 工具箱」的「Swap/虚拟内存」中添加 Swap，我们可以设置如 1024MB 或者 1500MB。
 {% endnote %}
 

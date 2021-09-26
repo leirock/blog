@@ -145,7 +145,7 @@ g = g.replace(/![0-9]{3,}x/,"");
 
 之前是使用 Valine 搭配 LeanCloud 的评论系统，要迁移到 Typecho 还是蛮复杂的，毕竟没有现成的工具，而且评论的 id 和文章的 id 与 Typecho 格式也不一致。目前是参考一个 [Valine 转 Wordpress 评论的脚本](https://veltlion.github.io/valine-to-wxr/)，自己修改了代码。脚本需要先安装 `jq` 这个 JSON 文件处理包，然后可以实现 JSON 转为 SQL 文件。
 
-```bash
+```sh
 #!/usr/bin/env bash
 # by @leirock
 # Valine to Typecho
@@ -199,7 +199,7 @@ echo done!
 
 保存该文件命名为 `valine2typecho.sh`，重命名 LeanCloud 导出的 Valine 评论文件为 `comment.json`，然后在这两个文件所在目录执行以下命令：
 
-```bash
+```sh
 sh valine2typecho.sh comment.json
 ```
 
@@ -212,7 +212,6 @@ UPDATE typecho_contents t1 SET t1.commentsNum = (select count(*) from typecho_co
 ```
 
 ## 3. 插件介绍
-
 
 | 插件                                                         | 介绍                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -268,7 +267,7 @@ CORSANYWHERE_WHITELIST = https://blog.dlzhang.com,https://rss.zdl.one
 
 之后安装所需要的依赖（以下命令二选一）:
 
-```shell
+```sh
 # yarn 安装方式
 yarn
 yarn add dotenv # 调用环境变量文件需要的依赖
@@ -288,7 +287,7 @@ dotenv.config('./env');
 
 可以手动启动，或者用「PM2 管理器」启动，选择启动文件为 `server.js` 即可。
 
-```shell
+```sh
 node server.js
 ```
 
@@ -310,7 +309,7 @@ node server.js
 
 Google BBR 是一个 TCP 加速优化工具，可用于优化TCP连接，根据介绍开启可以加快访问的网速，这里参考了 [Rat 介绍的方法](https://www.moerats.com/archives/297/)：
 
-```shell
+```sh
 # 修改系统变量
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
@@ -327,14 +326,14 @@ lsmod | grep bbr
 
 显示以下即内核已开启 BBR：
 
-```shell
+```sh
 # sysctl net.ipv4.tcp_available_congestion_control
 net.ipv4.tcp_available_congestion_control = bbr cubic reno
 ```
 
 显示类似以下内容即 BBR 启动成功：
 
-```shell
+```sh
 # lsmod | grep bbr
 tcp_bbr                20480  14
 ```
