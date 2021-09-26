@@ -414,11 +414,13 @@ li.category-list-item a {
 
 }
 
-.v[data-class=v] .vcard .vhead .vreply:hover,
+.v[data-class=v] .vaction:hover, //评论框左下角
+.v[data-class=v] .vcard .vhead .vreply:hover, //回复按钮
 .v[data-class=v] .vcard .vhead .vreply.active {
     color: var(--link-hover-color) !important;
 }
 
+/* comment-评论列表昵称链接 */
 .v[data-class=v] .vcard .vhead .vnick {
   color: var(--text-color) !important;
   border-bottom: none !important;
@@ -452,22 +454,20 @@ li.category-list-item a {
 .v[data-class=v] .vheader label,
 .v[data-class=v] .vheader input, 
 .v[data-class=v] .veditor,
-.v[data-class=v] .vbtn,
 .v[data-class=v] .vcard .vhead .vnick,
 .v[data-class=v] .vcard .vcontent {
-  font-size: .95em !important;
+  font-size: .9em !important;
 }
-
-.v[data-class=v] .vheader label,
-.v[data-class=v] .vbtn {
-  font-weight: bold !important;
-}
-
 
 /* comment-管理登录按钮 */
-.v[data-class=v] .vbtn:hover {
-    border-color: $btn-default-hover-bg !important;
-    color: $btn-default-hover-bg !important;
+.v[data-class=v] .vbtn {
+  font-weight: bold !important;
+  font-size: .8em !important;
+
+  &:hover {
+      border-color: $btn-default-hover-bg !important;
+      color: $btn-default-hover-bg !important;
+  }
 }
 
 /* comment-评论提交按钮 */
