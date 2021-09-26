@@ -57,6 +57,17 @@ if (hexo-config('gray')) {
   }
 }
 
+/* 修改选中字符的颜色 */
+::-moz-selection { /* Code for Firefox */
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--blockquote-color);
+}
+
+::selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--blockquote-color);
+}
+
 /************************ Sidebar **************************/
 
 /* sidebar-标题背景 */
@@ -84,6 +95,10 @@ if (hexo-config('gray')) {
   color: var(--blockquote-color);
   font-family: $font-family-quote;
   font-size: .9em;
+}
+
+.menu-item a {
+  font-size: .85em;
 }
 
 /* sidebar-二级菜单圆角 */
@@ -145,18 +160,14 @@ if (hexo-config('gray')) {
   }
 }
 
+/* post-文章信息项超链接 */
 .post-meta-item a {
   border-bottom: none;
 }
 
 /* post-段后距 */
 p {
-  margin-bottom: 12px;
-}
-
-/* post-正文字号 */
-.post-body {
-  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 /* post-标签选择卡片加粗 */
@@ -166,16 +177,16 @@ p {
 
 /* post-超链接 */
 .post-body a {
-  text-decoration-color: var(--text-color);
+  text-decoration-color: var(--link-color);
 
   &:hover {
-    border-bottom-color: var(--text-color-dark);
+    border-bottom-color: var(--link-hover-color);
   }
 }
 
 /* post-图片标题 */
 .post-body .image-caption {
-  margin: 0 auto 15px;
+  margin: 0 auto 1em;
   font-weight: 400;
 }
 
@@ -205,32 +216,21 @@ li {
   top: .15em;
 }
 
-/* post-链接卡片样式 */
-.post-body .link-grid .link-grid-container {
-  border: 2px solid #ddd;
-  border-radius: $myradius;
-  box-shadow: .2rem .2rem 0.5rem rgba(0,0,0,0.2);
-
-  &:hover {
-    animation: none;
-  }
-
-  &:active {
-    box-shadow: none;
-    transform: none;
-  }
+/* post-文章结尾部分 */
+.post-body-end {
+  margin-top: 40px;
 }
 
-.post-body .link-grid .link-grid-container p {
+.post-end-item {
+  color: var(--blockquote-color); 
+  font-size: .85em;
+}
 
-  &:first-of-type {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2bbc8a;
-  }
+.post-end-item a {
+  color: var(--blockquote-color);
 
-  &:last-of-type {
-    font-size: .85em;
+  &:hover{
+    color: var(--link-hover-color);
   }
 }
 
@@ -280,17 +280,6 @@ li {
   }
 }
 
-/* 修改选中字符的颜色 */
-::-moz-selection { /* Code for Firefox */
-  background: rgba(0, 149, 255, 0.2);
-  color: var(--blockquote-color);
-}
-
-::selection {
-  background: rgba(0, 149, 255, 0.2);
-  color: var(--blockquote-color);
-}
-
 /****************** Pagination & Footer ********************/
 
 /* pagination-删去页码框 */
@@ -326,8 +315,18 @@ li {
 
 /* footer */
 .footer {
-  margin: 20px 0 15px 0;
+  margin-top: 50px;
+  padding-bottom: 40px;
   color: var(--blockquote-color);
+}
+
+.footer a {
+  color: var(--blockquote-color);
+  border-bottom:none;
+
+  &:hover{
+    color: var(--link-hover-color);
+  }
 }
 
 /************************ Overview *************************/
@@ -400,9 +399,33 @@ li.category-list-item a {
   border-radius: $myradius !important;
 }
 
-/* comment-评论超链接下划线 */
+/* comment-超链接 */
 .comments a {
-  border-bottom: none;  
+  color: var(--text-color) !important;
+  display: inline !important;
+
+  &:hover {
+    color: var(--link-hover-color) !important;
+  }
+
+  &.at {
+    border-bottom: none !important;
+  }
+
+}
+
+.v[data-class=v] .vcard .vhead .vreply:hover,
+.v[data-class=v] .vcard .vhead .vreply.active {
+    color: var(--link-hover-color) !important;
+}
+
+.v[data-class=v] .vcard .vhead .vnick {
+  color: var(--text-color) !important;
+  border-bottom: none !important;
+
+  &:hover {
+    color: var(--link-hover-color) !important;
+  }
 }
 
 /* comment-输入框背景图片 */
@@ -425,11 +448,21 @@ li.category-list-item a {
   }
 }
 
+/* comment-字号字重 */
+.v[data-class=v] .vheader label,
 .v[data-class=v] .vheader input, 
+.v[data-class=v] .veditor,
+.v[data-class=v] .vbtn,
+.v[data-class=v] .vcard .vhead .vnick,
+.v[data-class=v] .vcard .vcontent {
+  font-size: .95em !important;
+}
+
 .v[data-class=v] .vheader label,
 .v[data-class=v] .vbtn {
-  font-size: .8em !important;
+  font-weight: bold !important;
 }
+
 
 /* comment-管理登录按钮 */
 .v[data-class=v] .vbtn:hover {
@@ -449,8 +482,39 @@ li.category-list-item a {
   }
 }
 
-/************************* 卡片页面 (Friends/Lab) ************************/
+/************************* 链接卡片  ************************/
 
+/* 普通卡片 */
+.post-body .link-grid .link-grid-container {
+  border: 2px solid #ddd;
+  border-radius: $myradius;
+  box-shadow: .2rem .2rem 0.5rem rgba(0,0,0,0.2);
+
+  &:hover {
+    animation: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.post-body .link-grid .link-grid-container p {
+
+  &:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2bbc8a;
+  }
+
+  &:last-of-type {
+    font-size: .85em;
+  }
+}
+
+
+/* 友链卡片 */
 .post-body .mygrid {
   gap: 1rem 1rem;
   grid-gap: 1rem 1rem;

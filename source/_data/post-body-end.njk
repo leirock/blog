@@ -1,32 +1,28 @@
-<span style="margin-top:30px; color:var(--blockquote-color); font-size:0.85em">
+<div class="post-body-end">
     {%- if post.publication %}
-        <span class="post-end-item" title="文章来源">
+        <div class="post-end-item">
             <span class="post-end-item-icon" style="margin-right: 3px">
                 <i class="fas fa-fw fa-feather"></i>
             </span>
             {%- if post.publication_url %}
-                <span class="post-end-item-text">发表于 <a target="_blank" rel="noopener" href="{{ post.publication_url }}" data-pjax-state="" style="color:var(--blockquote-color)">{{ post.publication }}</a> </span>
+                <span class="post-end-item-text">发表于 <a target="_blank" rel="nofollow noopener" href="{{ post.publication_url }}">{{ post.publication }}</a></span>
             {% else %}
-                <span class="post-end-item-text">发表于 {{ post.publication }} </span>
+                <span class="post-end-item-text">发表于 {{ post.publication }}</span>
             {%- endif %}
-        </span>
+        </div>
     {%- endif %}
     {%- if post.copyright !== false %}
-        <br>
-        <span class="post-end-item" title="著作权声明">
+        <div class="post-end-item">
             <span class="post-end-item-icon" style="margin-right: 3px">
                 <i class="far fa-fw fa-copyright"></i>
             </span>
-            <span class="post-end-item-text">原创作品，引用转载请查阅<a style="color:var(--blockquote-color);" target="_blank" rel="nofollow noopener" href="/copyright/">著作权声明</span>。
-        </span>
+            <span class="post-end-item-text">原创作品，引用转载请查阅 <a href="/copyright/">著作权声明</a>。</span>
+            </div>
+        <div class="donations">
+            <div class="donation-label">喜欢这篇文章？考虑打赏一下作者吧～</div>
+            <a class="afdian-button" target="_blank" rel="nofollow noopener" href="https://afdian.net/@leirock">
+                <i class="fab fa-fw fa-alipay"></i> 爱发电 <i class="fab fa-fw fa-weixin"></i>
+            </a>
+        </div>
     {%- endif %}
-</span>
-
-{%- if post.copyright !== false %}
-    <div class="donations">
-        <div class="donation-label">喜欢这篇文章？考虑打赏一下作者吧～</div>
-        <a class="afdian-button" rel="noopener" target="_blank" href="https://afdian.net/@leirock" >
-            <i class="fab fa-fw fa-alipay"></i> 爱发电 <i class="fab fa-fw fa-weixin"></i>
-        </a>
-    </div>
- {%- endif %}
+</div>

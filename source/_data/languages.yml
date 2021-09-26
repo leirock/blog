@@ -21,3 +21,5 @@ zh-CN:
       other: '<strong><i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类</strong>'
     archive_posts:
       other: '<strong><i class="fas fa-fw fa-feather"></i> 目前共计 %d 篇文章</strong>'
+  footer:
+    powered: Powered by <a target="_blank" rel="nofollow noopener" href="https://hexo.io">Hexo</a> <a target="_blank" rel="nofollow noopener" href="https://theme-next.js.org">NexT</a> · Designed by <a target="_blank" rel="nofollow noopener" href="https://dlzhang.com">Leirock</a>
