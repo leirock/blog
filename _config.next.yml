@@ -62,7 +62,7 @@ menu:
 
 # Sidebar Avatar
 avatar:
-  url: https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-256.png
+  url: https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-128.png
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
