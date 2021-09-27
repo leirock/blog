@@ -79,7 +79,7 @@ social_icons:
 toc:
   # Automatically add list number to toc.
   number: false
-  max_depth: 4 # <h4> ####
+  max_depth: 3 # <h3> ###
 
 # ---------------------------------------------------------------
 # Footer Settings

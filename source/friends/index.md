@@ -37,7 +37,7 @@ toc:
 - 将压缩后的图片上传到 [笑果图床](https://imagelol.com) 获取链接，或者上传到 GitHub 然后提供对应的 jsDelivr 链接。
 
 {% note info %}
-##### 提示
+#### 提示
 如果无法创建 GitHub Issue，可以在[留言板](/guestbook/)留下上述信息。
 {% endnote %}
 
@@ -46,7 +46,7 @@ toc:
 请添加本站到您的友链中，如果您也使用 Issues 作为友链源，只需要告知您的友链源仓库即可。
 
 {% note success %}
-##### 本站信息
+#### 本站信息
 名称：纯粹
 简介：班班的碎碎念
 标识：https://cdn.jsdelivr.net/gh/leirock/assets/avatar/avatar-512.png
