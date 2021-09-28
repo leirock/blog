@@ -1,5 +1,5 @@
 ---
-title: 升级到 Debian 10 并安装宝塔面板
+title: Debian 10 升级并安装宝塔面板
 categories: [笔记本]
 tags: [服务器, Linux]
 pid: 46

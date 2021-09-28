@@ -1,5 +1,5 @@
 ---
-title: 宝塔面板部署 RSSHub 和自动签到 Docker 应用
+title: Docker 部署 RSSHub 和自动签到
 categories: [笔记本]
 tags: [服务器, Docker, RSS]
 pid: 49

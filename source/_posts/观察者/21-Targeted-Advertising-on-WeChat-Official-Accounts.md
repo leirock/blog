@@ -11,9 +11,9 @@ This is a small research proposal about targeted advertising on WeChat official 
 ## 1. Motivation
 
 Users’ online activities become much easier to be collected by social media now. Based on this, the operators can deduce the users’ online preferences and behavior, which enables advertisers to promote their products to targeted customers precisely. 
+<!--more-->
 
 There are usually two different advertising channels on social media for advertisers to choose. The first channel is through social media’s official advertising platform. The social media provide some advertising space in users’ timeline for advertisers to buy. Facebook in the US and WeChat in China both have this kind of platform based on their big data analysis. The second channel is to post advertisements on those accounts with lots of followers, which make the advertisements appear in the followers’ timeline. 
-<!--more-->
 
 Since the operators of the social media have easier access to the users’ online activities data, the former channel seems more efficient to targeted advertising. However, the effectiveness of the later channel should not be neglected. Those users following the same account tend to have more similar interests and preferences. These homogeneous characteristics make the targeted advertising be possible. In the advertising market, there are many advertising agents are doing this work. They help advertisers to determine appropriate creatives and to find social media accounts followed by targeted consumers. 
 
