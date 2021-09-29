@@ -383,11 +383,7 @@ li {
 
 .license-link a {
   color:#7a7a7a;
-  border-bottom-color: #7a7a7a !important;
-
-  &:hover{
-    border-bottom-color: #7a7a7a !important
-  }
+  border-bottom: none !important;
 }
 
 .license-meta-text {
@@ -439,11 +435,12 @@ li {
   line-height: 1.5;
   box-sizing: border-box;
   border-color: transparent;
-  padding: .5em .75em;
+  padding: .6em .9em;
   border-radius: 4px;
   font-size: .9em;
   color: white;
   background-color: #946ce6;
+  font-weight: bold;
 
   &:hover {
     color: white;
@@ -544,8 +541,8 @@ li.category-list-item a {
 */
 
 /* tags */
-.tag-cloud a, //标签云
-.posts-expand .post-tags a { //文章末标签
+//标签云
+.tag-cloud a {
   padding: 2px 10px;
   margin: 8px;
   background: $whitesmoke;
@@ -561,6 +558,15 @@ li.category-list-item a {
   @media (prefers-color-scheme: dark) {
     color: var(--text-color) !important;
     background: $btn-default-bg;
+  }
+}
+
+//文章末标签
+.post-tags {
+  text-align: left;
+  
+  & a {
+  border-bottom: none;
   }
 }
 

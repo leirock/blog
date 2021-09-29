@@ -3,6 +3,7 @@ title: 个人主页与 Hexo 博客搭建记录
 categories: [笔记本]
 tags: [blog]
 pid: 30
+cc_license: true
 date: 2018-06-06 18:03:02
 ---
 

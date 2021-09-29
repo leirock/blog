@@ -3,6 +3,7 @@ title: Typecho 博客搭建尝试
 categories: [笔记本]
 tags: [blog, 服务器]
 pid: 50
+cc_license: true
 date: 2020-04-30 17:00:00
 edit: 2020-10-27 19:00:00
 ---

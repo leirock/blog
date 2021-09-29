@@ -6,8 +6,11 @@ pid:
 mathjax: false
 comments: true
 toc:
-  enable: true
-  number: false
+    enable: true
+cc_license: false
+original_author:
+publish:
+publish_url:
 date: {{ date }}
 ---
 

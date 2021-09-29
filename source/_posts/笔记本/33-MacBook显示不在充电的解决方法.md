@@ -3,6 +3,7 @@ title: MacBook 显示不在充电的解决方法
 categories: [笔记本]
 tags: [Apple]
 pid: 33
+cc_license: true
 date: 2018-06-15 21:24:43
 ---
 

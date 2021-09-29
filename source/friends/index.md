@@ -3,7 +3,7 @@ title: 友情链接
 description: 班班的朋友们
 comments: false
 toc:
-  enable: false
+    enable: false
 ---
 
 {% friendslink https://api.dlzhang.com/proxy/?url=https://raw.githubusercontent.com/leirock/friends/main/generator/output/data.json %}
@@ -34,7 +34,7 @@ toc:
 其中，对于标识图片的链接有如下建议：
 
 - 打开 [压缩图](https://www.yasuotu.com) 上传站点标识图片，将图片尺寸调整到 96px 后下载;
-- 将压缩后的图片上传到 [笑果图床](https://imagelol.com) 获取链接，或者上传到 GitHub 然后提供对应的 jsDelivr 链接。
+- 将压缩后的图片上传到 [笑果图床](https://imagelol.com) 获取链接，或者上传到 GitHub 获取对应的 jsDelivr 链接。
 
 {% note info %}
 #### 提示
@@ -47,7 +47,7 @@ toc:
 
 {% note success %}
 #### 本站信息
-名称：纯粹
+名称：`纯粹` 或 `班班` 或 `Leirock`
 简介：班班的碎碎念
 标识：https://cdn.jsdelivr.net/gh/leirock/assets/avatar/avatar-512.png
 链接：https://blog.dlzhang.com

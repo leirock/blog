@@ -3,6 +3,7 @@ title: 服务器部署 Hexo 博客和看板娘 Live2D API
 categories: [笔记本]
 tags: [服务器, 持续集成]
 pid: 47
+cc_license: true
 date: 2020-04-15 19:45:00
 ---
 
@@ -18,7 +19,7 @@ date: 2020-04-15 19:45:00
   uses: easingthemes/ssh-deploy@v2.1.2
   env:
     ARGS: "-avz --delete"
-    publication: "public/" #要同步到服务器的目录
+    publish: "public/" #要同步到服务器的目录
     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} #服务器上公钥所对应的私钥
     REMOTE_HOST: ${{ secrets.REMOTE_HOST }} #服务器 IP 地址
     REMOTE_PORT: ${{ secrets.REMOTE_PORT }} #SSH 连接端口
@@ -33,7 +34,7 @@ date: 2020-04-15 19:45:00
 最后，因为 GitHub Actions 同步到服务器网站目录过程中用到了 rsync 这一数据镜像备份工具，所以需要先在服务器上安装好 rsync：
 
 ```bash
-apt-get install rsync
+apt install rsync
 ```
 
 **备注**：如果服务器提供商的控制台没有自动配置密钥对的功能，可以在服务器上手动生成。
