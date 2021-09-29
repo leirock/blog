@@ -6,8 +6,8 @@
 title: 纯粹
 subtitle: '风卷过的起点'
 description: '爱美食/纪录片/夜猫子'
-keywords: [班班, Leirock, LeileiRock, Hexo, blog, 博客, 经济学, economics]
-author: 班班 Leirock
+keywords: [班班, Leirock, Hexo, blog, 博客, 经济学, economics]
+author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -47,7 +47,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: true
   tab_replace: true
   wrap: true
@@ -151,6 +151,7 @@ waline:
 # hexo-renderer-markdown-it
 # For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
 markdown:
+  langPrefix: 'language-'
   plugins:
     - markdown-it-footnote
     - markdown-it-ins

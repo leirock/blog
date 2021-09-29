@@ -1,28 +1,49 @@
-<div class="post-body-end">
-    {%- if post.publication %}
-        <div class="post-end-item">
-            <span class="post-end-item-icon" style="margin-right: 3px">
-                <i class="fas fa-fw fa-feather"></i>
-            </span>
-            {%- if post.publication_url %}
-                <span class="post-end-item-text">发表于 <a target="_blank" rel="nofollow noopener" href="{{ post.publication_url }}">{{ post.publication }}</a></span>
-            {% else %}
-                <span class="post-end-item-text">发表于 {{ post.publication }}</span>
-            {%- endif %}
-        </div>
-    {%- endif %}
-    {%- if post.copyright !== false %}
-        <div class="post-end-item">
-            <span class="post-end-item-icon" style="margin-right: 3px">
-                <i class="far fa-fw fa-copyright"></i>
-            </span>
-            <span class="post-end-item-text">原创作品，引用转载请查阅 <a href="/copyright/">著作权声明</a>。</span>
+<div class="license">
+    <div class="license-title">{{ page.title }}</div>
+    <div class="license-link">
+        <a href="{{ page.permalink }}" rel="external nofollow noopener" target="_blank">{{ page.permalink }}</a>
+    </div>
+    <div class="license-meta">
+        <div class="license-meta-item">
+            <div class="license-meta-title">本文作者</div>
+            <div class="license-meta-text">
+                {%- if post.original %}
+                    {{ post.original }}
+                {%- else %}
+                    {{ author }}
+                {%- endif %}
             </div>
-        <div class="donations">
-            <div class="donation-label">喜欢这篇文章？考虑打赏一下作者吧～</div>
-            <a class="afdian-button" target="_blank" rel="nofollow noopener" href="https://afdian.net/@leirock">
-                <i class="fab fa-fw fa-alipay"></i> 爱发电 <i class="fab fa-fw fa-weixin"></i>
-            </a>
         </div>
-    {%- endif %}
+        <div class="license-meta-item">
+            <div class="license-meta-title">许可协议</div>
+            <div class="license-meta-text">
+                {%- if post.original %}
+                    原作者许可协议
+                {%- else %}
+                    <a href="/copyright/" rel="external nofollow noopener" target="_blank">著作权声明</a>
+                {%- endif %}
+            </div>
+        </div>
+        {%- if post.publication %}
+            <div class="license-meta-item">
+                <div class="license-meta-title">发表于</div>
+                <div class="license-meta-text">
+                    {%- if post.publication_url %}
+                        <a href="{{ post.publication_url }}" rel="external nofollow noopener" target="_blank">{{ post.publication }}</a>
+                    {% else %}
+                        {{ post.publication }}
+                    {%- endif %}
+                </div>
+            </div>
+        {%- endif %}
+    </div>
+    <div>转载或引用本文时请遵守著作权许可协议！</div>
 </div>
+{%- if not post.original %}
+    <div class="donations">
+        <div class="donation-label">喜欢这篇文章？考虑打赏一下作者吧～</div>
+        <a class="afdian-button" href="https://afdian.net/@leirock" rel="external nofollow noopener" target="_blank">
+            <i class="fab fa-fw fa-alipay"></i>爱发电<i class="fab fa-fw fa-weixin"></i>
+        </a>
+    </div>
+{%- endif %}
