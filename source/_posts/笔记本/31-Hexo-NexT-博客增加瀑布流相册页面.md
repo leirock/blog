@@ -51,9 +51,14 @@ fs.readdir(path, function (err, files) {
 创建好并把照片放在目录后，执行以下命令：
 
 ```shell
-cd <folder-path>  #定位到 Hexo 博客目录
-yarn add image-size #或者 npm install image-size --save
-node scripts/phototool.js  #生成对应的 json 文件
+# 定位到 Hexo 博客目录
+cd <folder-path>
+
+# 安装依赖包
+yarn add image-size
+
+# 生成对应的 json 文件
+node scripts/phototool.js  
 ```
 
 `node scripts/phototool.js` 这个步骤以后可以不用手动执行，每次 `hexo s` 或者 `hexo deploy` 时候会被自动执行。如果报错，请注意检查保存本地照片的文件夹里有没有非图片类文件，特别是要删除如 `.DS_Store` 这样的隐藏文件。`json` 文件样例如下：

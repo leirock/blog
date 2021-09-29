@@ -41,8 +41,10 @@ apt-get install rsync
 ```shell
 # 进入用户 SSH 密钥存储目录
 cd ~/.ssh
+
 # 列出目录中内容，确认是否已拥有密钥
 ls
+
 # 生成 SSH 密钥
 ssh-keygen
 ```
@@ -52,6 +54,7 @@ ssh-keygen
 ```shell
 # 将公钥内容写入 authorized_keys
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
 # 列出私钥的内容
 cat ~/.ssh/id_rsa
 ```

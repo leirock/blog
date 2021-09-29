@@ -56,11 +56,11 @@ chmod -R 777 ./data
 
 ## 2. 客户端访问
 
-要通过 Reeder 等客户端来阅读 RSS 资讯，还需要在设置界面等「认证」中打开「允许 API 访问 」，然后前往「用户帐户」设置好「API 密码」。这样，在 Reeder 客户端添加账号时选择 FreshRSS，然后填写如下：
+要通过 Reeder 等客户端来访问，还需要在设置的「认证」中打开 `允许API访问`，然后前往「用户帐户」设置好「API 密码」。这样，在 Reeder 添加账号时选择 FreshRSS，然后填写如下：
 
-- Sever：设置「API 密码」时右侧显示的链接地址；
-- User：FreshRSS 登录用户名；
-- Password：刚才设置的「API 密码」。
+- `Sever`：设置「API 密码」时右侧显示的链接地址；
+- `User`：FreshRSS 登录用户名；
+- `Password`：刚才设置的「API 密码」。
 
 ## 3. 自动刷新订阅源
 

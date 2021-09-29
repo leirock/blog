@@ -51,8 +51,10 @@ git clone https://github.com/diygod/rsshub.git rsshub
 ```shell
 # 下载 Docker Compose 稳定发布版
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
 # 设置访问权限
 sudo chmod +x /usr/local/bin/docker-compose
+
 # 查看安装版本
 docker-compose --version
 ```
@@ -62,10 +64,13 @@ docker-compose --version
 ```shell
 # 下载 docker-compose.yml
 wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+
 # 创建 volume 持久化 Redis 缓存
 docker volume create redis-data
+
 # 启动 Docker
 docker-compose up -d
+
 # 更新：先执行以下命令删除旧容器，然后重复上述安装步骤
 docker-compose down
 ```
@@ -97,8 +102,10 @@ services:
 ```shell
 # 启动
 docker-compose up -d
+
 # 停止（不需要在该目录下执行）
 docker stop qiandao
+
 # 移除
 docker-compose down
 ```
@@ -108,8 +115,10 @@ docker-compose down
 ```shell
 # 进入容器管理（也可通过宝塔面板 Docker 管理器进入）
 docker exec -it qiandao /bin/bash
+
 # 设置站点管理员（邮箱需要已注册）
 python ./chrole.py admin@example.com admin
+
 # 退出容器管理
 exit
 ```
@@ -129,6 +138,7 @@ exit
 ```shell
 # 把文件复制到容器内
 docker cp login.py qiandao:/usr/src/app/web/handlers/
+
 # 重启容器
 docker restart qiandao
 ```
@@ -138,6 +148,7 @@ docker restart qiandao
 ```shell
 # 将容器中的数据库文件复制到当前目录
 docker cp qiandao:/usr/src/app/database.db .
+
 # 将备份的数据库复制到容器中（当前目录的 database.db 文件）
 docker cp database.db qiandao:/usr/src/app/
 ```

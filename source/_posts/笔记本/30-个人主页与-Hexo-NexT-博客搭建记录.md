@@ -34,6 +34,7 @@ macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在�
 
 ```shell
 npm install -g hexo-cli
+
 # 或者用 yarn 命令
 yarn global add hexo-cli 
 ```
@@ -41,8 +42,13 @@ yarn global add hexo-cli
 安装 Hexo 完成后，执行下列命令会在指定文件夹中新建所需要的文件：
 
 ```shell
-hexo init <folder-path>  #在指定文件夹中初始化 Hexo
-cd <folder-path>  #定位到 Hexo 博客目录
+# 在指定文件夹中初始化 Hexo
+hexo init <folder-path>
+
+# 定位到 Hexo 博客目录
+cd <folder-path>
+
+# 安装依赖包
 yarn install
 ```
 
@@ -57,15 +63,18 @@ yarn install
 使用以下第一句可以在 `source/_post/` 文件夹下新建一篇文章；使用以下的第二句可以在 `source` 下新建以 `<page-title>` 为名称的文件夹，文件夹内的 `index.md` 可以在编译后生成一个新的页面。
 
 ```shell
-hexo new "<post-title>"  #新建文章
-hexo new page "<page-title>"  #新建页面
+# 新建文章
+hexo new "<post-title>"
+
+# 新建页面
+hexo new page "<page-title>"
 ```
 
 因为原始的都是 Markdown 文件，要让浏览器可以显示美观的网页，需要根据 Markdown 文件生成 HTML 静态文件。执行以下命令：
 
 ```shell
-#生成静态文件
-hexo generate  #或者 hexo g
+# 生成静态文件，或者 hexo g
+hexo generate
 ```
 
 在某些情况，如果发现对站点的更改无论如何也不生效，可能需要运行该命令，清除缓存文件 `db.json` 和已生成的静态文件 `/public/`。
@@ -95,17 +104,21 @@ deploy:
 设置完成后，执行以下命令。第一次执行过程中会提示输入相应用户名和密码，正确输入后既可以正常部署。
 
 ```shell
-#首次部署要先执行以下命令安装插件
-yarn add hexo-deployer-git #或者 npm i hexo-deployer-git --save
-#部署网站
+# 首次部署要先执行以下命令安装插件
+yarn add hexo-deployer-git
+
+# 部署网站
 hexo deploy
 ```
 
 在两条命令直接采用 `&&` 进行连接即可同时执行两条命令。另外，使用以下的命令可以简化命令的使用：
 
 ```shell
-hexo s -g  #启动服务器之前预先生成静态文件，等价于 hexo g && hexo s
-hexo g -d  #静态文件生成后立即部署网站，等价于 hexo g && hexo d
+# 启动服务器之前预先生成静态文件，等价于 hexo g && hexo s
+hexo s -g
+
+# 静态文件生成后立即部署网站，等价于 hexo g && hexo d
+hexo g -d
 ```
 
 ### 2.4 添加文章命令后自动打开编辑器
@@ -169,6 +182,7 @@ yarn add hexo-generator-sitemap
 cd <blog-path>
 hexo new page "404"
 ```
+
 编辑该页面的 Markdown 文件为以下内容，正文部分可以自行编辑内容。其中 `permalink: /404` 表示将该文件解析生成的 HTML 文件永久链接设置为 `/404`，这样就可以让访客访问错误链接时看到这个页面了。
 
 ```markdown
@@ -252,4 +266,4 @@ yarn add hexo-generator-indexed
 
 文章图片的存储如果放至在博客项目下，会极大地增加项目的空间。所以可以将图片上传到图床，然后在需要图片的地方引用该图片外部链接即可。我现在选择了腾讯云的 COS 对象存储，提供每个月 10GB 的免费外网下行流量，以及每个月 50GB 的免费存储空间。
 
-另外介绍一个 macOS 上十分实用的批量打水印免费软件 [XnConvert](http://www.xnview.com/en/xnconvert/)，可以查阅这一份 [使用说明](https://ningselect.com/2017/02/25/攝影小教室-超簡單！一招幫所/)。
+另外介绍一个 macOS 上十分实用的批量打水印免费软件 [XnConvert](http://www.xnview.com/en/xnconvert/)，可以查阅 [使用说明](https://ningselect.com/2017/02/25/攝影小教室-超簡單！一招幫所/)。

@@ -6,7 +6,7 @@ pid: 46
 date: 2020-04-15 18:30:37
 ---
 
-近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。
+近日入手了一个阿里云的轻量应用服务器，看着价格还比较实惠，就打算把自己的博客也搬过去。服务器买都买了，当然还要折腾一下其他有趣的应用和服务，比如 RSS 订阅、RSSHub、自动签到、Live2D API 等等 ~~（其实是为了部署服务才买了服务器，顺带迁移了博客站点）~~ 。所以就在这里记录一下搭建的过程，方便日后维护和重装部署。
 <!--more-->
 
 ## 1. 系统升级到 Debian 10
@@ -18,18 +18,23 @@ date: 2020-04-15 18:30:37
 因为我的是全新系统，就没有备份环节啦。建议先将本地软件更新到最新版，然后再升级 Debian 不然很有可能会出现一些未知的问题，本次升级基于官方源进行。
 
 ```shell
-# 更新软件索引
-sudo apt update
+# 更新软件索引，如不是 root 账号则前面加 sudo
+apt update
+
 # 更新本地所有软件到最新版
-sudo apt full-upgrade
+apt full-upgrade
+
 # 切换 stretch 源到 buster 源
-sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list
+sed -i 's/stretch/buster/g' /etc/apt/sources.list
+
 # 再次更新软件索引
-sudo apt update
+apt update
+
 # 升级 Debian 9 stretch 到 Debian 10 buster
-sudo apt upgrade
+apt upgrade
+
 # 重启服务器
-sudo reboot
+reboot
 ```
 
 由于是跨版本升级，在第五个命令的升级过程中很多地方需要我们手动设置或确认：
