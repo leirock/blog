@@ -17,7 +17,7 @@ date: 2020-04-15 18:30:37
 
 因为我的是全新系统，就没有备份环节啦。建议先将本地软件更新到最新版，然后再升级 Debian 不然很有可能会出现一些未知的问题，本次升级基于官方源进行。
 
-```sh
+```shell
 # 更新软件索引
 sudo apt update
 # 更新本地所有软件到最新版
@@ -44,7 +44,7 @@ sudo reboot
 
 参考宝塔官网给出的安装命令安装宝塔面板：
 
-```sh
+```shell
 curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.sh
 ```
 
@@ -69,7 +69,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 
 不过，安装完毕设置阿里云 OSS 参数插件之前，执行以下命令，不然可能无法正常执行备份操作（提示：`ImportError: No module named oss2`）：
 
-```sh
+```shell
 pip install oss2
 ```
 

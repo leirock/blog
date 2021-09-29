@@ -65,33 +65,18 @@ echo '
 </div>
 ```
 
-- **页脚更改**：`/usr/themes/handsome/component/footer.php` 第 5-13 行代码
+- **页脚更改**：修改 `/usr/themes/handsome/component/footer.php`
 
-```php
-<div class="wrapper bg-light">
+```diff
   <span class="pull-right hidden-xs text-ellipsis">
     <?php $this->options->BottomInfo(); ?>
-    Powered by <a target="_blank" href="http://www.typecho.org">Typecho</a>&nbsp;|&nbsp;Theme by <a target="_blank"
- href="https://www.ihewro.com/archives/489/">handsome</a>
+-    Powered by <a target="_blank" href="http://www.typecho.org">Typecho</a>&nbsp;|&nbsp;Theme by <a target="_blank"
+- href="https://www.ihewro.com/archives/489/">handsome</a>
   </span>
   <span class="text-ellipsis">
-    &copy;&nbsp;<?php echo date("Y");?> Copyright&nbsp;
+-    &copy;&nbsp;<?php echo date("Y");?> Copyright&nbsp;
     <?php $this->options->BottomleftInfo(); ?>
   </span>
-</div>
-```
-
-修改为：
-
-```php
-<div class="wrapper bg-light">
-  <span class="pull-right hidden-xs text-ellipsis">
-    <?php $this->options->BottomInfo(); ?>
-  </span>
-  <span class="text-ellipsis">
-    <?php $this->options->BottomleftInfo(); ?>
-  </span>
-</div>
 ```
 
 然后就可以直接在主题的「开发者设置」里添加需要的内容了，不会受到原本页脚内容的局限。
@@ -130,16 +115,11 @@ $(".album-thumb img").lazyload({
 
 就如在用 Hexo 时候进行的修改一样，我希望在使用 FancyBox 时候预览的缩略图是小图，点开后可以加载原图，这样就需要修改 `/usr/themes/handsome/assets/js/core.min.js` 文件。因为是经过压缩后的版本，所以先恢复回有缩进的版本，然后修改 `seFancyBox` 函数的定义。
 
-找到 `seFancyBox` 函数最后一句：
+找到 `seFancyBox` 函数最后一句，在这一句之前添加一句命令，以适配我自己设置的腾讯云对象存储剪裁后缀，如 `#500x`：
 
-```javascript
-j += i, "undefined" !== f ? b.prop("outerHTML", '<a class="light-link img-blur" data-fancybox="gallery" style="background-image: url(' + g + ')" no-pjax data-type="image" data-caption="' + c + '" href="' + g + '">' + j + "</a>") : b.prop("outerHTML", '<a class="light-link" data-fancybox="gallery" no-pjax data-type="image" data-caption="' + c + '" href="' + g + '">' + j + "</a>")
-```
-
-在这一句之前添加（以适配我自己设置的腾讯云对象存储剪裁后缀，如 `#500x`）：
-
-```javascript
-g = g.replace(/![0-9]{3,}x/,"");
+```diff
++ g = g.replace(/![0-9]{3,}x/,"");
+  j += i, "undefined" !== f ? b.prop("outerHTML", '<a class="light-link img-blur" data-fancybox="gallery" style="background-image: url(' + g + ')" no-pjax data-type="image" data-caption="' + c + '" href="' + g + '">' + j + "</a>") : b.prop("outerHTML", '<a class="light-link" data-fancybox="gallery" no-pjax data-type="image" data-caption="' + c + '" href="' + g + '">' + j + "</a>")
 ```
 
 然后再对 `core.min.js` 文件进行压缩保存即可。
@@ -148,7 +128,7 @@ g = g.replace(/![0-9]{3,}x/,"");
 
 之前是使用 Valine 搭配 LeanCloud 的评论系统，要迁移到 Typecho 还是蛮复杂的，毕竟没有现成的工具，而且评论的 id 和文章的 id 与 Typecho 格式也不一致。目前是参考一个 [Valine 转 Wordpress 评论的脚本](https://veltlion.github.io/valine-to-wxr/)，自己修改了代码。脚本需要先安装 `jq` 这个 JSON 文件处理包，然后可以实现 JSON 转为 SQL 文件。
 
-```sh
+```bash
 #!/usr/bin/env bash
 # by @leirock
 # Valine to Typecho
@@ -202,7 +182,7 @@ echo done!
 
 保存该文件命名为 `valine2typecho.sh`，重命名 LeanCloud 导出的 Valine 评论文件为 `comment.json`，然后在这两个文件所在目录执行以下命令：
 
-```sh
+```shell
 sh valine2typecho.sh comment.json
 ```
 
@@ -253,9 +233,9 @@ Handsome 开发者提供了一个微信公众号发布的渠道，但是这样�
 
 时光机上要显示自己的微博或者 Twitter 的动态，可以借助 RSSHub 生成的订阅源。RSSHub 的部署可以参考我之前的文章，其中 Twitter 还需要去申请获得 API 相应的 key 才可以访问。
 
-当然，使用的时候不能直接填写这个订阅源，因为会被禁止跨域访问，这时候可以在该订阅源链接前面加上 `https://cors-anywhere.herokuapp.com/`。例如我们要订阅微博的 RSS 订阅源链接是 `https://rsshub.app/weibo/user/{weibo_user_id}`，那么为了方便跨域访问，可以在时光机设置时候填写:
+当然，使用的时候不能直接填写这个订阅源，因为会被禁止跨域访问，这时候可以在该订阅源链接前面加上 `https://cors-anywhere.herokuapp.com/`。例如我们要订阅微博的 RSS 订阅源链接是 `https://rsshub.app/weibo/user/{weibo_user_id}`，那么为了方便跨域访问，可以在时光机设置时候填写：
 
-```http
+```
 https://cors-anywhere.herokuapp.com/https://rsshub.app/weibo/user/{weibo_user_id}
 ```
 
@@ -263,14 +243,14 @@ https://cors-anywhere.herokuapp.com/https://rsshub.app/weibo/user/{weibo_user_id
 
 然后下载上述项目源码到需要部署的服务器目录，项目根目录下创建环境变量设置文件 `.env`，编辑文件添加环境变量（具体含义用法见该项目文档），例如：
 
-```env
+```
 PORT = 1400
 CORSANYWHERE_WHITELIST = https://blog.dlzhang.com,https://rss.zdl.one
 ```
 
 之后安装所需要的依赖（以下命令二选一）:
 
-```sh
+```shell
 # yarn 安装方式
 yarn
 yarn add dotenv # 调用环境变量文件需要的依赖
@@ -280,18 +260,12 @@ npm install
 npm install dotenv --save # 调用环境变量文件需要的依赖
 ```
 
-修改启动文件 `server.js`，在最开头加入以下内容，以便在最开始就引入环境变量文件的参数：
+修改启动文件 `server.js`，在最开头加入以下内容，以便在最开始就引入环境变量文件的参数。保存后，可以手动启动 `node server.js`，或者用「PM2 管理器」启动该脚本即可。
 
-```js
+```javascript
 // Import .env
 let dotenv = require('dotenv');
 dotenv.config('./env');
-```
-
-可以手动启动，或者用「PM2 管理器」启动，选择启动文件为 `server.js` 即可。
-
-```sh
-node server.js
 ```
 
 最后，为服务设置反向代理，使得可以通过域名访问该服务。
@@ -300,7 +274,7 @@ node server.js
 
 ### 5.1 CDN
 
-最开始是静态资源走腾讯云境内 CDN（存储在对象存储中），毕竟腾讯云每个月有 10G 免费境内 CDN 流量包可以使用。但是测试和实际使用发现，如果只是使用境内 CDN 分发静态资源，海外访问的时候会有「云减速」的效果，但是如果开启全球加速，海外访问的流量费也是一笔钱。
+最开始是静态资源走腾讯云境内 CDN（存储在对象存储中），毕竟腾讯云每个月有 10G 免费境内 CDN 流量包可以使用。但是实际使用发现，如果只是使用境内 CDN 分发静态资源，海外访问的时候会有「云减速」的效果，但是如果开启全球加速，海外访问的流量费也是一笔钱。
 
 而如果选择 Cloudflare 的 CDN，似乎对境内访问有「云减速」的效果。如果是 DNS 双线解析，境内直接访问服务器，境外访问 Cloudflare 的 CDN（可以通过 Cloudflare Partner 面板实现 CNAME 接入）， 可以让海外访问走 CDN，不过感觉对境内一样是源站访问的话用 CDN 意义不算很大。而且，因为目前服务器和我同地域，访问延迟特别低，体验很好，加上 Cloudflare 的 CDN，纵使是境外也感觉有「云减速」的效果，似乎没有给我选择最近的节点或者是回源获取资源了吧。
 
@@ -312,7 +286,7 @@ node server.js
 
 Google BBR 是一个 TCP 加速优化工具，可用于优化TCP连接，根据介绍开启可以加快访问的网速，这里参考了 [Rat 介绍的方法](https://www.moerats.com/archives/297/)：
 
-```sh
+```shell
 # 修改系统变量
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
@@ -329,14 +303,14 @@ lsmod | grep bbr
 
 显示以下即内核已开启 BBR：
 
-```sh
+```shell
 # sysctl net.ipv4.tcp_available_congestion_control
 net.ipv4.tcp_available_congestion_control = bbr cubic reno
 ```
 
 显示类似以下内容即 BBR 启动成功：
 
-```sh
+```shell
 # lsmod | grep bbr
 tcp_bbr                20480  14
 ```

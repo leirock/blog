@@ -32,19 +32,18 @@ macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在�
 
 要使用 Hexo NexT 主题的博客，需要先配置好环境，安装 [Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/downloads)。安装完成后，在终端中输入以下命令安装 Hexo：
 
-```sh
+```shell
 npm install -g hexo-cli
-
 # 或者用 yarn 命令
 yarn global add hexo-cli 
 ```
 
 安装 Hexo 完成后，执行下列命令会在指定文件夹中新建所需要的文件：
 
-```sh
+```shell
 hexo init <folder-path>  #在指定文件夹中初始化 Hexo
 cd <folder-path>  #定位到 Hexo 博客目录
-yarn install #或者 npm install
+yarn install
 ```
 
 新建完成后，指定文件夹的目录中：
@@ -57,21 +56,21 @@ yarn install #或者 npm install
 
 使用以下第一句可以在 `source/_post/` 文件夹下新建一篇文章；使用以下的第二句可以在 `source` 下新建以 `<page-title>` 为名称的文件夹，文件夹内的 `index.md` 可以在编译后生成一个新的页面。
 
-```sh
+```shell
 hexo new "<post-title>"  #新建文章
 hexo new page "<page-title>"  #新建页面
 ```
 
 因为原始的都是 Markdown 文件，要让浏览器可以显示美观的网页，需要根据 Markdown 文件生成 HTML 静态文件。执行以下命令：
 
-```sh
+```shell
 #生成静态文件
 hexo generate  #或者 hexo g
 ```
 
 在某些情况，如果发现对站点的更改无论如何也不生效，可能需要运行该命令，清除缓存文件 `db.json` 和已生成的静态文件 `/public/`。
 
-```sh
+```shell
 hexo clean
 ```
 
@@ -79,13 +78,13 @@ hexo clean
 
 要在本地预览调试生成的博客网页效果，可以执行以下命令。访问网址为：`http://localhost:4000/`。
 
-```sh
+```shell
 hexo serve
 ```
 
 如果是部署在 GitHub Pages，可以按照下述命令配置站点配置文件（注意缩进保持一致）：
 
-```yaml /_config.yml
+```yaml
 # Deployment
 deploy:
   - type: git
@@ -95,7 +94,7 @@ deploy:
 
 设置完成后，执行以下命令。第一次执行过程中会提示输入相应用户名和密码，正确输入后既可以正常部署。
 
-```sh
+```shell
 #首次部署要先执行以下命令安装插件
 yarn add hexo-deployer-git #或者 npm i hexo-deployer-git --save
 #部署网站
@@ -104,7 +103,7 @@ hexo deploy
 
 在两条命令直接采用 `&&` 进行连接即可同时执行两条命令。另外，使用以下的命令可以简化命令的使用：
 
-```sh
+```shell
 hexo s -g  #启动服务器之前预先生成静态文件，等价于 hexo g && hexo s
 hexo g -d  #静态文件生成后立即部署网站，等价于 hexo g && hexo d
 ```
@@ -115,7 +114,7 @@ hexo g -d  #静态文件生成后立即部署网站，等价于 hexo g && hexo d
 
 在**站点**文件夹根目录新建文件夹 `scripts`，然后在文件夹内新建文件 `openeditor.js`：
 
-```javascript /scripts/openeditor.js
+```javascript
 //Windows
 var spawn = require('child_process').exec;
 hexo.on('new', function(data){
@@ -135,14 +134,14 @@ hexo.on('new', function(data){
 
 可以执行以下命令下载主题文件，当然也可以从 GitHub [直接下载](https://github.com/theme-next/hexo-theme-next/releases) 最新版本压缩包，解压后将文件放在 `/themes/next` 目录下面。
 
-```sh
+```shell
 cd <blog-path>  #定位到 Hexo 博客目录
 git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
 另一种是通过添加子模块的方法载入主题文件：
 
-```sh
+```shell
 git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
@@ -157,16 +156,16 @@ git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 
 要自动生成站点地图，可以执行以下命令，这样以后每次执行 `hexo g`，都会生成 `sitemap.xml`。
 
-```sh
+```shell
 cd <blog-path>
-yarn add hexo-generator-sitemap #或者 npm i hexo-generator-sitemap --save
+yarn add hexo-generator-sitemap 
 ```
 
 ### 3.3 与主题样式一致的404页面
 
 要生成一个和主题样式一致的404页面，首先需要新建一个页面：
 
-```sh
+```shell
 cd <blog-path>
 hexo new page "404"
 ```
@@ -184,14 +183,14 @@ permalink: /404
 
 这里使用插件 `hexo-abbrlink` 来生成博客文章的永久链接，可以查看该插件的 [GitHub 项目页面](https://github.com/Rozbo/hexo-abbrlink)。
 
-```sh
+```shell
 cd <blog-path>
-yarn add hexo-abbrlink #或者 npm i hexo-abbrlink --save
+yarn add hexo-abbrlink
 ```
 
 在站点配置文件中修改 `permalink`：
 
-```diff /_config.yml
+```diff
 -permalink: :year/:month/:day/:title/
 +permalink: posts/:abbrlink/
 +abbrlink:
@@ -203,20 +202,12 @@ yarn add hexo-abbrlink #或者 npm i hexo-abbrlink --save
 
 首先替换给文章排序索引的原有插件 `hexo-generator-index`，执行以下命令
 
-```sh
-yarn remove hexo-generator-index && yarn add hexo-generator-indexed
-
-#或者以下命令
-npm uni hexo-generator-index --save && npm i hexo-generator-indexed --save
+```shell
+yarn remove hexo-generator-index
+yarn add hexo-generator-indexed
 ```
 
-然后在需要置顶的文章的开头添加 `sticky` 控制文章置顶：
-
-```diff
----
-+sticky: true
----
-```
+然后在需要置顶的文章的开头添加 `sticky: true` 控制文章置顶：
 
 ### 3.6 豆瓣读书电影游戏展示
 
@@ -224,7 +215,7 @@ npm uni hexo-generator-index --save && npm i hexo-generator-indexed --save
 
 但是，该插件在 Safari 浏览器下无法显示豆瓣读书中书籍封面图片。需要做的修改就是让页面自动判断是不是豆瓣读书页面，如果是就加载一句 meta 信息，否则就不加载。所以，把以下这段代码加入到 `/source/_data/head.swig` 之中：
 
-```javascript /source/_data/head.swig
+```javascript
 <script>
   function GetUrlRelativePath() {
     var url = document.location.toString(); //获取当前链接
@@ -245,7 +236,7 @@ npm uni hexo-generator-index --save && npm i hexo-generator-indexed --save
 
 因为这里利用到了主题注入功能，所以需要在**主题配置文件**启用该功能：
 
-```diff /themes/next/_config.yml
+```diff
  custom_file_path:
 -  #head: source/_data/head.swig
 +  head: source/_data/head.swig

@@ -59,12 +59,12 @@ if (hexo-config('gray')) {
 
 /* 修改选中字符的颜色 */
 ::-moz-selection { /* Code for Firefox */
-  background: rgba(0, 149, 255, 0.2);
+  background: rgba(0, 149, 255, .2);
   color: var(--blockquote-color);
 }
 
 ::selection {
-  background: rgba(0, 149, 255, 0.2);
+  background: rgba(0, 149, 255, .2);
   color: var(--blockquote-color);
 }
 
@@ -231,10 +231,57 @@ figcaption {
 
 /* post-行内代码 */
 code {
-  background: #e6e8ee!important; //加!important是为了适配评论中的代码样式
+  background: #e6e8ee !important; //加!important是为了适配评论中的代码样式
   
   @media (prefers-color-scheme: dark) {
-    background: #3e4b5e!important;
+    background: #3e4b5e !important;
+  }
+}
+
+pre[class*=language-] {
+  background: $highlight-background;
+  font-size: .85em;
+
+  @media (prefers-color-scheme: dark) {
+    background: $highlight-background-dark;
+    border-radius: 0;
+  }
+}
+
+pre[class*=language-]:before {
+  color: var(--t-l);
+  content: attr(data-language);
+  font-size: 1.9em;
+  font-weight: 700;
+  opacity: .15;
+  position: absolute;
+  right: .3rem;
+  top: .1em;
+  text-transform: uppercase;
+}
+
+code[class*=language-] {
+  background: none !important;
+  white-space: break-spaces;
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    background: none;
+}
+
+.token.deleted {
+  background: #fdd;
+}
+.token.inserted {
+  background: #dfd;
+}
+
+@media (prefers-color-scheme: dark) {
+  .token.deleted {
+    background: #654545;
+  }
+  .token.inserted {
+    background: #466548;
   }
 }
 
@@ -243,7 +290,7 @@ td, th {
   border-color: #e3e6eb;
 
   @media (prefers-color-scheme: dark) {
-    border-color: #3e4b5e!important;
+    border-color: #3e4b5e !important;
   }
 }
 
@@ -315,7 +362,7 @@ li {
 }
 
 .license-title, .license-meta-title {
-  margin:0 0 .25rem
+  margin: 0 0 .25rem
 }
 
 .license-link, .license-meta-title {
@@ -330,15 +377,16 @@ li {
   color: currentColor;
 
   &:hover{
-    border-bottom-color:#999!important
+    border-bottom-color:#999 !important
   }
 }
 
 .license-link a {
   color:#7a7a7a;
-  border-bottom-color: #7a7a7a!important;
+  border-bottom-color: #7a7a7a !important;
+
   &:hover{
-    border-bottom-color:#7a7a7a!important
+    border-bottom-color: #7a7a7a !important
   }
 }
 
@@ -616,7 +664,7 @@ li.category-list-item a {
 .post-body .link-grid .link-grid-container {
   border: 2px solid #ddd;
   border-radius: $myradius;
-  box-shadow: .2rem .2rem 0.5rem rgba(0,0,0,0.2);
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
 
   &:hover {
     animation: none;
@@ -684,7 +732,7 @@ li.category-list-item a {
   }
 
   &:last-of-type {
-    font-size: 0.875em;
+    font-size: .875em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

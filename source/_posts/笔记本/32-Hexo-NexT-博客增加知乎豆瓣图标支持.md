@@ -35,9 +35,9 @@ NexT 8.1.0 版本下可以直接选择 [草莓图标库](https://github.com/xian
 
 ## 2. 自定义样式配置
 
-因为阿里巴巴矢量库里有多个知乎、豆瓣的图标，大小不一，即使设置了字体大小页可能无法和原始图像大小一致，这让强迫症的我不能忍，经过仔细挑选我终于找到了合适大小的两个图标。在主题 CSS 自定义文件中可以直接加入以下内容：
+因为阿里巴巴矢量库里有多个知乎、豆瓣的图标，大小不一，即使设置了字体大小页可能无法和原始图像大小一致，这让强迫症的我不能忍，经过仔细挑选我终于找到了合适大小的两个图标。在主题 CSS 自定义文件 `/source/_data/styles.styl` 中可以直接加入以下内容：
 
-```css /source/_data/styles.styl
+```stylus
 //知乎豆瓣图标 font-class引用
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1528847148903'); /* IE9*/
@@ -61,7 +61,7 @@ NexT 8.1.0 版本下可以直接选择 [草莓图标库](https://github.com/xian
 
 因为这里利用到了主题注入功能，所以需要在**主题配置文件**启用该功能：
 
-```diff /themes/next/_config.yml
+```diff
  custom_file_path:
 -  #style: source/_data/styles.styl
 +  style: source/_data/styles.styl
@@ -71,7 +71,7 @@ NexT 8.1.0 版本下可以直接选择 [草莓图标库](https://github.com/xian
 
 举个例子，在主题配置文件中，社交账号图标设置好以后，类似是以下这样的格式：
 
-```yaml /themes/next/_config.yml
+```yaml
 social:
   Twitter: https://twitter.com/user_id || twitter
   GitHub: https://github.com/user_id || github

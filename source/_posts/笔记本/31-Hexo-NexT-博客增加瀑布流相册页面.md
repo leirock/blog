@@ -14,7 +14,7 @@ edit: 2021-05-14 23:30:00
 
 在博客根目录的 `/scripts/` 文件夹下新建一个 `phototool.js` 文件，内容如下。主要功能是访问照片文件夹，获取每张照片的大小和文件名，并生成对应的 `json` 文件：
 
-```js /scripts/phototool.js
+```javascript
 "use strict";
 const fs = require("fs");
 const sizeOf = require('image-size');
@@ -50,7 +50,7 @@ fs.readdir(path, function (err, files) {
 
 创建好并把照片放在目录后，执行以下命令：
 
-```sh
+```shell
 cd <folder-path>  #定位到 Hexo 博客目录
 yarn add image-size #或者 npm install image-size --save
 node scripts/phototool.js  #生成对应的 json 文件
@@ -58,7 +58,7 @@ node scripts/phototool.js  #生成对应的 json 文件
 
 `node scripts/phototool.js` 这个步骤以后可以不用手动执行，每次 `hexo s` 或者 `hexo deploy` 时候会被自动执行。如果报错，请注意检查保存本地照片的文件夹里有没有非图片类文件，特别是要删除如 `.DS_Store` 这样的隐藏文件。`json` 文件样例如下：
 
-```json /source/photos/photoslist.json
+```json
 [
 	"4032.3024 IMG_0391.JPG",
 	"12500.3874 IMG_0404.JPG",
@@ -71,7 +71,7 @@ node scripts/phototool.js  #生成对应的 json 文件
 
 首先，在 `/source/js/` 目录下创建 `photo.js`：
 
-```js /source/js/photo.js
+```javascript
 var imgDataPath = '/photos/photoslist.json'; //图片名称高宽信息json文件路径
 var imgPath = '/images/photos/';  //图片访问路径
 var imgMaxNum = 50; //图片显示数量
@@ -134,7 +134,7 @@ photo.init();
 
 然后，在 `/source/_data/` 下创建 `body-end.swig` 文件，并添加如下代码：
 
-```html /source/_data/body-end.swig
+```swig
 {% if page.type ==='picture' %}
   <script src="//cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
   <script src="/js/photo.js"></script>
@@ -143,7 +143,7 @@ photo.init();
 
 因为这里利用到了主题注入功能，所以需要在**主题配置文件**启用该功能：
 
-```diff /themes/next/_config.yml
+```diff
  custom_file_path:
 -  #bodyEnd: source/_data/body-end.swig
 +  bodyEnd: source/_data/body-end.swig
@@ -153,7 +153,7 @@ photo.init();
 
 新建相册页 ` hexo new page photos`，创建  `/source/photos/index.md`，编辑为以下内容：
 
-```markdown /source/photos/index.md
+```markdown
 ---
 title: 相册
 type: picture
@@ -191,7 +191,7 @@ comments: true
 
 在主题配置文件中，按照说明安装和开启 `fancybox` 。在 `menu` 添加如下内容可以添加相册页导航菜单：
 
-```diff /themes/next/_config.yml
+```diff
  menu:
 +  photos: /photos/ || fas fa-camera-retro
 ```
