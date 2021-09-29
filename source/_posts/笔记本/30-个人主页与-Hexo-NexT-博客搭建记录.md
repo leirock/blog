@@ -32,7 +32,7 @@ macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在�
 
 要使用 Hexo NexT 主题的博客，需要先配置好环境，安装 [Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/downloads)。安装完成后，在终端中输入以下命令安装 Hexo：
 
-```shell
+```bash
 npm install -g hexo-cli
 
 # 或者用 yarn 命令
@@ -41,7 +41,7 @@ yarn global add hexo-cli
 
 安装 Hexo 完成后，执行下列命令会在指定文件夹中新建所需要的文件：
 
-```shell
+```bash
 # 在指定文件夹中初始化 Hexo
 hexo init <folder-path>
 
@@ -62,7 +62,7 @@ yarn install
 
 使用以下第一句可以在 `source/_post/` 文件夹下新建一篇文章；使用以下的第二句可以在 `source` 下新建以 `<page-title>` 为名称的文件夹，文件夹内的 `index.md` 可以在编译后生成一个新的页面。
 
-```shell
+```bash
 # 新建文章
 hexo new "<post-title>"
 
@@ -72,14 +72,14 @@ hexo new page "<page-title>"
 
 因为原始的都是 Markdown 文件，要让浏览器可以显示美观的网页，需要根据 Markdown 文件生成 HTML 静态文件。执行以下命令：
 
-```shell
+```bash
 # 生成静态文件，或者 hexo g
 hexo generate
 ```
 
 在某些情况，如果发现对站点的更改无论如何也不生效，可能需要运行该命令，清除缓存文件 `db.json` 和已生成的静态文件 `/public/`。
 
-```shell
+```bash
 hexo clean
 ```
 
@@ -87,7 +87,7 @@ hexo clean
 
 要在本地预览调试生成的博客网页效果，可以执行以下命令。访问网址为：`http://localhost:4000/`。
 
-```shell
+```bash
 hexo serve
 ```
 
@@ -103,7 +103,7 @@ deploy:
 
 设置完成后，执行以下命令。第一次执行过程中会提示输入相应用户名和密码，正确输入后既可以正常部署。
 
-```shell
+```bash
 # 首次部署要先执行以下命令安装插件
 yarn add hexo-deployer-git
 
@@ -113,7 +113,7 @@ hexo deploy
 
 在两条命令直接采用 `&&` 进行连接即可同时执行两条命令。另外，使用以下的命令可以简化命令的使用：
 
-```shell
+```bash
 # 启动服务器之前预先生成静态文件，等价于 hexo g && hexo s
 hexo s -g
 
@@ -147,14 +147,14 @@ hexo.on('new', function(data){
 
 可以执行以下命令下载主题文件，当然也可以从 GitHub [直接下载](https://github.com/theme-next/hexo-theme-next/releases) 最新版本压缩包，解压后将文件放在 `/themes/next` 目录下面。
 
-```shell
+```bash
 cd <blog-path>  #定位到 Hexo 博客目录
 git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
 另一种是通过添加子模块的方法载入主题文件：
 
-```shell
+```bash
 git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
@@ -169,7 +169,7 @@ git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 
 要自动生成站点地图，可以执行以下命令，这样以后每次执行 `hexo g`，都会生成 `sitemap.xml`。
 
-```shell
+```bash
 cd <blog-path>
 yarn add hexo-generator-sitemap 
 ```
@@ -178,7 +178,7 @@ yarn add hexo-generator-sitemap
 
 要生成一个和主题样式一致的404页面，首先需要新建一个页面：
 
-```shell
+```bash
 cd <blog-path>
 hexo new page "404"
 ```
@@ -197,7 +197,7 @@ permalink: /404
 
 这里使用插件 `hexo-abbrlink` 来生成博客文章的永久链接，可以查看该插件的 [GitHub 项目页面](https://github.com/Rozbo/hexo-abbrlink)。
 
-```shell
+```bash
 cd <blog-path>
 yarn add hexo-abbrlink
 ```
@@ -216,7 +216,7 @@ yarn add hexo-abbrlink
 
 首先替换给文章排序索引的原有插件 `hexo-generator-index`，执行以下命令
 
-```shell
+```bash
 yarn remove hexo-generator-index
 yarn add hexo-generator-indexed
 ```

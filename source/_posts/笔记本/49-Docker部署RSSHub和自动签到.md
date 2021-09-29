@@ -31,7 +31,7 @@ date: 2020-04-15 23:30:50
 
 然后，我们创建一个新的网站，不需要创建新的数据库，PHP 设置为纯静态。把文章根目录下的文件都清空，然后把 RSSHub 源代码拉取到网站根目录 `/www/wwwroot/rsshub/`。这样的目的是以后有需要，可以直接修改该目录下的文件，而不需要进入 Docker 容器进行修改。
 
-```shell
+```bash
 cd /www/wwwroot/
 git clone https://github.com/diygod/rsshub.git rsshub
 ```
@@ -48,7 +48,7 @@ git clone https://github.com/diygod/rsshub.git rsshub
 
 当然首先需要先安装  Docker Compose，参照[文档说明](https://docs.docker.com/compose/install/)：
 
-```shell
+```bash
 # 下载 Docker Compose 稳定发布版
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
@@ -61,7 +61,7 @@ docker-compose --version
 
 接下来安装RSSHub：
 
-```shell
+```bash
 # 下载 docker-compose.yml
 wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
 
@@ -99,7 +99,7 @@ services:
 
 该目录下执行以下命令可以：启动、停止、移除容器。
 
-```shell
+```bash
 # 启动
 docker-compose up -d
 
@@ -112,7 +112,7 @@ docker-compose down
 
 接下来我们按照前面介绍的方法设置反向代理，这样就可以访问之前设置的域名注册账号，再把该账号设置为管理员：
 
-```shell
+```bash
 # 进入容器管理（也可通过宝塔面板 Docker 管理器进入）
 docker exec -it qiandao /bin/bash
 
@@ -135,7 +135,7 @@ exit
 
 如果不希望别人访问我们的签到网站注册账号，可以把 `/web/handlers/login.py` 文件第 66-130 行的代码注释掉（前后均写上 `'''`）。编辑好该文件后，在该文件目录执行以下命令把文件复制到容器内：
 
-```shell
+```bash
 # 把文件复制到容器内
 docker cp login.py qiandao:/usr/src/app/web/handlers/
 
@@ -145,7 +145,7 @@ docker restart qiandao
 
 要备份我们的数据信息，可以执行如下命令，建议恢复数据库后立即重启容器（方法同上）。
 
-```shell
+```bash
 # 将容器中的数据库文件复制到当前目录
 docker cp qiandao:/usr/src/app/database.db .
 

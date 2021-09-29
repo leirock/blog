@@ -32,13 +32,13 @@ date: 2020-04-15 19:45:00
 
 最后，因为 GitHub Actions 同步到服务器网站目录过程中用到了 rsync 这一数据镜像备份工具，所以需要先在服务器上安装好 rsync：
 
-```shell
+```bash
 apt-get install rsync
 ```
 
 **备注**：如果服务器提供商的控制台没有自动配置密钥对的功能，可以在服务器上手动生成。
 
-```shell
+```bash
 # 进入用户 SSH 密钥存储目录
 cd ~/.ssh
 
@@ -51,7 +51,7 @@ ssh-keygen
 
 首先 `ssh-keygen` 会确认密钥的存储位置（默认是 `.ssh/id_rsa`），然后它会要求你输入两次密钥口令。 如果你不想在使用密钥时输入口令，将其留空即可。
 
-```shell
+```bash
 # 将公钥内容写入 authorized_keys
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
@@ -67,7 +67,7 @@ cat ~/.ssh/id_rsa
 
 首先，在宝塔面板创建新站点，设置好 PHP 版本（不能是纯静态），并添加上 SSL 证书。然后，删去网站根目录 `/www/wwwroot/api/` 下默认添加创建的所有文件，确保文件夹全部清空。打开 SSH 终端，把 Live2D API 源代码拉取到网站 `live2d/` 目录：
 
-```shell
+```bash
 cd /www/wwwroot/
 git clone https://github.com/fghrsh/live2d_api.git api/live2d
 ```

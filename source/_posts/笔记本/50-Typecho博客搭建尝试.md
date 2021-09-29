@@ -182,7 +182,7 @@ echo done!
 
 保存该文件命名为 `valine2typecho.sh`，重命名 LeanCloud 导出的 Valine 评论文件为 `comment.json`，然后在这两个文件所在目录执行以下命令：
 
-```shell
+```bash
 sh valine2typecho.sh comment.json
 ```
 
@@ -250,7 +250,7 @@ CORSANYWHERE_WHITELIST = https://blog.dlzhang.com,https://rss.zdl.one
 
 之后安装所需要的依赖（以下命令二选一）:
 
-```shell
+```bash
 # yarn 安装方式
 yarn
 yarn add dotenv # 调用环境变量文件需要的依赖
@@ -286,7 +286,7 @@ dotenv.config('./env');
 
 Google BBR 是一个 TCP 加速优化工具，可用于优化TCP连接，根据介绍开启可以加快访问的网速，这里参考了 [Rat 介绍的方法](https://www.moerats.com/archives/297/)：
 
-```shell
+```bash
 # 修改系统变量
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
@@ -303,14 +303,14 @@ lsmod | grep bbr
 
 显示以下即内核已开启 BBR：
 
-```shell
+```bash
 # sysctl net.ipv4.tcp_available_congestion_control
 net.ipv4.tcp_available_congestion_control = bbr cubic reno
 ```
 
 显示类似以下内容即 BBR 启动成功：
 
-```shell
+```bash
 # lsmod | grep bbr
 tcp_bbr                20480  14
 ```

@@ -50,7 +50,7 @@ fs.readdir(path, function (err, files) {
 
 创建好并把照片放在目录后，执行以下命令：
 
-```shell
+```bash
 # 定位到 Hexo 博客目录
 cd <folder-path>
 
