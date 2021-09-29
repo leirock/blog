@@ -1,5 +1,5 @@
 ---
-title: 个人主页与 Hexo NexT 博客搭建记录
+title: 个人主页与 Hexo 博客搭建记录
 categories: [笔记本]
 tags: [blog]
 pid: 30
