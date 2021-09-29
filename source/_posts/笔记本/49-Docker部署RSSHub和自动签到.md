@@ -75,7 +75,7 @@ docker-compose up -d
 docker-compose down
 ```
 
-如果要添加配置，可以修改 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) 中的 `environment` 进行配置。
+如果要添加配置，可以修改 `docker-compose.yml` 中的 `environment` 进行配置。
 
 ## 2. 自动签到应用
 

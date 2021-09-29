@@ -4,7 +4,7 @@ categories: [碎碎念]
 tags: [PhD, 升学]
 pid: 12
 date: 2016-04-07 22:54:42
-publication: 微信公众号 · 班班碎碎念
+publication: 微信公众号
 publication_url: https://mp.weixin.qq.com/s/I5EY7dWvHI3dMdzJIbfChw
 ---
 

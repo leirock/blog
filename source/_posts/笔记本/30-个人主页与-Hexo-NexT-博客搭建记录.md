@@ -33,7 +33,10 @@ macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在�
 要使用 Hexo NexT 主题的博客，需要先配置好环境，安装 [Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/downloads)。安装完成后，在终端中输入以下命令安装 Hexo：
 
 ```sh
-sudo yarn global add hexo-cli #需要输入密码确认，或者 npm install -g hexo-cli
+npm install -g hexo-cli
+
+# 或者用 yarn 命令
+yarn global add hexo-cli 
 ```
 
 安装 Hexo 完成后，执行下列命令会在指定文件夹中新建所需要的文件：
