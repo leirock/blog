@@ -131,8 +131,10 @@ post_navigation: right
 # Preconnect CDN for fonts and plugins.
 preconnect: true
 
-# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "" # theme color
+# Browser header panel color.
+theme_color:
+  light: "#e7ddc8"
+  dark: "#181c27"
 
 codeblock:
   # All available themes: https://theme-next.js.org/highlight/
@@ -209,6 +211,7 @@ note:
 
 # Tabs tag
 tabs:
+  sticky: true
   transition:
     tabs: true
     labels: true
