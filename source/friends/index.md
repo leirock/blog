@@ -18,9 +18,9 @@ toc:
 
 ## 交换友链方式
 
-**第一步：提交 Issue 并等待审核**
+### 提交申请
 
-新建 [GitHub Issue](https://github.com/leirock/friends/issues/)，按模板格式填写并提交。待审核通过，添加 `active` 标签后，回来刷新即可生效。
+新建 [GitHub Issue](https://github.com/leirock/friends/issues/)，按模板格式填写站点信息，提交后请等待审核通过。
 
 ```json
 {
@@ -41,7 +41,7 @@ toc:
 如果无法创建 GitHub Issue，可以在[留言板](/guestbook/)留下上述信息。
 {% endnote %}
 
-**第二步：添加本站友链**
+### 添加本站友链
 
 请添加本站到您的友链中，如果您也使用 Issues 作为友链源，只需要告知您的友链源仓库即可。
 
@@ -53,7 +53,7 @@ toc:
 链接：https://blog.dlzhang.com
 {% endnote %}
 
-**第三步：更新友链信息**
+### 更新友链信息
 
 - 直接修改相应 Issue 中的信息即可，大约 3 分钟内生效，无需等待博客更新；
 - 如果您没有相应 Issue 的编辑权限，可以参考第一步的方法新建一个 Issue，或者直接在原 Issue 留言告知更新的信息。
