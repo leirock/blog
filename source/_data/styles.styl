@@ -266,8 +266,13 @@ code[class*=language-] {
   white-space: break-spaces;
 }
 
+code[class*=language-],
+pre[class*=language-] {
+  text-shadow: none;
+}
+
 .language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
-    background: none;
+  background: none;
 }
 
 .token.deleted {
