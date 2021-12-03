@@ -64,7 +64,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 8
+  per_page: 5
   order_by: -date
 
 # Category & Tag
@@ -90,7 +90,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 20
+per_page: 15
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -141,7 +141,7 @@ waline:
     #'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
   ]
   locale:
-    placeholder: 在这里分享你的观点与想法～ 昵称、邮箱必填，评论回复会通过邮件提醒。 # Comment box placeholder
+    placeholder: 在这里分享你的观点与想法，评论通过审核后才会显示。昵称、邮箱必填，回复通过邮件提醒。 # Comment box placeholder
     admin: 博主
     nick: 昵称*
     mail: 邮箱*
