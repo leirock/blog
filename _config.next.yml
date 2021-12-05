@@ -50,7 +50,7 @@ menu:
   note: /note/ || fas fa-pencil-alt
   tags: /tags/ || fas fa-tags
   guestbook: /guestbook/ || fas fa-location-arrow
-  friends: /friends/ || fas fa-link
+#  friends: /friends/ || fas fa-link
 #  overview: 
 #    default: /overview/ || fas fa-archive
 #    timeline: timeline/ || fas fa-history

@@ -16,10 +16,6 @@ toc:
 - 主题不限，但是应当有{%dot 实质性原创内容 %}并让我产生共鸣，或者设计排版有独特风格；
 - 定期清理友链，范围包括但不限于长期未更新、无法访问、已不再符合上述的收录标准等。
 
-## 添加本站友链
-
-如果您也使用 Issues 作为友链源，只需要告知您的友链源仓库即可。
-
 {% note success %}
 #### 本站信息
 名称：`纯粹` 或 `班班` 或 `Leirock`
@@ -30,7 +26,7 @@ toc:
 
 ## 提交友链申请
 
-新建 [GitHub Issue](https://github.com/leirock/friends/issues/)，按模板格式填写站点信息，提交后请等待审核通过。
+新建 [GitHub Issue](https://github.com/leirock/friends/issues/)，按模板格式填写站点信息，提交后请等待审核通过。如果无法创建 GitHub Issue，可以在[留言板](/guestbook/)留下相关信息。
 
 ```json
 {
@@ -46,11 +42,6 @@ toc:
 - 打开 [压缩图](https://www.yasuotu.com) 上传站点标识图片，将图片尺寸调整到 96px 后下载;
 - 将压缩后的图片上传到 [笑果图床](https://imagelol.com) 获取链接，或者上传到 GitHub 获取对应的 jsDelivr 链接；
 - 不要采用 Gravatar 头像链接（包括镜像站），显示时会出错。
-
-{% note info %}
-#### 提示
-如果无法创建 GitHub Issue，可以在[留言板](/guestbook/)留下上述信息。
-{% endnote %}
 
 如果需要更新您的友链信息，只需要：
 
