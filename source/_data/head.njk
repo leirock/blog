@@ -1,6 +1,6 @@
 {### Favicon ###}
 <link rel="icon" href="/favicon.ico">
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
 
 {### umami ###}
 <script async defer data-website-id="f2b3c6f5-c67a-4e9e-b7d3-5c567c8eaa15" src="https://stats.dlzhang.com/umami.js"></script>
@@ -8,7 +8,7 @@
 {### Live2D ###}
 <script type="text/javascript">
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/leirock/live2d-widget/";
+const live2d_path = "/live2d/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -35,9 +35,9 @@ function loadExternalResource(url, type) {
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
 	Promise.all([
-		loadExternalResource(live2d_path + "waifu.min.css", "css"),
+		loadExternalResource(live2d_path + "waifu.css", "css"),
 		loadExternalResource(live2d_path + "live2d.min.js", "js"),
-		loadExternalResource(live2d_path + "waifu-tips.min.js", "js")
+		loadExternalResource(live2d_path + "waifu-tips.js", "js")
 	]).then(() => {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",

@@ -38,7 +38,7 @@ jobs:
     - name: Generate Hexo site
       run: |
         yarn build
-        rm -rf public/images public/img
+        rm -rf public/images
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@main

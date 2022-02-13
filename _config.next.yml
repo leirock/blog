@@ -35,10 +35,10 @@ gray: false
 
 favicon:
   small: ''
-  medium: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon-32.png
-  apple_touch_icon: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/apple-touch-icon.png
+  medium: /img/favicon/favicon-32.png
+  apple_touch_icon: /img/favicon/apple-touch-icon.png
   safari_pinned_tab: ''
-  android_manifest: https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/manifest.webmanifest
+  android_manifest: ''
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -62,7 +62,7 @@ menu:
 
 # Sidebar Avatar
 avatar:
-  url: https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-128.png
+  url: https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
   rounded: true
 
 # Posts / Categories / Tags in sidebar.
@@ -230,6 +230,14 @@ motion:
 
 vendors:
   # The CDN provider of NexT internal scripts.
-  internal: jsdelivr
+  internal: custom
+  plugins: custom
+  # custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file} #360 75CDN
+  # custom_cdn_url: https://code.bdstatic.com/npm/${npm_name}@${version}/${npm_file} #百度云
+  # custom_cdn_url: https://unpkg.zhimg.com/${npm_name}@${version}/${npm_file} #知乎
+  custom_cdn_url: https://npm.elemecdn.com/${npm_name}@${version}/${npm_file} #饿了么
 
-images: https://cdn.jsdelivr.net/gh/leirock/assets@main/blog
+# Assets
+# css - local
+# js - same as internal CDN
+images: /img # root /img/ folder
