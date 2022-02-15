@@ -128,11 +128,12 @@ waline:
   libUrl: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
   serverURL: https://waline.dlzhang.com # Waline server address url
   avatar: '' # Gravatar style
+  login: disable
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 5 # Pagination size
   visitor: false # Article reading statistic
-  comment_count: false  # If false, comment count will only be displayed in post page, not in home page
+  comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   copyright: false
   dark: auto
   emoji:  [
@@ -148,7 +149,7 @@ waline:
     nick: 昵称*
     mail: 邮箱*
     link: 网址
-    login: 管理
+    #login: 管理
 
 # hexo-renderer-markdown-it
 # For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
