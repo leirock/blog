@@ -125,6 +125,7 @@ server:
 # For more information: https://waline.js.org
 waline:
   enable: true
+  libUrl: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
   serverURL: https://waline.dlzhang.com # Waline server address url
   avatar: '' # Gravatar style
   meta: [nick, mail, link] # Custom comment header
