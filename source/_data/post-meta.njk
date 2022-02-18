@@ -1,7 +1,7 @@
 {%- if post.edit %}
-    <span class="post-meta-item">
-        <time title="{{ '修改时间' + __('symbol.colon') + full_date(post.edit) }}" itemprop="dateModified" datetime="{{ moment(post.edit).format() }}">
-            <small>已编辑</small>
-        </time>
-    </span>
+  <span class="post-meta-item">
+    <time title="{{ '修改时间' + __('symbol.colon') + full_date(post.edit) }}" itemprop="dateModified" datetime="{{ moment(post.edit).format() }}">
+      <small>已编辑</small>
+    </time>
+  </span>
 {%- endif %}

@@ -1,48 +1,48 @@
 {### Comment Locating ###}
 {% if page.comments or post.comments %}
-    <script type="text/javascript">
-        if (window.location.hash) {
-            var checkExist = setInterval(function () {
-                if ($(window.location.hash).length) {
-                    $('html, body').animate({
-                        scrollTop: $(window.location.hash).offset().top - 90
-                    }, 1000);
-                    clearInterval(checkExist);
-                }
-            }, 100);
+  <script type="text/javascript">
+    if (window.location.hash) {
+      var checkExist = setInterval(function () {
+        if ($(window.location.hash).length) {
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top - 90
+          }, 1000);
+          clearInterval(checkExist);
         }
-    </script>
+      }, 100);
+    }
+  </script>
 {% endif %}
 
 {### Friends Grid ###}
 <script{{ pjax }} type="text/javascript">
-    var el = document.getElementById('friendslink');
+  var el = document.getElementById('friendslink');
     if (el != undefined) {
-        var friendsList = el.getAttribute('link');
-        friend = {
-            init: function () {
-                var that = this;
-                $.getJSON(friendsList, function (data) {
-                    that.render(data);
-                });
-            },
-            render: function (data) {
-                var title, logo, url, description, li = "";
-                for (var i = 0; i < data.length; i++) {
-                    title = data[i].title;
-                    description = data[i].description;
-                    logo = data[i].logo;
-                    url = data[i].url;
-                    li += '<div class="link-grid-container">' +
-                        '<img class="link-grid-image" src="' + logo + '">' +
-                        '<p>' + title + '</p>' + 
-                        '<p>' + description + '</p>' + 
-                        '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
-                        '</div>';
-                }
-                $("#friendslink").append(li);
+      var friendsList = el.getAttribute('link');
+      friend = {
+        init: function () {
+          var that = this;
+          $.getJSON(friendsList, function (data) {
+            that.render(data);
+          });
+        },
+        render: function (data) {
+          var title, logo, url, description, li = "";
+          for (var i = 0; i < data.length; i++) {
+            title = data[i].title;
+            description = data[i].description;
+            logo = data[i].logo;
+            url = data[i].url;
+            li += '<div class="link-grid-container">' +
+                '<img class="link-grid-image" src="' + logo + '">' +
+                '<p>' + title + '</p>' + 
+                '<p>' + description + '</p>' + 
+                '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
+                '</div>';
             }
+            $("#friendslink").append(li);
+          }
         }
         friend.init();
-    }
-</script>
+      }
+  </script>

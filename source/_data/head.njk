@@ -14,7 +14,6 @@ const live2d_path = "/live2d/";
 function loadExternalResource(url, type) {
 	return new Promise((resolve, reject) => {
 		let tag;
-
 		if (type === "css") {
 			tag = document.createElement("link");
 			tag.rel = "stylesheet";

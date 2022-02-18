@@ -1,49 +1,49 @@
 <div class="license">
-    <div class="license-title">{{ page.title }}</div>
-    <div class="license-link">
-        <a href="{{ page.permalink }}" rel="external nofollow noopener" target="_blank">{{ page.permalink }}</a>
-    </div>
-    <div class="license-meta">
-        <div class="license-meta-item">
-            <div class="license-meta-title">本文作者</div>
-            <div class="license-meta-text">
-                {%- if post.original_author %}
-                    {{ post.original_author }}
-                {%- else %}
-                    {{ author }}
-                {%- endif %}
-            </div>
-        </div>
-        {%- if post.publish %}
-            <div class="license-meta-item">
-                <div class="license-meta-title">发表于</div>
-                <div class="license-meta-text">
-                    {%- if post.publish_url %}
-                        <a href="{{ post.publish_url }}" rel="external nofollow noopener" target="_blank">{{ post.publish }}</a>
-                    {% else %}
-                        {{ post.publish }}
-                    {%- endif %}
-                </div>
-            </div>
+  <div class="license-title">{{ page.title }}</div>
+  <div class="license-link">
+    <a href="{{ page.permalink }}" rel="external nofollow noopener" target="_blank">{{ page.permalink }}</a>
+  </div>
+  <div class="license-meta">
+    <div class="license-meta-item">
+      <div class="license-meta-title">本文作者</div>
+      <div class="license-meta-text">
+        {%- if post.original_author %}
+          {{ post.original_author }}
+        {%- else %}
+          {{ author }}
         {%- endif %}
-        <div class="license-meta-item">
-            <div class="license-meta-title">许可协议</div>
-            <div class="license-meta-text">
-                {%- if post.original_author %}
-                    原作者许可协议
-                {%- elif post.cc_license %}
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
-                {% else %}
-                    禁止转载引用
-                {%- endif %}
-            </div>
-        </div>
+      </div>
     </div>
-    <div class="license-statement">转载或引用本文内容时，请遵守著作权许可协议！</div>
+    {%- if post.publish %}
+      <div class="license-meta-item">
+        <div class="license-meta-title">发表于</div>
+        <div class="license-meta-text">
+          {%- if post.publish_url %}
+            <a href="{{ post.publish_url }}" rel="external nofollow noopener" target="_blank">{{ post.publish }}</a>
+          {% else %}
+            {{ post.publish }}
+          {%- endif %}
+        </div>
+      </div>
+    {%- endif %}
+    <div class="license-meta-item">
+      <div class="license-meta-title">许可协议</div>
+      <div class="license-meta-text">
+        {%- if post.original_author %}
+          原作者许可协议
+        {%- elif post.cc_license %}
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
+        {% else %}
+          禁止转载引用
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+  <div class="license-statement">转载或引用本文内容时，请遵守著作权许可协议！</div>
 </div>
 {%- if not post.original_author %}
-    <div class="donations">
-        <div class="donation-label">喜欢这篇文章？不考虑打赏一下作者吗？</div>
-        <a class="afdian-button" href="https://afdian.net/@leirock" rel="external nofollow noopener" target="_blank">爱发电</a>
-    </div>
+  <div class="donations">
+    <div class="donation-label">喜欢这篇文章？不考虑打赏一下作者吗？</div>
+    <a class="afdian-button" href="https://afdian.net/@leirock" rel="external nofollow noopener" target="_blank">爱发电</a>
+  </div>
 {%- endif %}
