@@ -22,4 +22,4 @@ zh-CN:
     archive_posts:
       other: '<strong><i class="fas fa-fw fa-feather"></i> 目前共计 %d 篇文章</strong>'
   footer:
-    powered: Powered by <a target="_blank" rel="nofollow noopener" href="https://hexo.io">Hexo</a> <a target="_blank" rel="nofollow noopener" href="https://theme-next.js.org">NexT</a> · Designed by <a target="_blank" rel="nofollow noopener" href="https://dlzhang.com">Leirock</a>
+    powered: 本站由 <a target="_blank" rel="nofollow noopener" href="https://dlzhang.com">班班</a> 创建，使用 <a target="_blank" rel="nofollow noopener" href="https://theme-next.js.org">NexT</a> 主题。 
