@@ -1,3 +1,17 @@
+/************************* Fonts **************************/
+
+@font-face {
+  font-family: LXGW;
+  font-display: swap;
+  src:url(/resources/fonts/LXGWWenKaiLite-Regular.woff2)
+}
+
+@font-face {
+  font-family: "Long Cang";
+  font-display: swap;
+  src: url(/resources/fonts/LongCang-Regular.woff2)
+}
+
 /************************* Header **************************/
 
 /* header-隐藏顶部线条 */
@@ -86,7 +100,6 @@ if (hexo-config('gray')) {
 
 /* sidebar-副标题 */
 .site-subtitle {
-  font-family: $font-family-sans;
   color: var(--brand-color);
 }
 
@@ -114,8 +127,7 @@ if (hexo-config('gray')) {
 /************************** Post ***************************/
 
 /* post-文章卡片圆角 */
-.post-block,
-.post-block+.post-block {
+.post-block{
   border-radius: $myradius !important;
 }
 
@@ -201,11 +213,12 @@ p {
   box-shadow: $image-box-shadow;
 }
 
-/* post-引用与 note 字体 */
+/* post-引用与 note 字体 
 blockquote p,
 .post-body .note {
   font-family: $font-family-quote;
 }
+*/
 
 /* post-引用字体颜色 */
 blockquote {

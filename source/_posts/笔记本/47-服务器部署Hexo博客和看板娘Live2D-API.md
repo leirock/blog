@@ -1,22 +1,23 @@
 ---
-title: 服务器部署 Hexo 博客和看板娘 Live2D API
+title: 服务器部署静态博客和看板娘 Live2D API
 categories: [笔记本]
 tags: [服务器, 持续集成]
 pid: 47
 cc_license: true
 date: 2020-04-15 19:45:00
+edit: 2022-03-12 23:45:00
 ---
 
-在服务器上部署 Hexo 静态博客有两种方案，一是直接把源代码推送到服务器上，然后在服务器上安装 Node.js 和 hexo-cli，从而直接在服务器上构建网页文件并部署；二是依旧按照之前部署到对象存储的方案，用 GitHub 作为源代码托管，然后用 GitHub Actions 构建网页文件，再同步到服务器的网站根目录下。这里，我选择后一种方案，这样修改的地方比较少，也比较方便。
+## 1. 服务器部署静态博客
+
+在服务器上部署静态博客有两种方案，一是直接在服务器上用博客源代码构建网页文件并部署；二是用 GitHub 作为源代码托管，然后用 GitHub Actions 构建博客，再同步到服务器的网站根目录下。这里，我选择后一种方案。
 <!--more-->
 
-## 1. 通过 GitHub Actions 部署 Hexo
-
-首先，修改原来的 GitHub Actions 脚本，删去部署到阿里云 OSS 的内容，添加如下内容：
+首先，在宝塔面板上创建网站。如果需要 Let's Encrypt SSL 通配符证书，可能还需要进行 DNS 解析认证，这就需要我们去域名解析提供商那边获取一个可以编辑 DNS 解析记录的 token，方便面板自动配置解析记录。然后在 GitHub Actions 脚本中添加如下内容：
 
 ```yaml
 - name: Deploy to server
-  uses: easingthemes/ssh-deploy@v2.1.2
+  uses: easingthemes/ssh-deploy@main
   env:
     ARGS: "-avz --delete"
     publish: "public/" #要同步到服务器的目录
@@ -27,9 +28,7 @@ date: 2020-04-15 19:45:00
     TARGET: ${{ secrets.REMOTE_TARGET }} #服务器上网站的根目录
 ```
 
-对于上述变量，我们直接添加在代码仓库设置的 Secrets 中即可。对于阿里云轻量应用服务器，可以在控制台很容易地生成密钥对，并下载由于连接服务器的私钥（生成后重启一下服务器）。
-
-设置好 GitHub Actions 各项参数之后，需要在宝塔面板上创建网站，并设置域名等内容，这里就不详细介绍。如果需要 Let's Encrypt SSL 通配符证书，可能还需要进行 DNS 解析认证，这就需要我们去域名解析提供商那边获取一个可以编辑 DNS 解析记录的 token，方便宝塔面板自动配置解析记录。
+上述变量直接添加在代码仓库设置的 Secrets 中即可。密钥对可以在服务器控制台生成，并下载用于连接服务器的私钥（生成后重启服务器）。
 
 最后，因为 GitHub Actions 同步到服务器网站目录过程中用到了 rsync 这一数据镜像备份工具，所以需要先在服务器上安装好 rsync：
 
@@ -37,63 +36,117 @@ date: 2020-04-15 19:45:00
 apt install rsync
 ```
 
-**备注**：如果服务器提供商的控制台没有自动配置密钥对的功能，可以在服务器上手动生成。
-
-```bash
-# 进入用户 SSH 密钥存储目录
-cd ~/.ssh
-
-# 列出目录中内容，确认是否已拥有密钥
-ls
-
-# 生成 SSH 密钥
-ssh-keygen
-```
-
-首先 `ssh-keygen` 会确认密钥的存储位置（默认是 `.ssh/id_rsa`），然后它会要求你输入两次密钥口令。 如果你不想在使用密钥时输入口令，将其留空即可。
-
-```bash
-# 将公钥内容写入 authorized_keys
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-
-# 列出私钥的内容
-cat ~/.ssh/id_rsa
-```
-
-最后，我们把私钥的内容复制到 GitHub 代码仓库设置的 Secrets 中 `SSH_PRIVATE_KEY` 变量内即可。
-
 ## 2. 将萌萌哒看板娘抱回家
 
-看板娘的大致设置都可以参考 [stevenjoezhang/live2d-widget](https://github.com/stevenjoezhang/live2d-widget) 这个项目的介绍。这里我主要记录一下使用上述组件时候，需要调用到的看板娘模型 API 的自建过程。
+### 2.1 看板娘前端设置
 
-首先，在宝塔面板创建新站点，设置好 PHP 版本（不能是纯静态），并添加上 SSL 证书。然后，删去网站根目录 `/www/wwwroot/api/` 下默认添加创建的所有文件，确保文件夹全部清空。打开 SSH 终端，把 Live2D API 源代码拉取到网站 `live2d/` 目录：
+看板娘前端的设置主要可以参考 [stevenjoezhang/live2d-widget](https://github.com/stevenjoezhang/live2d-widget) 的介绍。
+
+首先，从上述项目中获取以下四个文件，放入博客目录 `/source/resources/live2d/`：
+
+- `live2d.min.js`
+- `waifu-tips.json`：使用 CSS 选择器[设置提示语](https://github.com/leirock/live2d-widget)
+- `waifu-tips.js`：调整设置实现随机装扮
+
+```diff
+- if (modelId === null) {
+  // 首次访问加载 指定模型 的 指定材质
+  modelId = 1; // 模型 ID
+- modelTexturesId = 53; // 材质 ID
++ const sample = arr => arr[Math.floor(Math.random() * arr.length)]; //随机装扮
++ modelTexturesId = sample([35,36,52,53,60]); //装扮ID
+- }
+```
+
+- `waifu.css`：看板娘的样式设置，末尾可以添加如下内容
+
+```css
+/* Mobile 移动端不显示 */
+@media (max-width: 768px) {
+	#waifu {
+		display: none;
+	}
+}
+
+/* Darkmode 黑暗模式 */
+@media (prefers-color-scheme: dark) {
+	#waifu-tips span {
+		color: greenyellow;
+	}
+}
+```
+
+然后，在 `/source/_data/head.njk` 添加如下内容，并设置好 `live2d_path`（前端文件路径） 和 `apiPath`（后端 API 路径）：
+
+```javascript
+<script type="text/javascript">
+// 注意：live2d_path 参数应使用绝对路径
+const live2d_path = "/resources/live2d/";
+
+// 封装异步加载资源的方法
+function loadExternalResource(url, type) {
+	return new Promise((resolve, reject) => {
+		let tag;
+		if (type === "css") {
+			tag = document.createElement("link");
+			tag.rel = "stylesheet";
+			tag.href = url;
+		}
+		else if (type === "js") {
+			tag = document.createElement("script");
+			tag.src = url;
+		}
+		if (tag) {
+			tag.onload = () => resolve(url);
+			tag.onerror = () => reject(url);
+			document.head.appendChild(tag);
+		}
+	});
+}
+
+// 加载 waifu.css live2d.min.js waifu-tips.js
+if (screen.width >= 768) {
+	Promise.all([
+		loadExternalResource(live2d_path + "waifu.css", "css"),
+		loadExternalResource(live2d_path + "live2d.min.js", "js"),
+		loadExternalResource(live2d_path + "waifu-tips.js", "js")
+	]).then(() => {
+		initWidget({
+			waifuPath: live2d_path + "waifu-tips.json",
+			apiPath: "https://api.dlzhang.com/live2d/", // https://live2d.fghrsh.net/api/
+			//cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+		});
+	});
+}
+// initWidget 第一个参数为 waifu-tips.json 的路径，第二个参数为 API 地址
+// API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api
+// 初始化看板娘会自动加载指定目录下的 waifu-tips.json
+</script>
+```
+
+### 2.2 后端 API 搭建
+
+首先，在宝塔面板创建新站点，设置好 PHP 版本（不是纯静态），并添加上 SSL 证书。然后，删去网站根目录 `/www/wwwroot/api/` 下默认添加创建的所有文件，确保文件夹全部清空。打开 SSH 终端，把 Live2D API 源代码拉取到网站 `live2d/` 目录：
 
 ```bash
 cd /www/wwwroot/
 git clone https://github.com/fghrsh/live2d_api.git api/live2d
 ```
 
-然后在网站的配置文件中添加代码设置跨域访问：
+最后，在网站的 Nginx 配置中允许跨域访问：
 
 ```nginx
 server
 {
-    add_header 'Access-Control-Allow-Origin' $allow_origin always;
-    add_header 'Access-Control-Allow-Credentials' 'true';
-    add_header 'Access-Control-Allow-Methods' 'GET,POST,OPTIONS';
-    add_header 'Access-Control-Allow-Headers' 'Token,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,X_Requested_With,If-Modified-Since,Cache-Control,Content-Type';
-    if ($request_method = 'OPTIONS') {
-        return 204;
-    }
+    #add_header Access-Control-Allow-Origin * always;
+    add_header 'Access-Control-Allow-Origin' $allow_origin;
 }
+
 map $http_origin $allow_origin {
     default "";
-    "~^(https?://localhost(:[0-9]+)?)" $1;
     "~^(https?://127.0.0.1(:[0-9]+)?)" $1; 
-    "~^(https?://192.168.10.[\d]+(:[0-9]+)?)" $1;
-    "~^(https?://local.zdl.one(:[0-9]+)?)" $1;
-    "~^https://dlzhang.com" https://dlzhang.com;
-    "~^https://blog.dlzhang.com" https://blog.dlzhang.com;
+    "~^(https?://[\w]+.dlzhang.com(:[0-9]+)?)" $1;
 }
 ```
-因为我的看板娘组件文件都放在了腾讯云的对象存储中并通过其 CDN 进行访问，所以还需要在腾讯云的内容分发网络中对加速域名也设置好允许相关域名跨域访问的权限。
+
+如果前端文件通过 CDN 访问，则还需要在 CDN 中也设置好允许相关域名跨域访问的权限。

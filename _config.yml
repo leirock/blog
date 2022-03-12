@@ -133,7 +133,7 @@ waline:
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 5 # Pagination size
   visitor: false # Article reading statistic
-  comment_count: true  # If false, comment count will only be displayed in post page, not in home page
+  comment_count: false  # If false, comment count will only be displayed in post page, not in home page
   copyright: false
   dark: auto
   emoji:  [
@@ -175,8 +175,255 @@ theme_plus:
     - path: 'archive.njk'
       file: 'custom/archive.njk'
 
-# hexo-directory-category
-# For more information: https://github.com/zthxxx/hexo-directory-category
-auto_dir_categorize:
-	enable: true  # options:true, false; default is true
-	force: true # options:true, false; default is false
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# See: https://theme-next.js.org/docs/theme-settings/
+# ---------------------------------------------------------------
+
+theme_config:
+
+  # Remove unnecessary files after hexo generate.
+  minify: true
+
+  # Define custom file paths.
+  # Create your custom files in site directory `source/_data` and uncomment needed files below.
+  custom_file_path:
+    head: source/_data/head.njk
+    #header: source/_data/header.njk
+    #sidebar: source/_data/sidebar.njk
+    postMeta: source/_data/post-meta.njk
+    postBodyEnd: source/_data/post-body-end.njk
+    #footer: source/_data/footer.njk
+    bodyEnd: source/_data/body-end.njk
+    variable: source/_data/variables.styl
+    mixin: source/_data/mixins.styl
+    style: source/_data/styles.styl
+
+  # ---------------------------------------------------------------
+  # Scheme Settings
+  # ---------------------------------------------------------------
+
+  scheme: Gemini
+  darkmode: true
+  # Color style: Day of Mourning
+  gray: false
+
+  # ---------------------------------------------------------------
+  # Site Information Settings
+  # ---------------------------------------------------------------
+
+  favicon:
+    small: ''
+    medium: /resources/favicon/favicon-32.png
+    apple_touch_icon: /resources/favicon/apple-touch-icon.png
+    safari_pinned_tab: ''
+    android_manifest: ''
+
+  # ---------------------------------------------------------------
+  # Menu Settings
+  # ---------------------------------------------------------------
+
+  menu:
+    life: /life/ || fas fa-pizza-slice
+    viewpoint: /viewpoint/ || fas fa-eye
+    note: /note/ || fas fa-pencil-alt
+    tags: /tags/ || fas fa-tags
+    guestbook: 
+      default: /guestbook/ || fas fa-location-arrow
+      friends: ../friends/ || fas fa-link
+      history: ../post/26/ || fas fa-history
+  #  overview: 
+  #    default: /overview/ || fas fa-archive
+  #    timeline: timeline/ || fas fa-history
+
+  # ---------------------------------------------------------------
+  # Sidebar Settings
+  # See: https://theme-next.js.org/docs/theme-settings/sidebar
+  # ---------------------------------------------------------------
+
+  # Sidebar Avatar
+  avatar:
+    url: https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
+    rounded: true
+
+  # Posts / Categories / Tags in sidebar.
+  site_state: false
+
+  social:
+    微博: https://weibo.com/leirock || fab fa-weibo
+    GitHub: https://github.com/leirock || fab fa-github
+    RSS: /atom.xml || fas fa-rss
+
+  social_icons:
+    icons_only: true
+
+  toc:
+    # Automatically add list number to toc.
+    number: false
+    max_depth: 3 # <h3> ###
+
+  # ---------------------------------------------------------------
+  # Footer Settings
+  # See: https://theme-next.js.org/docs/theme-settings/footer
+  # ---------------------------------------------------------------
+
+  footer:
+    since: 2008
+
+    # Icon between year and copyright info.
+    icon:
+      name: fas fa-heart
+      animated: true
+      color: "#f06292"
+
+    copyright: 纯粹
+
+    # Powered by Hexo & NexT
+    powered: true
+
+  # ---------------------------------------------------------------
+  # Post Settings
+  # See: https://theme-next.js.org/docs/theme-settings/posts
+  # ---------------------------------------------------------------
+
+  # Read more button
+  read_more_btn: false
+
+  # Post meta display settings
+  post_meta:
+    item_text: false
+    updated_at:
+      enable: false
+
+  # Post wordcount display settings
+  # Dependencies: https://github.com/next-theme/hexo-word-counter
+  symbols_count_time:
+    separated_meta: false
+
+  # Show previous post and next post in post footer if exists
+  # Available values: left | right | false
+  post_navigation: right
+
+  # ---------------------------------------------------------------
+  # Misc Theme Settings
+  # See: https://theme-next.js.org/docs/theme-settings/miscellaneous
+  # ---------------------------------------------------------------
+
+  # Preconnect CDN for fonts and plugins.
+  preconnect: true
+
+  # Browser header panel color.
+  theme_color:
+    light: "#e7ddc8"
+    dark: "#181c27"
+
+  codeblock:
+    # All available themes: https://theme-next.js.org/highlight/
+    prism:
+      light: prism
+      dark: prism-okaidia
+    copy_button:
+      enable: true
+      style: flat
+
+  back2top:
+    scrollpercent: true
+
+  # ---------------------------------------------------------------
+  # Font Settings
+  # ---------------------------------------------------------------
+
+  font:
+    enable: true
+    global:
+      external: false
+      family: LXGW  # EB Garamond, Noto Serif SC
+    title:
+      external: false
+      family: Long Cang
+      size: 2.2
+    headings:
+      size: 1.6
+    codes:
+      external: false
+      family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
+
+  # ---------------------------------------------------------------
+  # SEO Settings
+  # See: https://theme-next.js.org/docs/theme-settings/seo
+  # ---------------------------------------------------------------
+
+  baidu_site_verification: wvc37nzEad
+
+  # ---------------------------------------------------------------
+  # Third Party Plugins & Services Settings
+  # See: https://theme-next.js.org/docs/third-party-services/
+  # ---------------------------------------------------------------
+
+  math:
+    mathjax:
+      enable: true
+  pjax: true
+  fancybox: true
+  lazyload: true
+  pangu: true
+
+  # ---------------------------------------------------------------
+  # Search Services
+  # See: https://theme-next.js.org/docs/third-party-services/search-services
+  # ---------------------------------------------------------------
+
+  # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+  local_search:
+    enable: true
+
+  # ---------------------------------------------------------------
+  # Tags Settings
+  # See: https://theme-next.js.org/docs/tag-plugins/
+  # ---------------------------------------------------------------
+
+  # Note tag (bootstrap callout)
+  note:
+    # Note tag style values:
+    #  - simple    bootstrap callout old alert style. Default.
+    #  - modern    bootstrap callout new (v2-v3) alert style.
+    #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+    #  - disabled  disable all CSS styles import of note tag.
+    style: flat
+    icons: true
+    # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+    # Offset also applied to label tag variables. This option can work with disabled note tag.
+    light_bg_offset: 0
+
+  # Tabs tag
+  tabs:
+    sticky: true
+    transition:
+      tabs: true
+      labels: true
+
+  # ---------------------------------------------------------------
+  # Animation Settings
+  # ---------------------------------------------------------------
+
+  motion:
+    enable: false
+
+  # ---------------------------------------------------------------
+  # CDN Settings
+  # See: https://theme-next.js.org/docs/advanced-settings/vendors
+  # ---------------------------------------------------------------
+
+  vendors:
+    # The CDN provider of NexT internal scripts.
+    internal: custom
+    plugins: custom
+    # custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file} #360 75CDN
+    # custom_cdn_url: https://code.bdstatic.com/npm/${npm_name}@${version}/${npm_file} #百度云
+    # custom_cdn_url: https://unpkg.zhimg.com/${npm_name}@${version}/${npm_file} #知乎
+    custom_cdn_url: https://npm.elemecdn.com/${npm_name}@${version}/${npm_file} #饿了么
+
+  # Assets
+  # css - local
+  # js - same as internal CDN
+  images: /resources/background/ # root /img/ folder

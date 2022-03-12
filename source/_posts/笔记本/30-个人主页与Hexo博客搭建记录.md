@@ -206,11 +206,11 @@ yarn add hexo-abbrlink
 在站点配置文件中修改 `permalink`：
 
 ```diff
--permalink: :year/:month/:day/:title/
-+permalink: posts/:abbrlink/
-+abbrlink:
-+  alg: crc32  #support crc16(default) and crc32
-+  rep: hex    #support dec(default) and hex
+- permalink: :year/:month/:day/:title/
++ permalink: posts/:abbrlink/
++ abbrlink:
++   alg: crc32  #support crc16(default) and crc32
++   rep: hex    #support dec(default) and hex
 ```
 
 ### 3.5 文章置顶
@@ -252,9 +252,9 @@ yarn add hexo-generator-indexed
 因为这里利用到了主题注入功能，所以需要在**主题配置文件**启用该功能：
 
 ```diff
- custom_file_path:
--  #head: source/_data/head.swig
-+  head: source/_data/head.swig
+  custom_file_path:
+-   #head: source/_data/head.swig
++   head: source/_data/head.swig
 ```
 
 ### 3.7 Travis CI 持续集成
