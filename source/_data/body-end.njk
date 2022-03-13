@@ -27,16 +27,16 @@
         });
       },
       render: function (data) {
-        var title, logo, url, description, li = "";
+        var title, logo, url, intro, li = "";
         for (var i = 0; i < data.length; i++) {
           title = data[i].title;
-          description = data[i].description;
+          intro = data[i].intro;
           logo = data[i].logo;
           url = data[i].url;
           li += '<div class="link-grid-container">' +
               '<img class="link-grid-image" src="' + logo + '">' +
               '<p>' + title + '</p>' + 
-              '<p>' + description + '</p>' + 
+              '<p>' + intro + '</p>' + 
               '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
               '</div>';
         }
