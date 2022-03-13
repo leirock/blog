@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /friends/friendslist.json
 
 Sitemap: https://blog.dlzhang.com/sitemap.xml
