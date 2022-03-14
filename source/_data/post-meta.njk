@@ -1,7 +1,12 @@
 {%- if post.edit %}
   <span class="post-meta-item">
-    <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.edit) }}" itemprop="dateModified" datetime="{{ moment(post.edit).format() }}">
+    <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.edit) }}">
       已更新
     </time>
   </span>
 {%- endif %}
+{% if not is_index %}
+  <span class="post-meta-item">
+    <a href="{{ 'https://github.com/leirock/blog-next/tree/main/source/' + post.source }}" target="_blank">编辑</a>
+  </span>
+{% endif %}
