@@ -4,8 +4,8 @@ categories: [碎碎念]
 tags: [PhD, 升学]
 pid: 13
 date: 2016-04-07 23:00:42
-publish: 微信公众号
-publish_url: https://mp.weixin.qq.com/s/FmmC05tC1EbJQsf43926Og
+orig_source: 微信公众号
+orig_url: https://mp.weixin.qq.com/s/FmmC05tC1EbJQsf43926Og
 ---
 
 提交申请之后，其实主要就两件事情，其一是检查自己的材料是否提交齐全；其二是等待面试通知和参加面试。

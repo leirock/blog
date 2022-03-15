@@ -4,8 +4,8 @@ categories: [观察者]
 tags: [升学, 经济]
 pid: 29
 date: 2017-12-15 21:00:00
-publish: 知乎 Live
-publish_url: https://www.zhihu.com/lives/922106856669868032
+orig_source: 知乎 Live
+orig_url: https://www.zhihu.com/lives/922106856669868032
 ---
 
 ## 一、Live 简介
