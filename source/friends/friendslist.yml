@@ -27,11 +27,13 @@
   intro: 有故事的个人博客
   logo: https://sdn.geekzu.org/avatar/8bffd96de39bb1215657c8a6a75f917a?s=96
   url: http://linyy.name
+  label: 已关站
 
 - title: 城南旧事
   intro: 为简单生活创造记忆
   logo: https://blog.loli.top/logo.png
   url: https://blog.loli.top
+  label: 404
 
 - title: 猫鱼的小窝
   intro: 记录猫鱼生活的琐事和分享喜欢的音乐
