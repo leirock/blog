@@ -125,7 +125,7 @@ server:
 # For more information: https://waline.js.org
 waline:
   enable: true
-  libUrl: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
+  libUrl: https://lib.baomitu.com/waline/latest/Waline.min.js
   serverURL: https://waline.dlzhang.com # Waline server address url
   avatar: '' # Gravatar style
   login: disable
@@ -425,4 +425,4 @@ theme_config:
   # Assets
   # css - local
   # js - same as internal CDN
-  images: /resources/background/ # root /img/ folder
+  images: /resources/img/ # root /img/ folder
