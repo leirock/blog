@@ -228,12 +228,9 @@ theme_config:
     note: /note/ || fas fa-pencil-alt
     tags: /tags/ || fas fa-tags
     guestbook: 
-      default: /guestbook/ || fas fa-location-arrow
+      default: /guestbook/ || fas fa-splotch
       friends: ../friends/ || fas fa-link
       history: ../post/26/ || fas fa-history
-  #  overview: 
-  #    default: /overview/ || fas fa-archive
-  #    timeline: timeline/ || fas fa-history
 
   # ---------------------------------------------------------------
   # Sidebar Settings
@@ -249,8 +246,8 @@ theme_config:
   site_state: false
 
   social:
-    微博: https://weibo.com/leirock || fab fa-weibo
-    GitHub: https://github.com/leirock || fab fa-github
+    微博: https://weibo.com/leirock || fa-brands fa-weibo
+    哔哩哔哩: https://space.bilibili.com/7454906 || fa-brands fa-bilibili
     RSS: /atom.xml || fas fa-rss
 
   social_icons:
