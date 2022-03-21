@@ -1,16 +1,23 @@
 #!/bin/sh
+clear
+
 HexoPath=$(cd "$(dirname "$0")"; pwd)
 cd ${HexoPath}
-function hexo_server(){
-	function open_url(){
-		sleep 2
+
+hexo_server(){
+	open_url(){
+		sleep 1
 		open http://127.0.0.1:4000/
 	}
     open_url &
     hexo server
 	hexo clean
 }
-clear
+
+hexo() {
+    node --no-warnings node_modules/hexo/bin/hexo "$@"
+}
+
 echo '==================== Hexo Utilities ===================='
 printf "常用:\n"
 printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
@@ -20,6 +27,7 @@ printf "\n\033[32mHexo 根目录："${HexoPath}"\033[0m\n"
 echo '--------------------------------------------------------'
 printf "\n选择："
 read answer
+
 if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 	printf "\n\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
