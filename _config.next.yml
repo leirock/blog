@@ -50,7 +50,7 @@ favicon:
 
 menu:
   life: /life/ || fas fa-pizza-slice
-  viewpoint: /viewpoint/ || fas fa-eye
+  observer: /observer/ || fas fa-eye
   media: /media/ || fas fa-guitar
   note: /note/ || fas fa-book-open
   tags: /tags/ || fas fa-tags

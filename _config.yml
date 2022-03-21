@@ -71,7 +71,7 @@ index_generator:
 default_category: life
 category_map:
   碎碎念: life
-  观察者: viewpoint
+  观察者: observer
   书影音: media
   笔记本: note
 tag_map:
