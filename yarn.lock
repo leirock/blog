@@ -1508,9 +1508,10 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@next-theme/hexo-theme-next#aae3ab8:
+hexo-theme-next@^8.10.1:
   version "8.10.1"
-  resolved "https://codeload.github.com/next-theme/hexo-theme-next/tar.gz/aae3ab8dbdb8ea43171072d28033f2b640babac2"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.10.1.tgz#de5c3203316423c2fee083cc366f8ce10e02e84d"
+  integrity sha512-c7XoUki1VAxx4TKvyemXJeV/WtPWaUCOm+4c/ca2deCpwSmieKcXA4eFK3acJafh+BxN5mlfg8IhB+PeGGC12Q==
 
 hexo-util@2.5.0:
   version "2.5.0"
