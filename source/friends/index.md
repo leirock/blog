@@ -21,8 +21,8 @@ title: 友情链接
 其中，对于标识图片的链接有如下建议：
 
 - 请提供 https 形式的链接，并以正方形或圆形图片为佳；
-- 建议提供 Gravatar 头像的镜像链接（如[极客族](https://cdn.geekzu.org/cached.html)），并以 `?s=96` 结尾控制尺寸；或者
-- 在 [Online Image Tool](https://www.onlineimagetool.com) 或 [iLoveIMG](https://www.iloveimg.com) 将尺寸调整到 96px，然后上传至[笑果图床](https://imagelol.com)获取链接。
+- 建议提供 Gravatar 头像的镜像链接（如[极客族](https://cdn.geekzu.org/cached.html)）；或者
+- 在 [TinyPNG](https://tinify.cn) 压缩图片后上传至[笑果图床](https://imagelol.com)获取链接。
 
 {% note info %}
 #### 本站信息
