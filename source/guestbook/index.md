@@ -15,5 +15,5 @@ toc:
 ### 在这里发现更多
 
 - 微博：[@班班Leirock](https://weibo.com/leirock)
-- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://web-1256060851.file.myqcloud.com/file/wechat-channel.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
+- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://web-1256060851.file.myqcloud.com/file/wechat.jpg" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
 - 邮箱：zjzdl@outlook.com
