@@ -38,6 +38,8 @@ apt install rsync
 
 ## 2. 将萌萌哒看板娘抱回家
 
+![](https://web-1256060851.file.myqcloud.com/post/47/live2d.png#650x)
+
 ### 2.1 看板娘前端设置
 
 看板娘前端的设置主要可以参考 [stevenjoezhang/live2d-widget](https://github.com/stevenjoezhang/live2d-widget) 的介绍。

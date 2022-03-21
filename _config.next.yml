@@ -160,18 +160,12 @@ font:
 # ======================= SEO Settings ======================== #
 # ============================================================= #
 
-# Automatically add external URL with Base64 encrypt & decrypt.
-exturl: true
-# If true, an icon will be attached to each external URL
-exturl_icon: false
-
 baidu_site_verification: wvc37nzEad
 
 
 # ============================================================= #
 # =============== Third Party Services Settings =============== #
 # ============================================================= #
-
 
 math:
   mathjax:
