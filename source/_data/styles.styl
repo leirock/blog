@@ -208,9 +208,23 @@ p {
   font-weight: 400;
 }
 
-/* post-图片阴影 */
+/* post-组图*/
+.group-picture {
+  margin-bottom: 5px;
+}
+
+.group-picture-column .image-caption {
+  margin-top: 1em;
+}
+
+.group-picture .group-picture-row {
+  display: inline-flex;
+}
+
+/* post-图片阴影、圆角 */
 .posts-expand .post-body img {
-  box-shadow: $image-box-shadow;
+  /*box-shadow: $image-box-shadow;*/
+  border-radius: $myradius;
 }
 
 /* post-引用与 note 字体 
