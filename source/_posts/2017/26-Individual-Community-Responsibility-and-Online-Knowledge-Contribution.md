@@ -3,8 +3,8 @@ title: Individual Community Responsibility and Online Knowledge Contribution
 categories: [观察者]
 tags: [经济, 互联网]
 mathjax: true
-pid: 22
-date: 2017-05-11 18:30:01
+pid: 26
+date: 2017-11-21 18:30:01
 ---
 
 This is a small research proposal about individual community responsibility and online knowledge contribution.
