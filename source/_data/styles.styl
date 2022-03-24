@@ -1,4 +1,6 @@
-/************************* Fonts **************************/
+/********************************************************/
+/************************* 字体 **************************/
+/********************************************************/
 
 @font-face {
   font-family: LXGW;
@@ -12,14 +14,17 @@
   src: url(/resources/fonts/LongCang-Regular.woff2)
 }
 
-/************************* Header **************************/
 
-/* header-隐藏顶部线条 */
+/**********************************************************/
+/************************* 全站背景 ************************/
+/**********************************************************/
+
+/* 隐藏顶部线条 */
 .headband {
   display: none;
 }
 
-/* header-顶部空白 */
+/* 顶部边距 */
 .header,
 .main-inner {
   margin-top: 10px;
@@ -29,21 +34,7 @@
   }
 }
 
-/* 圆角 */
-.header-inner, ///顶部圆角
-.sidebar-inner { //侧边头像圆角
-  border-radius: $myradius;
-}
-
-.site-brand-container {
-  border-radius: $myradius $myradius 0 0;
-
-  +mobile() {
-    border-radius: 0 0 $myradius $myradius;
-  }
-}
-
-/* header-页面背景 */
+/* 背景图片 */
 body {
   background-image: url($body-bg-url);
   background-repeat: repeat;
@@ -71,7 +62,7 @@ if (hexo-config('gray_filter')) {
   }
 }
 
-/* 修改选中字符的颜色 */
+/* 选中字符颜色 */
 ::-moz-selection { /* Code for Firefox */
   background: rgba(0, 149, 255, .2);
   color: var(--blockquote-color);
@@ -82,56 +73,76 @@ if (hexo-config('gray_filter')) {
   color: var(--blockquote-color);
 }
 
-/************************ Sidebar **************************/
 
-/* sidebar-标题背景 */
+/**********************************************************/
+/************************ 侧边栏 ***************************/
+/**********************************************************/
+
+/* 侧边圆角 */
+.header-inner, //顶部标题
+.sidebar-inner { //侧边头像
+  border-radius: $myradius;
+}
+
+.site-brand-container {
+  border-radius: $myradius $myradius 0 0;
+
+  +mobile() {
+    border-radius: 0 0 $myradius $myradius;
+  }
+}
+
+/* 站点标题背景 */
 .site-brand-container {
   background: url($site-brand-bg-url);
   background-position: 70% 20%;
   background-size: cover;
 }
 
-/* sidebar-标题 */
+/* 站点标题文字 */
 .site-title {
-  /*font-weight: bold;*/
   letter-spacing: 10px;
   padding-left: 10px; //修正字间距导致的标题左移
 }
 
-/* sidebar-副标题 */
+/* 站点副标题 */
 .site-subtitle {
   color: var(--brand-color);
 }
 
-/* sidebar-站点描述介绍 */
+/* 站点描述介绍 */
 .site-description {
   color: var(--blockquote-color);
   font-family: $font-family-quote;
   font-size: .9em;
 }
 
+/* 导航菜单文字 */
 .menu-item a {
   font-size: .85em;
 }
 
-/* sidebar-二级菜单圆角 */
+/* 二级导航菜单 */
 .sub-menu {
   border-radius: $myradius !important;
 }
 
-/* sidebar-社交媒体图标 */
+/* 社交媒体图标 */
 .links-of-author-item a {
   font-size: 1.05em;
 }
 
-/************************** Post ***************************/
 
-/* post-文章卡片圆角 */
+/**********************************************************/
+/************************ 文章 ****************************/
+/**********************************************************/
+
+/* 文章卡片 */
 .post-block{
   border-radius: $myradius !important;
 }
 
-/* post-文章与页面标题 */
+/* 文章与页面标题 */
 .posts-expand .post-title {
   font-size: 1.4em;
   font-weight: bold;
@@ -141,7 +152,7 @@ if (hexo-config('gray_filter')) {
   }
 }
 
-/* post-文章标题 */
+/* 文章标题 */
 .index .post-title,
 .post .post-title {
   text-align: left;
@@ -149,7 +160,7 @@ if (hexo-config('gray_filter')) {
   padding-left: 10px;
 }
 
-/* post-文章信息 */
+/* 文章信息栏 */
 .index .post-meta,
 .post .post-meta {
   justify-content: left;
@@ -172,43 +183,54 @@ if (hexo-config('gray_filter')) {
   }
 }
 
-/* post-文章信息项超链接 */
+/* 文章信息项超链接 */
 .post-meta-item a {
   border-bottom: none;
 }
 
-/* post-段后距 */
+/* 段后距 */
 p {
   margin-bottom: 1em;
 }
 
+/* 字号大小 */
 @media (min-width: 1200px) {
   .post-body {
     font-size: 1.09em;
   }
 }
 
-/* post-标签选择卡片加粗 */
+/* 标签选择卡片加粗（书单影单页） */
 .post-body .tabs ul.nav-tabs li.tab a {
   font-weight: bold;
 }
 
-/* post-超链接 */
+/* 超链接 */
 .post-body a {
-  text-decoration-color: var(--link-color);
+  color: var(--link-color);
+  transition: all .2s;
+  border-bottom-color: var(--link-hover-color);
 
   &:hover {
-    border-bottom-color: var(--link-hover-color);
+    color: var(--link-hover-color);
+    
+    border-bottom-width: 2px;
   }
 }
 
-/* post-图片标题 */
+/* 图片阴影圆角 */
+.posts-expand .post-body img {
+  /*box-shadow: $image-box-shadow;*/
+  border-radius: $myradius;
+}
+
+/* 图片标题 */
 .post-body .image-caption {
   margin: 0 auto 1em;
   font-weight: 400;
 }
 
-/* post-组图*/
+/* 组图标题 */
 .group-picture {
   margin-bottom: 5px;
 }
@@ -221,20 +243,19 @@ p {
   display: inline-flex;
 }
 
-/* post-图片阴影、圆角 */
-.posts-expand .post-body img {
-  /*box-shadow: $image-box-shadow;*/
-  border-radius: $myradius;
-}
-
-/* post-引用与 note 字体 
+/* 引用与提示卡片字体 
 blockquote p,
 .post-body .note {
   font-family: $font-family-quote;
 }
 */
 
-/* post-引用字体颜色 */
+/* 提示卡片图标位置 */
+.post-body .note:not(.no-icon)::before {
+  top: .15em;
+}
+
+/* 引用字体颜色 */
 blockquote {
   color: var(--text-color);
   background: #f4f5f7;
@@ -252,12 +273,12 @@ blockquote {
   
 }
 
-/* post-代码路径字体 */
+/* 代码路径字体 */
 figcaption {
   font-family: $font-family-monospace;
 }
 
-/* post-行内代码 */
+/* 行内代码 */
 code {
   background: #e6e8ee !important; //加!important是为了适配评论中的代码样式
   
@@ -318,7 +339,7 @@ pre[class*=language-] {
   }
 }
 
-/* post-表格边框 */
+/* 表格边框 */
 td, th {
   border-color: #e3e6eb;
 
@@ -327,7 +348,7 @@ td, th {
   }
 }
 
-/* post-表格背景 */
+/* 表格背景 */
 tbody tr {
   &:hover {
     background: var(--content-bg-color);
@@ -337,17 +358,21 @@ tbody tr {
   }
 }
 
-/* post-思源宋体列表打叉修复 */
+/* 思源宋体列表打叉修复 */
 li {
   text-align: left;
 }
 
-/* post-提示卡片图标位置 */
-.post-body .note:not(.no-icon)::before {
-  top: .15em;
+/* 文末标签 */
+.post-tags {
+  text-align: left;
+  
+  & a {
+  border-bottom: none;
+  }
 }
 
-/* post-文章结尾版权信息 */
+/* 文章版权信息 */
 .license {
   background: #f5f5f5;
   color: #4a4a4a;
@@ -434,9 +459,12 @@ li {
   margin:0 2rem 1em 0
 }
 
-/************************ Button ***************************/
 
-/* button-back2top */
+/**********************************************************/
+/************************ 按钮 ****************************/
+/**********************************************************/
+
+/* 返回最上按钮 */
 .back-to-top {
   background: $btn-default-bg;
   opacity: .8;
@@ -449,7 +477,7 @@ li {
   }
 }
 
-/* button-reward */
+/* 赞赏 */
 .donations {
   text-align: center;
   margin-top: 3em;
@@ -481,16 +509,19 @@ li {
   }
 }
 
-/****************** Pagination & Footer ********************/
 
-/* pagination-删去页码框 */
+/************************************************************/
+/************************ 页码页脚 ***************************/
+/************************************************************/
+
+/* 删去页码栏外框 */
 .pagination {
   border: none !important;
   background: none !important;
   box-shadow: none !important;
 }
 
-/* pagination-页码按钮 */
+/* 页码按钮 */
 .pagination .prev,
 .pagination .next,
 .pagination .page-number {
@@ -504,7 +535,7 @@ li {
   }
 }
 
-/* pagination-当前页码 */
+/* 当前页码 */
 .pagination .page-number.current {
   background: $btn-default-bg;
   btn-shadow-only();
@@ -514,7 +545,7 @@ li {
   }
 }
 
-/* footer */
+/* 页脚 */
 .footer {
   margin-top: 50px;
   padding-bottom: 40px;
@@ -530,9 +561,12 @@ li {
   }
 }
 
-/************************ Overview *************************/
 
-/* categories 
+/************************************************************/
+/************************ 文章汇总 ***************************/
+/************************************************************/
+
+/* 分类 
 +mobile() {
   .category-all-page .category-list-item {
     margin: 10px 40px;
@@ -573,8 +607,7 @@ li.category-list-item a {
 }
 */
 
-/* tags */
-//标签云
+/* 标签云 */
 .tag-cloud a {
   padding: 2px 10px;
   margin: 8px;
@@ -594,44 +627,40 @@ li.category-list-item a {
   }
 }
 
-//文章末标签
-.post-tags {
-  text-align: left;
-  
-  & a {
-  border-bottom: none;
-  }
-}
 
-/************************* Comment ************************/
+/**********************************************************/
+/************************ 评论框 ***************************/
+/**********************************************************/
 
-/* comment-圆角 */
+/* 评论卡片圆角 */
 .comments {
   border-radius: $myradius !important;
 }
 
-/* comment-超链接 */
+/* 评论超链接 */
 .comments a {
-  color: var(--text-color) !important;
+  color: var(--link-color) !important;
+  transition: all .2s;
+  border-bottom-color: var(--link-hover-color);
   display: inline !important;
 
   &:hover {
     color: var(--link-hover-color) !important;
+    border-bottom-width: 2px;
   }
+}
 
-  &.at {
-    border-bottom: none !important;
-  }
-
+.comments a[href^="#"] {
+  border-bottom: none !important;
 }
 
 .v[data-class=v] .vaction:hover, //评论框左下角
 .v[data-class=v] .vcard .vhead .vreply:hover, //回复按钮
 .v[data-class=v] .vcard .vhead .vreply.active {
-    color: var(--link-hover-color) !important;
+  color: var(--link-hover-color) !important;
 }
 
-/* comment-评论列表昵称链接 */
+/* 评论列表昵称链接 */
 .v[data-class=v] .vcard .vhead .vnick {
   color: var(--text-color) !important;
   border-bottom: none !important;
@@ -641,7 +670,7 @@ li.category-list-item a {
   }
 }
 
-/* comment-输入框背景图片 */
+/* 评论输入框背景 */
 .veditor {
 	background-image: url($comment-bg-url) !important;
 	background-repeat: no-repeat !important;
@@ -652,7 +681,7 @@ li.category-list-item a {
 	transition: all .2s ease-in-out 0s !important;
 }
 
-/* comment-输入框黑暗模式 */
+/* 评论输入框黑暗模式 */
 @media (prefers-color-scheme: dark) {
   body {
     --waline-text-color: $text-color-dark !important;
@@ -661,7 +690,7 @@ li.category-list-item a {
   }
 }
 
-/* comment-字号字重 */
+/* 评论输入框字号字重 */
 .v[data-class=v] .vheader label,
 .v[data-class=v] .vheader input, 
 .v[data-class=v] .veditor,
@@ -670,7 +699,7 @@ li.category-list-item a {
   font-size: .9em !important;
 }
 
-/* comment-管理登录按钮 */
+/* 评论管理登录按钮 */
 .v[data-class=v] .vbtn {
   font-size: .8em !important;
 
@@ -684,7 +713,7 @@ li.category-list-item a {
   }
 }
 
-/* comment-评论提交按钮 */
+/* 评论提交按钮 */
 .v[data-class=v] .vbtn.primary {
   font-weight: bold !important;
   color: white !important;
@@ -697,12 +726,15 @@ li.category-list-item a {
   }
 }
 
-/* comment-去掉表情包 */
+/* 评论去掉表情包 */
 .v[data-class=v] .vaction[title="表情"] {
   display: none;
 }
 
-/************************* 链接卡片  ************************/
+
+/**********************************************************/
+/*********************** 链接卡片  *************************/
+/**********************************************************/
 
 /* 普通卡片 */
 .post-body .link-grid .link-grid-container {
@@ -735,8 +767,8 @@ li.category-list-item a {
 
 /* 友链卡片 */
 .post-body .mygrid {
-  gap: 1rem 1rem;
-  grid-gap: 1rem 1rem;
+  gap: 1rem;
+  grid-gap: 1rem;
 }
 
 .post-body .mygrid .link-grid-container p:first-of-type {
@@ -801,7 +833,10 @@ li.category-list-item a {
   padding: 0 6px !important;
 }
 
-/************************* 特殊样式排版 ************************/
+
+/**********************************************************/
+/*********************** 特殊排版  *************************/
+/**********************************************************/
 
 /* 着重号 `{% dot 强调的文字 %}` */
 .emphasis-point {

@@ -38,7 +38,7 @@ apt install rsync
 
 ## 2. 将萌萌哒看板娘抱回家
 
-![](https://web-1256060851.file.myqcloud.com/post/47/live2d.png#650x)
+![](https://web-1256060851.file.myqcloud.com/post/2020/47-live2d.png#650x)
 
 ### 2.1 看板娘前端设置
 
@@ -47,7 +47,7 @@ apt install rsync
 首先，从上述项目中获取以下四个文件，放入博客目录 `/source/resources/live2d/`：
 
 - `live2d.min.js`
-- `waifu-tips.json`：使用 CSS 选择器[设置提示语](https://github.com/leirock/live2d-widget)
+- `waifu-tips.json`：使用 CSS 选择器 [设置提示语](https://github.com/leirock/live2d-widget)
 - `waifu-tips.js`：调整设置实现随机装扮
 
 ```diff

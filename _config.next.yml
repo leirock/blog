@@ -68,7 +68,7 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
+  url: /resources/img/avatar.jpg # https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
   rounded: true
 
 site_state: false
