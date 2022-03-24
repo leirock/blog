@@ -16,13 +16,13 @@ date: 2020-04-15 23:30:50
 
 ### 1.1 Docker 部署
 
-首先，打开 Docker 管理器，在「镜像管理」中获取官方库镜像 `diygod/rsshub`。
+首先，打开 Docker 管理器，在“镜像管理”中获取官方库镜像 `diygod/rsshub`。
 
-![获取镜像](https://web-1256060851.file.myqcloud.com/post/49/docker_mirror.jpg#550x)
+![获取镜像](https://web-1256060851.file.myqcloud.com/post/2020/49-docker_mirror.jpg#550x)
 
-然后，在「容器列表」创建新的 Docker 容器：
+然后，在“容器列表”创建新的 Docker 容器：
 
-![创建 RSSHub 容器](https://web-1256060851.file.myqcloud.com/post/49/rsshub_docker.jpg#400x)
+![创建 RSSHub 容器](https://web-1256060851.file.myqcloud.com/post/2020/49-rsshub_docker.jpg#400x)
 
 这里我们设置了：
 
@@ -39,7 +39,7 @@ git clone https://github.com/diygod/rsshub.git rsshub
 
 最后，设置反向代理，以便我们可以通过域名来访问该服务：
 
-![反向代理](https://web-1256060851.file.myqcloud.com/post/49/reverse_proxy.jpg#500x)
+![反向代理](https://web-1256060851.file.myqcloud.com/post/2020/49-reverse_proxy.jpg#500x)
 
 这样，我们的 RSSHub 就完成了搭建，具体的配置和路由可以参见 [RSSHub 文档](https://docs.rsshub.app)。
 
@@ -130,7 +130,7 @@ exit
 
 - 从 GitHub 下载[该项目的源代码](https://github.com/acgotaku/GetCookies)；
 - 全局搜索 `qiandao.today`，替换为自己的签到网站域名并保存；
-- 在 Chrome 浏览器的扩展程序管理页面（chrome://extensions），选择「加载已解压的扩展程序」，将刚才已经编辑过的扩展程序文件夹上传安装即可。
+- 在 Chrome 浏览器的扩展程序管理页面（chrome://extensions），选择“加载已解压的扩展程序”，将刚才已经编辑过的扩展程序文件夹上传安装即可。
 
 ### 2.3 配置与备份数据
 

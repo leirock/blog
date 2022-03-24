@@ -1,12 +1,12 @@
 ---
 title: 影视收藏
+toc:
+    enable: false
 ---
 
 {% tabs watching %}
 
 <!-- tab 纪录片 -->
-以 CCTV 与 BBC 拍摄的纪录片为主，大多是人文历史或者社会纪实类型。自然地理方面的纪录片很少，主要是因为个人对这个题材的纪录片不太感兴趣。
-
 ### 中国纪录片
 
 - **超级工程** <font color=#bbb>CCTV 科技</font>
@@ -82,16 +82,6 @@ title: 影视收藏
 - 生活大爆炸 <font color=#bbb>美国</font>
 - 纸牌屋 <font color=#bbb>美国</font>
 - 实习医生格蕾 <font color=#bbb>美国</font>
-<!-- endtab -->
-
-
-<!-- tab 综艺 -->
-- 爸爸去哪儿（第一季） <font color=#bbb>湖南卫视，2013</font>
-- 梦想改造家 <font color=#bbb>东方卫视</font>
-- 全员加速中（第一季） <font color=#bbb>湖南卫视，2015</font>
-- 偶像来了 <font color=#bbb>湖南卫视，2015</font>
-- 极限挑战（第1-4季） <font color=#bbb>东方卫视，2015-2018</font>
-- 乘风破浪的姐姐（第一季） <font color=#bbb>芒果 TV，2020</font>
 <!-- endtab -->
 
 {% endtabs %}

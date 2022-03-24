@@ -2,100 +2,106 @@
   intro: 一个人的寂寞，一群人的狂欢。
   logo: https://www.foreverblog.cn/favicon.ico
   url: https://www.foreverblog.cn
+  label:
 
 - title: moliu
   intro: 数据分析，经济学 girl
   logo: https://cdn.jsdelivr.net/gh/moliusmile/moliusmile.github.io/aboutme/Denise2.jpg
   url: http://shuxinyang.com
+  label:
 
 - title: 荷戟独彷徨
   intro: 爱光学，爱生活，爱创造
   logo: https://cdn.jsdelivr.net/gh/guanqr/blog/static/icons/apple-touch-icon.png
   url: https://guanqr.com
+  label:
 
 - title: 槽
   intro: 一些脑洞、涂鸦和快乐碎片
   logo: https://s3.jpg.cm/2021/09/26/IkNfnW.jpg
   url: https://miyehn.me/blog
+  label:
 
 - title: Armstrong
   intro: 一位视障学生的日志
   logo: https://s3.jpg.cm/2021/09/26/IkSb02.png
   url: https://armstrong.viyf.org
-
-- title: 林洋洋
-  intro: 有故事的个人博客
-  logo: https://sdn.geekzu.org/avatar/8bffd96de39bb1215657c8a6a75f917a?s=96
-  url: http://linyy.name
-  label: 已关站
-
-- title: 城南旧事
-  intro: 为简单生活创造记忆
-  logo: https://blog.loli.top/logo.png
-  url: https://blog.loli.top
-  label: 404
+  label:
 
 - title: 猫鱼的小窝
   intro: 记录猫鱼生活的琐事和分享喜欢的音乐
   logo: https://sdn.geekzu.org/avatar/ef1147bd0a0f7d814783e9fea34908cb?s=96
   url: https://2cat.net
+  label:
 
 - title: 有跡可尋
   intro: 日常/吐槽/唠叨
   logo: https://s6.jpg.cm/2021/12/05/L50WlX.jpg
   url: https://kyarameru.net
+  label:
 
 - title: Js.nake
   intro: 改来改去，啥也不是，爱咋滴咋滴。
   logo: https://sdn.geekzu.org/avatar/4bf10e64144ae0c611d16c9916bdef19?s=96
   url: https://imsnake.cn
+  label:
 
 - title: 米米
   intro: 米米的博客！！
   logo: https://sdn.geekzu.org/avatar/f56980e9dc026727282a04eea02b4f4d?s=96
   url: https://zhangshuqiao.org
+  label:
 
 - title: 兰铃
   intro: Just for Life.
   logo: https://s3.jpg.cm/2021/09/26/IkY0pU.png
   url: https://muyuuuu.github.io
+  label:
 
 - title: xaoxuu
   intro: 一个世界边缘的佛系小站
   logo: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
   url: https://xaoxuu.com
+  label:
 
 - title: Ljcbaby 的网络小屋
   intro: 宁静的栖身之地
   logo: https://sdn.geekzu.org/avatar/e7033b1012a3e7c07044b31686c57523?s=96
   url: https://blog.ljcbaby.top
+  label:
 
 - title: 爱即是诗
   intro: 一个关于 GIS 的博客
   logo: https://aigisss.com/blog/images/profile/avatar.jpg
   url: https://aigisss.com/blog/
+  label:
 
 - title: 呆逼の博客
   intro: 分享日常本身，就是一件很浪漫的事。
   logo: https://sdn.geekzu.org/avatar/d6bd7e0e627e873a58c389694b042e47?s=96
   url: https://blog.keepdai.cn
+  label:
 
 - title: 一克猫
   intro: 一只微不足道的猫
   logo: https://sdn.geekzu.org/avatar/7adbfaef92d9d082be5dec39f3fe3d02?s=96
   url: https://www.1gcat.com
+  label:
 
 - title: Sulv's Blog
   intro: 一个记录技术、阅读、生活的博客
   logo: https://www.sulvblog.cn/img/Q.gif
   url: https://www.sulvblog.cn
+  label:
 
 - title: Super Blog
   intro: Follow Your Heart
   logo: https://sdn.geekzu.org/avatar/cdd8da7ae0aaeb08b93d66ded8973570?s=96
   url: https://blog.superpung.cn
+  label:
 
 - title: 涛叔
   intro: 个人学习笔记
   logo: https://taoshu.in/avatar.jpg
   url: https://taoshu.in
+  label:

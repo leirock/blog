@@ -58,14 +58,14 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 
 在浏览器登录宝塔面板后，就会跳出推荐安装套件的窗口。选择 LNMP 套件极速安装，版本上因为我的机器内存只有 1G，所以就选择了 MySQL 5.5 的版本，其他都选择了最新版本。
 
-![推荐安装套件](https://web-1256060851.file.myqcloud.com/post/46/LNMP.jpg#500x)
+![推荐安装套件](https://web-1256060851.file.myqcloud.com/post/2020/46-lnmp.jpg#500x)
 
 {% note info %}
 #### 注意
-如果发现下载时无法连接到宝塔的下载地址（特别是境外服务器），可能需要先在首页的「Linux 工具箱」中临时修改一下「DNS 设置」，例如使用 1.1.1.1 或者 8.8.8.8。
+如果发现下载时无法连接到宝塔的下载地址（特别是境外服务器），可能需要先在首页的“Linux 工具箱”中临时修改一下“DNS 设置”，例如使用 1.1.1.1 或者 8.8.8.8。
 {% endnote %}
 
-安装完推荐套件后，继续在「软件商店」中安装其他需要的软件，我们这里选择安装：
+安装完推荐套件后，继续在“软件商店”中安装其他需要的软件，我们这里选择安装：
 
 - [运行环境] Docker 管理器：方便后续安装 RSSHub 和自动签到服务；
 - [运行环境] PM2 管理器：Nodejs 服务可以通过其管理，如果安装 Nodejs 失败，可以使用 `nvm` 手动安装，方法参考 [nvm-sh/nvm](https://github.com/nvm-sh/nvm) 的说明，可能需要指定好路径才能正确使用（具体可以参考 [解决 nvm command not found 问题的方法](https://www.cnblogs.com/weifeng1463/p/11321432.html)）；
@@ -79,7 +79,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 pip install oss2
 ```
 
-对于 PHP，我们可以在「性能调整」中根据自己的内存大小修改并发方案，还可以选择安装以下扩展：
+对于 PHP，我们可以在“性能调整”中根据自己的内存大小修改并发方案，还可以选择安装以下扩展：
 
 - fileinfo：FreshRSS 需要此扩展
 - opcache：开启脚本缓存可以提高 PHP 运行性能
@@ -87,9 +87,9 @@ pip install oss2
 
 {% note info %}
 #### 注意
-内存只有 1G 的服务器可能无法安装 fileinfo，这时候需要我们在「Linux 工具箱」的「Swap/虚拟内存」中添加 Swap，我们可以设置如 1024MB 或者 1500MB。
+内存只有 1G 的服务器可能无法安装 fileinfo，这时候需要我们在“Linux 工具箱”的“Swap/虚拟内存”中添加 Swap，我们可以设置如 1024MB 或者 1500MB。
 {% endnote %}
 
-软件安装完毕后，可以进入「面板设置」，修改默认的访问端口、登录用户名密码等信息，还可以为面板绑定访问域名并添加 SSL 证书。
+软件安装完毕后，可以进入“面板设置”，修改默认的访问端口、登录用户名密码等信息，还可以为面板绑定访问域名并添加 SSL 证书。
 
 对于 FTP 工具，本地可以使用 FileZilla 软件，使用方法可以参考宝塔面板的[论坛帖子](https://www.bt.cn/bbs/thread-43162-1-1.html)。
