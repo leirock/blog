@@ -1,17 +1,6 @@
 ---
-title: 影视收藏夹
-categories: [书影音]
-tags: [纪录片, 电视剧, 清单]
-pid: 52
-toc:
-    enable: false
-cc_license: true
-date: 2020-11-05 09:21:28
-edit: 2021-12-03 08:00:00
+title: 影视收藏
 ---
-
-整理一些自己看过的经典纪录片、电影、电视剧和综艺节目，会持续更新。
-<!-- more -->
 
 {% tabs watching %}
 
@@ -106,3 +95,27 @@ edit: 2021-12-03 08:00:00
 <!-- endtab -->
 
 {% endtabs %}
+
+
+<!-- LICENSE SECTION
+*****************************************************
+*****************************************************
+-->
+
+<div class="license">
+    <div class="license-title">影视收藏</div>
+    <div class="license-link">
+        <a href="https://blog.dlzhang.com/culture/movies/" rel="external nofollow noopener" target="_blank">https://blog.dlzhang.com/culture/movies/</a>
+    </div>
+    <div class="license-meta">
+        <div class="license-meta-item">
+            <div class="license-meta-title">本文作者</div>
+            <div class="license-meta-text">班班</div>
+        </div>
+        <div class="license-meta-item">
+            <div class="license-meta-title">许可协议</div>
+            <div class="license-meta-text">禁止转载引用</div>
+        </div>
+    </div>
+    <div class="license-statement">转载或引用本文前，请先联系作者获得授权！</div>
+</div>

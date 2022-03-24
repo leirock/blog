@@ -1,11 +1,5 @@
 ---
 title: 阅读书单
-categories: [书影音]
-tags: [阅读, 清单]
-pid: 51
-cc_license: true
-date: 2020-11-05 09:20:38
-edit: 2021-09-02 20:36:00
 ---
 
 - [**蹦极**](https://book.douban.com/subject/35525567/) 卢山（杨优明）
@@ -16,7 +10,6 @@ edit: 2021-09-02 20:36:00
 
 - [**目击中国100年**](https://book.douban.com/subject/2004652/) 成勇
 十分用心编写的一本书，或者更准确说是画册。用照片的方式展现有照片记录以来中国20世纪的诸多历史瞬间，让我们得以了解更生动立体的近现代中国。
-<!-- more -->
 
 - [**邓小平时代**](https://book.douban.com/subject/20424526/) 傅高义
 资料翔实，叙述详尽，向我们展现了改革开放前后那个瞬息万变的历史时期。
@@ -48,3 +41,27 @@ edit: 2021-09-02 20:36:00
 - [**文化苦旅**](https://book.douban.com/subject/1050339/) 余秋雨
 - [**围城**](https://book.douban.com/subject/1008145/) 钱钟书
 - [**他改变了中国**](https://book.douban.com/subject/1258378/) 罗伯特 · 劳伦斯 · 库恩
+
+
+<!-- LICENSE SECTION
+*****************************************************
+*****************************************************
+-->
+
+<div class="license">
+    <div class="license-title">阅读书单</div>
+    <div class="license-link">
+        <a href="https://blog.dlzhang.com/culture/books/" rel="external nofollow noopener" target="_blank">https://blog.dlzhang.com/culture/books/</a>
+    </div>
+    <div class="license-meta">
+        <div class="license-meta-item">
+            <div class="license-meta-title">本文作者</div>
+            <div class="license-meta-text">班班</div>
+        </div>
+        <div class="license-meta-item">
+            <div class="license-meta-title">许可协议</div>
+            <div class="license-meta-text">禁止转载引用</div>
+        </div>
+    </div>
+    <div class="license-statement">转载或引用本文前，请先联系作者获得授权！</div>
+</div>

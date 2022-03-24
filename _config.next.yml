@@ -51,13 +51,16 @@ favicon:
 menu:
   life: /life/ || fas fa-pizza-slice
   observer: /observer/ || fas fa-eye
-  media: /media/ || fas fa-guitar
+  culture: 
+    default: /culture/ || fas fa-guitar
+    books: books/ || fas fa-book
+    movies: movies/ || fas fa-film
   note: /note/ || fas fa-book-open
   tags: /tags/ || fas fa-tags
   guestbook: 
     default: /guestbook/ || fas fa-splotch
     friends: ../friends/ || fas fa-link
-    history: ../post/26/ || fas fa-history
+    history: ../history/ || fas fa-history
 
 
 # ============================================================= #
