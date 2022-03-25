@@ -3,6 +3,7 @@ title: {{ title }}
 categories: []
 tags: []
 pid:
+header: true
 mathjax: false
 comments: true
 toc:
