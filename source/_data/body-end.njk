@@ -27,12 +27,12 @@
         });
       },
       render: function (data) {
-        var title, logo, url, intro, label, li = "";
+        var title, intro, url, logo, label, li = "";
         for (var i = 0; i < data.length; i++) {
           title = data[i].title;
           intro = data[i].intro;
-          logo = data[i].logo;
           url = data[i].url;
+          logo = data[i].logo;
           label = data[i].label;
           if (label != undefined) { 
             label = '<span class="label">' + label + '</span>'
