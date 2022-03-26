@@ -14,7 +14,7 @@ RSS 订阅我之前是使用 Inoreader，但是免费版的即使是在 Reeder �
 <!--more-->
 
 {% note info %}
-#### 20210915 更新
+#### 2021-09-15 更新
 目前 FreshRSS 已经支持 Docker 安装，建议直接采用官方提供的 [`docker-compose.yml`](https://github.com/FreshRSS/FreshRSS/blob/edge/Docker/docker-compose.yml) 进行安装，数据库我也改用 SQLite 了，这样只需要把 `data/` 和 `extensions/` 文件夹备份起来就好，简单方便。
 {% endnote %}
 
