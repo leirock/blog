@@ -29,7 +29,6 @@ custom_file_path:
 
 scheme: Gemini
 darkmode: true
-gray_filter: false
 
 
 # ============================================================= #
@@ -55,7 +54,7 @@ menu:
     default: /culture/ || fas fa-guitar
     books: books/ || fas fa-book
     movies: movies/ || fas fa-film
-  note: /note/ || fas fa-book-open
+  notes: /notes/ || fas fa-book-open
   tags: /tags/ || fas fa-tags
   guestbook: 
     default: /guestbook/ || fas fa-splotch
