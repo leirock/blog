@@ -59,8 +59,8 @@ menu:
   tags: /tags/ || fas fa-tags
   guestbook: 
     default: /guestbook/ || fas fa-splotch
-    friends: ../friends/ || fas fa-link
     history: ../history/ || fas fa-history
+    friends: ../friends/ || fas fa-link
 
 
 # ============================================================= #
