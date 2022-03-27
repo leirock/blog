@@ -21,6 +21,6 @@
     "hexo-renderer-markdown-it": "^6.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-next": "^8.10.1"
+    "hexo-theme-next": "github:next-theme/hexo-theme-next"
   }
 }

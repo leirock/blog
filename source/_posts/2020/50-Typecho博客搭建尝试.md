@@ -247,11 +247,6 @@ CORSANYWHERE_WHITELIST = https://blog.dlzhang.com,https://rss.zdl.one
 之后安装所需要的依赖（以下命令二选一）:
 
 ```bash
-# yarn 安装方式
-yarn
-yarn add dotenv # 调用环境变量文件需要的依赖
-
-# npm 安装方式
 npm install
 npm install dotenv --save # 调用环境变量文件需要的依赖
 ```

@@ -56,7 +56,7 @@ fs.readdir(path, function (err, files) {
 cd <folder-path>
 
 # 安装依赖包
-yarn add image-size
+npm i image-size
 
 # 生成对应的 json 文件
 node scripts/phototool.js  
