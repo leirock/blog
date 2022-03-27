@@ -45,23 +45,6 @@ body {
   }
 }
 
-/* 全站黑白滤镜 */
-if (hexo-config('gray_filter')) {
-  html {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
-  }
-  @media (prefers-color-scheme: light) {
-    body {
-      background-image: url($body-bg-gray-url);
-    }
-  }
-}
-
 /* 选中字符颜色 */
 ::-moz-selection { /* Code for Firefox */
   background: rgba(0, 149, 255, .2);

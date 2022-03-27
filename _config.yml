@@ -10,6 +10,7 @@ keywords: [班班, Leirock, Hexo, blog, 博客, 经济学, economics]
 author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
+gray_filter: false # 黑白滤镜
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -73,7 +74,7 @@ category_map:
   碎碎念: life
   观察者: observer
   书影音: culture
-  笔记本: note
+  笔记本: notes
 tag_map:
 
 # Metadata elements
@@ -107,7 +108,6 @@ theme: next
 
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier
-all_minifier: true
 html_minifier:
   silent: true
 css_minifier:
@@ -128,7 +128,6 @@ waline:
   enable: true
   libUrl: https://lib.baomitu.com/waline/latest/Waline.min.js
   serverURL: https://waline.dlzhang.com # Waline server address url
-  avatar: '' # Gravatar style
   login: disable
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
