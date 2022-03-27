@@ -35,9 +35,6 @@ macOS 在编译时候可能会提示没有缺少 Command Line Tools，需要在�
 
 ```bash
 npm install -g hexo-cli
-
-# 或者用 yarn 命令
-yarn global add hexo-cli 
 ```
 
 安装 Hexo 完成后，执行下列命令会在指定文件夹中新建所需要的文件：
@@ -50,7 +47,7 @@ hexo init <folder-path>
 cd <folder-path>
 
 # 安装依赖包
-yarn install
+npm install
 ```
 
 新建完成后，指定文件夹的目录中：
@@ -106,7 +103,7 @@ deploy:
 
 ```bash
 # 首次部署要先执行以下命令安装插件
-yarn add hexo-deployer-git
+npm i hexo-deployer-git
 
 # 部署网站
 hexo deploy
@@ -172,7 +169,7 @@ git submodule add https://github.com/theme-next/hexo-theme-next themes/next
 
 ```bash
 cd <blog-path>
-yarn add hexo-generator-sitemap 
+npm i hexo-generator-sitemap 
 ```
 
 ### 3.3 与主题样式一致的404页面
@@ -200,7 +197,7 @@ permalink: /404
 
 ```bash
 cd <blog-path>
-yarn add hexo-abbrlink
+npm i hexo-abbrlink
 ```
 
 在站点配置文件中修改 `permalink`：
@@ -218,8 +215,7 @@ yarn add hexo-abbrlink
 首先替换给文章排序索引的原有插件 `hexo-generator-index`，执行以下命令
 
 ```bash
-yarn remove hexo-generator-index
-yarn add hexo-generator-indexed
+npm uni hexo-generator-index && npm i hexo-generator-indexed
 ```
 
 然后在需要置顶的文章的开头添加 `sticky: true` 控制文章置顶：
