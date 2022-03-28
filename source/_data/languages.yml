@@ -12,13 +12,11 @@ zh-CN:
     history: 建站简史
     friends: 友情链接
     search: 搜文章
-  sidebar:
-    overview: 博主信息
-  post:
-    comments:
-      waline: 评论
+#  sidebar:
+#    overview: 博主信息
+#  post:
+#    comments:
+#      waline: 评论
   counter:
     tag_cloud:
       other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'
-  footer:
-    powered: 本站由 <a target="_blank" rel="nofollow noopener" href="https://dlzhang.com">班班</a> 创建，使用 <a target="_blank" rel="nofollow noopener" href="https://github.com/next-theme/hexo-theme-next">NexT</a> 主题。 

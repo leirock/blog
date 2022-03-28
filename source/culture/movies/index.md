@@ -78,7 +78,7 @@ toc:
 - 庆余年  <font color=#bbb>中国，2019</font>
 - 山海情 <font color=#bbb>中国，2021</font>
 - 功勋 <font color=#bbb>中国，2021</font>
-- 爱很美味 <font color=#bbb>中国，2021</font>
+- [爱很美味](/post/61/) <font color=#bbb>中国，2021</font>
 - 生活大爆炸 <font color=#bbb>美国</font>
 - 纸牌屋 <font color=#bbb>美国</font>
 - 实习医生格蕾 <font color=#bbb>美国</font>
