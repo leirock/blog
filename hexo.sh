@@ -6,7 +6,7 @@ cd ${HexoPath}
 
 hexo_server(){
 	open_url(){
-		sleep 1
+		sleep 1.5
 		open http://127.0.0.1:4000/
 	}
     open_url &
@@ -42,7 +42,7 @@ if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 else
 	if [ "$answer" == "u" ]; then
 		printf "\n\033[32mINFO \033[0m 开始更新依赖包...\n"
-		yarn upgrade
+		npm update --no-audit
 		exec ${HexoPath}/hexo.sh
 	else
 		printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"

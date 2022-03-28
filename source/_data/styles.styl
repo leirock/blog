@@ -115,6 +115,40 @@ body {
   font-size: 1.05em;
 }
 
+/* 文章目录、二级导航菜单、文章内tab中选中颜色橘黄色的变更 */
+.sidebar-toc-active .sidebar-nav-toc { //文章目录标题
+  border-bottom: none;
+  color: var(--text-color);
+  font-weight: bold;
+
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.sidebar-nav li.sidebar-nav-overview {
+  display: none; //有目录时不显示博主信息
+}
+
+.post-toc .nav a {
+  border-bottom: none; //文章目录不显示下划线（未激活项目）
+}
+
+.post-toc .nav .active>a, //文章目录（激活项目）
+.sub-menu .menu-item-active, //二级导航菜单（激活项目）
+.sub-menu .menu-item a:hover { //二级导航菜单（未激活项目）
+  border-bottom: none;
+  color: var(--link-hover-color);
+}
+
+.post-body .tabs ul.nav-tabs li.tab.active { //文章内tab
+  border-top-color: var(--link-hover-color);
+
+  & a {
+    color: var(--link-hover-color);
+  }
+}
+
 
 /**********************************************************/
 /************************ 文章 ****************************/
@@ -536,12 +570,8 @@ li {
 }
 
 .footer a {
-  color: var(--blockquote-color);
+  color: var(--text-color);
   border-bottom:none;
-
-  &:hover{
-    color: var(--link-hover-color);
-  }
 }
 
 
