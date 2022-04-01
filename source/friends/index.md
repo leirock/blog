@@ -25,6 +25,8 @@ toc:
 - 建议提供 Gravatar 头像的镜像链接（如 [极客族](https://cdn.geekzu.org/cached.html)）；或者
 - 在 [TinyPNG](https://tinify.cn) 压缩图片后上传至 [TG图床](https://imgtg.com) 获取链接。
 
+<style>.post-body .note {text-align:left;}</style>
+
 {% note info %}
 #### 本站信息
 名称：纯粹
