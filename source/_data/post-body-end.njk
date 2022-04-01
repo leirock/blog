@@ -37,11 +37,11 @@
         </div>
       </div>
     {%- endif %}
-    {%- if post.edit %}
+    {%- if post.updated %}
       <div class="license-meta-item">
         <div class="license-meta-title">更新于</div>
         <div class="license-meta-text">
-          {{ date(post.edit) }}
+          {{ date(post.updated) }}
         </div>
       </div>
     {%- endif %}

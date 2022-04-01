@@ -88,7 +88,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'empty' # do not use file modified time as updated time
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -148,7 +148,6 @@ waline:
     nick: 昵称*
     mail: 邮箱*
     link: 网址
-    #login: 管理
 
 # hexo-renderer-markdown-it
 # For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
