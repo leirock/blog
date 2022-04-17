@@ -5,7 +5,7 @@ toc:
     enable: false
 ---
 
-生活类站点在前，技术类在后，分别按照添加顺序排列。
+<a href="https://www.foreverblog.cn/go.html" target="_blank"><img src="https://img.foreverblog.cn/wormhole_1.gif" alt="" style="width:auto;height:35px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
 
 {% friendslink friendslist.json %}
 
@@ -29,8 +29,8 @@ toc:
 
 {% note info %}
 #### 本站信息
-名称：纯粹
+名称：频率
 简介：班班的碎碎念
-链接：https://blog.dlzhang.com
+链接：https://pinlyu.com
 图标：https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=256
 {% endnote %}

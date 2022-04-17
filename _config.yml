@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 纯粹
+title: 频率
 subtitle: 风卷过的起点
 description: 爱美食/纪录片/夜猫子
 keywords: [班班, Leirock, Hexo, blog, 博客]
@@ -14,7 +14,7 @@ gray_filter: false # 黑白滤镜
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://blog.dlzhang.com
+url: https://pinlyu.com
 root: /
 permalink: /post/:pid/
 permalink_defaults:
@@ -127,7 +127,7 @@ server:
 waline:
   enable: true
   libUrl: https://lib.baomitu.com/waline/latest/Waline.min.js
-  serverURL: https://waline.dlzhang.com # Waline server address url
+  serverURL: https://waline.pinlyu.com # Waline server address url
   login: disable
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]

@@ -264,3 +264,201 @@ npm uni hexo-generator-index && npm i hexo-generator-indexed
 文章图片的存储如果放至在博客项目下，会极大地增加项目的空间。所以可以将图片上传到图床，然后在需要图片的地方引用该图片外部链接即可。我现在选择了腾讯云的 COS 对象存储，提供每个月 10GB 的免费外网下行流量，以及每个月 50GB 的免费存储空间。
 
 另外介绍一个 macOS 上十分实用的批量打水印免费软件 [XnConvert](http://www.xnview.com/en/xnconvert/)，可以查阅 [使用说明](https://ningselect.com/2017/02/25/攝影小教室-超簡單！一招幫所/)。
+
+## 4. MarkDown 参考
+
+### 4.1 上下标
+
+```markdown
+19^th^
+H~2~O
+```
+19^th^
+H~2~O
+
+### 4.2 下划线/插入
+
+```markdown
+++Inserted text++
+```
+++Inserted text++
+
+### 4.3 段首空两格
+
+```markdown
+<!-- 段首空两格 -->{% indent %} 
+```
+
+### 4.4 脚注
+
+```markdown
+Footnote 1 link[^firstaa].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^firstaa]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+```
+Footnote 1 link[^firstaa].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^firstaa]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+## 5. 提示卡片
+
+```markdown
+{% note %}
+#### Header
+(without define class style)
+{% endnote %}
+```
+
+{% note %}
+
+#### Header
+
+(without define class style)
+{% endnote %}
+
+```markdown
+{% note default %}
+#### Default Header
+Welcome to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note default %}
+
+#### Default Header
+
+Welcome to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note primary %}
+#### Primary Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note primary %}
+
+#### Primary Header
+
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note info %}
+#### Info Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note info %}
+
+#### Info Header
+
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note success %}
+#### Success Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note success %}
+
+#### Success Header
+
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note warning %}
+#### Warning Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note warning %}
+
+#### Warning Header
+
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note danger %}
+#### Danger Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+```
+
+{% note danger %}
+
+#### Danger Header
+
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+```markdown
+{% note info no-icon %}
+#### No icon note
+Note **without** icon: `note info no-icon`
+{% endnote %}
+```
+
+{% note info no-icon %}
+
+#### No icon note
+
+Note **without** icon: `note info no-icon`
+{% endnote %}
+
+```markdown
+{% note primary This is a summary %}
+#### Details and summary
+Note with summary: `note primary This is a summary`
+{% endnote %}
+```
+
+{% note primary This is a summary %}
+
+#### Details and summary
+
+Note with summary: `note primary This is a summary`
+{% endnote %}
+
+```markdown
+{% note info no-icon This is a summary %}
+#### Details and summary (No icon)
+Note with summary: `note info no-icon This is a summary`
+{% endnote %}
+```
+
+{% note info no-icon This is a summary %}
+
+#### Details and summary (No icon)
+
+Note with summary: `note info no-icon This is a summary`
+{% endnote %}
+

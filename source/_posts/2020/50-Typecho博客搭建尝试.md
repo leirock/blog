@@ -241,7 +241,7 @@ https://cors-anywhere.herokuapp.com/https://rsshub.app/weibo/user/{weibo_user_id
 
 ```
 PORT = 1400
-CORSANYWHERE_WHITELIST = https://blog.dlzhang.com,https://rss.zdl.one
+CORSANYWHERE_WHITELIST = https://pinlyu.com
 ```
 
 之后安装所需要的依赖（以下命令二选一）:

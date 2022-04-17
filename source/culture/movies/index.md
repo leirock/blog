@@ -95,7 +95,7 @@ toc:
 <div class="license">
     <div class="license-title">影视收藏</div>
     <div class="license-link">
-        <a href="https://blog.dlzhang.com/culture/movies/" rel="external nofollow noopener" target="_blank">https://blog.dlzhang.com/culture/movies/</a>
+        <a href="https://pinlyu.com/culture/movies/" rel="external nofollow noopener" target="_blank">https://pinlyu.com/culture/movies/</a>
     </div>
     <div class="license-meta">
         <div class="license-meta-item">
