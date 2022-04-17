@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /friends/friendslist.json
 
-Sitemap: https://blog.dlzhang.com/sitemap.xml
+Sitemap: https://pinlyu.com/sitemap.xml

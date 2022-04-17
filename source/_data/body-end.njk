@@ -17,7 +17,7 @@
 {### Friends Grid ###}
 <script{{ pjax }} type="text/javascript">
   var el = document.getElementById('friendslink');
-  if (el != undefined) {
+  if(el) {
     var friendsList = el.getAttribute('link');
     friend = {
       init: function () {
@@ -34,7 +34,7 @@
           url = data[i].url;
           logo = data[i].logo;
           label = data[i].label;
-          if (label != undefined) { 
+          if(label) { 
             label = '<span class="label">' + label + '</span>'
           } else {
             label = ""

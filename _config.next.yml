@@ -58,8 +58,8 @@ menu:
   tags: /tags/ || fas fa-tags
   guestbook: 
     default: /guestbook/ || fas fa-splotch
-    history: ../history/ || fas fa-history
     friends: ../friends/ || fas fa-link
+    policy: ../policy/ || fas fa-scale-balanced
 
 
 # ============================================================= #
@@ -67,7 +67,7 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: /resources/img/avatar.jpg # https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
+  url: /resources/favicon/apple-touch-icon.png # https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
   rounded: true
 
 site_state: false
@@ -97,7 +97,7 @@ footer:
     name: fas fa-heart
     animated: true
     color: "#f06292"
-  copyright: 纯粹
+  copyright: 频率
   powered: false
 
 
@@ -158,13 +158,6 @@ font:
   codes:
     external: false
     family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
-
-
-# ============================================================= #
-# ======================= SEO Settings ======================== #
-# ============================================================= #
-
-baidu_site_verification: wvc37nzEad
 
 
 # ============================================================= #
