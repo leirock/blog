@@ -6,11 +6,11 @@
     "build": "./node_modules/.bin/hexo generate"
   },
   "hexo": {
-    "version": "6.1.0"
+    "version": "5.4.2"
   },
   "dependencies": {
     "@waline/hexo-next": "^2.0.5",
-    "hexo": "^6.0.0",
+    "hexo": "^5.4.2",
     "hexo-all-minifier": "^0.5.5",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
