@@ -10,13 +10,10 @@ updated: 2021-09-15 22:18:00
 
 RSS 订阅我之前是使用 Inoreader，但是免费版的即使是在 Reeder 客户端下浏览依然是有广告植入的，而且听闻最近在境内已经无法访问了，所以就考虑自建一个。
 
-一开始考虑的是 Tiny Tiny RSS，这个之前在腾讯云的学生机上就尝试搭建过。但是订阅源的自动刷新一直搞不定，看了很多教程也没有成功，而且界面设置什么的都不是很喜欢，就放弃了。继续寻找之下找到了 FreshRSS，自带支持 Reeder 客户端访问，不像 Tiny Tiny RSS 还需要安装 fever 插件。
-<!--more-->
+一开始考虑 Tiny Tiny RSS，这个之前在腾讯云的学生机上就尝试搭建过。但是订阅源的自动刷新一直搞不定，看了很多教程也没有成功，而且界面设置什么的都不是很喜欢，就放弃了。
 
-{% note info %}
-#### 2021-09-15 更新
-目前 FreshRSS 已经支持 Docker 安装，建议直接采用官方提供的 [`docker-compose.yml`](https://github.com/FreshRSS/FreshRSS/blob/edge/Docker/docker-compose.yml) 进行安装，数据库我也改用 SQLite 了，这样只需要把 `data/` 和 `extensions/` 文件夹备份起来就好，简单方便。
-{% endnote %}
+继续寻找之下找到了 FreshRSS，Reeder 客户端自带支持访问，也提供 fever api。不像 Tiny Tiny RSS 还需要安装 fever 插件。
+<!--more-->
 
 ## 1. 安装 FreshRSS
 
@@ -75,4 +72,47 @@ chmod -R 777 ./data
 
 ```bash
 php /www/wwwroot/rss/app/actualize_script.php > /tmp/FreshRSS.log 2>&1
+```
+
+## 4. Docker Compose 部署
+
+{% note info %}
+#### 2021-09-15 更新
+目前 FreshRSS 已经支持 Docker 安装，建议直接采用 [Docker Compose](https://github.com/FreshRSS/FreshRSS/blob/edge/Docker/docker-compose.yml) 部署。
+{% endnote %}
+
+```yaml
+version: "3"
+
+services:
+  freshrss:
+    image: freshrss/freshrss:latest
+    container_name: freshrss
+    hostname: freshrss-app
+    restart: always
+    ports:
+      - '8010:80'
+    volumes:
+      - ./data:/var/www/FreshRSS/data
+      - ./extensions:/var/www/FreshRSS/extensions
+    environment:
+      CRON_MIN: '*/20' # 刷新频率
+      TZ: Asia/Shanghai
+```
+
+Docker 启动后可以在 `data/config.php` 中进行相关设置。因为是 Docker 启动后使用反向代理，需要先设置好 `base_url` 的访问域名。另外，这里数据库我选择了 SQLite。设置好之后，重新启动一下容器即可生效。
+
+```php
+  'db' => 
+  array (
+    'type' => 'sqlite',
+    'host' => false,
+    'user' => false,
+    'password' => false,
+    'base' => false,
+    'prefix' => false,
+    'connection_uri_params' => '',
+    'pdo_options' => 
+    array (
+    ),
 ```
