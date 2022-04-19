@@ -1,18 +1,27 @@
 // Generate friends list in JSON format
-// See https://github.com/SukkaW/Friends
 
 const yaml = require('js-yaml');
-const { readFileSync, mkdirSync, writeFileSync } = require('fs');
+const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 
-// Get document, or throw exception on error
+const src = './source/friends/';
+const dist = './public/friends/';
+
 try {
-    const doc = yaml.load(readFileSync('./source/friends/friendslist.yml', 'utf8'));
-    try {
-        mkdirSync('./public/friends/');
-    } catch ({ code }) {
-        if (code !== 'EEXIST') throw code;
-    }
-    writeFileSync('./public/friends/friendslist.json', JSON.stringify(doc));
-} catch (e) {
-    console.error(e);
+    mkdirSync(dist, {recursive: true});
+} catch ({ code }) {
+    if (code !== 'EEXIST') throw code;
 }
+
+var files = readdirSync(src);
+var path = require('path');
+
+for(var i in files) {
+    if(path.extname(files[i]) === ".yml") {
+        try {
+            const doc = yaml.load(readFileSync(src + files[i], 'utf8'));
+            writeFileSync(dist + files[i].slice(0, -3) + 'json', JSON.stringify(doc));
+        } catch (e) {
+            console.error(e);
+        }
+    }
+ }

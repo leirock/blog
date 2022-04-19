@@ -16,7 +16,7 @@
 <div class="license">
   <div class="license-title">{{ page.title }}</div>
   <div class="license-link">
-    <a href="{{ page.permalink }}" rel="external nofollow noopener" target="_blank">{{ page.permalink }}</a>
+    <a href="{{ page.permalink }}" rel="noopener" target="_blank">{{ page.permalink }}</a>
   </div>
   <div class="license-meta">
     <div class="license-meta-item">
@@ -50,7 +50,7 @@
         <div class="license-meta-title">原文出处</div>
         <div class="license-meta-text">
           {%- if post.orig_url %}
-            <a href="{{ post.orig_url }}" rel="external nofollow noopener" target="_blank">{{ post.orig_source }}</a>
+            <a href="{{ post.orig_url }}" rel="noopener" target="_blank">{{ post.orig_source }}</a>
           {% else %}
             {{ post.orig_source }}
           {%- endif %}
@@ -63,7 +63,7 @@
         {%- if post.orig_author %}
           原作许可协议
         {%- elif post.cc_license %}
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC BY-NC-SA 4.0</a>
         {% else %}
           禁止转载引用
         {%- endif %}
@@ -81,9 +81,9 @@
   </div>
 </div>
 
-{%- if not post.orig_author %}
+{%- if (not post.orig_author) and (post.pid > 0) %}
   <div class="donations">
     <div class="donation-label">真诚赞赏，手留余香。</div>
-    <a class="afdian-button" href="https://afdian.net/@leirock" rel="external nofollow noopener" target="_blank">赞赏</a>
+    <a class="afdian-button" href="https://afdian.net/@leirock" rel="noopener" target="_blank">赞赏</a>
   </div>
 {%- endif %}

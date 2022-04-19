@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /friends/friendslist.json
+Disallow: /friends/*.json$
 
 Sitemap: https://pinlyu.com/sitemap.xml
