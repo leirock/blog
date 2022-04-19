@@ -1,6 +1,6 @@
 {
-  "name": "pinlyu-blog",
-  "version": "3.5.1",
+  "name": "pinlyu-com",
+  "version": "3.6.0",
   "private": true,
   "scripts": {
     "build": "./node_modules/.bin/hexo generate"

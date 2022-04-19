@@ -12,8 +12,8 @@ zh-CN:
     policy: 网站政策
     friends: 友情链接
     search: 搜文章
-#  sidebar:
-#    overview: 博主信息
+  sidebar:
+    toc: 目 录
 #  post:
 #    comments:
 #      waline: 评论

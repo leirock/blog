@@ -16,39 +16,36 @@
 
 {### Friends Grid ###}
 <script{{ pjax }} type="text/javascript">
-  var el = document.getElementById('friendslink');
-  if(el) {
-    var friendsList = el.getAttribute('link');
-    friend = {
-      init: function () {
-        var that = this;
-        $.getJSON(friendsList, function (data) {
-          that.render(data);
-        });
-      },
-      render: function (data) {
-        var title, intro, url, logo, label, li = "";
-        for (var i = 0; i < data.length; i++) {
-          title = data[i].title;
-          intro = data[i].intro;
-          url = data[i].url;
-          logo = data[i].logo;
-          label = data[i].label;
-          if(label) { 
-            label = '<span class="label">' + label + '</span>'
+  //jquery selector
+  var $linkLists = $("[name='linklist']");
+  if($linkLists.length != 0){
+    var j = -1;
+    for	(var i = 0; i < $linkLists.length; i++) {
+      var listPath = $linkLists[i].getAttribute('src');
+      //使用 getJSON 读取 JSON 文件中的数据
+      $.getJSON(listPath, function(data) {
+        j++;
+        //存储数据的变量 
+        var li = "";
+        //清空内容 
+        $linkLists.eq(j).empty();
+        //将获取到的 json 格式数据遍历到 div 中
+        $.each(data, function(infoIndex, info) {
+          if(info['label']) { 
+            info['label'] = '<span class="label">' + info['label'] + '</span>';
           } else {
-            label = ""
+            info['label'] = "";
           }
-          li += '<div class="link-grid-container">' +
-              '<img class="link-grid-image" src="' + logo + '">' +
-              '<p>' + title + label + '</p>' + 
-              '<p>' + intro + '</p>' + 
-              '<a target="_blank" rel="noopener" href="' + url + '" data-pjax-state=""></a>' +
-              '</div>';
-        }
-        $("#friendslink").append(li);
-      }
+          li += '<div class="link-grid-container">';
+          li += '<img class="link-grid-image" src="' + info['logo'] + '">';
+          li += '<p>' + info['title'] + info['label'] + '</p>';
+          li += '<p>' + info['intro'] + '</p>';
+          li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
+          li += '</div>';
+        })
+        //显示处理后的数据 
+        $linkLists.eq(j).html(li);
+      })
     }
-    friend.init();
   }
 </script>

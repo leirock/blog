@@ -50,7 +50,7 @@ title: 阅读书单
 <div class="license">
     <div class="license-title">阅读书单</div>
     <div class="license-link">
-        <a href="https://pinlyu.com/culture/books/" rel="external nofollow noopener" target="_blank">https://pinlyu.com/culture/books/</a>
+        <a href="https://pinlyu.com/culture/books/" rel="noopener" target="_blank">https://pinlyu.com/culture/books/</a>
     </div>
     <div class="license-meta">
         <div class="license-meta-item">
