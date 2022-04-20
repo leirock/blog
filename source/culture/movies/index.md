@@ -60,7 +60,6 @@ toc:
 ### 电影
 
 - 辛德勒的名单 <font color=#bbb>美国，1993</font>
-- 肖申克的救赎 <font color=#bbb>美国，1994</font>
 - 玩具总动员 <font color=#bbb>美国，1995</font>
 - 举起手来 <font color=#bbb>中国，2003</font>
 - 让子弹飞 <font color=#bbb>中国，2010</font>
