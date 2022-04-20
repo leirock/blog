@@ -1,5 +1,4 @@
 // Generate friends list in JSON format
-
 const yaml = require('js-yaml');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 

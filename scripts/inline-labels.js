@@ -7,7 +7,7 @@ hexo.extend.tag.register('dot', function(args) {
 
 //友链列表
 hexo.extend.tag.register('linklist', function(args) {
-  return `<div name="linklist" class="link-grid mygrid" src="${args}"></div>`;
+  return `<div name="linklist" class="favlink-grid" src="${args}"></div>`;
 });
 
 //首行空两格
