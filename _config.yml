@@ -71,10 +71,10 @@ index_generator:
 # Category & Tag
 default_category: life
 category_map:
-  碎碎念: life
-  观察者: observer
-  书影音: culture
-  笔记本: notes
+  生活: life
+  观点: observer
+  文艺: culture
+  笔记: notes
 tag_map:
 
 # Metadata elements
@@ -158,16 +158,3 @@ markdown:
     - markdown-it-ins
     - markdown-it-sub
     - markdown-it-sup
-
-#########################
-##### 以下插件设置停用 #####
-#########################
-
-# Replace any theme file in layout folder to a custom file.
-# For more information: https://github.com/jiangtj/hexo-extend-theme
-theme_plus:
-  views:
-    - path: 'page.njk'
-      file: 'custom/page.njk'
-    - path: 'archive.njk'
-      file: 'custom/archive.njk'

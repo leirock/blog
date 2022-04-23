@@ -1,6 +1,6 @@
 ---
 title: 服务器部署静态博客和看板娘 Live2D API
-categories: [笔记本]
+categories: [笔记]
 tags: [服务器, 持续集成]
 pid: 47
 cc_license: true

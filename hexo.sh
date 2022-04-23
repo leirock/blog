@@ -22,6 +22,7 @@ echo '==================== Hexo Utilities ===================='
 printf "常用:\n"
 printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
 printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 's' '(hexo server)' '预览并打开浏览器'
+printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'get' '(curl json)' '拉取照片JSON文件'
 printf "\n默认回车：只加载预览不打开浏览器\n"
 printf "\n\033[32mHexo 根目录："${HexoPath}"\033[0m\n"
 echo '--------------------------------------------------------'
@@ -45,8 +46,20 @@ else
 		npm update --no-audit
 		exec ${HexoPath}/hexo.sh
 	else
-		printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
-		sleep 1s
-		exec ${HexoPath}/hexo.sh
+		if  [ "$answer" == "get" ]; then
+			cd source/album/photoinfo
+			curl -O https://leirock.github.io/album/animals.json
+			curl -O https://leirock.github.io/album/culture.json
+			curl -O https://leirock.github.io/album/documentary.json
+			curl -O https://leirock.github.io/album/food.json
+			curl -O https://leirock.github.io/album/landscape.json
+			curl -O https://leirock.github.io/album/museum.json
+			cd ../../../
+			exec ${HexoPath}/hexo.sh
+		else
+			printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
+			sleep 1s
+			exec ${HexoPath}/hexo.sh
+		fi
 	fi
 fi

@@ -1,6 +1,6 @@
 ---
 title: Individual Community Responsibility and Online Knowledge Contribution
-categories: [观察者]
+categories: [观点]
 tags: [经济, 互联网]
 mathjax: true
 pid: 26

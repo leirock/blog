@@ -1,6 +1,6 @@
 ---
 title: Typecho 博客搭建尝试
-categories: [笔记本]
+categories: [笔记]
 tags: [blog, 服务器]
 pid: 50
 cc_license: true
