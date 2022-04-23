@@ -104,7 +104,7 @@
 {### Photos Grid ###}
 <script{{ pjax }} type="text/javascript">
 var $album = $(".album")[0];
-if($album.length != 0){
+if($album) {
   // photos list path
   var imgDataPath = $album.getAttribute('src-json');
   // photos storage path
