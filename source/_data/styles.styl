@@ -237,8 +237,7 @@ p {
 
 /* 图片阴影圆角 */
 .posts-expand .post-body img {
-  /*box-shadow: $image-box-shadow;*/
-  border-radius: $myradius;
+  /* border-radius: 4px; */
 }
 
 /* 图片标题 */
@@ -259,13 +258,6 @@ p {
 .group-picture .group-picture-row {
   display: inline-flex;
 }
-
-/* 引用与提示卡片字体 
-blockquote p,
-.post-body .note {
-  font-family: $font-family-quote;
-}
-*/
 
 /* 提示卡片图标位置 */
 .post-body .note:not(.no-icon)::before {
@@ -389,7 +381,11 @@ li {
   }
 }
 
-/* 文章版权信息 */
+
+/**********************************************************/
+/********************** 文末版权信息 ************************/
+/**********************************************************/
+
 .license {
   background: #f5f5f5;
   color: #4a4a4a;
@@ -579,6 +575,26 @@ li {
 /************************ 文章汇总 ***************************/
 /************************************************************/
 
+/* 标签云 */
+.tag-cloud a {
+  padding: 2px 10px;
+  margin: 8px;
+  background: $whitesmoke;
+  border-bottom: none;
+  border-radius: 15px;
+  btn-shadow();
+
+  &:hover {
+    color: white !important;
+    text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--text-color) !important;
+    background: $btn-default-bg;
+  }
+}
+
 /* 分类 
 +mobile() {
   .category-all-page .category-list-item {
@@ -619,26 +635,6 @@ li.category-list-item a {
   }
 }
 */
-
-/* 标签云 */
-.tag-cloud a {
-  padding: 2px 10px;
-  margin: 8px;
-  background: $whitesmoke;
-  border-bottom: none;
-  border-radius: 15px;
-  btn-shadow();
-
-  &:hover {
-    color: white !important;
-    text-decoration: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--text-color) !important;
-    background: $btn-default-bg;
-  }
-}
 
 
 /**********************************************************/
@@ -857,6 +853,61 @@ li.category-list-item a {
   vertical-align: top;
   color: white  !important;
   padding: 0 6px !important;
+}
+
+
+/**********************************************************/
+/*********************** 相册标签 **************************/
+/**********************************************************/
+
+.albumbox {
+  display: inline-flex;
+  gap: 3px;
+  margin-bottom: 3px;
+}
+
+.albumbox-photo {
+  margin: 4px;
+  flex: 1;
+}
+
+.albumbox-photo img {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  object-fit: cover;
+
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+.albumbox-photo .image-caption {
+  margin-top: 1em;
+}
+
+.album {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center
+}
+
+.album .card {
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  border-radius: 0;
+  background-color: #efefef;
+  padding: 1.5px;
+
+  @media(prefers-color-scheme:dark) {
+    background-color: $body-bg-color-dark;
+  }
+}
+
+.album-photo img {
+  padding: 0;
+  border-radius: 0;
 }
 
 

@@ -1,16 +1,17 @@
 zh-CN:
   menu:
-    life: 碎碎念
-    observer: 观察者
-    culture: 书影音
+    life: 生活 #碎碎念
+    observer: 观点 #观察者
+    culture: 文艺 #书影音
     books: 阅读书单
     movies: 影视收藏
-    notes: 笔记本
+    notes: 笔记 #笔记本
     tags: 标签云
-    guestbook: 留言板
+    album: 光影 #光影集
+    guestbook: 留言 #留言板
     policy: 网站政策
-    friends: 友情链接
-    search: 搜文章
+    links: 友情链接
+    search: 搜索 #搜文章
   sidebar:
     toc: 目 录
 #  post:

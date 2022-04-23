@@ -1,6 +1,6 @@
 ---
 title: 再说缘分：PhD 申请面试与录取之后
-categories: [碎碎念]
+categories: [生活]
 tags: [PhD, 升学]
 pid: 13
 date: 2016-04-07 23:00:42

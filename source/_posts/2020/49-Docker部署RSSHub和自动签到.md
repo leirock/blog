@@ -1,6 +1,6 @@
 ---
 title: Docker 部署 RSSHub 和自动签到
-categories: [笔记本]
+categories: [笔记]
 tags: [服务器, Docker, RSS]
 pid: 49
 cc_license: true

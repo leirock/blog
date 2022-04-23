@@ -1,6 +1,6 @@
 ---
 title: 部署 RSS 订阅服务 FreshRSS
-categories: [笔记本]
+categories: [笔记]
 tags: [服务器, RSS]
 pid: 48
 cc_license: true

@@ -1,6 +1,6 @@
 ---
 title: Targeted Advertising on WeChat Official Accounts
-categories: [观察者]
+categories: [观点]
 tags: [经济, 互联网]
 pid: 21
 date: 2017-04-20 09:30:02

@@ -1,6 +1,6 @@
 ---
 title: Debian 10 升级并安装宝塔面板
-categories: [笔记本]
+categories: [笔记]
 tags: [服务器, Linux]
 pid: 46
 cc_license: true

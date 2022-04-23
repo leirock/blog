@@ -1,6 +1,6 @@
 ---
 title: 个人主页与 Hexo 博客搭建记录
-categories: [笔记本]
+categories: [笔记]
 tags: [blog]
 pid: 30
 cc_license: true

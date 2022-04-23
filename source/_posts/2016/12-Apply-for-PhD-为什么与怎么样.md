@@ -1,6 +1,6 @@
 ---
 title: Apply for PhD：为什么与怎么样
-categories: [碎碎念]
+categories: [生活]
 tags: [PhD, 升学]
 pid: 12
 date: 2016-04-07 22:54:42

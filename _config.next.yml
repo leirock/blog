@@ -55,10 +55,11 @@ menu:
     books: books/ || fas fa-book
     movies: movies/ || fas fa-film
   notes: /notes/ || fas fa-book-open
-  tags: /tags/ || fas fa-tags
+  album: /album/ || fas fa-camera-retro
   guestbook: 
     default: /guestbook/ || fas fa-splotch
-    friends: ../friends/ || fas fa-link
+    tags: ../tags/ || fas fa-tags
+    links: ../links/ || fas fa-link
     policy: ../policy/ || fas fa-scale-balanced
 
 
@@ -173,11 +174,7 @@ fancybox: true
 lazyload: true
 pangu: true
 
-
-# ============================================================= #
 # ====================== Search Services ====================== #
-# ============================================================= #
-
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: false

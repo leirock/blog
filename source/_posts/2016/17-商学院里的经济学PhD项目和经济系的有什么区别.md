@@ -1,6 +1,6 @@
 ---
 title: 商学院里的经济学 PhD 项目和经济系的有什么区别
-categories: [观察者]
+categories: [观点]
 tags: [经济, PhD]
 pid: 17
 date: 2016-08-26 02:33:00

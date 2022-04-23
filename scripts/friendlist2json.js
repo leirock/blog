@@ -2,8 +2,8 @@
 const yaml = require('js-yaml');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 
-const src = './source/friends/';
-const dist = './public/friends/';
+const src = './source/links/';
+const dist = './public/links/';
 
 try {
     mkdirSync(dist, {recursive: true});
@@ -23,4 +23,4 @@ for(var i in files) {
             console.error(e);
         }
     }
- }
+}
