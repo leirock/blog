@@ -86,11 +86,7 @@ toc:
 {% endtabs %}
 
 
-<!-- LICENSE SECTION
-*****************************************************
-*****************************************************
--->
-
+<!-- LICENSE SECTION -->
 <div class="license">
     <div class="license-title">影视收藏</div>
     <div class="license-link">

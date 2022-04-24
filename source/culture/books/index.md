@@ -42,11 +42,7 @@ title: 阅读书单
 - **围城** 钱钟书
 
 
-<!-- LICENSE SECTION
-*****************************************************
-*****************************************************
--->
-
+<!-- LICENSE SECTION -->
 <div class="license">
     <div class="license-title">阅读书单</div>
     <div class="license-link">

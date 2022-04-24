@@ -37,13 +37,6 @@ jobs:
       run: |
         npm run build
         rm -rf public/images
-        cd public/album/photoinfo
-        curl -O https://leirock.github.io/album/animals.json
-        curl -O https://leirock.github.io/album/culture.json
-        curl -O https://leirock.github.io/album/documentary.json
-        curl -O https://leirock.github.io/album/food.json
-        curl -O https://leirock.github.io/album/landscape.json
-        curl -O https://leirock.github.io/album/museum.json
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@main

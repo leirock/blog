@@ -51,7 +51,7 @@
 </script>
 
 {### Minigrid JS ###}
-<script type="text/javascript">
+<script{{ pjax }} type="text/javascript">
 /* @license Minigrid v3.1.1 – https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js */
 !function(t, e) {
 	"function" == typeof define && define.amd ? define(e) : "object" == typeof exports ? module.exports = e() : t.Minigrid = e()
@@ -123,7 +123,6 @@ if($album) {
 
   // Tencent Cloud imgage style (based on photo width)
   var imgStyle = '!' + imageWidth + 'x';
-  //var imgStyle = ''
 
   // generate photo grid
   var LinkDataPath = imgDataPath;
