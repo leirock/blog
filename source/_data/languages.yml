@@ -6,11 +6,11 @@ zh-CN:
     books: 阅读书单
     movies: 影视收藏
     notes: 笔记 #笔记本
-    tags: 标签云
+    tags: 标签
     album: 光影 #光影集
     guestbook: 留言 #留言板
     policy: 网站政策
-    links: 友情链接
+    links: 链接
     search: 搜索 #搜文章
   sidebar:
     toc: 目 录

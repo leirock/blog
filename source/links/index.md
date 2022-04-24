@@ -1,5 +1,6 @@
 ---
-title: 友情链接
+title: 链接
+description: 依然在坚持写博客的人们
 comments: false
 ---
 
@@ -19,7 +20,7 @@ comments: false
 
 * * *
 
-## 友链收录
+## 链接收录
 
 ### 规则
 
@@ -29,7 +30,7 @@ comments: false
 
 ### 申请
 
-请先添加本站友链，然后参考下方的格式，在 [留言板](/guestbook/) 留下您站点的相关信息。其中，对于图标的链接有如下建议：
+请先添加本站链接，然后参考下方的格式，在 [留言板](/guestbook/) 留下您站点的相关信息。其中，对于图标的链接有如下建议：
 
 - 请提供 https 形式的链接，并以中心对称图形为佳；
 - 建议提供 Gravatar 头像的镜像链接（如 [极客族](https://cdn.geekzu.org/cached.html)）；或者
