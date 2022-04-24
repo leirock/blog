@@ -14,9 +14,13 @@ hexo.extend.tag.register('linklist', function(args) {
 });
 
 //相册
+//如果输入是两个值，那么用 args[0]，args[1] 分别代表
 hexo.extend.tag.register('album', function(args) {
+  const cosDomain = 'https://cos.pinlyu.com';
+  const photoSrc = cosDomain + '/album/' + args + '/';
+  const jsonSrc = photoSrc + 'photolist.json';
   return `<style>.post-block{padding-left:10px;padding-right:10px;}</style>
-  <div class="album" src-json="${args[0]}" src-photo="${args[1]}"></div>`;
+  <div class="album" src-photo="${photoSrc}" src-json="${jsonSrc}"></div>`;
 });
 
 //相册列表
@@ -24,13 +28,12 @@ hexo.extend.tag.register('album', function(args) {
 hexo.extend.tag.register('albumbox', function([args, delimiter = '|', comment = '%'], content) {
   const links = content.split('\n').filter(line => line.trim() !== '').map(line => {
     const item = line.split(delimiter).map(arg => arg.trim());
-    const cdnDomain =  args || 'https://web-1256060851.file.myqcloud.com';
+    const cosDomain =  args || 'https://cos.pinlyu.com';
     if (item[0][0] === comment) return '';
-    const imagePath = item[2];
-    const imageSource = cdnDomain + imagePath;
+    const imageSource = cosDomain + '/album/' + item[1] + '/' + item[2];
     return `
       <div class="albumbox-photo">
-        <a href="${item[1]}">
+        <a href="${item[1]}/">
           <img alt="${item[0]}" src="${imageSource}!500x">
           <p class="image-caption">${item[0]}</p>
         </a>
