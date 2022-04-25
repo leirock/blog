@@ -8,11 +8,11 @@ comments: false
 
 ## 生活向
 
-{% linklist lifeblog.json %}
+{% linklist life.json %}
 
 ## 技术向
 
-{% linklist techblog.json %}
+{% linklist tech.json %}
 
 ## 博客组织
 
