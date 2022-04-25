@@ -1,6 +1,6 @@
 ---
-title: 光影集·纪实
-description: 人物与生活的记录
+title: 记录正在发生的故事
+description: <a href="../">光影集</a> / 纪实
 ---
 
 {% album documentary %}

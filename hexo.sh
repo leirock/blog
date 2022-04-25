@@ -20,7 +20,7 @@ hexo() {
 
 echo '==================== Hexo Utilities ===================='
 printf "常用:\n"
-printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
+printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 'u' '(npm update)' '更新依赖包'
 printf "  \033[1m\033[32m%s\033[0m %s \t %s \n" 's' '(hexo server)' '预览并打开浏览器'
 printf "\n默认回车：只加载预览不打开浏览器\n"
 printf "\n\033[32mHexo 根目录："${HexoPath}"\033[0m\n"
