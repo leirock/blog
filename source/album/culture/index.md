@@ -1,6 +1,6 @@
 ---
-title: 光影集·风物
-description: 发现不一样的文化
+title: 风物志
+description: <a href="../">光影集</a> / 风物
 ---
 
 {% album culture %}

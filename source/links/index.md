@@ -16,7 +16,7 @@ comments: false
 
 ## 博客组织
 
-{% linklist blogorg.json %}
+{% linklist org.json %}
 
 * * *
 
