@@ -126,7 +126,7 @@ server:
 # For more information: https://waline.js.org
 waline:
   enable: true
-  libUrl: https://lib.baomitu.com/waline/latest/Waline.min.js
+  libUrl: https://lib.baomitu.com/waline/1.6.0/Waline.min.js # https://npm.elemecdn.com/@waline/client@latest/dist/Waline.min.js
   serverURL: https://waline.pinlyu.com # Waline server address url
   login: disable
   meta: [nick, mail, link] # Custom comment header
