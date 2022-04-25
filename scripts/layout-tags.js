@@ -24,7 +24,7 @@ hexo.extend.tag.register('album', function(args) {
 });
 
 //相册列表
-// 可以用 {% albumbox https://web-1256060851.cos.ap-hongkong.myqcloud.com %} 来重新定义变量 cdnDomain
+// 可以用 {% albumbox https://web-1256060851.cos.ap-hongkong.myqcloud.com %} 来重新定义变量 cosDomain
 hexo.extend.tag.register('albumbox', function([args, delimiter = '|', comment = '%'], content) {
   const links = content.split('\n').filter(line => line.trim() !== '').map(line => {
     const item = line.split(delimiter).map(arg => arg.trim());
