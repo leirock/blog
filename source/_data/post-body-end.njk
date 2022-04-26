@@ -10,6 +10,14 @@
         </ul>
       </div>
     {%- endif %}
+    {%- if cat.name == '笔记' %}
+      <div class="notes-related">
+        <h3 style="margin-bottom:-.3em"><i class="fas fa-book fa-fw"></i>相关推荐</h3>
+        <ul>
+          <li><a href="https://dlzhang.com/wiki">语雀知识库</a></li>
+        </ul>
+      </div>
+    {%- endif %}
   {%- endfor %}
 {%- endif %}
 
