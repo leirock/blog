@@ -13,31 +13,29 @@ jobs:
 
     steps:
     - name: Checkout source
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+      uses: actions/checkout@v3
 
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: '16'
 
-    - name: Yarn install cache
-      uses: actions/cache@v2.1.6
+    - name: Install npm cache
+      uses: actions/cache@v3
       id: node-modules
       with:
         path: node_modules/
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
+        key: ${{ runner.os }}-npm-cache-${{ hashFiles('package-lock.json') }}
         restore-keys: |
-          ${{ runner.os }}-node-modules-
+          ${{ runner.os }}-npm-cache
 
     - name: Install dependencies
       if: steps.node-modules.outputs.cache-hit != 'true'
-      run: yarn install --frozen-lockfile
+      run: npm i --no-audit
 
     - name: Generate Hexo site
       run: |
-        yarn build
+        npm run build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
@@ -45,13 +43,15 @@ jobs:
         personal_token: ${{ secrets.GH_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
+        user_name: github-actions[bot]
+        user_email: github-actions[bot]@users.noreply.github.com
         commit_message: ${{ github.event.head_commit.message }}
 
-    - name: Telegram notification
-      if: cancelled() == false
-      uses: xinthink/action-telegram@v1.1
-      with:
-        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
-        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
-        jobStatus: ${{ job.status }}
-        skipSuccess: false
+#    - name: Telegram notification
+#      if: cancelled() == false
+#      uses: xinthink/action-telegram@v1.1
+#      with:
+#        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
+#        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
+#        jobStatus: ${{ job.status }}
+#        skipSuccess: false
