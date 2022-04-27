@@ -1,161 +1,165 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" href="/favicon.ico">
-    <title>404 Not Found</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>未找到页面 | 频率</title>
+    <link rel="icon" href="/resources/favicon/favicon.ico">
+    <script async defer data-website-id="93f919a5-83db-47a5-a13d-ac167310c81b" src="https://stat.pinlyu.com/umami.js"></script>
     <style>
+        * {
+            border-width: 0;
+            border-style: solid;
+        }
+
         body {
+            -webkit-font-smoothing: antialiased;
             margin: 0;
-            padding: 0;
-            font-family: PingFang SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+            font-family: sans-serif;
         }
 
-        a,
-        button.submit {
-            color: #6E7173;
-            text-decoration: none;
-            -webkit-transition: all .1s ease-in;
-            -moz-transition: all .1s ease-in;
-            -o-transition: all .1s ease-in;
-            transition: all .1s ease-in;
-        }
-
-        a:hover,
-        a:active {
-            color: #6E7173;
-        }
-
-        .body404 {
-            position: absolute;
-            height: 100%;
+        .left-part {
             width: 100%;
-            background: #fff;
-            background-size: auto 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 35px;
         }
 
-        .body-about .body404 {
-            background: #fff;
+        .box404 {
+            max-width: 30rem;
+            margin: 2rem;
         }
 
-        .site-name404 {
-            margin: 0 auto;
-            text-align: center;
-            letter-spacing: 2px;
-            font-size: 150px;
-            line-height: 1;
-            font-weight: 100;
-            color: #f35626;
-            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-animation: hue 60s infinite linear;
+        .error-code {
+            color: #22292f;
+            font-size: 3rem;
+            font-weight: 900;
         }
 
-        .site-name404 h1 {
-            margin: 0 0 10px;
-            font-size: 50px;
-            line-height: 1.2;
+        .line {
+            width: 4rem;
+            height: .25rem;
+            background-color: #a779e9;
+            margin-top: .75rem;
+            margin-bottom: .75rem;
         }
 
-        .title404 span {
-            font-size: 15px;
-            width: 2px;
-        }
-
-        .title404 p {
-            font-size: 20px;
+        .error-text {
+            color: #606f7b;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
             line-height: 1.5;
+        }
+
+        p {
             margin: 0;
-            color: #7b8993;
         }
 
-        .info404 {
-            position: absolute;
-            top: 50%;
-            text-align: center;
-            width: 100%;
-            margin-top: -160px;
-        }
-
-        .body-about .info404 {
-            margin-top: -180px;
-        }
-
-        #footer404 {
-            margin-top: 30px;
-            font-size: 10px;
-        }
-
-        .index404 {
-            margin-top: 24px;
-            display: inline-block;
-            white-space: nowrap;
+        button {
+            font-size: 100%;
+            font-weight: 700;
+            background: transparent;
+            padding: .75rem 1.5rem .75rem 1.5rem;
+            color: #3d4852;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            border-width: 2px;
+            border-color: #dae1e7;
+            border-radius: .5rem;
             cursor: pointer;
-            letter-spacing: 1px;
-            font-size: 14px;
-            -moz-user-select: -moz-none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            -o-user-select: none;
-            user-select: none;
-            text-shadow: none;
-            border: 2px solid #7b8993;
-            line-height: 36px;
-            text-align: center;
-            height: 36px;
-            padding: 0 25px;
-            border-radius: 25px;
-            background-color: #fff;
-            color: #7b8993;
         }
 
-        .icon-about {
-            padding: 10px 0 25px;
+        button:hover {
+            border-color: #b8c2cc;
         }
 
-        .icon-about a {
-            font-size: 20px;
-            margin: 5px;
-            color: #fff;
-            background-color: #000;
-            border-radius: 100%;
-            padding: 6px;
+        .right-part {
+            position: relative;
+            padding-bottom: 100%;
+            width: 100%;
+            margin-top: 25px;
         }
 
-        @-webkit-keyframes hue {
-            from {
-                -webkit-filter: hue-rotate(0deg);
+        .right-svg {
+            background-image: url('/resources/img/404.svg');
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: 768px) {
+            .main {
+                display: flex;
             }
 
-            to {
-                -webkit-filter: hue-rotate(-360deg);
+            .left-part {
+                width: 50%;
+                margin-top: 0;
+            }
+
+            .error-code {
+                font-size: 9rem;
+            }
+
+            .line {
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .error-text {
+                font-size: 1.875rem;
+            }
+
+            .right-part {
+                display: flex;
+                padding-bottom: 0;
+                min-height: 100vh;
+                width: 50%;
+                margin-top: 0;
+            }
+
+            .right-svg {
+                background-position: left;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .right-svg {
+                background-position: center;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="body404">
-        <div class="info404">
-            <header id="header404" class="clearfix">
-                <div class="site-name404">404</div>
-            </header>
-            <section>
-                <div class="title404">
-                    <br>
-                    <p>The requested resource is not available.</p>
-                    <p>请求的资源不存在。</p>
-                </div><a href="/" class="index404">首页 Home</a>
-            </section>
+    <main class="main">
+        <div class="left-part">
+            <div class="box404">
+                <div class="error-code">
+                    404
+                </div>
+                <div class="line"></div>
+                <p class="error-text">
+                    抱歉，您访问的页面走丢了。
+                </p>
+                <a href="/">
+                    <button>返回首页</button>
+                </a>
+            </div>
         </div>
-    </div>
+        <div class="right-part">
+            <div class="right-svg"></div>
+        </div>
+    </main>
 </body>
 
 </html>
