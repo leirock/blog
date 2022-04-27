@@ -145,7 +145,7 @@ waline:
   locale:
     placeholder: 在这里分享你的想法！评论通过审核才会显示，回复通过邮件提醒，评论规范详见《网站政策》。 # Comment box placeholder
     admin: 站长
-    nick: 昵称*
+    nick: 名称*
     mail: 邮箱*
     link: 网址
 
