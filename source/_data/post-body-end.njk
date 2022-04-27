@@ -1,3 +1,4 @@
+{### 相关推荐 ###}
 {%- if post.categories %}
   {%- for cat in post.categories.toArray() %}
     {%- if cat.name == '文艺' %}
@@ -21,6 +22,7 @@
   {%- endfor %}
 {%- endif %}
 
+{### 版权许可协议 ###}
 <div class="license">
   <div class="license-title">{{ page.title }}</div>
   <div class="license-link">
@@ -89,6 +91,7 @@
   </div>
 </div>
 
+{### 赞赏 ###}
 {%- if (not post.orig_author) and (post.pid > 0) %}
   <div class="donations">
     <div class="donation-label">真诚赞赏，手留余香。</div>

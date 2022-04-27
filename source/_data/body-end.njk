@@ -1,17 +1,17 @@
 {### 锚点定位 ###}
 {% if page.comments or post.comments %}
-  <script type="text/javascript">
-    if (window.location.hash) {
-      var checkExist = setInterval(function () {
-        if ($(window.location.hash).length) {
-          $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top - 90
-          }, 1000);
-          clearInterval(checkExist);
-        }
-      }, 100);
-    }
-  </script>
+<script{{ pjax }} type="text/javascript">
+  if (window.location.hash) {
+    var checkExist = setInterval(function () {
+      if ($(window.location.hash).length) {
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top - 90
+        }, 1000);
+        clearInterval(checkExist);
+      }
+    }, 100);
+  }
+</script>
 {% endif %}
 
 {### 友链生成 ###}
@@ -50,9 +50,8 @@
   }
 </script>
 
-{### Minigrid JS ###}
+{### Minigrid JS https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js ###}
 <script{{ pjax }} type="text/javascript">
-// https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js
 !function(t, e) {
 	"function" == typeof define && define.amd ? define(e) : "object" == typeof exports ? module.exports = e() : t.Minigrid = e()
 }(this, function(t) {
