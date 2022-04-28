@@ -126,13 +126,13 @@ server:
 # For more information: https://waline.js.org
 waline:
   enable: true
-  libUrl: https://lib.baomitu.com/waline/1.6.0/Waline.min.js # https://npm.elemecdn.com/@waline/client@latest/dist/Waline.min.js
+  libUrl: https://lib.baomitu.com/waline/1.6.0/Waline.min.js
   serverURL: https://cmt.pinlyu.com # Waline server address url
   login: disable
   meta: [nick, mail, link] # Custom comment header
   requiredMeta: [nick, mail] # Set required fields: [nick] | [nick, mail]
   pageSize: 5 # Pagination size
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true  # If false, comment count will only be displayed in post page, not in home page
   copyright: false
   dark: auto
