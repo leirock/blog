@@ -4,14 +4,15 @@ categories: []
 tags: []
 pid:
 header: true
+indent: false
 mathjax: false
 comments: true
 toc:
     enable: true
 cc_license: false
-original_author:
-publish:
-publish_url:
+orig_author:
+orig_source:
+orig_url:
 date: {{ date }}
 ---
 

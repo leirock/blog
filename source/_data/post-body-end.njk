@@ -1,3 +1,21 @@
+{### 首行缩进 ###}
+{% if post.indent %}
+  <style>
+    .post .post-body p {
+      text-indent: 2em;
+      margin-bottom: 0;
+    }
+    .post .post-body .image-caption,
+    .post .post-body blockquote p {
+      text-indent: 0;
+      margin-bottom: 1em;
+    }
+    .post .post-body .note p {
+      text-indent: 0;
+    }
+  </style>
+{% endif %}
+
 {### 相关推荐 ###}
 {%- if post.categories %}
   {%- for cat in post.categories.toArray() %}
@@ -55,14 +73,14 @@
         </div>
       </div>
     {%- endif %}
-    {%- if post.orig_source %}
+    {%- if post.orig_src %}
       <div class="license-meta-item">
         <div class="license-meta-title">原文出处</div>
         <div class="license-meta-text">
           {%- if post.orig_url %}
-            <a href="{{ post.orig_url }}" rel="noopener" target="_blank">{{ post.orig_source }}</a>
+            <a href="{{ post.orig_url }}" rel="noopener" target="_blank">{{ post.orig_src }}</a>
           {% else %}
-            {{ post.orig_source }}
+            {{ post.orig_src }}
           {%- endif %}
         </div>
       </div>

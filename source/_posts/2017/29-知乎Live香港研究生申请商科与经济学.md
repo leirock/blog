@@ -3,9 +3,9 @@ title: '[知乎 Live] 香港研究生申请：商科与经济学'
 categories: [观点]
 tags: [升学, 经济]
 pid: 29
-date: 2017-12-15 21:00:00
-orig_source: 知乎 Live
+orig_src: 知乎 Live
 orig_url: https://www.zhihu.com/lives/922106856669868032
+date: 2017-12-15 21:00:00
 ---
 
 ## 一、Live 简介
