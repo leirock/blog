@@ -8,9 +8,14 @@
 //     hexo.theme.setView('page.njk', file);
 // }) 
 
+//着重号
+hexo.extend.tag.register('dot', function(args) {
+  return `<em class="emphasis-point">${args.join(' ')}</em>`;
+});
+
 //友链列表
 hexo.extend.tag.register('linklist', function(args) {
-  return `<div name="linklist" class="favlink-grid" src="${args}"></div>`;
+  return `<div class="link-list" src="${args}"></div>`;
 });
 
 //相册
@@ -20,7 +25,7 @@ hexo.extend.tag.register('album', function(args) {
   const photoSrc = cosDomain + '/album/' + args + '/';
   const jsonSrc = photoSrc + 'photolist.json';
   return `<style>.post-block{padding-left:10px;padding-right:10px;}</style>
-  <div class="album" src-photo="${photoSrc}" src-json="${jsonSrc}"></div>`;
+  <div class="album" photo-src="${photoSrc}" json-src="${jsonSrc}"></div>`;
 });
 
 //相册列表
@@ -32,12 +37,12 @@ hexo.extend.tag.register('albumbox', function([args, delimiter = '|', comment = 
     if (item[0][0] === comment) return '';
     const imageSource = cosDomain + '/album/' + item[1] + '/' + item[2];
     return `
-      <div class="albumbox-photo">
+      <div class="album-box-photo">
         <a href="${item[1]}/">
           <img alt="${item[0]}" src="${imageSource}!500x">
           <p class="image-caption">${item[0]}</p>
         </a>
       </div>`;
   });
-  return `<div class="albumbox">${links.join('')}</div>`;
+  return `<div class="album-box">${links.join('')}</div>`;
 }, true);

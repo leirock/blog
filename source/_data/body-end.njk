@@ -17,7 +17,7 @@
 {### 友链生成 ###}
 <script{{ pjax }} type="text/javascript">
   //jquery selector
-  var $linkLists = $("[name='linklist']");
+  var $linkLists = $(".link-list");
   if($linkLists.length != 0){
     var j = -1;
     for	(var i = 0; i < $linkLists.length; i++) {
@@ -36,8 +36,8 @@
           } else {
             info['label'] = "";
           }
-          li += '<div class="favlink-grid-container">';
-          li += '<img class="favlink-grid-image" src="' + info['logo'] + '">';
+          li += '<div class="link-list-container">';
+          li += '<img class="link-list-image" src="' + info['logo'] + '">';
           li += '<p>' + info['title'] + info['label'] + '</p>';
           li += '<p>' + info['intro'] + '</p>';
           li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
@@ -105,9 +105,9 @@
 var $album = $(".album")[0];
 if($album) {
   // photos list path
-  var imgDataPath = $album.getAttribute('src-json');
+  var imgDataPath = $album.getAttribute('json-src');
   // photos storage path
-  var imgPath = $album.getAttribute('src-photo');
+  var imgPath = $album.getAttribute('photo-src');
   // max photo number
   var imgMaxNum = 50;
   // window width (to decide photo width)
