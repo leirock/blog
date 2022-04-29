@@ -126,8 +126,8 @@ server:
 # For more information: https://waline.js.org
 waline:
   enable: true
-  libUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.js
-  cssUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.css
+  libUrl: https://npm.elemecdn.com/@waline/client@2/dist/waline.js
+  cssUrl: https://npm.elemecdn.com/@waline/client@2/dist/waline.css
   serverURL: https://cmt.pinlyu.com
   login: disable
   meta: [nick, mail, link]
