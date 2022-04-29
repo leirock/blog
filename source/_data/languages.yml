@@ -1,24 +1,3 @@
-# language
 zh-CN:
   menu:
-    home: 首页
-    overview: 总览
-    timeline: 时间轴
-    about: 关于
-    friends: 友链
     search: 搜索
-  post:
-    posted: 发布：
-    in: 分类：
-    views: 阅读
-    comments:
-      waline: 评论
-  counter:
-    tag_cloud:
-      other: '<i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签'
-    categories:
-      other: '<i class="fas fa-fw fa-th"></i> 目前共计 %d 个分类'
-    archive_posts:
-      other: '目前共计 %d 篇文章。'
-  state:
-    posts: 文章
