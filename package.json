@@ -1,6 +1,6 @@
 {
   "name": "leirock-blog-sample",
-  "version": "3.6.0",
+  "version": "3.6.1",
   "private": true,
   "scripts": {
     "build": "./node_modules/.bin/hexo generate"
@@ -9,7 +9,6 @@
     "version": "5.4.2"
   },
   "dependencies": {
-    "@waline/hexo-next": "^3.0.0-rc.1",
     "hexo": "^5.0.0",
     "hexo-all-minifier": "^0.5.5",
     "hexo-generator-archive": "^1.0.0",
