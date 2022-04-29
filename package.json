@@ -9,7 +9,7 @@
     "version": "5.4.2"
   },
   "dependencies": {
-    "@waline/hexo-next": "^3.0.0-rc.1",
+    "@waline/hexo-next": "^3.0.0",
     "hexo": "^5.4.2",
     "hexo-all-minifier": "^0.5.7",
     "hexo-generator-category": "^1.0.0",
