@@ -46,12 +46,3 @@ jobs:
         user_name: github-actions[bot]
         user_email: github-actions[bot]@users.noreply.github.com
         commit_message: ${{ github.event.head_commit.message }}
-
-#    - name: Telegram notification
-#      if: cancelled() == false
-#      uses: xinthink/action-telegram@v1.1
-#      with:
-#        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
-#        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
-#        jobStatus: ${{ job.status }}
-#        skipSuccess: false

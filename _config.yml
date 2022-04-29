@@ -111,20 +111,6 @@ js_minifier:
 image_minifier:
   enable: false
 
-# Waline
-# For more information: https://waline.js.org
-waline:
-  enable: true
-  serverURL: https://cmt.pinlyu.com
-  #libUrl: https://unpkg.com/@waline/client@2.0.6/dist/waline.js
-  #cssUrl: https://unpkg.com/@waline/client@2.0.6/dist/waline.css
-  commentCount: false
-  login: disable
-  emoji:
-    - //unpkg.com/@waline/emojis@1.0.1/weibo/info.json
-    - //unpkg.com/@waline/emojis@1.0.1/bilibili/info.json
-
-
 # hexo-renderer-markdown-it
 # For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
 markdown:

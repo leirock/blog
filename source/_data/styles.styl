@@ -1,20 +1,3 @@
-/********************************************************/
-/************************* 字体 **************************/
-/********************************************************/
-
-@font-face {
-  font-family: LXGW;
-  font-display: swap;
-  src:url(/resources/fonts/LXGWWenKaiLite-Regular.woff2)
-}
-
-@font-face {
-  font-family: "Long Cang";
-  font-display: swap;
-  src: url(/resources/fonts/LongCang-Regular.woff2)
-}
-
-
 /**********************************************************/
 /************************* 全站背景 ************************/
 /**********************************************************/
@@ -383,97 +366,6 @@ li {
 
 
 /**********************************************************/
-/********************** 文末版权信息 ************************/
-/**********************************************************/
-
-.license {
-  background: #f5f5f5;
-  color: #4a4a4a;
-  display: block;
-  font-size: .95rem;
-  line-height: 1.2;
-  margin: 15px -40px;
-  overflow: hidden;
-  padding: 1.25em 40px;
-  position: relative;
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--text-color);
-    background: #2f3947;
-  }
-}
-
-+mobile() {
-  .license {
-    margin: 15px -12px;
-    padding: 1.25em 12px;
-  }
-}
-
-+tablet() {
-  .license {
-    margin: 15px -20px;
-    padding: 1.25em 20px;
-  }
-}
-
-.license:after {
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 367.467 367.467' style='enable-background:new 0 0 367.467 367.467;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z'/%3E%3Cpath d='M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z'/%3E%3C/g%3E%3C/svg%3E");
-  content: " ";
-  height: 180px;
-  opacity: .1;
-  position: absolute;
-  right: -25px;
-  top: -35px;
-  width: 180px;
-}
-
-.license-title {
-  font-weight: bold;
-}
-
-.license-title, .license-meta-title {
-  margin: 0 0 .25rem
-}
-
-.license-link, .license-meta-title {
-  font-size: .8rem
-}
-
-.license-link {
-  margin-bottom: 1rem
-}
-
-.license a {
-  color: currentColor;
-
-  &:hover{
-    border-bottom-color:#999 !important
-  }
-}
-
-.license-link a {
-  color:#7a7a7a;
-  border-bottom: none !important;
-}
-
-.license-meta-text {
-  margin:0
-}
-
-.license-meta {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:flex-start
-}
-
-.license-meta-item {
-  margin:0 2rem 1em 0
-}
-
-
-/**********************************************************/
 /************************ 按钮 ****************************/
 /**********************************************************/
 
@@ -575,6 +467,47 @@ li {
 /************************ 文章汇总 ***************************/
 /************************************************************/
 
+/* 分类 */
++mobile() {
+  .category-all-page .category-list-item {
+    margin: 10px 40px;
+  }
+
+  .category-all-page .category-all ul {
+    list-style-type: disc;
+  }
+}
+
++tablet-desktop() {
+  .category-all-page .category-list-item {
+    margin: 10px 12px;
+  }
+
+  ul.category-list {
+    text-align: center;
+  }
+
+  li.category-list-item {
+    display: inline-block;
+  }
+
+  li.category-list-item a {
+    line-height: 5;
+    word-break: keep-all;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: $btn-default-bg;
+    border-bottom: none;
+    border-radius: 15px;
+    btn-shadow();
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 /* 标签云 */
 .tag-cloud a {
   padding: 2px 10px;
@@ -594,372 +527,3 @@ li {
     background: $btn-default-bg;
   }
 }
-
-/* 分类 
-+mobile() {
-  .category-all-page .category-list-item {
-    margin: 10px 40px;
-  }
-
-  .category-all-page .category-all ul {
-    list-style-type: disc;
-  }
-}
-
-+tablet-desktop() {
-.category-all-page .category-list-item {
-  margin: 10px 12px;
-}
-
-ul.category-list {
-  text-align: center;
-}
-
-li.category-list-item {
-  display: inline-block;
-}
-
-li.category-list-item a {
-  line-height: 5;
-  word-break: keep-all;
-  padding: 10px 15px;
-  font-weight: bold;
-  color: white;
-  background: $btn-default-bg;
-  border-bottom: none;
-  border-radius: 15px;
-  btn-shadow();
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-*/
-
-
-/**********************************************************/
-/*********************** 链接卡片  *************************/
-/**********************************************************/
-
-/* 普通卡片 */
-.post-body .link-grid .link-grid-container {
-  border: 2px solid #ddd;
-  border-radius: $myradius;
-  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
-
-  &:hover {
-    animation: none;
-  }
-
-  &:active {
-    box-shadow: none;
-    transform: none;
-  }
-}
-
-.post-body .link-grid .link-grid-container p {
-
-  &:first-of-type {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2bbc8a;
-  }
-
-  &:last-of-type {
-    font-size: .85em;
-  }
-}
-
-/* 友链卡片 */
-.link-list {
-  gap: 1rem;
-  grid-gap: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-
-  +mobile() {
-    grid-template-columns: 1fr;
-  }
-}
-
-.link-list-container {
-  box-shadow: none;
-  padding: 0;
-  position: relative;
-  border-bottom: 1px dashed #d3d3d4; 
-  min-height: 5rem;
-  min-width: 0;
-  transition: background .3s;
-
-  &:hover {
-    background: none;
-    color: var(--link-hover-color);
-  }
-
-  &:hover p:first-of-type {
-    color: var(--link-hover-color);
-  }
-}
-
-.link-list-image {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  height: 4rem;
-  width: 4rem;
-  box-sizing: border-box;
-  position: absolute;
-}
-
-.link-list-container p {
-  margin: 0 1rem 0 5rem;
-
-  &:first-of-type {
-    font-weight: 700;
-    margin-top: 3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &:last-of-type {
-    font-size: .875em;
-    opacity: .8;
-    line-height: 1.3rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-.link-list-container a {
-  border: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%
-  width: 100%;
-}
-
-.link-list-container .label {
-  font-size: 0.8em;
-  line-height: 18px;
-  border-radius: 3px;
-  background: #e7c000;
-  vertical-align: top;
-  color: white  !important;
-  padding: 0 6px !important;
-}
-
-
-/**********************************************************/
-/*********************** 相册标签 **************************/
-/**********************************************************/
-
-.album-box {
-  display: inline-flex;
-  gap: 3px;
-  margin-bottom: 3px;
-}
-
-.album-box-photo {
-  margin: 4px;
-  flex: 1;
-}
-
-.album-box-photo img {
-  width: 100%;
-  height:100%;
-  margin: 0;
-  object-fit: cover;
-
-  &:hover{
-    opacity: 0.6;
-  }
-}
-
-.album-box-photo .image-caption {
-  margin-top: 10px;
-}
-
-.album {
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.album .card {
-  overflow: hidden;
-  transition: .3s ease-in-out;
-  /*
-  border-radius: 5px;
-  background-color: #efefef;
-  padding: 3px;
-
-  @media(prefers-color-scheme:dark) {
-    background-color: $menu-item-bg-color-dark;
-  }
-  */
-}
-
-/*
-.album-photo img {
-  padding: 0;
-  border-radius: 5px;
-}
-*/
-
-
-/**********************************************************/
-/************************ 评论框 ***************************/
-/**********************************************************/
-
-/* 评论色彩 */
-body {
-  --waline-theme-color: var(--link-hover-color) !important;
-  --waline-active-color: var(--link-hover-color) !important;
-
-  @media (prefers-color-scheme: dark) {
-    --waline-color: $text-color-dark !important;
-    --waline-border-color: #555555 !important;
-    --waline-bgcolor: $content-bg-color-dark !important;
-    --waline-bgcolor-light: $body-bg-color-dark !important;
-  }
-}
-
-/* 评论卡片圆角 */
-.comments {
-  border-radius: $myradius !important;
-}
-
-/* 评论超链接 */
-.comments a {
-  color: var(--link-color) !important;
-  transition: all .2s !important;
-  border-bottom-color: var(--link-hover-color) !important;
-  display: inline !important;
-
-  &:hover {
-    color: var(--link-hover-color) !important;
-    border-bottom-width: 2px !important;
-  }
-}
-
-.comments a[href^="#"] {
-  border-bottom: none !important;
-}
-
-/* 评论列表昵称链接 */
-.wl-card .wl-nick {
-  color: var(--text-color) !important;
-  border-bottom: none !important;
-
-  &:hover {
-    color: var(--link-hover-color) !important;
-  }
-}
-
-/* 评论输入框背景 */
-.wl-editor {
-	background-image: url($comment-bg-url) !important;
-	background-repeat: no-repeat !important;
-	background-position: right !important;
-}
-
-.wl-editor:focus {
-	background-position-y: 200px !important;
-	transition: all .2s ease-in-out 0s !important;
-}
-
-/* 评论输入框字号字重 */
-.wl-header label,
-.wl-header input, 
-.wl-editor,
-.wl-card .wl-nick,
-.wl-card .wl-content {
-  font-size: .9em !important;
-}
-
-/* 评论区按钮 */
-.wl-btn {
-  font-size: .8em !important;
-
-  &:hover {
-    border-color: $btn-default-hover-bg !important;
-    color: $btn-default-hover-bg !important;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    border-color: #3e4b5e !important;
-  }
-}
-
-/* 评论提交按钮 */
-.wl-btn.primary {
-  font-weight: bold !important;
-  color: white !important;
-  border-color: $btn-default-bg !important;
-  background: $btn-default-bg !important;
-
-  &:hover {
-    border-color: $btn-default-hover-bg !important;
-    background: $btn-default-hover-bg !important;
-  }
-}
-
-/* 去掉评论表情包、预览分割线、版本信息 */
-.wl-preview hr {
-  display: none !important;  
-}
-
-
-/**********************************************************/
-/*********************** 特殊排版  *************************/
-/**********************************************************/
-
-/* 着重号 `{% dot 强调的文字 %}` */
-.emphasis-point {
-  font-style: normal;
-  text-emphasis: '•';
-  -webkit-text-emphasis: '•';
-  -moz-text-emphasis: '•';
-  text-emphasis-position: under;
-  -webkit-text-emphasis-position: under;
-  -moz-text-emphasis-position: under;
-}
-
-/* 分割线 `<hr>` 或 `***` 或 `---` */
-hr {
-  background-image: none;
-  height: 2em;
-  border: none;
-  margin: 1em 0 1em;
-  text-align: center;
-
-  &::after {
-    content: "···";
-    letter-spacing: 2em;
-    padding-left: 2em;
-    font-weight: bold;
-  }
-}
-
-/* 次级目录索引不显示 */
-.breadcrumb {
-  display: none;
-}
-
-/* 图片大小 */
-img[src*='300x'] { width:300px; }
-img[src*='350x'] { width:350px; }
-
-img[src*='400x'] { width:400px; }
-img[src*='450x'] { width:450px; }
-
-img[src*='500x'] { width:500px; }
-img[src*='550x'] { width:550px; }
-
-img[src*='600x'] { width:600px; }
-img[src*='650x'] { width:650px; }
-
-img.fancybox-image { width:100%; }
