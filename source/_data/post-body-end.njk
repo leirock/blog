@@ -1,47 +1,7 @@
-{#####################}
-{### POST END ITEM ###}
-{#####################}
-<span style="margin-top:30px; color:var(--blockquote-color); font-size:0.85em">
-    {%- if post.update %}
-        <span class="post-end-item" title="update">
-            {%- set create_title = __('post.update') + __('symbol.colon') + full_date(post.date) %}
-            <span class="post-end-item-icon" style="margin-right: 3px"><i class="far fa-fw fa-calendar-check"></i></span>
-            <time title="{{ '更新时间' + __('symbol.colon') + full_date(post.update) }}" itemprop="dateModified" datetime="{{ moment(post.update).format() }}">
-                <span class="post-end-item-text">更新时间：{{ date(post.update) }}</span>
-            </time>
-        </span>
-    {%- endif %}
-    {%- if post.origin %}
-        <br>
-        <span class="post-end-item" title="origin">
-            <span class="post-end-item-icon" style="margin-right: 3px">
-                <i class="fas fa-fw fa-feather"></i>
-            </span>
-            {%- if post.origin_url %}
-                <span class="post-end-item-text">本文发表于 <a target="_blank" rel="noopener" href="{{ post.origin_url }}" data-pjax-state="" style="color:var(--blockquote-color)">{{ post.origin }}</a> </span>
-            {% else %}
-                <span class="post-end-item-text">本文发表于 {{ post.origin }} </span>
-            {%- endif %}
-        </span>
-    {%- endif %}
-    {%- if post.copyright !== false %}
-        <br>
-        <span class="post-end-item" title="copyright"">
-            <span class="post-end-item-icon" style="margin-right: 3px">
-                <i class="fab fa-fw fa-creative-commons"></i>
-            </span>
-            <span class="post-end-item-text">采用署名-非商业性使用-相同方式共享 4.0（CC BY-NC-SA 4.0）许可协议</span>
-        </span>
-    {%- endif %}
-</span>
-
-
-{#################}
-{### DONATIONS ###}
-{#################}
-<div class="donations">
-    <div class="donation-label">「真诚赞赏，手留余香」</div>
-    <a class="afdian-button" href="https://afdian.net/@leirock" rel="nofollow noopener noreferrer" target="_blank">
-        爱发电
-    </a>
-</div>
+{### 赞赏 ###}
+{%- if (not post.orig_author) and (post.pid > 0) %}
+  <div class="donations">
+    <div class="donation-label">真诚赞赏，手留余香。</div>
+    <a class="afdian-button" href="https://afdian.net/@leirock" rel="noopener" target="_blank">赞赏</a>
+  </div>
+{%- endif %}

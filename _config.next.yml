@@ -1,13 +1,15 @@
-# ---------------------------------------------------------------
-# Theme Core Configuration Settings
-# See: https://theme-next.js.org/docs/theme-settings/
-# ---------------------------------------------------------------
+#################################################################
+###################### NexT Configuration #######################
+#################################################################
+# See: https://theme-next.js.org/docs/
+
+# ============================================================= #
+# ============= Theme Core Configuration Settings ============= #
+# ============================================================= #
 
 # Remove unnecessary files after hexo generate.
 minify: true
 
-# Define custom file paths.
-# Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
@@ -20,18 +22,18 @@ custom_file_path:
   mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
 
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
+
+# ============================================================= #
+# ====================== Scheme Settings ====================== #
+# ============================================================= #
 
 scheme: Gemini
 darkmode: true
-# Color style: Day of Mourning
-gray: false
 
-# ---------------------------------------------------------------
-# Site Information Settings
-# ---------------------------------------------------------------
+
+# ============================================================= #
+# ================= Site Information Settings ================= #
+# ============================================================= #
 
 favicon:
   small: ./images/favicon-16x16-next.png
@@ -39,108 +41,100 @@ favicon:
   apple_touch_icon: ./images/apple-touch-icon-next.png
   safari_pinned_tab: ./images/safari-pinned-tab-next.svg
 
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
+
+# ============================================================= #
+# ======================= Menu Settings ======================= #
+# ============================================================= #
 
 menu:
   home: / || fas fa-home
-  overview: 
-    default: /overview/ || fas fa-archive
-    tags: tags/ || fas fa-tags
-    timeline: timeline/ || fas fa-stream
-  about: /about/ || fas fa-location-arrow
-  friends: friends/ || fas fa-heart
+  categories: /categories/ || fas fa-th
+  tags: tags/ || fas fa-tags
+  archives: archives/ || fas fa-archive
+  about: /about/ || fas fa-splotch
 
-# ---------------------------------------------------------------
-# Sidebar Settings
-# See: https://theme-next.js.org/docs/theme-settings/sidebar
-# ---------------------------------------------------------------
 
-# Sidebar Avatar
+# ============================================================= #
+# ===================== Sidebar Settings ====================== #
+# ============================================================= #
+
 avatar:
   url: /images/avatar.gif
   rounded: true
 
-# Posts / Categories / Tags in sidebar.
 site_state: false
 
 social:
-  微博: https://weibo.com || fab fa-weibo
-  GitHub: https://github.com || fab fa-github
+  微博: https://dlzhang.com/weibo || fa-brands fa-weibo
+  哔哩哔哩: https://dlzhang.com/bilibili || fa-brands fa-bilibili
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
   icons_only: true
 
 toc:
-  # Automatically add list number to toc.
   number: false
+  wrap: true # 超出范围文字是否换行
+  max_depth: 3 # <h3> ###
+  expand_all: true
 
-# ---------------------------------------------------------------
-# Footer Settings
-# See: https://theme-next.js.org/docs/theme-settings/footer
-# ---------------------------------------------------------------
+
+# ============================================================= #
+# ====================== Footer Settings ====================== #
+# ============================================================= #
 
 footer:
-  since: 2016
-
-  # Icon between year and copyright info.
+  since: 2017
   icon:
     name: fas fa-heart
     animated: true
     color: "#f06292"
-
-  # Powered by Hexo & NexT
+  copyright: 频率
   powered: false
 
-# ---------------------------------------------------------------
-# Post Settings
-# See: https://theme-next.js.org/docs/theme-settings/posts
-# ---------------------------------------------------------------
 
-# Read more button
+# ============================================================= #
+# ======================= Post Settings ======================= #
+# ============================================================= #
+
 read_more_btn: false
 
-# Post meta display settings
 post_meta:
+  item_text: false
   updated_at:
     enable: false
 
-# Post wordcount display settings
-# Dependencies: https://github.com/next-theme/hexo-word-counter
-symbols_count_time:
-  separated_meta: false
+# Show previous post and next post in post footer if exists
+# Available values: left | right | false
+post_navigation: right
 
-# Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: true
 
-# ---------------------------------------------------------------
-# Misc Theme Settings
-# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
-# ---------------------------------------------------------------
+# ============================================================= #
+# ==================== Misc Theme Settings ==================== #
+# ============================================================= #
 
-# Preconnect CDN for fonts and plugins.
 preconnect: true
 
-# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "#6c599f"
+theme_color:
+  light: "#e7ddc8"
+  dark: "#181c27"
 
 codeblock:
   # All available themes: https://theme-next.js.org/highlight/
-  theme:
-    light: tomorrow
-    dark: tomorrow-night
+  prism:
+    light: prism
+    dark: prism-okaidia
   copy_button:
     enable: true
-    style: mac
+    style: flat
 
 back2top:
   scrollpercent: true
 
-# ---------------------------------------------------------------
-# Font Settings
-# ---------------------------------------------------------------
+
+# ============================================================= #
+# ======================= Font Settings ======================= #
+# ============================================================= #
 
 font:
   enable: true
@@ -151,68 +145,68 @@ font:
     size: 2
   headings:
     size: 1.48
+  codes:
+    external: false
+    family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
 
-# ---------------------------------------------------------------
-# SEO Settings
-# See: https://theme-next.js.org/docs/theme-settings/seo
-# ---------------------------------------------------------------
 
-#google_site_verification:
-#baidu_site_verification:
-
-# ---------------------------------------------------------------
-# Third Party Plugins & Services Settings
-# See: https://theme-next.js.org/docs/third-party-services/
-# ---------------------------------------------------------------
+# ============================================================= #
+# =============== Third Party Services Settings =============== #
+# ============================================================= #
 
 math:
   mathjax:
     enable: true
+    tags: ams
 pjax: true
 fancybox: true
 lazyload: true
 pangu: true
 
-# ---------------------------------------------------------------
-# Statistics and Analytics
-# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
-# ---------------------------------------------------------------
-
-#google_analytics:
-#  tracking_id:
-
-# ---------------------------------------------------------------
-# Search Services
-# See: https://theme-next.js.org/docs/third-party-services/search-services
-# ---------------------------------------------------------------
-
+# ====================== Search Services ====================== #
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
 
-# ---------------------------------------------------------------
-# Tags Settings
-# See: https://theme-next.js.org/docs/tag-plugins/
-# ---------------------------------------------------------------
+# ============================================================= #
+# ======================== Tag Plugins ======================== #
+# ============================================================= #
 
 # Note tag (bootstrap callout)
 note:
-  # Note tag style values:
-  #  - simple    bootstrap callout old alert style. Default.
-  #  - modern    bootstrap callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
   style: flat
   icons: true
-  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-  # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
-# ---------------------------------------------------------------
-# Animation Settings
-# ---------------------------------------------------------------
+# Tabs tag
+tabs:
+  sticky: true
+  transition:
+    tabs: true
+    labels: true
+
+
+# ============================================================= #
+# ==================== Animation Services ===================== #
+# ============================================================= #
 
 motion:
   enable: false
 
-images: /blog/images
+
+# ============================================================= #
+# ==================== External Libraries ===================== #
+# ============================================================= #
+# See: https://theme-next.js.org/docs/advanced-settings/vendors
+
+vendors:
+  # local | jsdelivr | unpkg | cdnjs | custom
+  internal: local
+  plugins: custom
+  # custom_cdn_url: https://cdn.staticfile.org/${cdnjs_name}/${version}/${cdnjs_file} #七牛云 不支持latest 海外阿里云
+  custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file} #360 75CDN 海外亚马逊云
+
+# Assets
+# css - local
+# js - only valid when vendors.internal is local
+images: /blog/images/ # root /img/ folder
