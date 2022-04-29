@@ -121,8 +121,8 @@ waline:
   commentCount: false
   login: disable
   emoji:
-    - //unpkg.com/@waline/emojis@1.0.1/weibo/
-    - //unpkg.com/@waline/emojis@1.0.1/bilibili/
+    - //unpkg.com/@waline/emojis@1.0.1/weibo/info.json
+    - //unpkg.com/@waline/emojis@1.0.1/bilibili/info.json
 
 
 # hexo-renderer-markdown-it
