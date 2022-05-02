@@ -1,12 +1,10 @@
 ---
-title: 影视收藏
+title: 纪录片
+description: <a href="../">文艺清单</a> / 纪录片
 toc:
     enable: false
 ---
 
-{% tabs watching %}
-
-<!-- tab 纪录片 -->
 ### 中国纪录片
 
 - **超级工程** <font color=#bbb>CCTV 科技</font>
@@ -54,53 +52,3 @@ toc:
 
 - **空中浩劫 Mayday** <font color=#bbb>Cineflix 科技与社会</font>
 各种惊心动魄，各种细致入微，细致的调查背后是对生命的尊重。
-<!-- endtab -->
-
-<!-- tab 影视剧 -->
-### 电影
-
-- 辛德勒的名单 <font color=#bbb>美国，1993</font>
-- 玩具总动员 <font color=#bbb>美国，1995</font>
-- 举起手来 <font color=#bbb>中国，2003</font>
-- 让子弹飞 <font color=#bbb>中国，2010</font>
-- 疯狂动物城 <font color=#bbb>美国，2016</font>
-- 哪吒之魔童降世 <font color=#bbb>中国，2019</font>
-
-### 电视剧
-
-- 大宅门 <font color=#bbb>中国，2001</font>
-- 甄嬛传 <font color=#bbb>中国，2011</font>
-- 北平无战事 <font color=#bbb>中国，2014</font>
-- 历史转折中的邓小平 <font color=#bbb>中国，2014</font>
-- 伪装者 <font color=#bbb>中国，2015</font>
-- 人民的名义 <font color=#bbb>中国，2017</font>
-- 庆余年  <font color=#bbb>中国，2019</font>
-- 山海情 <font color=#bbb>中国，2021</font>
-- 功勋 <font color=#bbb>中国，2021</font>
-- [爱很美味](/post/61/) <font color=#bbb>中国，2021</font>
-- 生活大爆炸 <font color=#bbb>美国</font>
-- 纸牌屋 <font color=#bbb>美国</font>
-- 实习医生格蕾 <font color=#bbb>美国</font>
-<!-- endtab -->
-
-{% endtabs %}
-
-
-<!-- LICENSE SECTION -->
-<div class="license">
-    <div class="license-title">影视收藏</div>
-    <div class="license-link">
-        <a href="https://pinlyu.com/culture/movies/" rel="noopener" target="_blank">https://pinlyu.com/culture/movies/</a>
-    </div>
-    <div class="license-meta">
-        <div class="license-meta-item">
-            <div class="license-meta-title">本文作者</div>
-            <div class="license-meta-text">班班</div>
-        </div>
-        <div class="license-meta-item">
-            <div class="license-meta-title">许可协议</div>
-            <div class="license-meta-text">禁止转载引用</div>
-        </div>
-    </div>
-    <div class="license-statement">转载或引用本文前，请先联系作者获得授权！</div>
-</div>

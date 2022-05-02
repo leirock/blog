@@ -50,11 +50,8 @@ favicon:
 menu:
   life: /life/ || fas fa-pizza-slice
   observer: /observer/ || fas fa-eye
-  culture: 
-    default: /culture/ || fas fa-guitar
-    books: books/ || fas fa-book-open
-    movies: movies/ || fas fa-film
   notes: /notes/ || fas fa-book
+  culture: /culture/ || fas fa-guitar
   album: /album/ || fas fa-camera-retro
   guestbook: 
     default: /guestbook/ || fas fa-splotch
