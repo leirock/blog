@@ -28,21 +28,21 @@ hexo.extend.tag.register('album', function(args) {
   <div class="album" photo-src="${photoSrc}" json-src="${jsonSrc}"></div>`;
 });
 
-//相册列表
-// 可以用 {% albumbox https://web-1256060851.cos.ap-hongkong.myqcloud.com %} 来重新定义变量 cosDomain
-hexo.extend.tag.register('albumbox', function([args, delimiter = '|', comment = '%'], content) {
+//子页面列表
+hexo.extend.tag.register('subpagebox', function([args, delimiter = '|', comment = '%'], content) {
   const links = content.split('\n').filter(line => line.trim() !== '').map(line => {
     const item = line.split(delimiter).map(arg => arg.trim());
-    const cosDomain =  args || 'https://cos.pinlyu.com';
+    // const cosDomain = args || 'https://cos.pinlyu.com';
+    const cosDomain = 'https://cos.pinlyu.com';
+    const imageSource = cosDomain + '/' + args + '/' + item[1] + '/' + item[2];
     if (item[0][0] === comment) return '';
-    const imageSource = cosDomain + '/album/' + item[1] + '/' + item[2];
     return `
-      <div class="album-box-photo">
+      <div class="subpage-box-cover">
         <a href="${item[1]}/">
           <img alt="${item[0]}" src="${imageSource}!500x">
           <p class="image-caption">${item[0]}</p>
         </a>
       </div>`;
   });
-  return `<div class="album-box">${links.join('')}</div>`;
+  return `<div class="subpage-box">${links.join('')}</div>`;
 }, true);

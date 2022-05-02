@@ -31,14 +31,17 @@
         $linkLists.eq(j).empty();
         //将获取到的 json 格式数据遍历到 div 中
         $.each(data, function(infoIndex, info) {
-          if(info['label']) { 
-            info['label'] = '<span class="label">' + info['label'] + '</span>';
-          } else {
-            info['label'] = "";
+          var labelWarn = '';
+          var labelInfo = '';
+          if(info['warn']) { 
+            labelWarn = '<span class="label warn">' + info['warn'] + '</span>';
+          }
+          if(info['info']) { 
+            labelInfo = '<span class="label info">' + info['info'] + '</span>';
           }
           li += '<div class="link-list-container">';
           li += '<img class="link-list-image" src="' + info['logo'] + '">';
-          li += '<p>' + info['title'] + info['label'] + '</p>';
+          li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
           li += '<p>' + info['intro'] + '</p>';
           li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
           li += '</div>';
