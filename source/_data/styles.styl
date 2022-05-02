@@ -745,29 +745,37 @@ li.category-list-item a {
   font-size: 0.8em;
   line-height: 18px;
   border-radius: 3px;
-  background: #e7c000;
   vertical-align: top;
-  color: white  !important;
+  margin-left: 2px;
+  color: white !important;
   padding: 0 6px !important;
+
+  &.info {
+    background: #428bca !important; //#5cb85c !important;
+  }
+
+  &.warn {
+    background: #e7c000 !important;
+  }
 }
 
 
 /**********************************************************/
-/*********************** 相册标签 **************************/
+/*********************** 子页面列表 *************************/
 /**********************************************************/
 
-.album-box {
+.subpage-box {
   display: inline-flex;
   gap: 3px;
   margin-bottom: 3px;
 }
 
-.album-box-photo {
+.subpage-box-cover {
   margin: 4px;
   flex: 1;
 }
 
-.album-box-photo img {
+.subpage-box-cover img {
   width: 100%;
   height:100%;
   margin: 0;
@@ -778,9 +786,15 @@ li.category-list-item a {
   }
 }
 
-.album-box-photo .image-caption {
+.subpage-box-cover .image-caption {
   margin-top: 10px;
+  color: var(--text-color);
 }
+
+
+/**********************************************************/
+/************************* 相册 ***************************/
+/**********************************************************/
 
 .album {
   width: 100%;
@@ -877,12 +891,12 @@ body {
 .wl-editor,
 .wl-card .wl-nick,
 .wl-card .wl-content {
-  font-size: .9em !important;
+  font-size: .95em !important;
 }
 
 /* 评论区按钮 */
 .wl-btn {
-  font-size: .8em !important;
+  font-size: .85em !important;
 
   &:hover {
     border-color: $btn-default-hover-bg !important;

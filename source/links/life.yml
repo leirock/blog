@@ -1,95 +1,82 @@
 - title: moliu
-  intro: '[校友] 数据分析，经济学 girl'
+  intro: 数据分析，经济学 girl
   url: http://shuxinyang.com
-  logo: https://i.imgtg.com/2022/03/26/bH7Tt.jpg
-  label:
+  logo: https://pic2.zhimg.com/v2-2a836c1519e81b6541d0ea031991f4ba_l.jpg
+  info: 校友
 
 - title: 荷戟独彷徨
-  intro: '[校友] 爱光学，爱生活，爱创造' 
+  intro: 爱光学，爱生活，爱创造
   url: https://guanqr.com
-  logo: https://i.imgtg.com/2022/03/26/bHiPi.png
-  label:
+  logo: https://api.iowen.cn/favicon/guanqr.com.png
+  info: 校友
 
 - title: 槽
   intro: 一些脑洞、涂鸦和快乐碎片
   url: https://miyehn.me/blog
-  logo: https://miyehn.me/blog/favicon.ico
-  label:
+  logo: https://api.iowen.cn/favicon/miyehn.me.png
 
 - title: 一位少年
   intro: 一名视障者的日志
   url: https://lad.one
-  logo: https://i.imgtg.com/2022/03/26/bHhzL.png
-  label:
+  logo: https://sdn.geekzu.org/avatar/ladone?d=mp
 
 - title: 猫鱼的小窝
   intro: 记录猫鱼生活的琐事
   url: https://2cat.net
-  logo: https://sdn.geekzu.org/avatar/ef1147bd0a0f7d814783e9fea34908cb?s=96
-  label:
+  logo: https://api.iowen.cn/favicon/2cat.net.png
 
 - title: Js.nake
   intro: 改来改去，啥也不是，爱咋滴咋滴。
   url: https://imsnake.cn
   logo: https://sdn.geekzu.org/avatar/4bf10e64144ae0c611d16c9916bdef19?s=96
-  label:
 
 - title: 阿锋的小宇宙
   intro: 沧海一粟，微亮渺小一只虫。
   url: https://feng.pub
-  logo: https://sdn.geekzu.org/avatar/868740183b995d2707e307ce0a89633a?s=96
-  label:
+  logo: https://api.iowen.cn/favicon/feng.pub.png
 
 - title: 雅余
   intro: 茶余饭后，闲情雅致
   url: https://www.yayu.net
-  logo: https://www.yayu.net/wp-content/themes/yayu/assets/images/apple-touch-icon.png
-  label:
+  logo: https://api.iowen.cn/favicon/www.yayu.net.png
 
 - title: 叶开楗博客
   intro: 90后阿宅一枚，福建三明尤溪人士
   url: https://xn--qpru0x.cn
-  logo: https://sdn.geekzu.org/avatar/4741124456fb02fa4da30494dbc6c99e?s=96
-  label:
+  logo: https://api.iowen.cn/favicon/xn--qpru0x.cn.png
 
 - title: XUHENG
   intro: 日常生活即是颂歌
   url: https://blog.fateso.com
-  logo: https://blog.fateso.com/favicon.ico
-  label:
+  logo: https://api.iowen.cn/favicon/blog.fateso.com.png
 
 - title: Vian
   intro: 想要的都拥有，得不到的都释怀...
   url: https://www.vian.top
-  logo: https://sdn.geekzu.org/avatar/3b0ff42d4312ad8fe5762117153f06c5?s=96
-  label:
+  logo: https://api.iowen.cn/favicon/www.vian.top.png
 
 - title: 孤斗
   intro: 做自己，不隨波逐流，不妥協
   url: http://d-d.design
-  logo: https://i.imgtg.com/2022/04/20/xJzzr.png
-  label:
+  logo: https://api.iowen.cn/favicon/d-d.design.png
 
 - title: 有跡可尋
   intro: 日常/吐槽/唠叨
   url: https://kyarameru.net
   logo: https://sdn.geekzu.org/avatar/748b4737b99a2d5553ff2d2c8d4f271d?s=96
-  label:
+  warn: 搬迁中
 
 - title: 致郁系
   intro: 站长叫16，一些日常向
   url: https://www.juroku.net
-  logo: https://www.juroku.net/blog/wp-content/themes/life/images/cherry.jpg
-  label:
+  logo: https://api.iowen.cn/favicon/www.juroku.net.png
 
 - title: BETTYPLEX
   intro: Life is full of regrets.
   url: https://forbetty.com
-  logo: https://sdn.geekzu.org/avatar/970502db446ddab8d9aaa1d3fad49ad5?s=96
-  label:
+  logo: https://api.iowen.cn/favicon/forbetty.com.png
 
 - title: 风记星辰
   intro: 分享生活 · 留下感动
   url: https://www.thyuu.com
-  logo: https://std.thyuu.com/logo.png
-  label:
+  logo: https://api.iowen.cn/favicon/www.thyuu.com.png

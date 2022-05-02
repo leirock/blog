@@ -1,5 +1,6 @@
 ---
-title: 阅读书单
+title: 阅读
+description: <a href="../">文艺清单</a> / 阅读
 ---
 
 - **蹦极** 卢山（杨优明）
@@ -40,23 +41,3 @@ title: 阅读书单
 - **动物庄园** 乔治 · 奥威尔
 - **文化苦旅** 余秋雨
 - **围城** 钱钟书
-
-
-<!-- LICENSE SECTION -->
-<div class="license">
-    <div class="license-title">阅读书单</div>
-    <div class="license-link">
-        <a href="https://pinlyu.com/culture/books/" rel="noopener" target="_blank">https://pinlyu.com/culture/books/</a>
-    </div>
-    <div class="license-meta">
-        <div class="license-meta-item">
-            <div class="license-meta-title">本文作者</div>
-            <div class="license-meta-text">班班</div>
-        </div>
-        <div class="license-meta-item">
-            <div class="license-meta-title">许可协议</div>
-            <div class="license-meta-text">禁止转载引用</div>
-        </div>
-    </div>
-    <div class="license-statement">转载或引用本文前，请先联系作者获得授权！</div>
-</div>
