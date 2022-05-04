@@ -46,14 +46,9 @@ body {
 }
 
 /* 选中字符颜色 */
-::-moz-selection { /* Code for Firefox */
-  background: rgba(0, 149, 255, .2);
-  color: var(--blockquote-color);
-}
-
 ::selection {
-  background: rgba(0, 149, 255, .2);
-  color: var(--blockquote-color);
+  background: highlight;
+  color: highlighttext;
 }
 
 
@@ -378,6 +373,7 @@ li {
   
   & a {
   border-bottom: none;
+  font-size: .875em;
   }
 }
 
@@ -566,8 +562,12 @@ li {
 }
 
 .footer a {
-  color: var(--text-color);
+  color: var(--blockquote-color);
   border-bottom:none;
+
+  &:hover {
+    color: var(--text-color);
+  }
 }
 
 
@@ -805,23 +805,7 @@ li.category-list-item a {
 .album .card {
   overflow: hidden;
   transition: .3s ease-in-out;
-  /*
-  border-radius: 5px;
-  background-color: #efefef;
-  padding: 3px;
-
-  @media(prefers-color-scheme:dark) {
-    background-color: $menu-item-bg-color-dark;
-  }
-  */
 }
-
-/*
-.album-photo img {
-  padding: 0;
-  border-radius: 5px;
-}
-*/
 
 
 /**********************************************************/

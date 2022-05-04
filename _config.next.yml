@@ -109,8 +109,9 @@ post_meta:
   updated_at:
     enable: false
 
+tag_icon: true
+
 # Show previous post and next post in post footer if exists
-# Available values: left | right | false
 post_navigation: right
 
 
