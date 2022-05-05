@@ -144,6 +144,35 @@ body {
   }
 }
 
+/* 普通链接卡片 */
+.post-body .link-grid .link-grid-container {
+  border: 2px solid #ddd;
+  border-radius: $myradius;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+
+  &:hover {
+    animation: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.post-body .link-grid .link-grid-container p {
+
+  &:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2bbc8a;
+  }
+
+  &:last-of-type {
+    font-size: .85em;
+  }
+}
+
 
 /**********************************************************/
 /************************ 文章 ****************************/
@@ -218,17 +247,60 @@ p {
 }
 
 /* 超链接 */
-.post-body a {
-  color: var(--link-color);
+.post-body a,
+.post-footer a {
   transition: all .2s;
+  color: var(--link-color);
   border-bottom-color: var(--link-hover-color);
 
   &:hover {
     color: var(--link-hover-color);
-    
     border-bottom-width: 2px;
   }
 }
+
+/* 提示卡片图标位置 */
+.post-body .note:not(.no-icon)::before {
+  top: .15em;
+}
+
+/* 引用字体颜色 */
+blockquote {
+  color: var(--text-color);
+  background: #f4f5f7;
+  border-left: .25em solid #e3e6eb;
+  padding: 0 2em;
+
+  &.blockquote-center {
+    background: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: $blockquote-bg-color-dark;
+    border-left: .25em solid #435266;
+  }
+  
+}
+
+/* 思源宋体列表打叉修复 */
+li {
+  text-align: left;
+}
+
+/* 文末标签 */
+.post-tags {
+  text-align: left;
+  
+  & a {
+  border-bottom: none;
+  font-size: .875em;
+  }
+}
+
+
+/**********************************************************/
+/********************* 图片与相册 **************************/
+/**********************************************************/
 
 /* 图片阴影圆角 */
 .posts-expand .post-body img {
@@ -254,28 +326,22 @@ p {
   display: inline-flex;
 }
 
-/* 提示卡片图标位置 */
-.post-body .note:not(.no-icon)::before {
-  top: .15em;
+/* 相册 */
+.album {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-/* 引用字体颜色 */
-blockquote {
-  color: var(--text-color);
-  background: #f4f5f7;
-  border-left: .25em solid #e3e6eb;
-  padding: 0 2em;
-
-  &.blockquote-center {
-    background: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background: $blockquote-bg-color-dark;
-    border-left: .25em solid #435266;
-  }
-  
+.album .card {
+  overflow: hidden;
+  transition: .3s ease-in-out;
 }
+
+
+/**********************************************************/
+/************************ 代码 ****************************/
+/**********************************************************/
 
 /* 代码路径字体 */
 figcaption {
@@ -343,6 +409,11 @@ pre[class*=language-] {
   }
 }
 
+
+/**********************************************************/
+/************************ 表格 ****************************/
+/**********************************************************/
+
 /* 表格边框 */
 td, th {
   border-color: #e3e6eb;
@@ -359,21 +430,6 @@ tbody tr {
   }
   &:nth-of-type(odd):hover {
     background: var(--table-row-odd-bg-color);
-  }
-}
-
-/* 思源宋体列表打叉修复 */
-li {
-  text-align: left;
-}
-
-/* 文末标签 */
-.post-tags {
-  text-align: left;
-  
-  & a {
-  border-bottom: none;
-  font-size: .875em;
   }
 }
 
@@ -442,10 +498,6 @@ li {
 
 .license a {
   color: currentColor;
-
-  &:hover{
-    border-bottom-color:#999 !important
-  }
 }
 
 .license-link a {
@@ -572,7 +624,7 @@ li {
 
 
 /************************************************************/
-/************************ 文章汇总 ***************************/
+/************************ 分类标签 ***************************/
 /************************************************************/
 
 /* 标签云 */
@@ -638,37 +690,8 @@ li.category-list-item a {
 
 
 /**********************************************************/
-/*********************** 链接卡片  *************************/
+/*********************** 友链列表 **************************/
 /**********************************************************/
-
-/* 普通卡片 */
-.post-body .link-grid .link-grid-container {
-  border: 2px solid #ddd;
-  border-radius: $myradius;
-  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
-
-  &:hover {
-    animation: none;
-  }
-
-  &:active {
-    box-shadow: none;
-    transform: none;
-  }
-}
-
-.post-body .link-grid .link-grid-container p {
-
-  &:first-of-type {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2bbc8a;
-  }
-
-  &:last-of-type {
-    font-size: .85em;
-  }
-}
 
 /* 友链卡片 */
 .link-list {
@@ -789,22 +812,6 @@ li.category-list-item a {
 .subpage-box-cover .image-caption {
   margin-top: 10px;
   color: var(--text-color);
-}
-
-
-/**********************************************************/
-/************************* 相册 ***************************/
-/**********************************************************/
-
-.album {
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.album .card {
-  overflow: hidden;
-  transition: .3s ease-in-out;
 }
 
 

@@ -24,7 +24,7 @@ comments: false
 <div class="license">
     <div class="license-title">光影集</div>
     <div class="license-link">
-        <a href="https://pinlyu.com/album/" rel="noopener" target="_blank">https://pinlyu.com/album/</a>
+        <a href="https://pinlyu.com/album/">https://pinlyu.com/album/</a>
     </div>
     <div class="license-meta">
         <div class="license-meta-item">

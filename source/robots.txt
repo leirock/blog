@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /links/*.json$
-Disallow: /culture/*/*.json$
+Disallow: /*.json$
 
 Sitemap: https://pinlyu.com/sitemap.xml
