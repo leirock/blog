@@ -18,6 +18,14 @@ hexo.extend.tag.register('linklist', function(args) {
   return `<div class="link-list" src="${args}"></div>`;
 });
 
+//文艺清单
+hexo.extend.tag.register('culturelist', function(args) {
+  const cosDomain = 'https://cos.pinlyu.com';
+  const coverSrc = cosDomain + '/culture/' + args + '/';
+  const jsonSrc = args + '-list.json';
+  return `<div class="culture-list" cover-src="${coverSrc}" json-src="${jsonSrc}"></div>`;
+});
+
 //相册
 //如果输入是两个值，那么用 args[0]，args[1] 分别代表
 hexo.extend.tag.register('album', function(args) {
@@ -34,7 +42,7 @@ hexo.extend.tag.register('subpagebox', function([args, delimiter = '|', comment 
     const item = line.split(delimiter).map(arg => arg.trim());
     // const cosDomain = args || 'https://cos.pinlyu.com';
     const cosDomain = 'https://cos.pinlyu.com';
-    const imageSource = cosDomain + '/' + args + '/' + item[1] + '/' + item[2];
+    const imageSource = cosDomain + '/' + args + '/' + item[2];
     if (item[0][0] === comment) return '';
     return `
       <div class="subpage-box-cover">

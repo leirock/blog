@@ -16,6 +16,7 @@
   </style>
 {% endif %}
 
+
 {### 相关推荐 ###}
 {%- if post.categories %}
   {%- for cat in post.categories.toArray() %}
@@ -43,6 +44,7 @@
     {%- endif %}
   {%- endfor %}
 {%- endif %}
+
 
 {### 版权许可协议 ###}
 <div class="license">
@@ -112,6 +114,7 @@
     {%- endif %}
   </div>
 </div>
+
 
 {### 赞赏 ###}
 {%- if (not post.orig_author) and (post.pid > 0) %}
