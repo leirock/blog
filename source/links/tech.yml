@@ -1,7 +1,7 @@
 - title: 米米
   intro: 米米的博客！！
   url: https://zhangshuqiao.org
-  logo: https://cravatar.cn/avatar/f56980e9dc026727282a04eea02b4f4d?s=96
+  logo: https://cravatar.cn/avatar/f56980e9dc026727282a04eea02b4f4d?s=100
 
 - title: 兰铃
   intro: Just for Life.
@@ -16,12 +16,13 @@
 - title: Ljcbaby 的网络小屋
   intro: 宁静的栖身之地
   url: https://blog.ljcbaby.top
-  logo: https://cravatar.cn/avatar/e7033b1012a3e7c07044b31686c57523?s=96
+  logo: https://api.iowen.cn/favicon/blog.ljcbaby.top.png
 
 - title: 一克猫
   intro: 一只微不足道的猫
   url: https://www.1gcat.com
-  logo: https://cravatar.cn/avatar/7adbfaef92d9d082be5dec39f3fe3d02?s=96
+  logo: https://cravatar.cn/avatar/7adbfaef92d9d082be5dec39f3fe3d02?s=100
+  warn: 维护中
 
 - title: Sulv's Blog
   intro: 记录技术、阅读、生活

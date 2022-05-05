@@ -138,7 +138,7 @@ waline:
   dark: auto
   emoji: false
   locale:
-    placeholder: 在这里分享你的想法！评论通过审核才会显示，回复通过邮件提醒，评论规范详见《网站政策》。
+    placeholder: 请正确填写邮箱方便查收回复，评论通过审核才会显示，评论规则详见页脚链接。
     admin: 站长
     nick: 名称*
     mail: 邮箱*

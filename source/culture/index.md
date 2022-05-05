@@ -18,7 +18,7 @@ comments: false
 <div class="license">
     <div class="license-title">文艺清单</div>
     <div class="license-link">
-        <a href="https://pinlyu.com/culture/" rel="noopener" target="_blank">https://pinlyu.com/culture/</a>
+        <a href="https://pinlyu.com/culture/">https://pinlyu.com/culture/</a>
     </div>
     <div class="license-meta">
         <div class="license-meta-item">
@@ -26,9 +26,15 @@ comments: false
             <div class="license-meta-text">班班</div>
         </div>
         <div class="license-meta-item">
+            <div class="license-meta-title">封面图片</div>
+            <div class="license-meta-text">
+                <a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash</a>
+            </div>
+        </div>
+        <div class="license-meta-item">
             <div class="license-meta-title">许可协议</div>
             <div class="license-meta-text">禁止转载引用</div>
         </div>
     </div>
-    <div class="license-statement">转载或引用三份清单内容前，请先联系作者获得授权！</div>
+    <div class="license-statement">转载或引用清单内容前，请先联系作者获得授权！</div>
 </div>

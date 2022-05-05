@@ -4,10 +4,8 @@ zh-CN:
     observer: 观点 #观察者
     culture: 文艺 #书影音
     notes: 笔记 #笔记本
-    tags: 标签
     album: 光影 #光影集
     guestbook: 留言 #留言板
-    links: 链接
     # search: 搜索 #搜文章
   sidebar:
     toc: 目 录

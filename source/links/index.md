@@ -1,5 +1,5 @@
 ---
-title: 链接
+title: 友情链接
 description: 依然在坚持写博客的人们
 comments: false
 ---
