@@ -19,12 +19,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        cache: 'npm'
+        cache: 'yarn'
 
     - name: Generate Hexo site
       run: |
-        npm install --no-audit
-        npm run build
+        yarn install
+        yarn build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
