@@ -5,6 +5,15 @@
   "scripts": {
     "build": "./node_modules/.bin/hexo generate"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leirock/blog.git"
+  },
+  "author": "leirock",
+  "bugs": {
+    "url": "https://github.com/leirock/blog/issues"
+  },
+  "homepage": "https://github.com/leirock/blog#readme",
   "hexo": {
     "version": "5.4.2"
   },
