@@ -2,7 +2,8 @@
 title: Hello World - 2
 categories: [OK]
 tags: [yes]
-pid: 2
+pid: 3
+cc_license: true
 date: 2021-09-06 08:02:00
 ---
 
