@@ -136,14 +136,6 @@ body {
   color: var(--link-hover-color);
 }
 
-.post-body .tabs ul.nav-tabs li.tab.active { //文章内tab
-  border-top-color: var(--link-hover-color);
-
-  & a {
-    color: var(--link-hover-color);
-  }
-}
-
 /* 普通链接卡片 */
 .post-body .link-grid .link-grid-container {
   border: 2px solid #ddd;
@@ -241,9 +233,22 @@ p {
   }
 }
 
-/* 标签选择卡片加粗（书单影单页） */
+/* 标签选择卡片 */
 .post-body .tabs ul.nav-tabs li.tab a {
   font-weight: bold;
+}
+
+.post-body .tabs ul.nav-tabs li.tab.active {
+  border-top-color: var(--link-hover-color);
+
+  @media (max-width: 413px) {
+    border-top-color: #ddd;
+    border-left-color: var(--link-hover-color);
+  }
+
+  & a {
+    color: var(--link-hover-color);
+  }
 }
 
 /* 超链接 */
@@ -812,6 +817,126 @@ li.category-list-item a {
 .subpage-box-cover .image-caption {
   margin-top: 10px;
   color: var(--text-color);
+}
+
+
+/**********************************************************/
+/************************ 文艺列表 *************************/
+/**********************************************************/
+
+@media screen and (max-width: 1000px) {
+  .media {
+    width: 100%!important;
+    padding: 0!important;
+  }
+}
+
+/*
+.culture-list {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+*/
+
+.culture-list:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.media {
+  width: 50%;
+  height: 150px;
+  float: left;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.media:nth-Child(2n){
+  padding-left: 8px;
+}
+
+.media:nth-Child(2n-1){
+    padding-right: 8px;
+}
+
+/*
+.media:nth-Child(3n){
+  padding-left: 10px;
+}
+
+.media:nth-Child(3n-1){
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.media:nth-Child(3n-2){
+    padding-right: 10px;
+}
+*/
+
+.media-cover {
+  width: 100px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.media-meta {
+  width: calc(100% - 100px);
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.media-meta-item {
+  width: 100%;
+  //height: 16.666666667%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: .8em;
+  line-height: 1.8em;
+  //position: relative;
+  //z-index: 2;
+}
+
+.media-meta-item.title {
+  font-weight: bold;
+  font-size: .85em;
+}
+
+.media-meta-item.intro {
+  //height: 50%;
+  text-align: justify;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.media-meta-item .author {
+  opacity: .65;
+}
+
+.media-meta-item .star-score {
+  color: #b96c68;
+  height: 0;
+  display: inline;
+  float: right;
+  position: relative;
+  //left: 5px;
+}
+
+.media-meta-item .grey-star {
+  color: lightgrey;
 }
 
 
