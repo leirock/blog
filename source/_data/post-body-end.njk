@@ -1,3 +1,73 @@
+{### 版权许可协议 ###}
+<div class="license">
+  <div class="license-title">{{ page.title }}</div>
+  <div class="license-link">
+    <a href="{{ page.permalink }}">{{ page.permalink }}</a>
+  </div>
+  <div class="license-meta">
+    <div class="license-meta-item">
+      <div class="license-meta-title">本文作者</div>
+      <div class="license-meta-text">
+        {%- if post.orig_author %}
+          {{ post.orig_author }}
+        {%- else %}
+          {{ author }}
+        {%- endif %}
+      </div>
+    </div>
+    {%- if post.date %}
+      <div class="license-meta-item">
+        <div class="license-meta-title">发布于</div>
+        <div class="license-meta-text">
+          {{ date(post.date) }}
+        </div>
+      </div>
+    {%- endif %}
+    {%- if post.updated %}
+      <div class="license-meta-item">
+        <div class="license-meta-title">更新于</div>
+        <div class="license-meta-text">
+          {{ date(post.updated) }}
+        </div>
+      </div>
+    {%- endif %}
+    {%- if post.orig_src %}
+      <div class="license-meta-item">
+        <div class="license-meta-title">原文出处</div>
+        <div class="license-meta-text">
+          {%- if post.orig_url %}
+            <a href="{{ post.orig_url }}" rel="noopener" target="_blank">{{ post.orig_src }}</a>
+          {% else %}
+            {{ post.orig_src }}
+          {%- endif %}
+        </div>
+      </div>
+    {%- endif %}
+    <div class="license-meta-item">
+      <div class="license-meta-title">许可协议</div>
+      <div class="license-meta-text">
+        {%- if post.orig_author %}
+          原作许可协议
+        {%- elif post.cc_license %}
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC BY-NC-SA 4.0</a>
+        {% else %}
+          禁止转载引用
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+  <div class="license-statement">
+    {%- if post.orig_author %}
+      转载或引用本文时，请遵守原作许可协议！
+    {%- elif post.cc_license %}
+      转载或引用本文时，请遵守上述许可协议，注明出处、不得用于商业用途！
+    {% else %}
+      转载或引用本文前，请先联系作者获得授权！
+    {%- endif %}
+  </div>
+</div>
+
+
 {### 赞赏 ###}
 {%- if (not post.orig_author) and (post.pid > 0) %}
   <div class="donations">

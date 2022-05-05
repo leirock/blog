@@ -104,6 +104,8 @@ post_meta:
   updated_at:
     enable: false
 
+tag_icon: true
+
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
 post_navigation: right
@@ -203,8 +205,8 @@ vendors:
   # local | jsdelivr | unpkg | cdnjs | custom
   internal: local
   plugins: custom
-  # custom_cdn_url: https://cdn.staticfile.org/${cdnjs_name}/${version}/${cdnjs_file} #七牛云 不支持latest 海外阿里云
-  custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file} #360 75CDN 海外亚马逊云
+  custom_cdn_url: https://cdn.staticfile.org/${cdnjs_name}/${version}/${cdnjs_file} #七牛云 不支持latest 海外阿里云
+  # custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file} #360 75CDN 海外亚马逊云
 
 # Assets
 # css - local

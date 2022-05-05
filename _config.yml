@@ -4,12 +4,13 @@
 
 # Site
 title: 频率
-subtitle: '班班博客的示例'
+subtitle: '演示站'
 description: 'This is a dummy blog.'
 keywords: ''
 author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
+gray_filter: false # 黑白滤镜
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -110,6 +111,29 @@ js_minifier:
   silent: true
 image_minifier:
   enable: false
+
+# Waline
+# For more information: https://waline.js.org
+# Plugin required: `npm install @waline/hexo-next`
+waline:
+  enable: false
+  serverURL: https://waline.vercel.app
+  libUrl: https://unpkg.com/@waline/client@v2/dist/waline.js
+  cssUrl: https://unpkg.com/@waline/client@v2/dist/waline.css
+  login: disable
+  meta: [nick, mail, link]
+  requiredMeta: [nick, mail]
+  pageSize: 5
+  pageview: false
+  commentCount: true
+  dark: auto
+  emoji: false
+  locale:
+    placeholder: 请正确填写邮箱方便查收回复，评论通过审核才会显示。
+    admin: 站长
+    nick: 名称*
+    mail: 邮箱*
+    link: 网址
 
 # hexo-renderer-markdown-it
 # For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
