@@ -14,6 +14,7 @@
 </script>
 {% endif %}
 
+
 {### 友链生成 ###}
 <script{{ pjax }} type="text/javascript">
   //jquery selector
@@ -53,81 +54,33 @@
   }
 </script>
 
-{### Minigrid JS https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js ###}
-<script{{ pjax }} type="text/javascript">
-!function(t, e) {
-	"function" == typeof define && define.amd ? define(e) : "object" == typeof exports ? module.exports = e() : t.Minigrid = e()
-}(this, function(t) {
-	"use strict";
-	function e(t, e) {
-		for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
-		return t
-	}
-	var i = function(t) {
-			var i = t.container instanceof Node ? t.container : document.querySelector(t.container),
-				r = t.item instanceof NodeList ? t.item : i.querySelectorAll(t.item);
-			this.props = e(t, {
-				container: i,
-				nodeList: r
-			})
-		};
-	return i.prototype.mount = function() {
-		if (!this.props.container) return !1;
-		if (!this.props.nodeList || 0 === this.props.nodeList.length) return !1;
-		var t = "number" == typeof this.props.gutter && isFinite(this.props.gutter) && Math.floor(this.props.gutter) === this.props.gutter ? this.props.gutter : 0,
-			e = this.props.done,
-			i = this.props.container,
-			r = this.props.nodeList;
-		i.style.width = "";
-		var n = Array.prototype.forEach,
-			o = i.getBoundingClientRect().width,
-			s = r[0].getBoundingClientRect().width + t,
-			p = Math.max(Math.floor((o - t) / s), 1),
-			a = 0;
-		o = s * p + t + "px", i.style.width = o, i.style.position = "relative";
-		for (var c = [], u = [], l = 0; l < p; ++l) u.push(l * s + t), c.push(t);
-		this.props.rtl && u.reverse(), n.call(r, function(e) {
-			var i = c.slice(0).sort(function(t, e) {
-				return t - e
-			}).shift();
-			i = c.indexOf(i);
-			var r = parseInt(u[i]),
-				n = parseInt(c[i]);
-			e.style.position = "absolute", e.style.webkitBackfaceVisibility = e.style.backfaceVisibility = "hidden", e.style.transformStyle = "preserve-3d", e.style.transform = "translate3D(" + r + "px," + n + "px, 0)", c[i] += e.getBoundingClientRect().height + t, a += 1
-		}), i.style.display = "";
-		var f = c.slice(0).sort(function(t, e) {
-			return t - e
-		}).pop();
-		i.style.height = f + "px", "function" == typeof e && e(r)
-	}, i
-});
-</script>
 
-{### Photos Grid ###}
+{### 相册 ###}
+<script src="https://jsd.pinlyu.com/npm/minigrid@3.1.1/dist/minigrid.min.js"></script>
 <script{{ pjax }} type="text/javascript">
 var $album = $(".album")[0];
 if($album) {
-  // photos list path
+  // 相册列表 JSON 数据
   var imgDataPath = $album.getAttribute('json-src');
-  // photos storage path
+  // 照片存储路径
   var imgPath = $album.getAttribute('photo-src');
-  // max photo number
+  // 最多显示数量
   var imgMaxNum = 50;
-  // window width (to decide photo width)
+  // 获取窗口大小以决定图片宽度
   var windowWidth = window.innerWidth
   || document.documentElement.clientWidth
   || document.body.clientWidth;
   if (windowWidth < 768) {
-      var imageWidth = 145; // photo width (mobile)
+      var imageWidth = 145; // 移动端图片宽度
   } else {
-      var imageWidth = 235; // photo width
+      var imageWidth = 235;
   }
 
-  // Tencent Cloud imgage style (based on photo width)
+  // 腾讯云 COS 自定义样式格式
   //var imgStyle = '!' + imageWidth + 'x';
   var imgStyle = '!300x';
 
-  // generate photo grid
+  // 生成相册
   var LinkDataPath = imgDataPath;
   photo = {
       page: 1,

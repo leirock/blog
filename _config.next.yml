@@ -53,10 +53,9 @@ menu:
   notes: /notes/ || fas fa-book
   culture: /culture/ || fas fa-guitar
   album: /album/ || fas fa-camera-retro
-  guestbook: 
-    default: /guestbook/ || fas fa-splotch
-    tags: ../tags/ || fas fa-tags
-    links: ../links/ || fas fa-link
+  guestbook: /guestbook/ || fas fa-splotch
+  #  default: /guestbook/ || fas fa-splotch
+  #  links: ../links/ || fas fa-link
 
 
 # ============================================================= #
@@ -171,7 +170,6 @@ fancybox: true
 lazyload: true
 pangu: true
 
-# ====================== Search Services ====================== #
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: false
