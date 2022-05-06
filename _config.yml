@@ -10,7 +10,6 @@ keywords: [班班, leirock, Hexo, blog, 博客, economics, pinlyu]
 author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
-gray_filter: false # 黑白滤镜
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -117,6 +116,16 @@ js_minifier:
 image_minifier:
   enable: false
 
+# hexo-renderer-markdown-it
+# For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
+markdown:
+  langPrefix: 'language-'
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+
 # Hexo Server
 server:
   port: 4000
@@ -144,12 +153,9 @@ waline:
     mail: 邮箱*
     link: 网址
 
-# hexo-renderer-markdown-it
-# For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
-markdown:
-  langPrefix: 'language-'
-  plugins:
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
+
+# 黑白滤镜
+gray_filter: false
+
+# COS 存储桶自定义域名（带 https 协议）
+cos_domain: https://cos.pinlyu.com

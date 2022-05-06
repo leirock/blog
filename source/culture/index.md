@@ -9,9 +9,14 @@ comments: false
 <br/>
 
 {% subpagebox culture %}
-阅读 | books | books.jpg
-纪录片 | documentaries | documentaries.jpg
-影视 | tv-movie |  tv-movie.jpg
+阅读 | books | cover.jpg
+纪录片 | documentaries | cover.jpg
+电视剧 | tv-series | cover.jpg
+{% endsubpagebox %}
+{% subpagebox culture %}
+电影 | movies | cover.jpg
+综艺 | variety-show | cover.jpg
+音乐 | music | cover.jpg
 {% endsubpagebox %}
 
 <!-- LICENSE SECTION -->

@@ -6,7 +6,16 @@
 // hexo.extend.filter.register('before_generate', () => {
 //     const file = readFileSync('layout/page.njk').toString();
 //     hexo.theme.setView('page.njk', file);
-// }) 
+// })
+
+console.log('\n-------------------------------------------------\n \
+COS Domain is: ' + hexo.config.cos_domain + '（腾讯云）\
+\n-------------------------------------------------\n')
+const cosDomain = hexo.config.cos_domain;
+
+hexo.extend.injector.register('head_begin', () => {
+  return '<link rel="preconnect" href="'+ cosDomain +'" crossorigin="">';
+});
 
 //着重号
 hexo.extend.tag.register('dot', function(args) {
@@ -15,12 +24,12 @@ hexo.extend.tag.register('dot', function(args) {
 
 //友链列表
 hexo.extend.tag.register('linklist', function(args) {
-  return `<div class="link-list" src="${args}"></div>`;
+  return `<div class="link-list" src="${args}.json"></div>`;
 });
 
 //文艺清单
 hexo.extend.tag.register('culturelist', function(args) {
-  const cosDomain = 'https://cos.pinlyu.com';
+  //const cosDomain = 'https://cos.pinlyu.com';
   const coverSrc = cosDomain + '/culture/' + args + '/';
   const jsonSrc = args + '-list.json';
   return `<div class="culture-list" cover-src="${coverSrc}" json-src="${jsonSrc}"></div>`;
@@ -29,7 +38,6 @@ hexo.extend.tag.register('culturelist', function(args) {
 //相册
 //如果输入是两个值，那么用 args[0]，args[1] 分别代表
 hexo.extend.tag.register('album', function(args) {
-  const cosDomain = 'https://cos.pinlyu.com';
   const photoSrc = cosDomain + '/album/' + args + '/';
   const jsonSrc = photoSrc + 'photolist.json';
   return `<style>.post-block{padding-left:10px;padding-right:10px;}</style>
@@ -40,14 +48,12 @@ hexo.extend.tag.register('album', function(args) {
 hexo.extend.tag.register('subpagebox', function([args, delimiter = '|', comment = '%'], content) {
   const links = content.split('\n').filter(line => line.trim() !== '').map(line => {
     const item = line.split(delimiter).map(arg => arg.trim());
-    // const cosDomain = args || 'https://cos.pinlyu.com';
-    const cosDomain = 'https://cos.pinlyu.com';
-    const imageSource = cosDomain + '/' + args + '/' + item[2];
+    const imageSource = cosDomain + '/' + args + '/' + item[1] + '/' + item[2];
     if (item[0][0] === comment) return '';
     return `
       <div class="subpage-box-cover">
         <a href="${item[1]}/">
-          <img alt="${item[0]}" src="${imageSource}!500x">
+          <img alt="${item[0]}" src="${imageSource}">
           <p class="image-caption">${item[0]}</p>
         </a>
       </div>`;
