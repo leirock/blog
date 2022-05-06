@@ -42,7 +42,8 @@ if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 else
 	if [ "$answer" == "u" ]; then
 		printf "\n\033[32mINFO \033[0m 开始更新依赖包...\n"
-		npm update --no-audit
+		# npm update --no-audit
+		yarn upgrade
 		exec ${HexoPath}/cli.sh
 	else
 		printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"

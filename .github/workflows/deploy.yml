@@ -23,7 +23,6 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-# npm install  --no-audit
         yarn install
         yarn build
         rm -rf public/images
