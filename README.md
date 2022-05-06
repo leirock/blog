@@ -7,5 +7,5 @@ This is a sample website of leirock's [blog](https://pinlyu.com).
 
 If you would like to add some custom layout, please visit:
 
-- [Friends' links list](https://github.com/leirock/friends)
-- [Album](https://github.com/leirock/HexoAlbum)
+- [Link list](https://github.com/leirock/hexo-link-list)
+- [Album](https://github.com/leirock/hexo-album)
