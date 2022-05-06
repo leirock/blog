@@ -2,7 +2,7 @@ const yaml = require('js-yaml');
 const path = require('path');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 
-const folders = ['books', 'documentaries', 'tv-movie'];
+const folders = ['books', 'documentaries', 'movies', 'music', 'tv-series', 'variety-show'];
 
 for(var i in folders) {
     const src = './source/culture/' + folders[i] + '/';
