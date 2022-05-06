@@ -138,14 +138,27 @@ waline:
   serverURL: https://cmt.pinlyu.com
   libUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.js
   cssUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.css
-  login: disable
+  # 填写字段
   meta: [nick, mail, link]
+  # 必填字段
   requiredMeta: [nick, mail]
-  pageSize: 5
-  pageview: false
-  commentCount: true
+  # 夜间模式
   dark: auto
+  # 表情包
   emoji: false
+  # 是否开启登录评论
+  login: true
+  # 每页显示评论数
+  pageSize: 5
+  # 浏览量统计
+  pageview: false
+  # 首页显示评论数
+  commentCount: true
+  # 图片上传
+  imageUploader: false
+  # 右下角版本号
+  copyright: false
+  # i8n
   locale:
     placeholder: 请正确填写邮箱方便查收回复，评论通过审核才会显示，评论规则详见页脚链接。
     admin: 站长
