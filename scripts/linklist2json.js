@@ -6,13 +6,17 @@ const linksSrc = './source/' + hexo.config.custom_page_path.links + '/';
 const linksDist = './public/' + hexo.config.custom_page_path.links + '/';
 const files = readdirSync(linksSrc);
 try {
-    mkdirSync(linksDist, {recursive: true});
-} catch ({ code }) {
+    mkdirSync(linksDist, {
+        recursive: true
+    });
+} catch ({
+    code
+}) {
     if (code !== 'EEXIST') throw code;
 }
 
-for(var i in files) {
-    if(path.extname(files[i]) === ".yml") {
+for (var i in files) {
+    if (path.extname(files[i]) === ".yml") {
         try {
             var doc = yaml.load(readFileSync(linksSrc + files[i], 'utf8'));
             var output = linksDist + files[i].slice(0, -4) + '.json';
