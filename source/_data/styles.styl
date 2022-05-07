@@ -302,6 +302,10 @@ li {
   }
 }
 
+//居中
+.text-center {
+  text-align: center;
+}
 
 /**********************************************************/
 /********************* 图片与相册 **************************/
@@ -529,6 +533,20 @@ tbody tr {
 /**********************************************************/
 /************************ 按钮 ****************************/
 /**********************************************************/
+
+/* 默认按钮 */
+.btn {
+  color: white!important;
+  border: none;
+  border-radius: $myradius;
+  background: $btn-default-bg;
+  btn-shadow-only();
+
+  &:hover {
+    background: $btn-default-hover-bg;
+    btn-shadow-hover-only();
+  }
+}
 
 /* 返回最上按钮 */
 .back-to-top {
