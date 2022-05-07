@@ -19,67 +19,67 @@
 					"label": "侧边栏"
 				},
 				{
-					"line": 171,
+					"line": 143,
 					"column": 0,
 					"label": "文章页"
 				},
 				{
-					"line": 312,
+					"line": 313,
 					"column": 0,
 					"label": "图片与相册"
 				},
 				{
-					"line": 353,
+					"line": 354,
 					"column": 0,
 					"label": "代码"
 				},
 				{
-					"line": 424,
+					"line": 425,
 					"column": 0,
 					"label": "表格"
 				},
 				{
-					"line": 448,
+					"line": 449,
 					"column": 0,
 					"label": "文末版权信息"
 				},
 				{
-					"line": 549,
+					"line": 536,
 					"column": 0,
 					"label": "按钮"
 				},
 				{
-					"line": 599,
+					"line": 600,
 					"column": 0,
 					"label": "页码页脚"
 				},
 				{
-					"line": 651,
+					"line": 652,
 					"column": 0,
 					"label": "分类标签"
 				},
 				{
-					"line": 718,
+					"line": 719,
 					"column": 0,
 					"label": "友链列表"
 				},
 				{
-					"line": 812,
+					"line": 813,
 					"column": 0,
 					"label": "子页面列表"
 				},
 				{
-					"line": 844,
+					"line": 845,
 					"column": 0,
 					"label": "文艺列表"
 				},
 				{
-					"line": 964,
+					"line": 965,
 					"column": 0,
 					"label": "评论框"
 				},
 				{
-					"line": 1067,
+					"line": 1068,
 					"column": 0,
 					"label": "特殊排版"
 				}
@@ -134,17 +134,17 @@
 					"label": "Font"
 				},
 				{
-					"line": 162,
+					"line": 163,
 					"column": 0,
 					"label": "Plugins, Search"
 				},
 				{
-					"line": 180,
+					"line": 181,
 					"column": 0,
 					"label": "Inline tag"
 				},
 				{
-					"line": 207,
+					"line": 208,
 					"column": 0,
 					"label": "Vendors"
 				}
