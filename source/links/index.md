@@ -4,34 +4,6 @@ description: 依然在坚持写博客的人们
 comments: false
 ---
 
-{% tabs links %}
-
-<!-- tab 收录规则 -->
-- 会添加一些我喜欢的站点，优先考虑有{%dot 实质性原创内容 %}的站点；
-- 暂时停止收录纯技术类站点，但{%dot 版面设计有独特风格 %}的除外；
-- 定期清理包括但不限于无法访问、不再符合前述标准、不认可其立场观点的站点；
-- 申请收录请先添加本站链接，然后参考本站信息格式，在 [留言板](/guestbook/) 留下相关信息。
-<!-- endtab -->
-
-<!-- tab 图标链接 -->
-<!-- Favicon API 加上 ?refresh=true 刷新缓存 -->
-- 默认采用站点 Favicon 图标（[API 文档](https://api.iowen.cn/doc/favicon.html)）；如获取失败或不清晰则请提供
-- [Cravatar](https://cravatar.cn/developers/api) 头像（兼容 Gravatar）；如未设置则请提供
-- QQ 头像（[API 文档](https://www.yuque.com/leirock/programming/di94ti)）或知乎、微博头像链接。
-<!-- endtab -->
-
-<!-- tab 本站信息 -->
-<style>.tab-pane#links-3 p{text-align:left;}</style>
-**名称:** 频率
-**简介:** 风卷过的起点
-**链接:** https://pinlyu.com
-**图标:** https://cravatar.cn/avatar/c9c462226e87da2be5e2a475d610fd95?s=200
-<!-- endtab -->
-
-{% endtabs %}
-
-* * *
-
 ## 生活向
 
 {% linklist life %}
@@ -43,3 +15,10 @@ comments: false
 ## 博客组织
 
 {% linklist org %}
+
+
+* * *
+
+<div class="text-center" style="font-size: 1.1em;font-weight:bold">
+    {% btn https://wj.qq.com/s2/10176653/6c0a/, 申请收录, list-check fa-fw %}
+</div>
