@@ -151,6 +151,7 @@ font:
     family: Long Cang
     size: 2.2
   headings:
+    external: false
     size: 1.6
   codes:
     external: false

@@ -86,6 +86,7 @@ body {
 /* 站点副标题 */
 .site-subtitle {
   color: var(--brand-color);
+  font-size: .85em;
 }
 
 /* 站点描述介绍 */
@@ -97,7 +98,7 @@ body {
 
 /* 导航菜单文字 */
 .menu-item a {
-  font-size: .85em;
+  font-size: .9em;
 }
 
 /* 二级导航菜单 */
@@ -136,48 +137,18 @@ body {
   color: var(--link-hover-color);
 }
 
-/* 普通链接卡片 */
-.post-body .link-grid .link-grid-container {
-  border: 2px solid #ddd;
-  border-radius: $myradius;
-  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
-
-  &:hover {
-    animation: none;
-  }
-
-  &:active {
-    box-shadow: none;
-    transform: none;
-  }
-}
-
-.post-body .link-grid .link-grid-container p {
-
-  &:first-of-type {
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2bbc8a;
-  }
-
-  &:last-of-type {
-    font-size: .85em;
-  }
-}
-
 
 /**********************************************************/
 /************************ 文章 ****************************/
 /**********************************************************/
 
 /* 文章卡片 */
-.post-block{
+.post-block {
   border-radius: $myradius !important;
 }
 
 /* 文章与页面标题 */
 .posts-expand .post-title {
-  font-size: 1.4em;
   font-weight: bold;
 
   +mobile() {
@@ -306,6 +277,36 @@ li {
 .text-center {
   text-align: center;
 }
+
+/* 普通链接卡片 */
+.post-body .link-grid .link-grid-container {
+  border: 2px solid #ddd;
+  border-radius: $myradius;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+
+  &:hover {
+    animation: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.post-body .link-grid .link-grid-container p {
+
+  &:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--link-hover-color);
+  }
+
+  &:last-of-type {
+    font-size: .85em;
+  }
+}
+
 
 /**********************************************************/
 /********************* 图片与相册 **************************/
@@ -1069,12 +1070,12 @@ body {
 /* 着重号 `{% dot 强调的文字 %}` */
 .emphasis-point {
   font-style: normal;
-  text-emphasis: '•';
   -webkit-text-emphasis: '•';
   -moz-text-emphasis: '•';
-  text-emphasis-position: under;
+  text-emphasis: '•';
   -webkit-text-emphasis-position: under;
   -moz-text-emphasis-position: under;
+  text-emphasis-position: under;
 }
 
 /* 分割线 `<hr>` 或 `***` 或 `---` */
