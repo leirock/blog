@@ -3,9 +3,7 @@ title: 光影集
 comments: false
 ---
 
-<center>
-岁月无声，光影留痕。用一张小小的照片，记录下身边的美好瞬间。
-</center>
+<div class="text-center">岁月无声，光影留痕。用一张小小的照片，记录下身边的美好瞬间。</div>
 <br/>
 
 {% subpagebox album %}
