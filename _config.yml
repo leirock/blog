@@ -160,11 +160,14 @@ waline:
   copyright: false
   # i8n
   locale:
-    placeholder: 请正确填写邮箱方便查收回复，评论通过审核才会显示，评论规则详见页脚链接。
+    placeholder: 请填写邮箱地址以便接收回复通知，评论通过审核才会显示，评论规则详见页脚政策链接。
     admin: 站长
     nick: 名称*
     mail: 邮箱*
     link: 网址
+    sofa: 在这里分享你的观点和想法～
+    nickError: 名称不能空缺
+    mailError: 请正确填写邮箱地址
 
 
 # 黑白滤镜
