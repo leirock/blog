@@ -39,5 +39,5 @@ comments: false
             </div>
         </div>
     </div>
-    <div class="license-statement">清单中评分仅供参考，转载或引用清单内容前，请先联系作者获得授权！</div>
+    <div class="license-statement">清单中的评分仅供参考，转载或引用清单内容前，请先联系作者获得授权！</div>
 </div>
