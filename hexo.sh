@@ -38,16 +38,16 @@ if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 		hexo_server
 	fi
 	echo " "
-	exec ${HexoPath}/cli.sh
+	exec ${HexoPath}/hexo.sh
 else
 	if [ "$answer" == "u" ]; then
 		printf "\n\033[32mINFO \033[0m 开始更新依赖包...\n"
 		# npm update --no-audit
 		yarn upgrade
-		exec ${HexoPath}/cli.sh
+		exec ${HexoPath}/hexo.sh
 	else
 		printf "\n\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
 		sleep 1s
-		exec ${HexoPath}/cli.sh
+		exec ${HexoPath}/hexo.sh
 	fi
 fi
