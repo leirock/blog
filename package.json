@@ -3,7 +3,8 @@
   "version": "3.7.0",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/hexo clean && ./node_modules/.bin/hexo generate"
+    "clean": "./node_modules/.bin/hexo clean",
+    "build": "./node_modules/.bin/hexo generate"
   },
   "hexo": {
     "version": "5.4.2"
