@@ -1,8 +1,26 @@
+- title: 流浪地球
+  cover: 流浪地球.jpg
+  author: 中国 2019
+  score: 5
+  intro: 在众多末日大灾难设定的电影中，展现了中国人的浪漫和不一样的中国方案。
+
 - title: 哪吒之魔童降世
   cover: 哪吒之魔童降世.jpg
   author: 中国 2019
-  score: 5
+  score: 4.5
   intro: 无论是立意还是动画制作都很优秀，我愿称之为近年国漫的巅峰之作。
+
+- title: 红海行动
+  cover: 红海行动.jpg
+  author: 中国 2018
+  score: 5
+  intro: 战争场面很过瘾，甚至有些过于血腥了，以至于在香港被定级为三级。
+
+- title: 战狼2
+  cover: 战狼2.jpg
+  author: 中国 2017
+  score: 5
+  intro: 让很多殖人破防的电影，甚至出现了吴京 PTSD。
 
 - title: 疯狂动物城
   cover: 疯狂动物城.jpg
