@@ -23,7 +23,7 @@ hexo.extend.injector.register('head_begin', () => {
 
 // 着重号
 hexo.extend.tag.register('dot', function (args) {
-    return `<em class="emphasis-point">${args.join(' ')}</em>`;
+    return `<span class="emphasis-point">${args.join(' ')}</span>`;
 });
 
 
