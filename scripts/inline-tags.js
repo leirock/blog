@@ -10,14 +10,20 @@
 
 
 // 初始化对象存储域名 cosDomain
-console.log('\n-------------------------------------------------\n \
-COS Domain is: ' + hexo.config.cos_domain + '（腾讯云）\
-\n-------------------------------------------------\n')
-
 const cosDomain = hexo.config.cos_domain;
+console.log('\n\x1B[32mINFO\x1B[0m  COS Domain: ' + cosDomain + '\n');
+
 // preconnect
 hexo.extend.injector.register('head_begin', () => {
-    return '<link rel="preconnect" href="' + cosDomain + '" crossorigin="">';
+    const walineServerUrl = new URL(hexo.config.waline.serverURL);
+    const walineLibUrl =  new URL(hexo.config.waline.libUrl);
+    const walineServer = walineServerUrl.protocol + '//' + walineServerUrl.hostname;
+    const walineLib = walineLibUrl.protocol + '//' + walineLibUrl.hostname; // also for NexT JS vendors
+    return `
+        <link rel="preconnect" href="${cosDomain}" crossorigin="">
+        <link rel="preconnect" href="${walineServer}" crossorigin="">
+        <link rel="preconnect" href="${walineLib}" crossorigin="">
+        <link rel="preconnect" href="https://cravatar.cn" crossorigin="">`;
 });
 
 
