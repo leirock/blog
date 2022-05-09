@@ -63,7 +63,7 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: /resources/favicon/apple-touch-icon.png # https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=128
+  url: /resources/favicon/apple-touch-icon.png
   rounded: true
 
 site_state: false
