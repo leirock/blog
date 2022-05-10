@@ -147,7 +147,7 @@ waline:
   # 表情包
   emoji: false
   # 是否开启登录评论
-  login: disable
+  login: enable
   # 每页显示评论数
   pageSize: 5
   # 浏览量统计
