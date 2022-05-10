@@ -11,8 +11,6 @@
 
 // 初始化对象存储域名 cosDomain
 const cosDomain = hexo.config.cos_domain;
-console.log('\n\x1B[32mINFO\x1B[0m  COS Domain: ' + cosDomain + '\n');
-
 // preconnect
 hexo.extend.injector.register('head_begin', () => {
     const walineServerUrl = new URL(hexo.config.waline.serverURL);
