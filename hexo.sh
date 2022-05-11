@@ -10,12 +10,8 @@ hexo_server(){
 		open http://127.0.0.1:4000/
 	}
     open_url &
-    hexo server
+    find . -name '*.DS_Store' -type f -delete && hexo server
 	hexo clean
-}
-
-hexo() {
-    node --no-warnings node_modules/hexo/bin/hexo "$@"
 }
 
 echo '==================== Hexo Utilities ===================='
@@ -31,7 +27,7 @@ if [ "$answer" == "" ] || [ "$answer" == "s" ]; then
 	printf "\n\x1B[32mINFO \x1B[0m 启动本地预览...\n"
 	echo " "
 	if [ "$answer" == "" ]; then
-		hexo server
+		find . -name '*.DS_Store' -type f -delete && hexo server
 		hexo clean
 	else
 		hexo_server
