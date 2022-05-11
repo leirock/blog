@@ -6,12 +6,8 @@ const linksSrc = './source/' + hexo.config.custom_page_path.links + '/';
 const linksDist = './public/' + hexo.config.custom_page_path.links + '/';
 const files = readdirSync(linksSrc);
 try {
-    mkdirSync(linksDist, {
-        recursive: true
-    });
-} catch ({
-    code
-}) {
+    mkdirSync(linksDist, { recursive: true });
+} catch ({ code }) {
     if (code !== 'EEXIST') throw code;
 }
 
