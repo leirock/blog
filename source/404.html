@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>未找到页面 | 频率</title>
+    <link rel="icon" href="/resources/favicon/favicon.ico">
+    <script async defer data-website-id="93f919a5-83db-47a5-a13d-ac167310c81b" src="https://stat.pinlyu.com/umami.js"></script>
+    <style>
+        * {
+            border-width: 0;
+            border-style: solid;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .left-part {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .error-box {
+            max-width: 30rem;
+            margin: 2rem;
+        }
+
+        .error-code {
+            color: #22292f;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .line {
+            width: 4rem;
+            height: .25rem;
+            background-color: #a779e9;
+            margin-top: .75rem;
+            margin-bottom: .75rem;
+        }
+
+        .error-text {
+            color: #606f7b;
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            font-size: 100%;
+            font-weight: 700;
+            background: transparent;
+            padding: .75rem 1.5rem .75rem 1.5rem;
+            color: #3d4852;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            border-width: 2px;
+            border-color: #dae1e7;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border-color: #b8c2cc;
+        }
+
+        .right-part {
+            position: relative;
+            padding-bottom: 100%;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .right-svg {
+            background-image: url('/resources/img/404.svg');
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: 768px) {
+            .main {
+                display: flex;
+            }
+
+            .left-part {
+                width: 50%;
+                margin-top: 0;
+            }
+
+            .error-code {
+                font-size: 9rem;
+            }
+
+            .line {
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .error-text {
+                font-size: 1.875rem;
+            }
+
+            .right-part {
+                display: flex;
+                padding-bottom: 0;
+                min-height: 100vh;
+                width: 50%;
+                margin-top: 0;
+            }
+
+            .right-svg {
+                background-position: left;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .right-svg {
+                background-position: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="left-part">
+            <div class="error-box">
+                <div class="error-code">404</div>
+                <div class="line"></div>
+                <p class="error-text">您访问的页面走丢了。</p>
+                <a href="/"><button>返回首页</button></a>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="right-svg"></div>
+        </div>
+    </main>
+</body>
+
+</html>
