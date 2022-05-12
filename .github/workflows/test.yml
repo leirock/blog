@@ -1,0 +1,59 @@
+name: Test
+
+on:
+  pull_request:
+#  push:
+#    branches:
+#      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'yarn'
+
+    - name: Generate Hexo site
+      run: |
+        yarn install
+        yarn build
+        rm -rf public/images
+
+#    - name: Deploy to GitHub Pages
+#      uses: peaceiris/actions-gh-pages@v3
+#      with:
+#        personal_token: ${{ secrets.GH_TOKEN }}
+#        publish_branch: gh-pages
+#        publish_dir: ./public
+#        user_name: github-actions[bot]
+#        user_email: github-actions[bot]@users.noreply.github.com
+#        commit_message: ${{ github.event.head_commit.message }}
+
+#    - name: Deploy to server
+#      uses: easingthemes/ssh-deploy@main
+#      env:
+#        ARGS: "-avz --delete"
+#        SOURCE: "public/"
+#        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+#        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+#        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+#        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+#        TARGET: ${{ secrets.REMOTE_TARGET }}
+
+#    - name: Telegram notification
+#      if: cancelled() == false
+#      uses: xinthink/action-telegram@v1.1
+#      with:
+#        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
+#        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
+#        jobStatus: ${{ job.status }}
+#        skipSuccess: false
