@@ -1,3 +1,17 @@
 zh-CN:
   menu:
-    search: 搜索
+    life: 生活 #碎碎念
+    observer: 观点 #观察者
+    culture: 文艺 #书影音
+    notes: 笔记 #笔记本
+    album: 光影 #光影集
+    guestbook: 留言 #留言板
+    # search: 搜索 #搜文章
+  sidebar:
+    toc: 目 录
+  # post:
+  #   comments:
+  #    waline: 评论
+  counter:
+    tag_cloud:
+      other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'
