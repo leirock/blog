@@ -28,6 +28,7 @@ jobs:
         cd source/lib/waline
         curl -O "https://cdn.jsdelivr.net/npm/@waline/client@$VERSION/dist/waline.js"
         curl -O "https://cdn.jsdelivr.net/npm/@waline/client@$VERSION/dist/waline.css"
+        cd ../../../
         yarn install --production
         yarn build
         rm -rf public/images
