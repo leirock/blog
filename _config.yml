@@ -136,8 +136,8 @@ server:
 waline:
   enable: true
   serverURL: https://cmt.pinlyu.com
-  libUrl: /lib/waline/waline.js
-  cssUrl: /lib/waline/waline.css
+  libUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.js
+  cssUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.css
   # 填写字段
   meta: [nick, mail, link]
   # 必填字段

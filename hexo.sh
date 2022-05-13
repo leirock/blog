@@ -6,7 +6,7 @@ cd ${HexoPath}
 
 hexo_server(){
 	open_url(){
-		sleep 1.5
+		sleep 2
 		open http://127.0.0.1:4000/
 	}
     open_url &
