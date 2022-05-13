@@ -175,10 +175,10 @@
   dependencies:
     vue-demi "*"
 
-"@waline/client@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@waline/client/-/client-2.4.1.tgz#ed5efa001986e41067643523364de1d260493cb7"
-  integrity sha512-hixNmA1I5WjdHKPrwJejDEDTRPrJXNb7TH15ABwsNKUFkJ+7i993RMWwYXJsZpO5HP9e8Wm1Z+7pBjA6pyz4FQ==
+"@waline/client@2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@waline/client/-/client-2.4.2.tgz#fe5f2b0f60f822695d2c4f077c7ab55924d4a618"
+  integrity sha512-XCUqggWDK/+FN9tjCZ194cYG8Oxozu4aP9q8T7wbfPktAWrQBcwyVmmMlc+nOqff+qq1ulCMhYKasapzZOruZg==
   dependencies:
     "@vueuse/core" "^8.4.2"
     autosize "^5.0.1"
