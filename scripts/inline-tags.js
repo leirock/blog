@@ -14,15 +14,17 @@ const cosDomain = hexo.config.cos_domain;
 // preconnect
 hexo.extend.injector.register('head_begin', () => {
     const walineServerUrl = new URL(hexo.config.waline.serverURL);
-    const walineLibUrl =  new URL(hexo.config.waline.libUrl);
     const walineServer = walineServerUrl.protocol + '//' + walineServerUrl.hostname;
-    const walineLib = walineLibUrl.protocol + '//' + walineLibUrl.hostname; // also for NexT JS vendors
+    const vendorsCdnUrl = new URL(hexo.config.theme_config.vendors.custom_cdn_url);
+    const vendorsCdn = vendorsCdnUrl.protocol + '//' + vendorsCdnUrl.hostname;
     return `
         <link rel="preconnect" href="${cosDomain}" crossorigin="">
+        <link rel="preconnect" href="${vendorsCdn}" crossorigin="">
         <link rel="preconnect" href="${walineServer}" crossorigin="">
-        <link rel="preconnect" href="${walineLib}" crossorigin="">
         <link rel="preconnect" href="https://cravatar.cn" crossorigin="">`;
 });
+
+
 
 
 // 着重号
