@@ -24,12 +24,7 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        VERSION=$(grep '@waline/client' package.json | sed -r 's/^[^:]*: "(.*)"$/\1/')
-        cd source/lib/waline
-        curl -O "https://cdn.jsdelivr.net/npm/@waline/client@$VERSION/dist/waline.js"
-        curl -O "https://cdn.jsdelivr.net/npm/@waline/client@$VERSION/dist/waline.css"
-        cd ../../../
-        yarn install --production
+        yarn install
         yarn build
         rm -rf public/images
 
