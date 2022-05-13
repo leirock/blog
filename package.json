@@ -32,5 +32,8 @@
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "3.0.0",
     "hexo-theme-next": "8.11.1"
+  },
+  "devDependencies": {
+    "@waline/client": "2.4.1"
   }
 }
