@@ -115,6 +115,6 @@
 {%- if (not post.orig_author) and (post.pid > 0) %}
   <div class="donations">
     <div class="donation-label">真诚赞赏，手留余香。</div>
-    <a class="afdian-button" href="https://afdian.net/@leirock" rel="noopener" target="_blank">赞赏</a>
+    <a class="afdian-button" href="{{ 'https://afdian.net/@' + config.afdian }}" rel="noopener" target="_blank">赞赏</a>
   </div>
 {%- endif %}

@@ -117,7 +117,7 @@ image_minifier:
   enable: false
 
 # hexo-renderer-markdown-it
-# For more information: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
+# See: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
 markdown:
   langPrefix: 'language-'
   plugins:
@@ -132,7 +132,7 @@ server:
   ip: 127.0.0.1
 
 # Waline
-# For more information: https://waline.js.org
+# See: https://waline.js.org
 waline:
   enable: true
   serverURL: https://cmt.pinlyu.com
@@ -169,15 +169,26 @@ waline:
     nickError: 名称不能空缺
     mailError: 请正确填写邮箱地址
 
-
 # 黑白滤镜
 gray_filter: false
-
-# COS 存储桶自定义域名（带 https 协议）
-cos_domain: https://cos.pinlyu.com
 
 # 自定义页面在 /source/ 下的文件夹名
 custom_page_path:
   culture: culture
   album: album
   links: links
+
+# GitHub repository
+github_repo: leirock/blog
+
+# 爱发电账号/个人主页
+afdian: leirock
+
+# COS 存储桶自定义域名（带 https 协议）
+cos_domain: https://cos.pinlyu.com
+
+# Umami Analytics
+# See: https://umami.is/docs/about
+umami:
+  script: https://stat.pinlyu.com/script.js
+  website_id: 93f919a5-83db-47a5-a13d-ac167310c81b
