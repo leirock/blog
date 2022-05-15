@@ -146,8 +146,6 @@ waline:
   dark: auto
   # 表情包
   emoji: false
-  # Gif 表情包搜索
-  showGif: false
   # 是否开启登录评论
   login: enable
   # 每页显示评论数
