@@ -63,7 +63,7 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: /resources/favicon/apple-touch-icon.png
+  url: https://cravatar.cn/avatar/c9c462226e87da2be5e2a475d610fd95?s=300
   rounded: true
 
 site_state: false
