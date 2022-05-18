@@ -1458,6 +1458,10 @@ hexo-log@^3.0.0:
   dependencies:
     nanocolors "^0.2.12"
 
+hexo-next-artalk@leirock/hexo-next-artalk:
+  version "0.0.0"
+  resolved "https://codeload.github.com/leirock/hexo-next-artalk/tar.gz/df1e2b7f302959e4f210c674380a6082961aa143"
+
 hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"

@@ -27,6 +27,7 @@
     "hexo-generator-indexed": "1.2.1",
     "hexo-generator-sitemap": "3.0.1",
     "hexo-generator-tag": "1.0.0",
+    "hexo-next-artalk": "leirock/hexo-next-artalk",
     "hexo-renderer-ejs": "2.0.0",
     "hexo-renderer-markdown-it": "6.0.1",
     "hexo-renderer-stylus": "2.0.1",
