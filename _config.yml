@@ -196,10 +196,10 @@ umami:
 artalk:
   enable: true
   server: https://test.pinlyu.com
-  jsUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.0/dist/Artalk.js
-  cssUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.0/dist/Artalk.css
+  jsUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.1/dist/Artalk.js
+  cssUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.1/dist/Artalk.css
   commentCount: true
-  pageview: true
+  pvCount: true
   emoticons: false
   sendBtn: 提交
   darkMode: auto
