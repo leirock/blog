@@ -30,7 +30,7 @@
     "hexo-next-artalk": "leirock/hexo-next-artalk",
     "hexo-renderer-ejs": "2.0.0",
     "hexo-renderer-markdown-it": "6.0.1",
-    "hexo-renderer-stylus": "2.0.1",
+    "hexo-renderer-stylus": "2.1.0",
     "hexo-server": "3.0.0",
     "hexo-theme-next": "8.11.1"
   }
