@@ -131,44 +131,6 @@ server:
   port: 4000
   ip: 127.0.0.1
 
-# Waline
-# See: https://waline.js.org
-waline:
-  enable: false
-  serverURL: https://cmt.pinlyu.com
-  libUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.js
-  cssUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.css
-  # 填写字段
-  meta: [nick, mail, link]
-  # 必填字段
-  requiredMeta: [nick, mail]
-  # 夜间模式
-  dark: auto
-  # 表情包
-  emoji: false
-  # 是否开启登录评论
-  login: enable
-  # 每页显示评论数
-  pageSize: 5
-  # 浏览量统计
-  pageview: false
-  # 首页显示评论数
-  commentCount: true
-  # 图片上传
-  imageUploader: false
-  # 右下角版本号
-  copyright: false
-  # i8n
-  locale:
-    placeholder: 请填写邮箱地址以便接收回复通知，评论通过审核才会显示，评论规则详见页脚政策链接。
-    admin: 站长
-    nick: 名称*
-    mail: 邮箱*
-    link: 网址
-    sofa: 在这里分享你的观点和想法～
-    nickError: 名称不能空缺
-    mailError: 请正确填写邮箱地址
-
 # 黑白滤镜
 gray_filter: false
 
@@ -196,12 +158,8 @@ umami:
 artalk:
   enable: true
   server: https://test.pinlyu.com
-  jsUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.1/dist/Artalk.js
-  cssUrl: https://cdn.jsdelivr.net/npm/artalk@2.3.1/dist/Artalk.css
+  jsUrl: https://test.pinlyu.com/dist/Artalk.js
+  cssUrl: https://test.pinlyu.com/dist/Artalk.css
   commentCount: true
-  pvCount: true
-  emoticons: false
-  sendBtn: 提交
-  darkMode: auto
-  pagination:
-    pageSize: 5
+  pvCount: false
+  useBackendConf: true
