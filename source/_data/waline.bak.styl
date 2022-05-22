@@ -1,0 +1,98 @@
+/* 评论色彩 */
+body {
+  --waline-theme-color: var(--link-hover-color) !important;
+  --waline-active-color: var(--link-hover-color) !important;
+
+  @media (prefers-color-scheme: dark) {
+    --waline-color: $text-color-dark !important;
+    --waline-border-color: #555555 !important;
+    --waline-bgcolor: $content-bg-color-dark !important;
+    --waline-bgcolor-light: $body-bg-color-dark !important;
+  }
+}
+
+/* 评论卡片圆角 */
+.comments {
+  border-radius: $myradius !important;
+}
+
+/* 评论超链接 */
+.comments a {
+  color: var(--link-color) !important;
+  transition: all .2s !important;
+  border-bottom-color: var(--link-hover-color) !important;
+  display: inline !important;
+
+  &:hover {
+    color: var(--link-hover-color) !important;
+    border-bottom-width: 2px !important;
+  }
+}
+
+.comments a[href^="#"] {
+  border-bottom: none !important;
+}
+
+/* 评论列表昵称链接 */
+.wl-card .wl-nick {
+  color: var(--text-color) !important;
+  border-bottom: none !important;
+
+  &:hover {
+    color: var(--link-hover-color) !important;
+  }
+}
+
+/* 评论输入框背景 */
+.wl-editor {
+	background-image: url($comment-bg-url) !important;
+	background-repeat: no-repeat !important;
+	background-position: right !important;
+}
+
+.wl-editor:focus {
+	background-position-y: 200px !important;
+	transition: all .2s ease-in-out 0s !important;
+}
+
+/* 评论输入框字号字重 */
+.wl-header label,
+.wl-header input, 
+.wl-editor,
+.wl-card .wl-nick,
+.wl-card .wl-content {
+  font-size: .95em !important;
+}
+
+/* 评论区按钮 */
+.wl-btn {
+  font-size: .85em !important;
+
+  &:hover {
+    border-color: $btn-default-hover-bg !important;
+    color: $btn-default-hover-bg !important;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    border-color: $menu-item-bg-color-dark !important;
+  }
+}
+
+/* 评论提交按钮 */
+.wl-btn.primary {
+  font-weight: bold !important;
+  color: white !important;
+  border-color: $btn-default-bg !important;
+  background: $btn-default-bg !important;
+
+  &:hover {
+    border-color: $btn-default-hover-bg !important;
+    background: $btn-default-hover-bg !important;
+  }
+}
+
+/* 去掉评论预览分割线、版本信息 */
+.wl-preview hr 
+.wl-action[title='表情包'] {
+  display: none !important;  
+}

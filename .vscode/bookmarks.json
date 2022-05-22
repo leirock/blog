@@ -79,7 +79,7 @@
 					"label": "评论框"
 				},
 				{
-					"line": 1078,
+					"line": 1059,
 					"column": 0,
 					"label": "特殊排版"
 				}
@@ -153,11 +153,6 @@
 		{
 			"path": "source/_data/body-end.njk",
 			"bookmarks": [
-				{
-					"line": 0,
-					"column": 14,
-					"label": "锚点定位"
-				},
 				{
 					"line": 17,
 					"column": 14,
