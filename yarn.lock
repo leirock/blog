@@ -1422,8 +1422,8 @@ hexo-log@^3.0.0:
     nanocolors "^0.2.12"
 
 hexo-next-artalk@leirock/hexo-next-artalk:
-  version "0.0.1"
-  resolved "https://codeload.github.com/leirock/hexo-next-artalk/tar.gz/09732a39e5534420cb7a3ae2da750ad14259b9d9"
+  version "0.1.0"
+  resolved "https://codeload.github.com/leirock/hexo-next-artalk/tar.gz/4c1307651ac2ad6f9b33cd84e277d898739dac98"
   dependencies:
     "@next-theme/utils" "^1.3.0"
 
