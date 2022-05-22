@@ -9,9 +9,9 @@ zh-CN:
     # search: 搜索 #搜文章
   sidebar:
     toc: 目 录
-  # post:
-  #   comments:
-  #    waline: 评论
+#  post:
+#    comments:
+#      artalk: 评论数
   counter:
     tag_cloud:
       other: '<strong><i class="fas fa-fw fa-tags"></i> 目前共计 %d 个标签</strong>'

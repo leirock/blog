@@ -131,48 +131,10 @@ server:
   port: 4000
   ip: 127.0.0.1
 
-# Waline
-# See: https://waline.js.org
-waline:
-  enable: true
-  serverURL: https://cmt.pinlyu.com
-  libUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.js
-  cssUrl: https://jsd.pinlyu.com/npm/@waline/client@2/dist/waline.css
-  # 填写字段
-  meta: [nick, mail, link]
-  # 必填字段
-  requiredMeta: [nick, mail]
-  # 夜间模式
-  dark: auto
-  # 表情包
-  emoji: false
-  # 是否开启登录评论
-  login: enable
-  # 每页显示评论数
-  pageSize: 5
-  # 浏览量统计
-  pageview: false
-  # 首页显示评论数
-  commentCount: true
-  # 图片上传
-  imageUploader: false
-  # 右下角版本号
-  copyright: false
-  # i8n
-  locale:
-    placeholder: 请填写邮箱地址以便接收回复通知，评论通过审核才会显示，评论规则详见页脚政策链接。
-    admin: 站长
-    nick: 名称*
-    mail: 邮箱*
-    link: 网址
-    sofa: 在这里分享你的观点和想法～
-    nickError: 名称不能空缺
-    mailError: 请正确填写邮箱地址
-
 # 黑白滤镜
 gray_filter: false
 
-# 自定义页面在 /source/ 下的文件夹名
+# 自定义页面文件夹名
 custom_page_path:
   culture: culture
   album: album
@@ -181,10 +143,10 @@ custom_page_path:
 # GitHub repository
 github_repo: leirock/blog
 
-# 爱发电账号/个人主页
+# 爱发电个人主页
 afdian: leirock
 
-# COS 存储桶自定义域名（带 https 协议）
+# COS 存储桶自定义域名
 cos_domain: https://cos.pinlyu.com
 
 # Umami Analytics
@@ -192,3 +154,15 @@ cos_domain: https://cos.pinlyu.com
 umami:
   script: https://stat.pinlyu.com/script.js
   website_id: 93f919a5-83db-47a5-a13d-ac167310c81b
+
+# Artalk
+# See: https://artalk.js.org
+artalk:
+  enable: true
+  server: https://cmt.pinlyu.com
+  jsUrl: https://cmt.pinlyu.com/dist/Artalk.js
+  cssUrl: https://cmt.pinlyu.com/dist/Artalk.css
+  commentCount: true
+  pvCount: false
+  darkMode: auto
+  useBackendConf: true
