@@ -134,7 +134,7 @@ server:
 # 黑白滤镜
 gray_filter: false
 
-# 自定义页面在 /source/ 下的文件夹名
+# 自定义页面文件夹名
 custom_page_path:
   culture: culture
   album: album
@@ -143,10 +143,10 @@ custom_page_path:
 # GitHub repository
 github_repo: leirock/blog
 
-# 爱发电账号/个人主页
+# 爱发电个人主页
 afdian: leirock
 
-# COS 存储桶自定义域名（带 https 协议）
+# COS 存储桶自定义域名
 cos_domain: https://cos.pinlyu.com
 
 # Umami Analytics
@@ -155,11 +155,14 @@ umami:
   script: https://stat.pinlyu.com/script.js
   website_id: 93f919a5-83db-47a5-a13d-ac167310c81b
 
+# Artalk
+# See: https://artalk.js.org
 artalk:
   enable: true
-  server: https://test.pinlyu.com
-  jsUrl: https://test.pinlyu.com/dist/Artalk.js
-  cssUrl: https://test.pinlyu.com/dist/Artalk.css
+  server: https://cmt.pinlyu.com
+  jsUrl: https://cmt.pinlyu.com/dist/Artalk.js
+  cssUrl: https://cmt.pinlyu.com/dist/Artalk.css
   commentCount: true
   pvCount: false
+  darkMode: auto
   useBackendConf: true
