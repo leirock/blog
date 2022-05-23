@@ -35,7 +35,13 @@ comments: false
 
 ## 四、隐私政策
 
-**第8条** （隐私保护法律适用）本站依照《[中华人民共和国个人信息保护法](https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3YjY0NzJhMzAxN2I2NTZjYzIwNDAwNDQ)》的相关规定，收集、存储、使用访客的隐私数据。根据相关法律法规，本站不对欧盟用户提供服务。
+**第8条** （隐私保护法律适用）本站依照以下中华人民共和国法律的相关规定，收集、存储、使用访客的隐私数据：
+
+- 《[中华人民共和国个人信息保护法](https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3YjY0NzJhMzAxN2I2NTZjYzIwNDAwNDQ)》
+- 《[中华人民共和国网络安全法](https://flk.npc.gov.cn/detail2.html?MmM5MDlmZGQ2NzhiZjE3OTAxNjc4YmY4Mjc2ZjA5M2Q)》
+- 《[中华人民共和国数据安全法](https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3OWY1ZTA4MDAxNzlmODg1YzdlNzAzOTI)》
+
+由于前述的中国法律与欧盟《通用数据保护规则》（GDPR）可能存在冲突，本站不对欧盟用户提供服务。
 
 **第9条** （信息收集）以下类型的信息可能被收集：
 
@@ -68,8 +74,8 @@ comments: false
 
 **第13条** （更新修订）本站保留在任何时间修改、修订或更新本页政策内容的权利。
 
-最后更新日期的变化表示该政策已被更新或编辑，更新或编辑的版本在发布后立即取代先前任何版本。浏览器、运营商、CDN、和其他组织或个人可能出于节省带宽或其他因素缓存本站的页面，在这种情况下导致您看到的页面内容和实际不符，应当以本站提供的为准。
+最后更新日期的变化表示该政策已被更新或编辑，更新或编辑的版本在发布后立即取代先前任何版本。浏览器、运营商、CDN 和其他组织或个人可能出于节省带宽或其他因素缓存本站的页面，在这种情况下导致您看到的页面内容和实际不符，应当以本站提供的为准。
 
 {% note info %}
-**最后更新日期**：2022年5月22日
+**最后更新日期**：2022年5月24日
 {% endnote %}
