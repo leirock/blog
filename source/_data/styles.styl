@@ -991,11 +991,16 @@ tbody tr {
   }
 }
 
-/* 评论列表昵称链接 */
+/* 评论列表昵称 */
 .atk-main .atk-nick,
 .atk-main .atk-nick a {
   color: var(--link-hover-color) !important;
   border-bottom: none !important;
+}
+
+.artalk,
+.atk-layer-wrap {
+  --at-color-main: var(--link-hover-color) !important;
 }
 
 /* 评论输入框背景 */
@@ -1016,6 +1021,7 @@ tbody tr {
   color: white !important;
   border-color: $btn-default-bg !important;
   background: $btn-default-bg !important;
+  border-radius: 1rem !important;
 
   &:hover {
     border-color: $btn-default-hover-bg !important;
