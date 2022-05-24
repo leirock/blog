@@ -21,7 +21,7 @@ comments: false
 <div class="license">
     <div class="license-title">文艺清单</div>
     <div class="license-link">
-        <a href="https://pinlyu.com/culture/">https://pinlyu.com/culture/</a>
+        <a href="./">https://pinlyu.com/culture/</a>
     </div>
     <div class="license-meta">
         <div class="license-meta-item">
