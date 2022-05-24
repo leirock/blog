@@ -19,7 +19,6 @@
     "version": "6.2.0"
   },
   "dependencies": {
-    "@waline/hexo-next": "3.0.1",
     "hexo": "6.2.0",
     "hexo-all-minifier": "0.5.7",
     "hexo-generator-category": "1.0.0",
