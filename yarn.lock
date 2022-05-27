@@ -434,7 +434,7 @@ clean-css@^5.1.2:
 clone-response@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/clone-response/-/clone-response-1.0.2.tgz#d1dc973920314df67fbeb94223b4ee350239e96b"
-  integrity sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=
+  integrity sha512-yjLXh88P599UOyPTFX0POsd7WxnbsVsGohcwzHOLspIhhpalPw1BcqED8NblyZLKcGrL8dTgMlcaZxV2jAD41Q==
   dependencies:
     mimic-response "^1.0.0"
 
@@ -498,7 +498,7 @@ compression@^1.7.4:
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
-  integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+  integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
 config-chain@^1.1.11:
   version "1.1.13"
@@ -1457,9 +1457,10 @@ hexo-log@^3.0.0:
   dependencies:
     nanocolors "^0.2.12"
 
-hexo-next-artalk@leirock/hexo-next-artalk:
+hexo-next-artalk@0.1.0:
   version "0.1.0"
-  resolved "https://codeload.github.com/leirock/hexo-next-artalk/tar.gz/4c1307651ac2ad6f9b33cd84e277d898739dac98"
+  resolved "https://registry.yarnpkg.com/hexo-next-artalk/-/hexo-next-artalk-0.1.0.tgz#c6f909df19a149f454a7c4f5e79bb7afe4de8f46"
+  integrity sha512-3y6vKTElN9Ij8NhXoVN74+Cz+PerGOUhcmpy5RJyaCJdfZta/E2keu8e0C4Vk5cQQ2BZJuTuiWotqgm6R9/kHw==
   dependencies:
     "@next-theme/utils" "^1.3.0"
 
