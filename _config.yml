@@ -117,7 +117,7 @@ image_minifier:
   enable: false
 
 # hexo-renderer-markdown-it
-# See: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
+## See: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
 markdown:
   langPrefix: 'language-'
   plugins:
@@ -150,13 +150,14 @@ afdian: leirock
 cos_domain: https://cos.pinlyu.com
 
 # Umami Analytics
-# See: https://umami.is/docs/about
+## See: https://umami.is/docs/about
 umami:
   script: https://stat.pinlyu.com/script.js
   website_id: 93f919a5-83db-47a5-a13d-ac167310c81b
 
 # Artalk
-# See: https://artalk.js.org
+## Config: https://artalk.js.org
+## Plugin: https://github.com/leirock/hexo-next-artalk
 artalk:
   enable: true
   server: https://cmt.pinlyu.com
