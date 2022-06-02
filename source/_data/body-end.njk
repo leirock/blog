@@ -166,9 +166,9 @@
         var imageWidth = 235;
     }
 
-    // 腾讯云 COS 自定义样式格式
+    // 腾讯云自定义样式 (数据万象外网流量需要付费)
     //var imgStyle = '!' + imageWidth + 'x';
-    var imgStyle = '!300x';
+    //var imgStyle = '!300x';
 
     // 生成相册
     var LinkDataPath = imgDataPath;
@@ -195,7 +195,7 @@
                 li += '<div class="card" style="width:' + imageWidth + 'px" >'
                 li += '<div class="album-photo" style="height:'+ imageWidth * imageY / imageX + 'px">'
                 li += '<a class="fancybox fancybox.image" href="' + imgPath + imgNameWithPattern + '" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="group" rel="group" data-caption="' + imgName + '" title="' +  imgName + '">'
-                li += '<img data-src="' + imgPath + imgNameWithPattern + imgStyle + '" src="' + imgPath + imgNameWithPattern + imgStyle + '" alt="' +  imgName + '" data-loaded="true">'
+                li += '<img data-src="' + imgPath + imgNameWithPattern + '" src="' + imgPath + imgNameWithPattern + '" alt="' +  imgName + '" data-loaded="true">'
                 li += '</a>'
                 li += '</div>'
                 li += '</div>'
