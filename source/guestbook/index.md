@@ -4,10 +4,7 @@ toc:
     enable: false
 ---
 
-<!--
-![求是园·启真湖](https://cos.pinlyu.com/album/landscape/浙大启真湖.jpg#550x)
--->
-![曲院风荷](https://cos.pinlyu.com/album/landscape/杭州曲院风荷.jpg?imageMogr2/crop/900x430/gravity/center#650x)
+![曲院风荷](https://cos.pinlyu.com/guestbook/quyuanfenghe.jpg)
 
 您好，欢迎访问**频率**。
 
@@ -18,6 +15,6 @@ toc:
 ### 在这里发现更多
 
 - 邮箱：<span>zdlzj (at) foxmail.com</span>
-- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://cos.pinlyu.com/file/wechat.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
+- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://cos.pinlyu.com/guestbook/wechat.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
 - 微博：[@班班leirock](https://dlzhang.com/weibo)
 - 哔哩哔哩：[@班班leirock](https://dlzhang.com/bilibili)
