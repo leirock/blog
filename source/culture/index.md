@@ -3,7 +3,7 @@ title: 文艺清单
 comments: false
 ---
 
-<div class="text-center">柴米油盐之外，劈柴、喂马、诗和远方。</div>
+<div class="text-center">既谈诗和远方，也爱浮生当下。</div>
 <br/>
 
 {% subpagebox culture %}
