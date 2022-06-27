@@ -16,5 +16,5 @@ toc:
 
 - 邮箱：<span>zdlzj (at) foxmail.com</span>
 - 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://cos.pinlyu.com/guestbook/wechat.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
-- 微博：[@班班leirock](https://dlzhang.com/weibo)
-- 哔哩哔哩：[@班班leirock](https://dlzhang.com/bilibili)
+- 微博：[@班班Leirock](https://dlzhang.com/weibo)
+- 哔哩哔哩：[@班班Leirock](https://dlzhang.com/bilibili)
