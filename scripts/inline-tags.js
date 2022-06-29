@@ -30,7 +30,9 @@ hexo.extend.tag.register('dot', function (args) {
 
 // 友链列表
 hexo.extend.tag.register('linklist', function (args) {
-    return `<div class="link-list" src="${args}.json"></div>`;
+    const iconSrc = cosDomain + '/' + hexo.config.custom_page_path.links + '/' + args + '/';
+    const jsonSrc = args + '.json';
+    return `<div class="link-list" icon-src="${iconSrc}" json-src="${jsonSrc}"></div>`;
 });
 
 

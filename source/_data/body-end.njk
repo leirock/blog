@@ -22,7 +22,8 @@
   if ($linkList.length != 0) {
     var j = -1;
     for	(var i = 0; i < $linkList.length; i++) {
-      const listPath = $linkList[i].getAttribute('src');
+      const listPath = $linkList[i].getAttribute('json-src');
+      const iconPath = $linkList[i].getAttribute('icon-src');
       //使用 getJSON 读取 JSON 文件中的数据
       $.getJSON(listPath, function(data) {
         j++;
@@ -41,7 +42,7 @@
             labelInfo = '<span class="label info">' + info['info'] + '</span>';
           }
           li += '<div class="link-list-container">';
-          li += '<img class="link-list-image" src="' + info['logo'] + '">';
+          li += '<img class="link-list-image" src="' + iconPath + info['logo'] + '">';
           li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
           li += '<p>' + info['intro'] + '</p>';
           li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
