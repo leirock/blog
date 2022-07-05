@@ -1515,10 +1515,10 @@ hexo-server@3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@8.12.1:
-  version "8.12.1"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.12.1.tgz#854b4608bb93502cfbb022ac46c117c5a3e50d7d"
-  integrity sha512-aUlzZFv9DXfjCNXPvwHxtMtIu8TDDp417ceMnG1KqBL+zV6le0q0sUWtekffMZ0BOZKUsB0QHvjF2hbO5dOUJg==
+hexo-theme-next@8.12.2:
+  version "8.12.2"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.12.2.tgz#bebf6ca7d0725f11f07b6d672debcc4daf06f115"
+  integrity sha512-SeJjy9xxZWyAEyiBFToQGMNynmiz/aFkHEbfHDL+2RLoTIlqGrHiebSWR3mmcBzImHhdl9TH94MMHah+xwvePQ==
 
 hexo-util@2.5.0:
   version "2.5.0"
