@@ -66,11 +66,6 @@
   logo: kyarameru.net.png
   warn: 搬迁中
 
-- title: 致郁系
-  intro: 站长叫16，日常向站点
-  url: https://www.juroku.net
-  logo: juroku.net.jpg
-
 - title: BETTYPLEX
   intro: Life is full of regrets.
   url: https://forbetty.com
@@ -80,3 +75,8 @@
   intro: 分享生活 · 留下感动
   url: https://www.thyuu.com
   logo: thyuu.com.png
+
+- title: 小鹿生活志
+  intro: 一个写故事的博客
+  url: https://www.t223.top
+  logo: t223.top.png
