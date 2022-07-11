@@ -9,7 +9,7 @@ comments: false
 {% subpagebox culture %}
 阅读 | books | cover.jpg
 纪录片 | documentaries | cover.jpg
-连续剧 | tv-series | cover.jpg
+电视剧 | tv-series | cover.jpg
 {% endsubpagebox %}
 {% subpagebox culture %}
 电影 | movies | cover.jpg
