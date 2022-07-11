@@ -17,8 +17,8 @@
 
 - title: 一位少年
   intro: 一名视障者的日志
-  url: https://lad.one
-  logo: lad.one.png
+  url: https://armstrong.viyf.org
+  logo: armstrong.viyf.org.png
 
 - title: 猫鱼的小窝
   intro: 记录猫鱼生活的琐事
@@ -57,7 +57,7 @@
 
 - title: 孤斗
   intro: 做自己，不隨波逐流，不妥協
-  url: http://d-d.design
+  url: https://d-d.design
   logo: d-d.design.png
 
 - title: 有跡可尋
@@ -65,11 +65,6 @@
   url: https://kyarameru.net
   logo: kyarameru.net.png
   warn: 搬迁中
-
-- title: 致郁系
-  intro: 站长叫16，日常向站点
-  url: https://www.juroku.net
-  logo: juroku.net.jpg
 
 - title: BETTYPLEX
   intro: Life is full of regrets.
@@ -80,3 +75,8 @@
   intro: 分享生活 · 留下感动
   url: https://www.thyuu.com
   logo: thyuu.com.png
+
+- title: 小鹿生活志
+  intro: 一个写故事的博客
+  url: https://www.t223.top
+  logo: t223.top.png
