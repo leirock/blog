@@ -1,6 +1,6 @@
 {
   "name": "pinlyu-com",
-  "version": "3.7.3",
+  "version": "3.7.4",
   "private": true,
   "scripts": {
     "clean": "./node_modules/.bin/hexo clean",
