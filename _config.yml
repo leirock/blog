@@ -134,12 +134,6 @@ server:
 # 黑白滤镜
 gray_filter: false
 
-# 自定义页面文件夹名
-custom_page_path:
-  culture: culture
-  album: album
-  links: links
-
 # GitHub repository
 github_repo: leirock/blog
 

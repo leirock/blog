@@ -2,8 +2,8 @@ const yaml = require('js-yaml');
 const path = require('path');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 
-const linksSrc = './source/' + hexo.config.custom_page_path.links + '/';
-const linksDist = './public/' + hexo.config.custom_page_path.links + '/';
+const linksSrc = './source/links/';
+const linksDist = './public/links/';
 const files = readdirSync(linksSrc);
 try {
     mkdirSync(linksDist, { recursive: true });

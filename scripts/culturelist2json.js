@@ -2,8 +2,8 @@ const yaml = require('js-yaml');
 const path = require('path');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync, stat } = require('fs');
 
-const cultureSrc = './source/' + hexo.config.custom_page_path.culture + '/';
-const cultureDist = './public/' + hexo.config.custom_page_path.culture + '/';
+const cultureSrc = './source/culture/';
+const cultureDist = './public/culture/';
 const mediaType = readdirSync(cultureSrc);
 
 for (var i in mediaType) {

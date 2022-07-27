@@ -30,7 +30,7 @@ hexo.extend.tag.register('dot', function (args) {
 
 // 友链列表
 hexo.extend.tag.register('linklist', function (args) {
-    const iconSrc = cosDomain + '/' + hexo.config.custom_page_path.links + '/' + args + '/';
+    const iconSrc = cosDomain + '/links/' + args + '/';
     const jsonSrc = args + '.json';
     return `<div class="link-list" icon-src="${iconSrc}" json-src="${jsonSrc}"></div>`;
 });
@@ -38,8 +38,8 @@ hexo.extend.tag.register('linklist', function (args) {
 
 // 文艺清单
 hexo.extend.tag.register('culturelist', function (args) {
-    const coverSrc = cosDomain + '/' + hexo.config.custom_page_path.culture + '/' + args + '/';
-    const jsonSrc = args + '-list.json';
+    const coverSrc = cosDomain + '/culture/' + args + '/';
+    const jsonSrc = args + '.json';
     return `<div class="culture-list" cover-src="${coverSrc}" json-src="${jsonSrc}"></div>`;
 });
 
@@ -47,8 +47,8 @@ hexo.extend.tag.register('culturelist', function (args) {
 // 相册
 // 如果输入是两个值，那么用 args[0]，args[1] 分别代表
 hexo.extend.tag.register('album', function (args) {
-    const photoSrc = cosDomain + '/' + hexo.config.custom_page_path.album + '/' + args + '/';
-    const jsonSrc = photoSrc + args + '-list.json';
+    const photoSrc = cosDomain + '/album/' + args + '/';
+    const jsonSrc = photoSrc + args + '.json';
     return `
         <style>
             .post-block { 
