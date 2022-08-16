@@ -6,7 +6,7 @@ toc:
     enable: false
 ---
 
-使用人民币请扫描微信赞赏码，其他币种请选择PayPal。如需给我留言，您可以在支付时填写附言。
+使用人民币请选择微信支付，其他币种请选择PayPal。如需给我留言，您可以在支付时填写附言。
 
 {% tabs Payment %}
 <!-- tab 微信@fa-brands fa-weixin -->
