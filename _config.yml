@@ -137,9 +137,6 @@ gray_filter: false
 # GitHub repository
 github_repo: leirock/blog
 
-# 爱发电个人主页
-afdian: leirock
-
 # COS 存储桶自定义域名
 cos_domain: https://cos.pinlyu.com
 

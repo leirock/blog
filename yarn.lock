@@ -55,9 +55,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "18.6.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.3.tgz#4e4a95b6fe44014563ceb514b2598b3e623d1c98"
-  integrity sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==
+  version "18.7.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.6.tgz#31743bc5772b6ac223845e18c3fc26f042713c83"
+  integrity sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==
 
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
@@ -1442,11 +1442,11 @@ hexo-log@^2.0.0:
     chalk "^4.0.0"
 
 hexo-log@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-log/-/hexo-log-3.0.0.tgz#bbdb75eabef3bf7aee83400a3969db06d5539b61"
-  integrity sha512-fd87qXYznpNTa8SLov+wjDsrPssk4yKSgdIQg1wJPcuthy8ngvbXYdqaJ4vWMSADZ+D257EmKXTJHJyaxJQhVw==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-log/-/hexo-log-3.1.0.tgz#f1c980a2136e2227b8a1bec26f9d9f99aad928ff"
+  integrity sha512-19h2g1xItVx0voyoAU91+bvrRDCLfIvw12GyCug52cz0MeA31o/j3pO0DKcUXYTG7VrYGtP1xDnmFZWiDL5lnw==
   dependencies:
-    nanocolors "^0.2.12"
+    picocolors "^1.0.0"
 
 hexo-next-artalk@^0.1.0:
   version "0.1.0"
@@ -1527,9 +1527,9 @@ hexo-util@2.5.0:
     strip-indent "^3.0.0"
 
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.6.1.tgz#19b79a1ec751a735ffe34766b65d8e2039c00519"
-  integrity sha512-xj1jUrId2qTe8L/tRizWWRl+j7X1Zzh5rCVtffboOU0p/EfbPomxIxDvntTHT3fcqgvLHsncqJF9V5j7+buOqA==
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.7.0.tgz#13d09292e79d260db35399710b3e19f3995443a3"
+  integrity sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
@@ -1783,9 +1783,9 @@ is-binary-path@~2.1.0:
     binary-extensions "^2.0.0"
 
 is-core-module@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.9.0.tgz#e1c34429cd51c6dd9e09e0799e396e27b19a9c69"
-  integrity sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.10.0.tgz#9012ede0a91c69587e647514e1d5277019e728ed"
+  integrity sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==
   dependencies:
     has "^1.0.3"
 
@@ -2153,9 +2153,9 @@ merge2@^1.2.3, merge2@^1.3.0:
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
 micro-memoize@^4.0.9:
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/micro-memoize/-/micro-memoize-4.0.10.tgz#cedf7682df990cd2290700af4537afa6dba7d4e9"
-  integrity sha512-rk0OlvEQkShjbr2EvGn1+GdCsgLDgABQyM9ZV6VoHNU7hiNM+eSOkjGWhiNabU/XWiEalWbjNQrNO+zcqd+pEA==
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/micro-memoize/-/micro-memoize-4.0.11.tgz#f664afc8bd8c11cb2838716a7306d6e1ec205d3a"
+  integrity sha512-CjxsaYe4j43df32DtzzNCwanPqZjZDwuQAZilsCYpa2ZVtSPDjHXbTlR4gsEZRyO9/twHs0b7HLjvy/sowl7sA==
 
 micromatch@^4.0.2, micromatch@^4.0.4:
   version "4.0.5"
@@ -2274,11 +2274,6 @@ ms@2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
-
-nanocolors@^0.2.12:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/nanocolors/-/nanocolors-0.2.13.tgz#dfd1ed0bfab05e9fe540eb6874525f0a1684099b"
-  integrity sha512-0n3mSAQLPpGLV9ORXT5+C/D4mwew7Ebws69Hx4E2sgz2ZA5+32Q80B9tL8PbL7XHnRDiAxH/pnrUJ9a4fkTNTA==
 
 negotiator@0.6.3:
   version "0.6.3"
