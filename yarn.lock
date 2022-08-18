@@ -1449,9 +1449,9 @@ hexo-log@^3.0.0:
     picocolors "^1.0.0"
 
 hexo-next-artalk@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/hexo-next-artalk/-/hexo-next-artalk-0.1.0.tgz#c6f909df19a149f454a7c4f5e79bb7afe4de8f46"
-  integrity sha512-3y6vKTElN9Ij8NhXoVN74+Cz+PerGOUhcmpy5RJyaCJdfZta/E2keu8e0C4Vk5cQQ2BZJuTuiWotqgm6R9/kHw==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/hexo-next-artalk/-/hexo-next-artalk-0.1.1.tgz#5718f3605184ba7553acb787f8f3e6834f254ac1"
+  integrity sha512-Adsvsg3PdqdB+NY9NoFyzeosZN/YbXHQmlad5VOHer9njmFeqleWuWqYDwDUgb9M7xUL4islSJNB3XmsPdvRYw==
   dependencies:
     "@next-theme/utils" "^1.3.0"
 
