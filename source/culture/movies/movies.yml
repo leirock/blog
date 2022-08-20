@@ -10,11 +10,29 @@
   score: 4.5
   intro: 无论是立意还是动画制作都很优秀，我愿称之为近年国漫的巅峰之作。
 
+- title: '复仇者联盟3：无限战争 Avengers: Infinity War'
+  cover: 复仇者联盟3.jpg
+  author: 美国 2018
+  score: 1
+  intro: 依然无法感受到漫威超级英雄电影好看之处，从头打到尾，看得很累。大概就是粉丝的狂欢罢了。
+
+- title: 寂静之地 A Quiet Place
+  cover: 寂静之地.jpg
+  author: 美国 2018
+  score: 3
+  intro: 一发出声音就会被怪物抓走，设定不错。但是剧情逻辑不行，全家花样作死，危机面前国家和军队又在哪里？
+
 - title: 红海行动
   cover: 红海行动.jpg
   author: 中国 2018
   score: 5
   intro: 战争场面很过瘾，甚至有些过于血腥了，以至于在香港被定级为三级。
+
+- title: '雷神3：诸神黄昏 Thor: Ragnarok'
+  cover: 雷神3.jpg
+  author: 美国 2017
+  score: 1
+  intro: 第一次看漫威电影，除了特效还算可以，剧情无聊而且强行插科打诨，看了个寂寞。
 
 - title: 战狼2
   cover: 战狼2.jpg
