@@ -140,12 +140,6 @@ github_repo: leirock/blog
 # COS 存储桶自定义域名
 cos_domain: https://cos.pinlyu.com
 
-# Umami Analytics
-## See: https://umami.is/docs/about
-umami:
-  script: https://stat.pinlyu.com/script.js
-  website_id: 93f919a5-83db-47a5-a13d-ac167310c81b
-
 # Artalk
 ## Config: https://artalk.js.org
 ## Plugin: https://github.com/leirock/hexo-next-artalk
