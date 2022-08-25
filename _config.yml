@@ -145,9 +145,9 @@ cos_domain: https://cos.pinlyu.com
 ## Plugin: https://github.com/leirock/hexo-next-artalk
 artalk:
   enable: true
-  server: https://cmt.pinlyu.com
-  jsUrl: https://cmt.pinlyu.com/dist/Artalk.js
-  cssUrl: https://cmt.pinlyu.com/dist/Artalk.css
+  server: https://comment.pinlyu.com
+  jsUrl: https://comment.pinlyu.com/dist/Artalk.js
+  cssUrl: https://comment.pinlyu.com/dist/Artalk.css
   commentCount: true
   pvCount: false
   darkMode: auto
