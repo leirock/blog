@@ -4,7 +4,7 @@ toc:
     enable: false
 ---
 
-![曲院风荷](https://cos.pinlyu.com/guestbook/quyuanfenghe.jpg#650x)
+![曲院风荷](https://cos.pinlyu.com/guestbook/quyuanfenghe.jpg#600x)
 
 您好，欢迎访问**频率**。
 
