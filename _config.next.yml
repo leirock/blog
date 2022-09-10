@@ -63,7 +63,7 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: /resources/img/avatar.jpg
+  url: /resources/img/avatar.webp
   rounded: true
 
 site_state: false
