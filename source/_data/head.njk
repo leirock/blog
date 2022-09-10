@@ -17,4 +17,10 @@
 {% endif %}
 
 {### Umami Analytics ###}
-<script async defer data-website-id="dfd4ef79-619d-4b55-b84e-981fd43cefa9" src="https://stat.pinlyu.com/script.js"></script>
+{% if config.umami.enable %}
+  <script async defer data-website-id="{{ config.umami.website_id  }}" src="{{ config.umami.script_url  }}"></script>
+{% endif %}
+
+{### Font Family ###}
+<link rel="stylesheet" href="/resources/fonts/longcang/longcang-regular.css" >
+<link rel="stylesheet" href="/resources/fonts/lxgw/lxgwwenkailite-regular.css" >

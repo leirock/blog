@@ -145,7 +145,7 @@ font:
   enable: true
   global:
     external: false
-    family: LXGW  # EB Garamond, Noto Serif SC
+    family: LXGW WenKai Lite  # EB Garamond, Noto Serif SC
   title:
     external: false
     family: Long Cang
