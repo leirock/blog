@@ -58,7 +58,7 @@ curl -sSO http://download.bt.cn/install/install_panel.sh && bash install_panel.s
 
 在浏览器登录宝塔面板后，就会跳出推荐安装套件的窗口。选择 LNMP 套件极速安装，版本上因为我的机器内存只有 1G，所以就选择了 MySQL 5.5 的版本，其他都选择了最新版本。
 
-![推荐安装套件](https://cos.pinlyu.com/post/2020/46-lnmp.jpg#500x)
+![推荐安装套件](https://cos.pinlyu.com/post/2020/46-lnmp.webp#500x)
 
 {% note info %}
 #### 注意
