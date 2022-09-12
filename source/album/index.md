@@ -7,15 +7,15 @@ comments: false
 <br/>
 
 {% subpagebox album %}
-风光 | landscape | 台湾阿里山1.jpg
-纪实 | documentary | 杭州曲院风荷.jpg
-风物 | culture | 夜未央音乐节.jpg
+风光 | landscape | 台湾阿里山1.webp
+纪实 | documentary | 杭州曲院风荷.webp
+风物 | culture | 夜未央音乐节.webp
 {% endsubpagebox %}
 
 {% subpagebox album %}
-美食 | food | 新北·油葱粿.jpg
-博物 | museum | 浦江·尚书第.jpg
-生灵 | animals | 新北平溪的猫咪.jpg
+美食 | food | 新北·油葱粿.webp
+博物 | museum | 浦江·尚书第.webp
+生灵 | animals | 新北平溪的猫咪.webp
 {% endsubpagebox %}
 
 <!-- LICENSE SECTION -->

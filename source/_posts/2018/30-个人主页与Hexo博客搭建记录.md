@@ -14,7 +14,7 @@ date: 2018-06-06 18:03:02
 
 购买到合适的域名之后，就需要把网站通过 DNS 解析到对应的域名上，我的网站 DNS 解析由 Cloudflare 提供。目前的个人主页与博客都放在 [Netlify](https://www.netlify.com) 上，由 Netlify 获取 GitHub 对应的项目仓库内容自动进行网站页面生成与部署。所以直接在 Netlify 对应的项目中添加好域名，再根据提示去设置解析。
 
-![Cloudflare DNS 设置](https://cos.pinlyu.com/post/2018/30-dns.png#600x)
+![Cloudflare DNS 设置](https://cos.pinlyu.com/post/2018/30-dns.webp#600x)
 
 上图中主机记录 `Name` 就是我们希望网站访问时的域名，如果我们的域名是 `example.com`，那么设置好主机记录后我们的访问域名也即 `主机记录.example.com`。当主机记录为 `@` 时，对应就是直接访问我们的根域名。记录值 `Value` 填写的是 Netlify 上对应项目的二级域名地址。
 

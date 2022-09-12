@@ -4,7 +4,7 @@ toc:
     enable: false
 ---
 
-![曲院风荷](https://cos.pinlyu.com/file/guestbook.jpg#600x)
+![维港落日](https://cos.pinlyu.com/file/guestbook.webp#650x)
 
 您好，欢迎访问**频率**。
 
@@ -15,6 +15,6 @@ toc:
 ### 在这里发现更多
 
 - 邮箱：<span>zdlzj (at) foxmail.com</span>
-- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://cos.pinlyu.com/file/wechat-channel.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
+- 订阅：[RSS](/atom.xml) / <a class="fancybox fancybox.image" href="https://cos.pinlyu.com/file/wechat-channel.webp" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="微信公众号：风卷过的起点" data-caption="微信公众号：风卷过的起点">微信公众号</a>
 - 微博：[@班班频率](https://dlzhang.com/weibo)
 - 哔哩哔哩：[@班班频率](https://dlzhang.com/bilibili)

@@ -7,14 +7,14 @@ comments: false
 <br/>
 
 {% subpagebox culture %}
-阅读 | books | cover.jpg
-纪录片 | documentaries | cover.jpg
-电视剧 | tv-series | cover.jpg
+阅读 | books | cover.webp
+纪录片 | documentaries | cover.webp
+电视剧 | tv-series | cover.webp
 {% endsubpagebox %}
 {% subpagebox culture %}
-电影 | movies | cover.jpg
-综艺 | variety-show | cover.jpg
-音乐 | music | cover.jpg
+电影 | movies | cover.webp
+综艺 | variety-show | cover.webp
+音乐 | music | cover.webp
 {% endsubpagebox %}
 
 <!-- LICENSE SECTION -->

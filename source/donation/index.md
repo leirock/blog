@@ -12,7 +12,7 @@ toc:
 
 {% tabs Payment %}
 <!-- tab 微信@fa-brands fa-weixin -->
-![使用微信扫描](https://cos.pinlyu.com/file/wechat-donation.jpg#250x)
+![使用微信扫描](https://cos.pinlyu.com/file/wechat-donation.webp#250x)
 <!-- endtab -->
 
 <!-- tab PayPal@fa-brands fa-paypal -->
