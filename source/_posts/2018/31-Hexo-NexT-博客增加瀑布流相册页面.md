@@ -66,10 +66,10 @@ node scripts/phototool.js
 
 ```json
 [
-	"4032.3024 IMG_0391.webp",
-	"12500.3874 IMG_0404.webp",
-	"4032.3024 IMG_0416.webp",
-	"4032.3024 IMG_0424.webp",
+	"4032.3024 IMG_0391.JPG",
+	"12500.3874 IMG_0404.JPG",
+	"4032.3024 IMG_0416.JPG",
+	"4032.3024 IMG_0424.JPG",
 ]
 ```
 

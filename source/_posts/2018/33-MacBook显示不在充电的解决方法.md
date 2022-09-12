@@ -18,6 +18,6 @@ date: 2018-06-15 21:24:43
 
 尝试了前两个方法均告失败，尝试第三个方法开机后一开始还是显示“Battery is not charging”，不过很快就变成了下图那样。
 
-![](https://cos.pinlyu.com/post/2018/33-battery.webp#600x)
+![](https://cos.pinlyu.com/post/2018/33-battery.png#600x)
 
 本来以为没用多久的电脑硬件出问题该去 Genius Bar 维修了，不过现在看来是软件问题就不用担心了。顺便说，苹果的售后和客服质量还是相当不错的，每次体验都还符合期待。
