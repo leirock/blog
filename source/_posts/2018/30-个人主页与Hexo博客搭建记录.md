@@ -14,7 +14,7 @@ date: 2018-06-06 18:03:02
 
 购买到合适的域名之后，就需要把网站通过 DNS 解析到对应的域名上，我的网站 DNS 解析由 Cloudflare 提供。目前的个人主页与博客都放在 [Netlify](https://www.netlify.com) 上，由 Netlify 获取 GitHub 对应的项目仓库内容自动进行网站页面生成与部署。所以直接在 Netlify 对应的项目中添加好域名，再根据提示去设置解析。
 
-![Cloudflare DNS 设置](https://cos.pinlyu.com/post/2018/30-dns.webp#600x)
+![Cloudflare DNS 设置](https://cos.pinlyu.com/posts/2018/30-dns.webp#600x)
 
 上图中主机记录 `Name` 就是我们希望网站访问时的域名，如果我们的域名是 `example.com`，那么设置好主机记录后我们的访问域名也即 `主机记录.example.com`。当主机记录为 `@` 时，对应就是直接访问我们的根域名。记录值 `Value` 填写的是 Netlify 上对应项目的二级域名地址。
 
@@ -222,7 +222,7 @@ npm uni hexo-generator-index && npm i hexo-generator-indexed
 
 ### 3.6 豆瓣读书电影游戏展示
 
-如果想在博客中展示自己在豆瓣上的读书、电影、游戏等的信息，可以安装插件 [`hexo-douban`](https://github.com/mythsman/hexo-douban)。而要增加知乎、豆瓣图标支持，请阅读《 [Hexo NexT 博客增加知乎豆瓣图标支持](/post/32/)》。
+如果想在博客中展示自己在豆瓣上的读书、电影、游戏等的信息，可以安装插件 [`hexo-douban`](https://github.com/mythsman/hexo-douban)。而要增加知乎、豆瓣图标支持，请阅读《 [Hexo NexT 博客增加知乎豆瓣图标支持](/posts/32/)》。
 
 但是，该插件在 Safari 浏览器下无法显示豆瓣读书中书籍封面图片。需要做的修改就是让页面自动判断是不是豆瓣读书页面，如果是就加载一句 meta 信息，否则就不加载。所以，把以下这段代码加入到 `/source/_data/head.swig` 之中：
 
@@ -259,7 +259,7 @@ npm uni hexo-generator-index && npm i hexo-generator-indexed
 
 ### 3.8 相册
 
-关于创建瀑布流的相册，请查看《[Hexo NexT 博客增加瀑布流相册页面](/post/31/)》。
+关于创建瀑布流的相册，请查看《[Hexo NexT 博客增加瀑布流相册页面](/posts/31/)》。
 
 文章图片的存储如果放至在博客项目下，会极大地增加项目的空间。所以可以将图片上传到图床，然后在需要图片的地方引用该图片外部链接即可。我现在选择了腾讯云的 COS 对象存储，提供每个月 10GB 的免费外网下行流量，以及每个月 50GB 的免费存储空间。
 
