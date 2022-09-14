@@ -8,10 +8,10 @@
 
 “本代码仓库”指在 GitHub 上的代码仓库 [leirock/blog](https://github.com/leirock/blog)。
 
-“博文和艺评”指本代码仓库中，在以下文件夹中的所有文件：
+“博客文章和文艺评论”指本代码仓库中，在以下文件夹中的所有文件：
 
-- 博文：`source/_posts`
-- 艺评：`source/culture`
+- 博客文章：`source/_posts`
+- 文艺评论：`source/culture`
 
 “程序”或“本程序”指本代码仓库中，除“博文和艺评”以外的其他代码所构成的程序。
 
@@ -23,13 +23,13 @@
 
 请不要在使用此代码仓库中完全相同的代码来部署您对博客。您应该为您的博客设计自己的定制风格，并在您的博客中发布自己的文章和评论。
 
-## 3. 博文和艺评
+## 3. 文章和文艺评论
 
-博文和艺评采用了不同的许可协议。一般通用的版权许可发布在 «频率» 的 [网站政策](https://pinlyu.com/policy/) 页面。
+博客文章和文艺评论采用了不同的许可协议。一般通用的版权许可发布在 «频率» 的 [网站政策](https://pinlyu.com/policy/) 页面。
 
-具体博文的许可信息可以在 «频率» 对应文章的末尾找到。博文链接的格式形如 `https://pinlyu.com/post/:pid/`，其中 `:pid` 是文章对应的编号。
+具体文章的许可信息可以在 «频率» 对应文章的末尾找到。文章链接的格式形如 `https://pinlyu.com/posts/:pid/`，其中 `:pid` 是文章对应的编号。
 
-具体艺评的许可信息可以在 «频率» 的 [文艺清单](https://pinlyu.com/culture/) 页面找到。
+具体文艺评论的许可信息可以在 «频率» 的 [文艺清单](https://pinlyu.com/culture/) 页面找到。
 
 ## 4. 其他
 
@@ -66,7 +66,7 @@ DO NOT USE TOTALLY THE SAME CODES IN THIS REPOSITORY to deploy a blog in the rep
 
 Articles and reviews are licensed under different licenses. The general copyright license is posted on [Website Policy](https://pinlyu.com/policy/) of «Pinlyu» in Chinese.
 
-License details for articles can be found on the end of every article on «Pinlyu». URL Format of articles is like `https://pinlyu.com/post/:pid/`, where `:pid` is the ID of each article (or post).
+License details for articles can be found on the end of every article on «Pinlyu». URL Format of articles is like `https://pinlyu.com/posts/:pid/`, where `:pid` is the ID of each article (or post).
 
 License details for reviews can be found on [Culture Lists](https://pinlyu.com/culture/) page of «Pinlyu».
 
