@@ -18,21 +18,4 @@ comments: false
 生灵 | animals | 新北平溪的猫咪.webp
 {% endsubpagebox %}
 
-<!-- LICENSE SECTION -->
-<div class="license">
-    <div class="license-title">光影集</div>
-    <div class="license-link">
-        <a href="./">https://pinlyu.com/album/</a>
-    </div>
-    <div class="license-meta">
-        <div class="license-meta-item">
-            <div class="license-meta-title">摄影作者</div>
-            <div class="license-meta-text">班班</div>
-        </div>
-        <div class="license-meta-item">
-            <div class="license-meta-title">许可协议</div>
-            <div class="license-meta-text">禁止转载引用</div>
-        </div>
-    </div>
-    <div class="license-statement">转载或引用摄影作品前，请先联系作者获得授权！</div>
-</div>
+{% license album 光影集 %}

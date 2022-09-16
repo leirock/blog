@@ -36,6 +36,32 @@ hexo.extend.tag.register('linklist', function (args) {
 });
 
 
+// 页面许可协议
+const author = hexo.config.author;
+const blogUrl = hexo.config.url;
+hexo.extend.tag.register('license', function (args) {
+    const url = blogUrl + '/' + args[0] +'/';
+    return `
+        <div class="license">
+            <div class="license-title">${args[1]}</div>
+            <div class="license-link">
+                <a href="./">${url}</a>
+            </div>
+            <div class="license-meta">
+                <div class="license-meta-item">
+                    <div class="license-meta-title">作者</div>
+                    <div class="license-meta-text">${author}</div>
+                </div>
+                <div class="license-meta-item">
+                    <div class="license-meta-title">许可协议</div>
+                    <div class="license-meta-text">禁止转载引用</div>
+                </div>
+            </div>
+            <div class="license-statement">如需转载或引用本栏目作品，请先获得作者授权！</div>
+        </div>`;
+});
+
+
 // 文艺清单
 hexo.extend.tag.register('culturelist', function (args) {
     const coverSrc = cosDomain + '/culture/' + args + '/';
