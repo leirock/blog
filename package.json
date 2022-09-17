@@ -3,6 +3,7 @@
   "version": "3.7.6",
   "private": true,
   "scripts": {
+    "dev": "find . -name '*.DS_Store' -type f -delete && ./node_modules/.bin/hexo server",
     "clean": "./node_modules/.bin/hexo clean",
     "build": "find . -name '*.DS_Store' -type f -delete && ./node_modules/.bin/hexo generate"
   },

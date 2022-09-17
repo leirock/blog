@@ -7,7 +7,7 @@ cd ${HexoPath}
 hexo_server(){
 	open_url(){
 		sleep 2
-		open http://127.0.0.1:4000/
+		open http://localhost:4000/
 	}
     open_url &
     find . -name '*.DS_Store' -type f -delete && hexo server
@@ -16,7 +16,7 @@ hexo_server(){
 
 echo '====================== Hexo Tools ======================'
 printf "常用:\n"
-#printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
+printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
 printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 's' '(hexo server)' '预览并打开浏览器'
 printf "\n\x1B[32m所在目录：\x1B[0m"${HexoPath}"\n"
 echo '--------------------------------------------------------'

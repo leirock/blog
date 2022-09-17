@@ -126,11 +126,6 @@ markdown:
     - markdown-it-sub
     - markdown-it-sup
 
-# Hexo Server
-server:
-  port: 4000
-  ip: 127.0.0.1
-
 # 黑白滤镜
 gray_filter: false
 
