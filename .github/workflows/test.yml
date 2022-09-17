@@ -20,12 +20,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        cache: 'npm'
+        cache: 'yarn'
 
     - name: Generate Hexo site
       run: |
-        npm install
-        npm build
+        yarn
+        yarn build
         rm -rf public/images
 
 #    - name: Deploy to GitHub Pages
