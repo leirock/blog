@@ -7,9 +7,9 @@ comments: false
 <br/>
 
 {% subpagebox album %}
-风光 | landscape | 台湾阿里山1.webp
+风光 | landscape | 台湾阿里山.webp
 纪实 | documentary | 杭州曲院风荷.webp
-风物 | culture | 夜未央音乐节.webp
+风物 | culture | 浙大夜未央音乐节.webp
 {% endsubpagebox %}
 
 {% subpagebox album %}
