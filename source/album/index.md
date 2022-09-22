@@ -13,7 +13,7 @@ comments: false
 {% endsubpagebox %}
 
 {% subpagebox album %}
-美食 | food | 新北·油葱粿.webp
+美食 | food | 学厨艺·朴素一餐.webp
 博物 | museum | 浦江·尚书第.webp
 生灵 | animals | 新北平溪的猫咪.webp
 {% endsubpagebox %}
