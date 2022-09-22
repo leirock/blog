@@ -8,8 +8,8 @@ comments: false
 
 {% subpagebox album %}
 风光 | landscape | 台湾阿里山.webp
-纪实 | documentary | 杭州曲院风荷.webp
-风物 | culture | 浙大夜未央音乐节.webp
+纪实 | documentary | 浙大毕业季玉泉.webp
+风物 | culture | 香港漫展2022.webp
 {% endsubpagebox %}
 
 {% subpagebox album %}
