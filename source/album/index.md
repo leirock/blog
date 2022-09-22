@@ -8,7 +8,7 @@ comments: false
 
 {% subpagebox album %}
 风光 | landscape | 台湾阿里山.webp
-纪实 | documentary | 浙大毕业季玉泉.webp
+纪实 | documentary | 香港高铁通车之西九龙站.webp
 风物 | culture | 香港漫展2022.webp
 {% endsubpagebox %}
 
