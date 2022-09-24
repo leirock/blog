@@ -3,6 +3,7 @@ title: 智能家居？米家全家桶，Yes！
 categories: [笔记]
 tags: [智能家居, 装修]
 pid: 66
+cc_license: true
 date: 2022-05-10 13:00:00
 ---
 
