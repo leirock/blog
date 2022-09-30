@@ -1,0 +1,49 @@
+- title: Our World in Data
+  intro: 关注世界热点问题的研究与数据
+  url: https://ourworldindata.org
+  logo: ourworldindata.webp
+
+- title: Economics Help
+  intro: 经济学基本原理 ABC
+  url: https://www.economicshelp.org
+  logo: economicshelp.webp
+
+- title: Statistical Consulting
+  intro: UCLA 统计分析参考资料
+  url: https://stats.oarc.ucla.edu
+  logo: uclastats.webp
+
+- title: 标准地图服务
+  intro: 中国权威标准地图底图
+  url: http://bzdt.ch.mnr.gov.cn
+  logo: bzdt.webp
+
+- title: 国家法律法规数据库
+  intro: 中国法律法规官方数据库
+  url: https://flk.npc.gov.cn
+  logo: npcflk.webp
+
+- title: NPC Observer
+  intro: 全国人大立法工作英文资料
+  url: https://npcobserver.com
+  logo: npcobserver.webp
+
+- title: 书格
+  intro: 数字古籍影像图书馆
+  url: https://new.shuge.org/
+  logo: shuge.webp
+
+- title: 中国哲学书电子化计划
+  intro: 历代中文文献资料库
+  url: https://ctext.org/zhs
+  logo: ctext.webp
+
+- title: The 1619 Project
+  intro: 重构美国的国家历史叙事
+  url: https://www.nytimes.com/interactive/2019/08/14/magazine/1619-america-slavery.html
+  logo: 1619project.webp
+
+- title: 中国传统色
+  intro: 中国传统颜色色卡
+  url: https://colors.ichuantong.cn
+  logo: chinesecolor.webp

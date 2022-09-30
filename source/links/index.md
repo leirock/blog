@@ -1,21 +1,22 @@
 ---
 title: 友情链接
-description: 依然在坚持写博客的人们
 comments: false
 ---
 
-## 生活向
+{% tabs links %}
 
+<!-- tab 生活向@fas fa-umbrella-beach -->
 {% linklist life %}
+<!-- endtab -->
 
-## 技术向
-
+<!-- tab 技术向@fas fa-code-branch -->
 {% linklist tech %}
+<!-- endtab -->
 
-## 博客组织
-
-{% linklist org %}
-
+<!-- tab 资料库@fas fa-cubes -->
+{% linklist lib %}
+<!-- endtab -->
+{% endtabs %}
 
 * * *
 
