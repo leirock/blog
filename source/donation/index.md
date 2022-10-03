@@ -11,6 +11,7 @@ toc:
 微信支付仅限人民币，其他币种请选择PayPal。如需留言，您可以在支付时填写附言。
 
 {% tabs Payment %}
+
 <!-- tab 微信@fa-brands fa-weixin -->
 ![使用微信扫描](https://cos.pinlyu.com/file/wechat-donation.webp#250x)
 <!-- endtab -->
@@ -20,4 +21,5 @@ toc:
 <div class="text-center">{% btn https://paypal.me/zhangdl, PayPal, fa-brands fa-paypal fa-fw fa-lg, PayPal %}</div>
 <br/>
 <!-- endtab -->
+
 {% endtabs %}
