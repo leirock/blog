@@ -9,7 +9,7 @@ comments: false
 {% subpagebox culture %}
 阅读 | books | cover.webp
 纪录片 | documentaries | cover.webp
-电视剧 | tv-series | cover.webp
+剧集 | series | cover.webp
 {% endsubpagebox %}
 
 {% subpagebox culture %}
