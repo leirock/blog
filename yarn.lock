@@ -55,9 +55,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "18.11.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.0.tgz#f38c7139247a1d619f6cc6f27b072606af7c289d"
-  integrity sha512-IOXCvVRToe7e0ny7HpT/X9Rb2RYtElG1a+VshjwT00HxrM2dWBApHQoqsI6WiY7Q03vdf2bCrIGzVrkF/5t10w==
+  version "18.11.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.5.tgz#1bc94cf2f9ab5fe33353bc7c79c797dcc5325bef"
+  integrity sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==
 
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
@@ -1388,12 +1388,12 @@ hexo-fs@^3.0.1, hexo-fs@^3.1.0:
     graceful-fs "^4.1.11"
     hexo-util "^2.0.0"
 
-hexo-generator-category@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-generator-category/-/hexo-generator-category-1.0.0.tgz#cd2a2b03eb326da3ef821d6e29408488cc132eb5"
-  integrity sha512-kmtwT1SHYL2ismbGnYQXNtqLFSeTdtHNbJIqno3LKROpCK8ybST5QVXF1bZI9LkFcXV/H8ilt8gfg4/dNNcQQQ==
+hexo-generator-category@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-category/-/hexo-generator-category-2.0.0.tgz#55473d5fafaec1cab7a5d9c0da7b159c0133d65c"
+  integrity sha512-9OduRBf3WeRDa4BR0kAfRjOVHur7v3fm0NKAwbjUiqULigAdNZVZPO3cHKW2MlBbl/lI5PuWdhQ9zZ99CCCAgQ==
   dependencies:
-    hexo-pagination "1.0.0"
+    hexo-pagination "3.0.0"
 
 hexo-generator-feed@^3.0.0:
   version "3.0.0"
@@ -1420,12 +1420,12 @@ hexo-generator-sitemap@^3.0.1:
     micromatch "^4.0.2"
     nunjucks "^3.1.6"
 
-hexo-generator-tag@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-generator-tag/-/hexo-generator-tag-1.0.0.tgz#54ec23de9409c75584ea81e36057a59031b022f1"
-  integrity sha512-JDoB2T1EncRlyGSjuAhkGxRfKkN8tq0i8tFlk9I4q2L6iYxPaUnFenhji0oxufTADC16/IchuPjmMk//dt8Msg==
+hexo-generator-tag@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-generator-tag/-/hexo-generator-tag-2.0.0.tgz#f5a18c92b2f28063a76008b4090a7cea81fbbcc0"
+  integrity sha512-1px/hF3veEohWDN8jjzchQhaiz+uOStUvvMaBJC9vWOlALh30UFcapL8IrvAwwJZjFRVA+WqGgDRqoQ8+yaaFw==
   dependencies:
-    hexo-pagination "1.0.0"
+    hexo-pagination "3.0.0"
 
 hexo-i18n@^1.0.0:
   version "1.0.0"
@@ -1459,6 +1459,11 @@ hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
   integrity sha512-miEVFgxchPr2qNWxw0JWpJ9R/Yaf7HjHBZVjvCCcqfbsLyYtCvIfJDxcEwz1sDOC/fLzYPqNnhUI73uNxBHRSA==
+
+hexo-pagination@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-3.0.0.tgz#b98b050bbddff25ae646e3d00ad607ac6ae77ea7"
+  integrity sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==
 
 hexo-renderer-ejs@^2.0.0:
   version "2.0.0"
@@ -1784,9 +1789,9 @@ is-binary-path@~2.1.0:
     binary-extensions "^2.0.0"
 
 is-core-module@^2.9.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.10.0.tgz#9012ede0a91c69587e647514e1d5277019e728ed"
-  integrity sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.11.0.tgz#ad4cb3e3863e814523c96f3f58d26cc570ff0144"
+  integrity sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==
   dependencies:
     has "^1.0.3"
 
@@ -1926,9 +1931,9 @@ jpegtran-bin@^5.0.0:
     logalot "^2.0.0"
 
 js-yaml-js-types@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/js-yaml-js-types/-/js-yaml-js-types-1.0.0.tgz#bf17cb75c7587c698294d15bbfa5f9b8b10b874b"
-  integrity sha512-UNjPwuoaj4mcHkJCJSF6l4MgkzoFjG+JJkBXMYNvjgO3yE9gTeRt+E6PN022vduz/daZZ7HmlEiSEE36NrGE4w==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/js-yaml-js-types/-/js-yaml-js-types-1.0.1.tgz#fa57135b99d67b3612718426af2d9b314e5c6808"
+  integrity sha512-5tpfyORs8OQ43alNERbWfYRCtWgykvzYgY46fUhrQi2+kS7N0NuuFYLZ/IrfmVm5muLTndeMublgraXiFRjEPw==
   dependencies:
     esprima "^4.0.1"
 
@@ -3276,9 +3281,9 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
 
 uglify-js@^3.13.3:
-  version "3.17.3"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.17.3.tgz#f0feedf019c4510f164099e8d7e72ff2d7304377"
-  integrity sha512-JmMFDME3iufZnBpyKL+uS78LRiC+mK55zWfM5f/pWBJfpOttXAqYfdDGRukYhJuyRinvPVAtUhvy7rlDybNtFg==
+  version "3.17.4"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.17.4.tgz#61678cf5fa3f5b7eb789bb345df29afb8257c22c"
+  integrity sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
