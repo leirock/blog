@@ -96,8 +96,8 @@ hexo.extend.tag.register('subpagebox', function ([args, delimiter = '|', comment
         return `
             <div class="subpage-box-cover">
                 <a href="${item[1]}/">
-                    <img alt="${item[0]}" src="${imageSource}">
                     <p class="image-caption">${item[0]}</p>
+                    <img alt="${item[0]}" src="${imageSource}">
                 </a>
             </div>
         `;
