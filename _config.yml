@@ -126,7 +126,7 @@ markdown:
     - markdown-it-sup
 
 # 黑白滤镜
-gray_filter: false
+gray_filter: true
 
 # GitHub repository
 github_repo: leirock/blog
