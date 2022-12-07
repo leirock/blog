@@ -4,6 +4,7 @@ categories: []
 tags: []
 pid:
 header: true
+donation: true
 indent: false
 mathjax: false
 comments: true
