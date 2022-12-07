@@ -112,7 +112,8 @@
 
 
 {### 赞赏 ###}
-{%- if (not post.orig_author) and (post.pid > 0) %}
+{### 三类不开启赞赏：转载文章(orig_author: xxx)、通知公告(pid: 0)、手动设置不开启(donation: false) ###}
+{%- if (not post.orig_author) and (post.pid > 0) and (post.donation != false) %}
   <div class="donation">
     <div class="donation-label">喜欢这篇文章？赞赏一下吧！</div>
     <a class="donation-button" href="/donation/">赞赏作者</a>
