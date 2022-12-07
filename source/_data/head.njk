@@ -1,17 +1,19 @@
-{### 黑白滤镜 ###}
+{### 哀悼用滤镜 ###}
 {% if config.gray_filter %}
   <style>
     html {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: gray;
+      filter: grayscale(85%) saturate(80%);
+      -webkit-filter: grayscale(85%) saturate(80%);
+      -moz-filter: grayscale(85%) saturate(80%);
+      -ms-filter: grayscale(85%) saturate(80%);
+      -o-filter: grayscale(85%) saturate(80%);      
     }
-    body {
-      background-image: none;
-      background: #d2d2d2;
+    
+    @media (prefers-color-scheme: light) {
+      body {
+        background-image: none;
+        background: #d2d2d2;
+      }
     }
   </style>
 {% endif %}
