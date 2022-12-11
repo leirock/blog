@@ -13,7 +13,7 @@ comments: false
 {% linklist tech %}
 <!-- endtab -->
 
-<!-- tab 资料库@fas fa-cubes -->
+<!-- tab 收藏夹@fas fa-bookmark -->
 {% linklist lib %}
 <!-- endtab -->
 {% endtabs %}
