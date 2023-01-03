@@ -55,9 +55,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "18.11.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.17.tgz#5c009e1d9c38f4a2a9d45c0b0c493fe6cdb4bcb5"
-  integrity sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==
+  version "18.11.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.18.tgz#8dfb97f0da23c2293e554c5a50d61ef134d7697f"
+  integrity sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==
 
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
@@ -1021,9 +1021,9 @@ fast-xml-parser@^3.19.0:
     strnum "^1.0.4"
 
 fastq@^1.6.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
-  integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
 
@@ -1514,9 +1514,9 @@ hexo-server@^3.0.0:
     serve-static "^1.14.1"
 
 hexo-theme-next@^8.13.0:
-  version "8.14.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.14.0.tgz#44755ee388e2a57a7fe28f2353a13ee493e19283"
-  integrity sha512-AJjue2bE5lqaZ4cwBR/vnfy4nvTWr4MEJdbyZr6PAKPlnBbuYozgL1lOZ3SeLt3CUiSynPCrnClmtWvDz2q3iw==
+  version "8.14.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.14.1.tgz#380ed5ef21498d0eca4a70da34714fd025863cef"
+  integrity sha512-7nf9AXlCYt3dgfoFVPA1ck9bJw71BkTZsHX09z02HYlVt4SJ0cI2agW02GGfeg2n0SxJCnOGRlcmR9/37E3TEA==
 
 hexo-util@2.5.0:
   version "2.5.0"
