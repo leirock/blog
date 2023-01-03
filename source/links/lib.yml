@@ -59,3 +59,13 @@
   intro: 中国传统颜色色卡
   url: https://colors.ichuantong.cn
   logo: chinesecolor.webp
+
+- title: 含韵百科
+  intro: 全方位认识张含韵的百科站点
+  url: https://hanyun.pinlyu.com
+  logo: hanyunwiki.webp
+
+- title: 小鸡词典
+  intro: 网络流行语词典
+  url: https://jikipedia.com
+  logo: jikipedia.webp
