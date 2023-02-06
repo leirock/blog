@@ -18,7 +18,7 @@ hexo.extend.injector.register('head_begin', () => {
     return `
         <link rel="preconnect" href="${cosDomain}" crossorigin="">
         <link rel="preconnect" href="${vendorsCdn}" crossorigin="">
-        <link rel="preconnect" href="https://cravatar.cn" crossorigin="">`;
+        <link rel="preconnect" href="https://cdn.helingqi.com" crossorigin="">`;
 });
 
 
