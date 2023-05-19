@@ -179,6 +179,7 @@ umami:
   enable: true
   script_url: https://stat.pinlyu.com/script.js
   website_id: dfd4ef79-619d-4b55-b84e-981fd43cefa9
+  data_host_url: # <your umami script CDN url> https://github.com/umami-software/umami/issues/95
 
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
