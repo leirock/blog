@@ -1,3 +1,10 @@
+#- title: ABCD
+#  intro: abcdefg
+#  url: http://abc.com
+#  logo: abc.com.webp
+#  info: xyz
+#  warn: 404
+
 - title: moliu
   intro: 数据分析，经济学 girl
   url: http://shuxinyang.com
@@ -37,14 +44,8 @@
 
 - title: 叶开博客
   intro: 90后阿宅一枚
-  url: https://xn--qpru0x.cn
-  logo: xn--qpru0x.cn.webp
-
-- title: XUHENG
-  intro: 日常生活即是颂歌
-  url: https://blog.fateso.com
-  logo: fateso.com.webp
-  warn: 404
+  url: https://qq.md
+  logo: qq.md.webp
 
 - title: Vian
   intro: 想要的都拥有，得不到的都释怀...
@@ -85,3 +86,8 @@
   intro: 有肉有猫有生活
   url: https://meuicat.com
   logo: meuicat.com.webp
+
+- title: 胤的博客
+  intro: 所念皆星河
+  url: https://blog.zengjunyin.com
+  logo: zengjunyin.com.webp
