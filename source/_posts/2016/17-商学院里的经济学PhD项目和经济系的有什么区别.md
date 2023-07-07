@@ -4,9 +4,12 @@ categories: [观点]
 tags: [经济, PhD]
 pid: 17
 orig_src: 知乎
-orig_url: https://www.zhihu.com/question/46344210/answer/118946681
 date: 2016-08-26 02:33:00
 ---
+
+{% note success %}
+该知乎回答被收录于「知乎圆桌」。
+{% endnote %}
 
 关注了好久的问题，最近刚入读某校商学院的经济学PhD项目，而敝校刚好在商学院和经济系都有经济学 PhD 项目，所以终于可以就自己近期的一些了解来答题了。
 <!-- more -->
