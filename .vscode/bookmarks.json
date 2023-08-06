@@ -149,31 +149,6 @@
 					"label": "Vendors"
 				}
 			]
-		},
-		{
-			"path": "source/_data/body-end.njk",
-			"bookmarks": [
-				{
-					"line": 17,
-					"column": 14,
-					"label": "友链列表"
-				},
-				{
-					"line": 58,
-					"column": 14,
-					"label": "文艺清单"
-				},
-				{
-					"line": 89,
-					"column": 12,
-					"label": "相册"
-				},
-				{
-					"line": 168,
-					"column": 0,
-					"label": "二手交易"
-				}
-			]
 		}
 	]
 }

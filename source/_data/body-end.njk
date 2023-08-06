@@ -17,112 +17,96 @@
 
 {### 友链列表 ###}
 <script{{ pjax }} type="text/javascript">
-  //jquery selector
-  var $linkList = $(".link-list");
-  if ($linkList.length != 0) {
-    var j = -1;
-    for	(var i = 0; i < $linkList.length; i++) {
-      const listPath = $linkList[i].getAttribute('json-src');
-      const iconPath = $linkList[i].getAttribute('icon-src');
-      //使用 getJSON 读取 JSON 文件中的数据
-      $.getJSON(listPath, function(data) {
-        j++;
-        //存储数据的变量 
-        var li = "";
-        //清空内容 
-        $linkList.eq(j).empty();
-        //将获取到的 json 格式数据遍历到 div 中
-        $.each(data, function(infoIndex, info) {
-          var labelWarn = '';
-          var labelInfo = '';
-          if (info['warn']) { 
-            labelWarn = '<span class="label warn">' + info['warn'] + '</span>';
-          }
-          if (info['info']) { 
-            labelInfo = '<span class="label info">' + info['info'] + '</span>';
-          }
-          li += '<div class="link-list-container">';
-          li += '<img class="link-list-image" src="' + iconPath + info['logo'] + '">';
-          li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
-          li += '<p>' + info['intro'] + '</p>';
-          li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
-          li += '</div>';
-        })
-        //显示处理后的数据 
-        $linkList.eq(j).html(li);
-      })
-    }
-  }
-</script>
+var linkLists = document.querySelectorAll(".link-list");
 
+linkLists.forEach(function(linkList) {
+  var listPath = linkList.getAttribute('json-src');
+  var iconPath = linkList.getAttribute('icon-src');
+  
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', listPath, true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var data = JSON.parse(xhr.responseText);
+      
+      var li = "";
+      linkList.innerHTML = '';
+
+      for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
+        var info = data[infoIndex];
+        var labelWarn = info['warn'] ? '<span class="label warn">' + info['warn'] + '</span>' : '';
+        var labelInfo = info['info'] ? '<span class="label info">' + info['info'] + '</span>' : '';
+
+        li += '<div class="link-list-container">';
+        li += '<img class="link-list-image" src="' + iconPath + info['logo'] + '">';
+        li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
+        li += '<p>' + info['intro'] + '</p>';
+        li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
+        li += '</div>';
+      }
+      
+      linkList.innerHTML = li;
+    }
+  };
+  xhr.send();
+});
+</script>
 
 {### 文艺清单 ###}
 <script{{ pjax }} type="text/javascript">
-  //jquery selector
-  var $cultureList = $(".culture-list");
-  if ($cultureList.length != 0) {
-    var j = -1;
-    for	(var i = 0; i < $cultureList.length; i++) {
-      const listPath = $cultureList[i].getAttribute('json-src');
-      const coverPath = $cultureList[i].getAttribute('cover-src');
-      //使用 getJSON 读取 JSON 文件中的数据
-      $.getJSON(listPath, function(data) {
+var cultureList = document.querySelectorAll(".culture-list");
+if (cultureList.length !== 0) {
+  var j = -1;
+  for (var i = 0; i < cultureList.length; i++) {
+    const listPath = cultureList[i].getAttribute('json-src');
+    const coverPath = cultureList[i].getAttribute('cover-src');
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', listPath, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
         j++;
-        //存储数据的变量 
+        var data = JSON.parse(xhr.responseText);
         var li = "";
-        //清空内容 
-        $cultureList.eq(j).empty();
-        //将获取到的 json 格式数据遍历到 div 中
-        $.each(data, function(infoIndex, info) {
-          //影评书评链接
+        
+        cultureList[j].innerHTML = '';
+
+        for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
+          var info = data[infoIndex];
+          
           var title = info['title'];
           if (info['pid']) {
-            title = '<a href="/posts/'+ info['pid'] +'/" >' + info['title'] +'</a>';
+            title = '<a href="/posts/' + info['pid'] + '/">' + info['title'] + '</a>';
           }
 
-          //作者
-          if (info['author']) {
-            var author = '<span class="author">' + info['author'] +'</span>';
-          } else {
-            var author = '';
-          }
+          var author = info['author'] ? '<span class="author">' + info['author'] + '</span>' : '';
 
-          //简介
-          if (info['intro']) {
-            var intro = info['intro'];
-          } else {
-            var intro = '';
-          }
-          
-          //分数
+          var intro = info['intro'] ? info['intro'] : '';
+
+          var star = '';
           if (info['score'] == null) {
-            var star = '';
+            star = '';
           } else {
-            //初始化
             var colorStar = '';
             var greyStar = '';
-            var int = info['score'] - info['score'] % 1; //整数部分
-            //是否有小数
-            var fract = 0; 
-            if (info['score'] % 1 != 0) {
+            var int = Math.floor(info['score']); //整数部分
+            var fract = 0;
+            if (info['score'] % 1 !== 0) {
               fract = 1;
             }
-            //整数星级
-            for	(var m = 0; m < int; m++) {
+            for (var m = 0; m < int; m++) {
               colorStar += '★';
             }
-            //半星级
-            if (fract != 0) {
+            if (fract !== 0) {
               colorStar += '☆';
             }
-            //用空缺星补齐五星
-            for	(var m = 0; m < (5 - fract - int); m++) {
+            for (var m = 0; m < (5 - fract - int); m++) {
               greyStar += '☆';
             }
-            if (info['score'] != 5) {
-              star = '<span class="star-score">'+ colorStar +'<span class="grey-star">'+ greyStar +'</span></span>';
+            if (info['score'] !== 5) {
+              star = '<span class="star-score">' + colorStar + '<span class="grey-star">' + greyStar + '</span></span>';
             } else {
-              star = '<span class="star-score">'+ colorStar +'</span>';
+              star = '<span class="star-score">' + colorStar + '</span>';
             }
           }
 
@@ -130,16 +114,17 @@
           li += '<div class="media-cover" style="background-image:url(' + coverPath + info['cover'] + ')"></div>';
           li += '<div class="media-meta">';
           li += '<div class="media-meta-item title">' + title + '</div>';
-          li += '<div class="media-meta-item">' + author + star +'</div>';
+          li += '<div class="media-meta-item">' + author + star + '</div>';
           li += '<div class="media-meta-item intro">' + intro + '</div>';
           li += '</div></div>';
-        })
+        }
         
-        //显示处理后的数据 
-        $cultureList.eq(j).html(li);
-      })
-    }
+        cultureList[j].innerHTML = li;
+      }
+    };
+    xhr.send();
   }
+}
 </script>
 
 
@@ -149,74 +134,79 @@
 #}
 <script src="/resources/minigrid.min.js"></script>
 <script{{ pjax }} type="text/javascript">
-  var $album = $(".album")[0];
-  if($album) {
-    // 相册列表 JSON 数据
-    var imgDataPath = $album.getAttribute('json-src');
-    // 照片存储路径
-    var imgPath = $album.getAttribute('photo-src');
-    // 最多显示数量
-    var imgMaxNum = 50;
-    // 获取窗口大小以决定图片宽度
-    var windowWidth = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
-    if (windowWidth < 768) {
-        var imageWidth = 145; // 移动端图片宽度
-    } else {
-        var imageWidth = 235;
-    }
+var album = document.querySelector(".album");
+if (album) {
+  // 相册列表 JSON 数据
+  var imgDataPath = album.getAttribute('json-src');
+  // 照片存储路径
+  var imgPath = album.getAttribute('photo-src');
+  // 最多显示数量
+  var imgMaxNum = 50;
+  // 获取窗口大小以决定图片宽度
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var imageWidth;
 
-    // 腾讯云自定义样式 (数据万象外网流量需要付费)
-    //var imgStyle = '!' + imageWidth + 'x';
-    //var imgStyle = '!300x';
-
-    // 生成相册
-    var LinkDataPath = imgDataPath;
-    photo = {
-        page: 1,
-        offset: imgMaxNum,
-        init: function () {
-            var that = this;
-            $.getJSON(LinkDataPath, function (data) {
-                that.render(that.page, data);
-            });
-        },
-        render: function (page, data) {
-            var begin = (page - 1) * this.offset;
-            var end = page * this.offset;
-            if (begin >= data.length) return;
-            var imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
-            for (var i = begin; i < end && i < data.length; i++) {
-                imgNameWithPattern = data[i].split(' ')[1];
-                imgName = imgNameWithPattern.split('.')[0]
-                imageSize = data[i].split(' ')[0];
-                imageX = imageSize.split('.')[0];
-                imageY = imageSize.split('.')[1];
-                li += '<div class="card" style="width:' + imageWidth + 'px" >'
-                li += '<div class="album-photo" style="height:'+ imageWidth * imageY / imageX + 'px">'
-                li += '<a class="fancybox fancybox.image" href="' + imgPath + imgNameWithPattern + '" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="group" rel="group" data-caption="' + imgName + '" title="' +  imgName + '">'
-                li += '<img data-src="' + imgPath + imgNameWithPattern + '" src="' + imgPath + imgNameWithPattern + '" alt="' +  imgName + '" data-loaded="true">'
-                li += '</a>'
-                li += '</div>'
-                li += '</div>'
-            }
-            $(".album").append(li);
-            this.minigrid();
-        },
-
-        minigrid: function() {
-          var grid = new Minigrid({
-              container: '.album',
-              item: '.card',
-              gutter: 12
-          });
-          grid.mount();
-          $(window).resize(function() {
-              grid.mount();
-          });
-        }
-    }
-    photo.init();
+  if (windowWidth < 768) {
+    imageWidth = 145; // 移动端图片宽度
+  } else {
+    imageWidth = 235;
   }
+
+  // 腾讯云自定义样式 (数据万象外网流量需要付费)
+  //var imgStyle = '!' + imageWidth + 'x';
+  //var imgStyle = '!300x';
+
+  // 生成相册
+  var linkDataPath = imgDataPath;
+  var photo = {
+    page: 1,
+    offset: imgMaxNum,
+    init: function () {
+      var that = this;
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", linkDataPath, true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var data = JSON.parse(xhr.responseText);
+          that.render(that.page, data);
+        }
+      };
+      xhr.send();
+    },
+    render: function (page, data) {
+      var begin = (page - 1) * this.offset;
+      var end = page * this.offset;
+      if (begin >= data.length) return;
+      var imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
+      for (var i = begin; i < end && i < data.length; i++) {
+        imgNameWithPattern = data[i].split(' ')[1];
+        imgName = imgNameWithPattern.split('.')[0];
+        imageSize = data[i].split(' ')[0];
+        imageX = imageSize.split('.')[0];
+        imageY = imageSize.split('.')[1];
+        li += '<div class="card" style="width:' + imageWidth + 'px" >';
+        li += '<div class="album-photo" style="height:'+ imageWidth * imageY / imageX + 'px">';
+        li += '<a class="fancybox fancybox.image" href="' + imgPath + imgNameWithPattern + '" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="group" rel="group" data-caption="' + imgName + '" title="' +  imgName + '">';
+        li += '<img data-src="' + imgPath + imgNameWithPattern + '" src="' + imgPath + imgNameWithPattern + '" alt="' +  imgName + '" data-loaded="true">';
+        li += '</a>';
+        li += '</div>';
+        li += '</div>';
+      }
+      album.insertAdjacentHTML('beforeend', li);
+      this.minigrid();
+    },
+    minigrid: function () {
+      var grid = new Minigrid({
+        container: '.album',
+        item: '.card',
+        gutter: 12
+      });
+      grid.mount();
+      window.addEventListener('resize', function () {
+        grid.mount();
+      });
+    }
+  };
+  photo.init();
+}
 </script>
