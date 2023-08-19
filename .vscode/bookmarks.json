@@ -6,80 +6,75 @@
 				{
 					"line": 3,
 					"column": 0,
-					"label": "字体"
-				},
-				{
-					"line": 21,
-					"column": 0,
 					"label": "背景"
 				},
 				{
-					"line": 70,
+					"line": 40,
 					"column": 0,
 					"label": "侧边栏"
 				},
 				{
-					"line": 156,
+					"line": 126,
 					"column": 0,
 					"label": "文章页"
 				},
 				{
-					"line": 335,
+					"line": 305,
 					"column": 0,
 					"label": "图片与相册"
 				},
 				{
-					"line": 376,
+					"line": 346,
 					"column": 0,
 					"label": "代码"
 				},
 				{
-					"line": 447,
+					"line": 417,
 					"column": 0,
 					"label": "表格"
 				},
 				{
-					"line": 471,
+					"line": 441,
 					"column": 0,
 					"label": "文末版权信息"
 				},
 				{
-					"line": 558,
+					"line": 528,
 					"column": 0,
 					"label": "按钮"
 				},
 				{
-					"line": 622,
+					"line": 592,
 					"column": 0,
 					"label": "页码页脚"
 				},
 				{
-					"line": 674,
+					"line": 644,
 					"column": 0,
 					"label": "分类标签"
 				},
 				{
-					"line": 741,
+					"line": 711,
 					"column": 0,
 					"label": "友链列表"
 				},
 				{
-					"line": 835,
+					"line": 805,
 					"column": 0,
 					"label": "子页面列表"
 				},
 				{
-					"line": 889,
+					"line": 859,
 					"column": 0,
 					"label": "文艺列表"
 				},
 				{
-					"line": 1009,
+					"line": 979,
 					"column": 0,
 					"label": "评论框"
 				},
 				{
-					"line": 1108,
+					"line": 1078,
 					"column": 0,
 					"label": "特殊排版"
 				}
