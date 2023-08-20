@@ -12,7 +12,7 @@ toc:
     enable: true
 cc_license: false
 orig_author:
-orig_source:
+orig_src:
 orig_url:
 ---
 
