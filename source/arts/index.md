@@ -5,7 +5,7 @@ comments: false
 
 <div class="text-center">既谈诗和远方，也爱浮生当下。</div>
 
-{% subpagebox culture %}
+{% subpagebox arts %}
 阅读 | books | cover.webp
 纪录片 | documentaries | cover.webp
 剧集 | series | cover.webp
@@ -14,4 +14,4 @@ comments: false
 音乐 | music | cover.webp
 {% endsubpagebox %}
 
-{% license culture 文艺清单 %}
+{% license arts 文艺清单 %}

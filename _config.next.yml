@@ -51,7 +51,7 @@ menu:
   life: /life/ || fas fa-pizza-slice
   observer: /observer/ || fas fa-eye
   notes: /notes/ || fas fa-book
-  culture: /culture/ || fas fa-guitar
+  arts: /arts/ || fas fa-guitar
   album: /album/ || fas fa-camera-retro
   guestbook: /guestbook/ || fas fa-splotch
   #  default: /guestbook/ || fas fa-splotch

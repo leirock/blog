@@ -6,13 +6,13 @@
 title: 频率
 subtitle: 风卷过的起点
 description: 爱美食/纪录片/夜猫子
-keywords: [Hexo, blog, 博客, pinlyu, 频率]
+keywords: [blog, 博客, pinlyu, 频率]
 author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://pinlyu.com
 root: /
 permalink: /posts/:pid/
@@ -45,17 +45,24 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
+# Syntax highlight
+## https://hexo.io/zh-cn/docs/syntax-highlight
+syntax_highlighter: prismjs #highlight.js
 highlight:
-  enable: false
-  line_number: false
-  auto_detect: true
-  tab_replace: true
+  auto_detect: false
+  line_number: true
+  line_threshold: 0
+  tab_replace: ''
+  exclude_languages:
+    - example
   wrap: true
   hljs: false
+## https://prismjs.com/download.html
 prismjs:
-  enable: true
   preprocess: true
   line_number: false
+  line_threshold: 0
   tab_replace: ''
 
 # Home page setting
@@ -115,23 +122,15 @@ js_minifier:
 image_minifier:
   enable: false
 
-# hexo-renderer-markdown-it
-## See: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
-markdown:
-  langPrefix: 'language-'
-  plugins:
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
+# hexo-renderer-marked
+## https://github.com/hexojs/hexo-renderer-marked
+marked:
+  figcaption: true
 
 # 黑白滤镜
 gray_filter: false
 
-# GitHub repository
-github_repo: leirock/blog
-
-# COS 存储桶自定义域名
+# 对象存储存储桶自定义域名
 cos_domain: https://cos.pinlyu.com
 
 # Artalk

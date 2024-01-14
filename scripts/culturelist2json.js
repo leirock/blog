@@ -2,32 +2,34 @@ const yaml = require('js-yaml');
 const path = require('path');
 const { readdirSync, readFileSync, mkdirSync, writeFileSync, stat } = require('fs');
 
-const cultureSrc = './source/culture/';
-const cultureDist = './public/culture/';
-const mediaType = readdirSync(cultureSrc);
+const artSrc = './source/arts/';
+const artDist = './public/arts/';
+const workTypes = readdirSync(artSrc);
 
-for (var i in mediaType) {
-    stat(cultureSrc + mediaType[i], function (err, stats) {
-        if (err) {
+for (const workType of workTypes) {
+    stat(path.join(artSrc, workType), (err, stats) => {
+        if (err || !stats.isDirectory()) {
             return;
         }
-        if (stats.isDirectory()) {
-            const mediaTypeDist = cultureDist + mediaType[i] + '/';
-            try {
-                mkdirSync(mediaTypeDist, { recursive: true });
-            } catch ({ code }) {
-                if (code !== 'EEXIST') throw code;
-            }
 
-            const mediaTypeSrc = cultureSrc + mediaType[i] + '/';
-            const files = readdirSync(mediaTypeSrc);
-            for (var j in files) {
-                if (path.extname(files[j]) === ".yml") {
-                    var doc = yaml.load(readFileSync(mediaTypeSrc + files[j], 'utf8'));
-                    var output = mediaTypeDist + files[j].slice(0, -4) + '.json';
-                    writeFileSync(output, JSON.stringify(doc));
-                }
+        const workTypeDist = path.join(artDist, workType, '/');
+        try {
+            mkdirSync(workTypeDist, { recursive: true });
+        } catch (error) {
+            if (error.code !== 'EEXIST') {
+                throw error;
             }
         }
-    })
+
+        const workTypeSrc = path.join(artSrc, workType, '/');
+        const files = readdirSync(workTypeSrc);
+
+        for (const file of files) {
+            if (path.extname(file) === ".yml") {
+                const doc = yaml.load(readFileSync(path.join(workTypeSrc, file), 'utf8'));
+                const output = path.join(workTypeDist, `${file.slice(0, -4)}.json`);
+                writeFileSync(output, JSON.stringify(doc));
+            }
+        }
+    });
 }
