@@ -1,4 +1,7 @@
 {### 文章编辑按钮 ###}
+{### 需在博客配置文件添加如下设置
+github_repo: leirock/blog
+###}
 {% if not is_index %}
   <span class="post-meta-item">
     <a href="{{ 'https://github.com/' + config.github_repo + '/edit/main/source/' + post.source }}" rel="noopener" target="_blank">编辑</a>

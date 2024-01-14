@@ -54,12 +54,12 @@ linkLists.forEach(function(linkList) {
 
 {### 文艺清单 ###}
 <script{{ pjax }} type="text/javascript">
-var cultureList = document.querySelectorAll(".culture-list");
-if (cultureList.length !== 0) {
+var artList = document.querySelectorAll(".art-list");
+if (artList.length !== 0) {
   var j = -1;
-  for (var i = 0; i < cultureList.length; i++) {
-    const listPath = cultureList[i].getAttribute('json-src');
-    const coverPath = cultureList[i].getAttribute('cover-src');
+  for (var i = 0; i < artList.length; i++) {
+    const listPath = artList[i].getAttribute('json-src');
+    const coverPath = artList[i].getAttribute('cover-src');
     
     var xhr = new XMLHttpRequest();
     xhr.open('GET', listPath, true);
@@ -69,7 +69,7 @@ if (cultureList.length !== 0) {
         var data = JSON.parse(xhr.responseText);
         var li = "";
         
-        cultureList[j].innerHTML = '';
+        artList[j].innerHTML = '';
 
         for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
           var info = data[infoIndex];
@@ -110,16 +110,16 @@ if (cultureList.length !== 0) {
             }
           }
 
-          li += '<div class="media">';
-          li += '<div class="media-cover" style="background-image:url(' + coverPath + info['cover'] + ')"></div>';
-          li += '<div class="media-meta">';
-          li += '<div class="media-meta-item title">' + title + '</div>';
-          li += '<div class="media-meta-item">' + author + star + '</div>';
-          li += '<div class="media-meta-item intro">' + intro + '</div>';
+          li += '<div class="work">';
+          li += '<div class="work-cover" style="background-image:url(' + coverPath + info['cover'] + ')"></div>';
+          li += '<div class="work-meta">';
+          li += '<div class="work-meta-item title">' + title + '</div>';
+          li += '<div class="work-meta-item">' + author + star + '</div>';
+          li += '<div class="work-meta-item intro">' + intro + '</div>';
           li += '</div></div>';
         }
         
-        cultureList[j].innerHTML = li;
+        artList[j].innerHTML = li;
       }
     };
     xhr.send();

@@ -1,3 +1,6 @@
+/* 引入 prismjs 代码高亮样式 */
+@import "prism.css"
+
 /**********************************************************/
 /************************* 全站背景 ************************/
 /**********************************************************/
@@ -310,9 +313,13 @@ blockquote {
 }
 
 /* 图片标题 */
-.post-body .image-caption {
+
+figcaption {
   margin: -10px auto 1em;
-  font-weight: 400;
+  color: #999;
+  font-size: 0.875em;
+  line-height: 1;
+  text-align: center;
 }
 
 /* 组图标题 */
@@ -344,11 +351,6 @@ blockquote {
 /**********************************************************/
 /************************ 代码 ****************************/
 /**********************************************************/
-
-/* 代码路径字体 */
-figcaption {
-  font-family: $font-family-monospace;
-}
 
 /* 行内代码 */
 code {
@@ -858,28 +860,28 @@ tbody tr {
 /**********************************************************/
 
 @media screen and (max-width: 1000px) {
-  .media {
+  .work {
     width: 100%!important;
     padding: 0!important;
   }
 }
 
 /*
-.culture-list {
+.art-list {
   width: 100%;
   position: relative;
   box-sizing: border-box;
 }
 */
 
-.culture-list:after {
+.art-list:after {
   content: '';
   display: block;
   width: 100%;
   clear: both;
 }
 
-.media {
+.work {
   width: 50%;
   height: 150px;
   float: left;
@@ -888,30 +890,30 @@ tbody tr {
   overflow: hidden;
 }
 
-.media:nth-Child(2n){
+.work:nth-Child(2n){
   padding-left: 8px;
 }
 
-.media:nth-Child(2n-1){
+.work:nth-Child(2n-1){
     padding-right: 8px;
 }
 
 /*
-.media:nth-Child(3n){
+.work:nth-Child(3n){
   padding-left: 10px;
 }
 
-.media:nth-Child(3n-1){
+.work:nth-Child(3n-1){
   padding-right: 5px;
   padding-left: 5px;
 }
 
-.media:nth-Child(3n-2){
+.work:nth-Child(3n-2){
     padding-right: 10px;
 }
 */
 
-.media-cover {
+.work-cover {
   width: 100px;
   height: 150px;
   background-position: center;
@@ -920,14 +922,14 @@ tbody tr {
   float: left;
 }
 
-.media-meta {
+.work-meta {
   width: calc(100% - 100px);
   height: 100%;
   float: left;
   position: relative;
 }
 
-.media-meta-item {
+.work-meta-item {
   width: 100%;
   //height: 16.666666667%;
   box-sizing: border-box;
@@ -938,12 +940,12 @@ tbody tr {
   //z-index: 2;
 }
 
-.media-meta-item.title {
+.work-meta-item.title {
   font-weight: bold;
   font-size: .85em;
 }
 
-.media-meta-item.intro {
+.work-meta-item.intro {
   //height: 50%;
   text-align: justify;
   display: -webkit-box;
@@ -955,11 +957,11 @@ tbody tr {
   -webkit-box-orient: vertical;
 }
 
-.media-meta-item .author {
+.work-meta-item .author {
   opacity: .65;
 }
 
-.media-meta-item .star-score {
+.work-meta-item .star-score {
   color: #b96c68;
   height: 0;
   display: inline;
@@ -968,7 +970,7 @@ tbody tr {
   //left: 5px;
 }
 
-.media-meta-item .grey-star {
+.work-meta-item .grey-star {
   color: lightgrey;
 }
 
@@ -1111,17 +1113,12 @@ hr {
 /* 图片大小 */
 img[src$='#200x'] { width:200px; }
 img[src$='#250x'] { width:250px; }
-
 img[src$='#300x'] { width:300px; }
 img[src$='#350x'] { width:350px; }
-
 img[src$='#400x'] { width:400px; }
 img[src$='#450x'] { width:450px; }
-
 img[src$='#500x'] { width:500px; }
 img[src$='#550x'] { width:550px; }
-
 img[src$='#600x'] { width:600px; }
 img[src$='#650x'] { width:650px; }
-
 img.fancybox-image { width:100%; }

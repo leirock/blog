@@ -10,10 +10,10 @@
   "repository": "leirock/blog",
   "author": "leirock",
   "hexo": {
-    "version": "6.3.0"
+    "version": "7.0.0"
   },
   "dependencies": {
-    "hexo": "^6.3.0",
+    "hexo": "^7.0.0",
     "hexo-all-minifier": "^0.5.7",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -22,9 +22,9 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-next-artalk": "^0.1.1",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it": "^7.1.0",
+    "hexo-renderer-marked": "^6.2.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-next": "8.17.1"
+    "hexo-theme-next": "^8.17.1"
   }
 }

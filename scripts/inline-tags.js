@@ -63,10 +63,10 @@ hexo.extend.tag.register('license', function (args) {
 
 
 // 文艺清单
-hexo.extend.tag.register('culturelist', function (args) {
-    const coverSrc = cosDomain + '/culture/' + args + '/';
+hexo.extend.tag.register('artlist', function (args) {
+    const coverSrc = cosDomain + '/arts/' + args + '/';
     const jsonSrc = args + '.json';
-    return `<div class="culture-list" cover-src="${coverSrc}" json-src="${jsonSrc}"></div>`;
+    return `<div class="art-list" cover-src="${coverSrc}" json-src="${jsonSrc}"></div>`;
 });
 
 

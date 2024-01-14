@@ -4,21 +4,25 @@ const { readdirSync, readFileSync, mkdirSync, writeFileSync } = require('fs');
 
 const linksSrc = './source/links/';
 const linksDist = './public/links/';
-const files = readdirSync(linksSrc);
+
 try {
     mkdirSync(linksDist, { recursive: true });
-} catch ({ code }) {
-    if (code !== 'EEXIST') throw code;
+} catch (error) {
+    if (error.code !== 'EEXIST') {
+        throw error;
+    }
 }
 
-for (var i in files) {
-    if (path.extname(files[i]) === ".yml") {
+const files = readdirSync(linksSrc);
+
+for (const file of files) {
+    if (path.extname(file) === ".yml") {
         try {
-            var doc = yaml.load(readFileSync(linksSrc + files[i], 'utf8'));
-            var output = linksDist + files[i].slice(0, -4) + '.json';
+            const doc = yaml.load(readFileSync(path.join(linksSrc, file), 'utf8'));
+            const output = path.join(linksDist, `${file.slice(0, -4)}.json`);
             writeFileSync(output, JSON.stringify(doc));
-        } catch (e) {
-            console.error(e);
+        } catch (error) {
+            console.error(error);
         }
     }
 }

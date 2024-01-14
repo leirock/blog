@@ -9,4 +9,4 @@ description: <a href="../">文艺清单</a> / 音乐
 .media-cover {width:120px;height:120px;}
 </style>
 
-{% culturelist music %}
+{% artlist music %}

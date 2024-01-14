@@ -4,27 +4,27 @@
 			"path": "source/_data/styles.styl",
 			"bookmarks": [
 				{
-					"line": 3,
+					"line": 4,
 					"column": 0,
-					"label": "背景"
+					"label": "全站背景"
 				},
 				{
-					"line": 40,
+					"line": 41,
 					"column": 0,
 					"label": "侧边栏"
 				},
 				{
-					"line": 126,
+					"line": 127,
 					"column": 0,
 					"label": "文章页"
 				},
 				{
-					"line": 305,
+					"line": 306,
 					"column": 0,
 					"label": "图片与相册"
 				},
 				{
-					"line": 346,
+					"line": 351,
 					"column": 0,
 					"label": "代码"
 				},
