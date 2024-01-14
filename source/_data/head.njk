@@ -18,12 +18,10 @@
   </style>
 {% endif %}
 
-{### Umami Analytics ###}
-{% if config.umami.enable %}
-  <script async defer data-website-id="{{ config.umami.website_id  }}" src="{{ config.umami.script_url  }}"></script>
-{% endif %}
-
 {### Font Family ###}
 <link rel="stylesheet" href="/resources/fonts/longcang/LongCang-Regular.css" >
+{###
 <link rel="stylesheet" href="/resources/fonts/lxgw/LXGWWenKaiLite-Bold.css" >
 <link rel="stylesheet" href="/resources/fonts/lxgw/LXGWWenKaiLite-Regular.css" >
+###}
+<link rel="stylesheet" href="https://lib.baomitu.com/lxgw-wenkai-webfont/latest/style.css" >
