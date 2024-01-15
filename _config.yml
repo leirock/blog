@@ -131,7 +131,7 @@ marked:
 gray_filter: false
 
 # 对象存储存储桶自定义域名
-cos_domain: https://cos.pinlyu.com
+cos_domain: https://cdn.pinlyu.com
 
 # Artalk
 ## Config: https://artalk.js.org
