@@ -38,7 +38,7 @@ apt install rsync
 
 ## 2. 将萌萌哒看板娘抱回家
 
-![](https://cos.pinlyu.com/posts/2020/47-live2d.webp#650x)
+![](https://cdn.pinlyu.com/posts/2020/47-live2d.webp#650x)
 
 ### 2.1 看板娘前端设置
 
