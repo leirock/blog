@@ -11,7 +11,7 @@
 “博客文章和文艺评论”指本代码仓库中，在以下文件夹中的所有文件：
 
 - 博客文章：`source/_posts`
-- 文艺评论：`source/culture`
+- 文艺评论：`source/arts`
 
 “程序”或“本程序”指本代码仓库中，除“博文和艺评”以外的其他代码所构成的程序。
 
@@ -29,7 +29,7 @@
 
 具体文章的许可信息可以在 «频率» 对应文章的末尾找到。文章链接的格式形如 `https://pinlyu.com/posts/:pid/`，其中 `:pid` 是文章对应的编号。
 
-具体文艺评论的许可信息可以在 «频率» 的 [文艺清单](https://pinlyu.com/culture/) 页面找到。
+具体文艺评论的许可信息可以在 «频率» 的 [文艺清单](https://pinlyu.com/arts/) 页面找到。
 
 ## 4. 其他
 
@@ -50,7 +50,7 @@
 "Articles and reviews" refers to all files included in the following folders of the repository:
 
 - Articles (also called posts): `source/_posts`
-- Reviews (also called comments): `source/culture`
+- Reviews (also called comments): `source/arts`
 
 "This Program" or the "Program" refers to all codes **except for Articles and Reviews** in the repository.
 
@@ -68,7 +68,7 @@ Articles and reviews are licensed under different licenses. The general copyrigh
 
 License details for articles can be found on the end of every article on «Pinlyu». URL Format of articles is like `https://pinlyu.com/posts/:pid/`, where `:pid` is the ID of each article (or post).
 
-License details for reviews can be found on [Culture Lists](https://pinlyu.com/culture/) page of «Pinlyu».
+License details for reviews can be found on [Art Lists](https://pinlyu.com/arts/) page of «Pinlyu».
 
 ## 4. Others
 
