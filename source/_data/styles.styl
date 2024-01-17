@@ -191,6 +191,15 @@ p {
   margin-bottom: 1em;
 }
 
+/* 标题颜色 */
+h2, h3, h4, h5 {
+  color: $link-hover-color;
+
+  @media (prefers-color-scheme: dark) {
+    color: $link-hover-color-dark;
+  }
+}
+
 /* 字号大小 */
 @media (min-width: 1200px) {
   .post-body {
@@ -1017,6 +1026,7 @@ tbody tr {
 .artalk,
 .atk-layer-wrap {
   --at-color-main: var(--link-hover-color) !important;
+  --at-color-font: $text-color !important;
 }
 
 /* 评论用户信息填写区 */
