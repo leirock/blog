@@ -1,12 +1,12 @@
 zh-CN:
   menu:
-    life: 生活 #碎碎念
-    observer: 观点 #观察者
-    arts: 文艺 #书影音
-    notes: 笔记 #笔记本
-    album: 光影 #光影集
-    guestbook: 留言 #留言板
-    # search: 搜索 #搜文章
+    life: 生活
+    observer: 观点
+    arts: 文艺
+    notes: 笔记
+    album: 光影
+    guestbook: 留言
+    # search: 搜索
   sidebar:
     toc: 目 录
   post:
