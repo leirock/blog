@@ -1652,9 +1652,9 @@ hexo-util@^3.0.1, hexo-util@^3.1.0:
     strip-indent "^3.0.0"
 
 hexo@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.npmmirror.com/hexo/-/hexo-7.1.0.tgz#80cb5ea8dd4a844de9eb2c1a2ea44c8757142a10"
-  integrity sha512-FFjo8NwqSQVxASSKFGkFUak720sFC/p3IxkDIOHLXQ1axQ5w4ipFU0DNqDzwyb5EJOMFYuMxFcurhm9olQP13A==
+  version "7.1.1"
+  resolved "https://registry.npmmirror.com/hexo/-/hexo-7.1.1.tgz#1686deb4ccfeeda950270e09292c26888538cf67"
+  integrity sha512-u6aJXG1npYkZJLl7QEOeTdm9hOwxfsLmFp4qAQVF0OAuNaikrKORjgNsjPmrWwI/tIObwjVJnEUJnV7S+NnUlw==
   dependencies:
     abbrev "^2.0.0"
     archy "^1.0.0"
