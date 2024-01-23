@@ -19,13 +19,13 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
-        cache: 'yarn'
+        node-version: '20'
+        cache: 'npm'
 
     - name: Generate Hexo site
       run: |
-        yarn
-        yarn build
+        npm install
+        npm run build
         rm -rf public/images
 
 #    - name: Deploy to GitHub Pages

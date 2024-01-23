@@ -10,7 +10,7 @@
   "repository": "leirock/blog",
   "author": "leirock",
   "hexo": {
-    "version": "7.1.0"
+    "version": "7.1.1"
   },
   "dependencies": {
     "hexo": "^7.0.0",
