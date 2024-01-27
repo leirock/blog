@@ -57,7 +57,7 @@ hexo.extend.tag.register('license', function (args) {
                     <div class="license-meta-text">禁止转载引用</div>
                 </div>
             </div>
-            <div class="license-statement">如需转载或引用本栏目作品，请先获得作者授权！</div>
+            <div class="license-statement">如需转载或引用本栏作品，请先获得作者授权！</div>
         </div>`;
 });
 
