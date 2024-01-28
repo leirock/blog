@@ -1,5 +1,5 @@
 ---
-title: 标签云
+title: 文章标签
 comments: false
 type: tags
 ---
