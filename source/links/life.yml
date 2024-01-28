@@ -5,12 +5,6 @@
 #  info: xyz
 #  warn: 404
 
-- title: moliu
-  intro: 数据分析，经济学 girl
-  url: http://shuxinyang.com
-  logo: shuxinyang.com.webp
-  info: 校友
-
 - title: 荷戟独彷徨
   intro: 爱光学，爱生活，爱创造
   url: https://guanqr.com
@@ -96,3 +90,14 @@
   intro: 所念皆星河
   url: https://blog.zengjunyin.com
   logo: zengjunyin.com.webp
+
+- title: 暮瞻
+  intro: 以我观物，故物皆着我之色彩。
+  url: https://blog.ralvines.top
+  logo: ralvines.top.webp
+  info: 校友
+
+- title: 空白 Koobai
+  intro: 一张纸一个画布一段人生
+  url: https://koobai.com
+  logo: ralvines.top.webp
