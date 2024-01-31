@@ -13,9 +13,6 @@ comments: false
 {% linklist tech %}
 <!-- endtab -->
 
-<!-- tab 收藏夹@fas fa-bookmark -->
-{% linklist lib %}
-<!-- endtab -->
 {% endtabs %}
 
 * * *
