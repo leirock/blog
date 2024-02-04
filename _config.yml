@@ -141,6 +141,7 @@ artalk:
   server: https://comment.pinlyu.com
   jsUrl: https://comment.pinlyu.com/dist/Artalk.js
   cssUrl: https://comment.pinlyu.com/dist/Artalk.css
+  site: 频率
   commentCount: true
   pvCount: false
   darkMode: auto
