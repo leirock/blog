@@ -148,7 +148,8 @@ font:
   enable: true
   global:
     external: false
-    family: LXGW WenKai Screen #LXGWWenKaiLite #EB Garamond, Noto Serif SC
+    # 在 head.njk 中设置字体链接  LXGWWenKaiLite, EB Garamond, Noto Serif SC
+    family: LXGW WenKai Screen 
   title:
     external: false
     family: Long Cang
@@ -222,10 +223,9 @@ motion:
 
 vendors:
   # local | jsdelivr | unpkg | cdnjs | custom
-  internal: custom
+  internal: local
   plugins: custom
-  #custom_cdn_url: https://cdn.staticfile.org/${cdnjs_name}/${version}/${cdnjs_file} #七牛云
-  custom_cdn_url: https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file} #bootcdn
+  custom_cdn_url: https://cdn.staticfile.net/${cdnjs_name}/${version}/${cdnjs_file} #七牛云
   #custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified} #jsdelivr
 
 

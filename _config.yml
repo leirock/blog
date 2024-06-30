@@ -127,7 +127,7 @@ image_minifier:
 marked:
   figcaption: true
 
-# 黑白滤镜
+# 灰色滤镜
 gray_filter: false
 
 # 对象存储存储桶自定义域名

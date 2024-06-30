@@ -1,12 +1,12 @@
 /* 引入 prismjs 代码高亮样式 */
-/**********************************************************/
+/* 测试中，待删除
 @media (prefers-color-scheme: light) {
   @import "prism.css"
 }
 @media (prefers-color-scheme: dark) {
   @import "prism-okaidia.css"
 }
-
+*/
 
 /**********************************************************/
 /************************* 全站背景 ************************/
@@ -104,14 +104,26 @@ header.header, //顶部标题
   font-size: 1.05em;
 }
 
+/* 移动端侧边栏 */
+.sidebar {
+  @media (max-width:991px) {
+    background: $body-bg-color-dark ;
+  }
+}
+
+/* 移动端侧边栏按钮 */
+.sidebar-toggle:hover .toggle-line {
+  background: var(--link-hover-color);
+}
+
 /* 文章目录、二级导航菜单、文章内tab中选中颜色橘黄色的变更 */
 .sidebar-toc-active .sidebar-nav-toc { //文章目录标题
   border-bottom: none;
-  color: var(--text-color);
+  color: var(--link-hover-color);
   font-weight: bold;
 
   &:hover {
-    color: var(--text-color);
+    color: var(--link-hover-color);
   }
 }
 
@@ -329,7 +341,6 @@ blockquote {
 }
 
 /* 图片标题 */
-
 figcaption {
   margin: -10px auto 1em;
   color: #999;
@@ -383,6 +394,8 @@ pre[class*=language-] {
 
   @media (prefers-color-scheme: dark) {
     background: $highlight-background-dark;
+    border: none;
+    box-shadow: none;
     border-radius: 0;
   }
 }

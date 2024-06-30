@@ -16,7 +16,7 @@ hexo_server(){
 
 echo '====================== Hexo Tools ======================'
 printf "命令:\n"
-printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 'u' '(yarn upgrade)' '更新依赖包'
+printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 'u' '(npm update)' '更新依赖包'
 printf "  \x1B[32m%s\x1B[0m %s \t %s \n" 's' '(hexo server)' '预览并打开浏览器'
 printf "\n\x1B[32m所在目录：\x1B[0m"${HexoPath}"\n"
 echo '--------------------------------------------------------'
