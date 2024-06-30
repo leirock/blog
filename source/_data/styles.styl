@@ -89,6 +89,18 @@ header.header, //顶部标题
   font-size: .9em;
 }
 
+/* 头像图片大小 */
+.site-author-image {
+  max-width: 100px;
+}
+
+/* 昵称在移动端侧边栏的颜色 */
+.site-author-name {
+  @media (max-width:991px) {
+    color: $text-color-dark ;
+  }
+}
+
 /* 导航菜单文字 */
 .menu-item a {
   font-size: .9em;
@@ -113,17 +125,21 @@ header.header, //顶部标题
 
 /* 移动端侧边栏按钮 */
 .sidebar-toggle:hover .toggle-line {
-  background: var(--link-hover-color);
+  background: #fff;
 }
 
 /* 文章目录、二级导航菜单、文章内tab中选中颜色橘黄色的变更 */
 .sidebar-toc-active .sidebar-nav-toc { //文章目录标题
   border-bottom: none;
-  color: var(--link-hover-color);
+  color: var(--text-color);
   font-weight: bold;
 
   &:hover {
-    color: var(--link-hover-color);
+    color: var(--text-color);
+  }
+
+  @media (max-width:991px) {
+    color: $text-color-dark;
   }
 }
 
