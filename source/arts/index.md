@@ -8,10 +8,7 @@ comments: false
 {% subpagebox arts %}
 阅读 | books | cover.webp
 纪录片 | documentaries | cover.webp
-剧集 | series | cover.webp
-电影 | movies | cover.webp
-综艺 | variety-show | cover.webp
-音乐 | music | cover.webp
+影视剧 | movies | cover.webp
 {% endsubpagebox %}
 
 {% license arts 文艺清单 %}
