@@ -46,6 +46,6 @@ toc:
 * * *
 
 <div class="text-center" style="font-size: 1.1em;font-weight:bold">
-    {% btn https://wj.qq.com/s2/10182369/d328/, 收录/更新链接, list-check fa-fw %}
+    {% btn https://example.com/, 收录/更新链接, list-check fa-fw %}
 </div>
 -->
