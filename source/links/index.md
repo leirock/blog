@@ -36,7 +36,7 @@ toc:
 名称: 频率
 简介: 风卷过的起点
 链接: https://pinlyu.com
-图标: https://cdn.helingqi.com/avatar/cc763511474fe24ffcc80257fb7cb970?s=300
+图标: https://cravatar.cn/avatar/cc763511474fe24ffcc80257fb7cb970?s=200
 ```
 <!-- endtab -->
 
