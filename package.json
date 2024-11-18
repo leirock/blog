@@ -13,6 +13,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@next-theme/plugins": "^8.21.1",
     "hexo": "^7.0.0",
     "hexo-all-minifier": "^0.5.7",
     "hexo-generator-category": "^2.0.0",

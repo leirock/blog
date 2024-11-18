@@ -224,8 +224,8 @@ motion:
 vendors:
   # local | jsdelivr | unpkg | cdnjs | custom
   internal: local
-  plugins: custom
-  custom_cdn_url: https://cdn.staticfile.net/${cdnjs_name}/${version}/${cdnjs_file} #七牛云
+  plugins: local
+  #custom_cdn_url: https://cdn.staticfile.net/${cdnjs_name}/${version}/${cdnjs_file} #七牛云
   #custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified} #jsdelivr
 
 
