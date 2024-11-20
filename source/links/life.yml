@@ -56,13 +56,8 @@
   url: https://www.t223.top
   logo: t223.top.webp
 
-- title: 徐伟轩博客
-  intro: 人生有多种可能，别给自己设限！
-  url: https://letus.top
-  logo: letus.top.webp
-
 - title: 山茶花舍
-  intro: 吕楪想要写一些....
+  intro: 吕楪在记录自己的生活
   url: https://irithys.com
   logo: irithys.com.webp
 
@@ -71,12 +66,13 @@
   url: https://www.macin.org
   logo: macin.org.webp
 
-- title: 爱吃肉的猫
-  intro: 有肉有猫有生活
-  url: https://meuicat.com
-  logo: meuicat.com.webp
-
 - title: 空白 Koobai
   intro: 一张纸一个画布一段人生
   url: https://koobai.com
   logo: koobai.com.webp
+
+- title: Sheng Dong
+  intro: 科学与功利
+  url: https://dong2000.xyz
+  logo: dong2000.xyz.webp
+  info: 校友
