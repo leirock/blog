@@ -1,6 +1,6 @@
 {
   "name": "pinlyu",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "private": true,
   "scripts": {
     "dev": "find . -name '*.DS_Store' -type f -delete && ./node_modules/.bin/hexo server",

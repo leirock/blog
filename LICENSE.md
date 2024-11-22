@@ -2,7 +2,7 @@
 
 # <div align="center">«频率» – 班班的博客</div>
 
-<p align="center">版权所有 © 2017 «<a href="https://dlzhang.com">Dylan Zhang</a>».</p>
+<p align="center">版权所有 © 2017 «<a href="https://dlzhang.com">ZHANG Donglei, Dylan</a>».</p>
 
 ## 1. 定义
 
@@ -41,7 +41,7 @@
 
 # <div align="center">«Pinlyu» – Leirock's Blog</div>
 
-<p align="center">Copyright © 2017 «<a href="https://dlzhang.com">Dylan Zhang</a>».</p>
+<p align="center">Copyright © 2017 «<a href="https://dlzhang.com">ZHANG Donglei, Dylan</a>».</p>
 
 ## 1. Definitions
 
