@@ -7,8 +7,8 @@ comments: false
 
 {% subpagebox arts %}
 阅读 | books | cover.webp
-纪录片 | documentaries | cover.webp
 影视剧 | movies | cover.webp
+纪录片 | documentaries | cover.webp
 {% endsubpagebox %}
 
 {% license arts 文艺清单 %}
