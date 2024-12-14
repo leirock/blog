@@ -6,15 +6,11 @@ toc:
 
 {% tabs links %}
 
-<!-- tab 生活向@fa-solid fa-umbrella-beach -->
-{% linklist life %}
+<!-- tab 朋友们@fa-solid fa-link -->
+{% linklist friends %}
 <!-- endtab -->
 
-<!-- tab 技术向@fa-solid fa-code-branch -->
-{% linklist tech %}
-<!-- endtab -->
-
-<!-- tab 收录链接@fa-solid fa-list-check -->
+<!-- tab 申请收录@fa-solid fa-list-check -->
 ## 收录说明
 - 优先收录有原创内容的生活类站点，不定期单方面清理链接（如长期无法访问或未更新）；
 - 提交收录申请不意味着必然收录，提交后请等待审核；

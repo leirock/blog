@@ -27,14 +27,6 @@ hexo.extend.tag.register('dot', function (args) {
 });
 
 
-// 友链列表
-hexo.extend.tag.register('linklist', function (args) {
-    const iconSrc = cosDomain + '/links/' + args + '/';
-    const jsonSrc = args + '.json';
-    return `<div class="link-list" icon-src="${iconSrc}" json-src="${jsonSrc}"></div>`;
-});
-
-
 // 页面许可协议
 const author = hexo.config.author;
 const blogUrl = hexo.config.url;
@@ -58,6 +50,14 @@ hexo.extend.tag.register('license', function (args) {
             </div>
             <div class="license-statement">如需转载或引用本栏作品，请先获得作者授权！</div>
         </div>`;
+});
+
+
+// 友链列表
+hexo.extend.tag.register('linklist', function (args) {
+    const iconSrc = cosDomain + '/links/';
+    const jsonSrc = args + '.json';
+    return `<div class="link-list" icon-src="${iconSrc}" json-src="${jsonSrc}"></div>`;
 });
 
 
