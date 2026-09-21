@@ -1,11 +1,10 @@
 zh-CN:
   menu:
-    life: 生活
     observer: 观点
     arts: 文艺
     notes: 笔记
     album: 光影
-    guestbook: 留言
+    about: 关于
     # search: 搜索
   sidebar:
     toc: 目 录

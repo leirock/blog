@@ -34,73 +34,24 @@
 
 
 {### 版权许可协议 ###}
-<div class="license">
-  <div class="license-title">{{ page.title }}</div>
-  <div class="license-link">
-    <a href="{{ page.permalink }}">{{ page.permalink }}</a>
-  </div>
-  <div class="license-meta">
-    <div class="license-meta-item">
-      <div class="license-meta-title">本文作者</div>
-      <div class="license-meta-text">
-        {%- if post.orig_author %}
-          {{ post.orig_author }}
-        {%- else %}
-          {{ author }}
-        {%- endif %}
-      </div>
-    </div>
-    {%- if post.date %}
-      <div class="license-meta-item">
-        <div class="license-meta-title">发布于</div>
-        <div class="license-meta-text">
-          {{ date(post.date) }}
-        </div>
-      </div>
-    {%- endif %}
-    {%- if post.updated %}
-      <div class="license-meta-item">
-        <div class="license-meta-title">更新于</div>
-        <div class="license-meta-text">
-          {{ date(post.updated) }}
-        </div>
-      </div>
-    {%- endif %}
-    {%- if post.orig_src %}
-      <div class="license-meta-item">
-        <div class="license-meta-title">原文出处</div>
-        <div class="license-meta-text">
-          {%- if post.orig_url %}
-            <a href="{{ post.orig_url }}" rel="noopener" target="_blank">{{ post.orig_src }}</a>
-          {% else %}
-            {{ post.orig_src }}
-          {%- endif %}
-        </div>
-      </div>
-    {%- endif %}
-    <div class="license-meta-item">
-      <div class="license-meta-title">许可协议</div>
-      <div class="license-meta-text">
-        {%- if post.orig_author %}
-          原作许可协议
-        {%- elif post.cc_license %}
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC BY-NC-SA 4.0</a>
-        {% else %}
-          禁止转载引用
-        {%- endif %}
-      </div>
-    </div>
-  </div>
-  <div class="license-statement">
-    {%- if post.orig_author %}
-      转载或引用本文时，请遵守原作许可协议！
-    {%- elif post.cc_license %}
-      转载或引用本文时，请遵守上述许可协议，注明出处、不得用于商业用途！
-    {% else %}
-      如需转载或引用本文，请先获得作者授权！
-    {%- endif %}
-  </div>
-</div>
+{### 结构与文案统一由 scripts/inline-tags.js 的 license_box 维护，与 {% license %} 标签共用 ###}
+{### 注：Hexo 会把 _data/*.njk 当数据文件再单独渲染一次，那里没有 helper，
+    所以这里加存在性判断；NexT 注入时读的是文件原文，helper 可用 ###}
+{%- if license_box -%}
+{{ license_box({
+  title: page.title,
+  linkHref: page.permalink,
+  linkText: page.permalink,
+  authorLabel: '本文作者',
+  authorName: post.orig_author or author,
+  published: post.date and date(post.date) or '',
+  updated: post.updated and date(post.updated) or '',
+  origSrc: post.orig_src or '',
+  origUrl: post.orig_url or '',
+  ccLicense: post.cc_license or false,
+  hasOrigAuthor: post.orig_author or false
+}) }}
+{%- endif -%}
 
 
 {### 赞赏 ###}

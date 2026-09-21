@@ -7,21 +7,21 @@
     "clean": "./node_modules/.bin/hexo clean",
     "build": "find . -name '*.DS_Store' -type f -delete && ./node_modules/.bin/hexo generate"
   },
-  "repository": "leirock/blog",
-  "author": "leirock",
+  "repository": "aermisty/blog",
+  "author": "Aermisty",
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.2"
   },
   "dependencies": {
     "@next-theme/plugins": "^8.23.0",
-    "hexo": "^7.0.0",
+    "hexo": "^8.0.0",
     "hexo-all-minifier": "^0.5.7",
     "hexo-generator-category": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-indexed": "^1.2.1",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-next-artalk": "^0.1.3",
+    "hexo-next-artalk": "github:Aermisty/hexo-next-artalk",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.0",
     "hexo-renderer-stylus": "^3.0.0",

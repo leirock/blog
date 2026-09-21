@@ -14,7 +14,7 @@ custom_file_path:
   head: source/_data/head.njk
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
-  #postMeta: source/_data/post-meta.njk
+  #postMeta: source/_data/post-meta.njk # 文章「编辑」按钮：需要在 _config.yml 配置 github_repo，当前未配置故未启用
   postBodyEnd: source/_data/post-body-end.njk
   footer: source/_data/footer.njk
   bodyEnd: source/_data/body-end.njk
@@ -36,9 +36,9 @@ darkmode: true
 # ============================================================= #
 
 favicon:
-  small: /resources/favicon/favicon.ico
-  medium: /resources/favicon/favicon-32.png
-  apple_touch_icon: /resources/favicon/apple-touch-icon.png
+  small: /statics/favicon/favicon.ico
+  medium: /statics/favicon/favicon-32.png
+  apple_touch_icon: /statics/favicon/apple-touch-icon.png
   safari_pinned_tab: ''
   android_manifest: ''
 
@@ -48,12 +48,11 @@ favicon:
 # ============================================================= #
 
 menu:
-  life: /life/ || fas fa-pizza-slice
   observer: /observer/ || fas fa-eye
   notes: /notes/ || fas fa-book
   arts: /arts/ || fas fa-guitar
   album: /album/ || fas fa-camera-retro
-  guestbook: /guestbook/ || fas fa-splotch
+  about: /about/ || fas fa-splotch
   #  default: /guestbook/ || fas fa-splotch
   #  links: ../links/ || fas fa-link
 
@@ -63,14 +62,12 @@ menu:
 # ============================================================= #
 
 avatar:
-  url: /resources/img/avatar.webp
+  url: /statics/img/avatar.webp
   rounded: true
 
 site_state: false
 
 social:
-  微博: https://dlzhang.com/weibo || fa-brands fa-weibo
-  哔哩哔哩: https://dlzhang.com/bilibili || fa-brands fa-bilibili
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
@@ -88,7 +85,7 @@ toc:
 # ============================================================= #
 
 footer:
-  since: 2017
+  since: 2015
   icon:
     name: fas fa-heart
     animated: true
@@ -170,19 +167,17 @@ font:
 # See: https://theme-next.js.org/docs/third-party-services/math-equations
 math:
   mathjax:
-    enable: true
+    enable: false
     tags: ams
 pjax: true
 fancybox: true
-lazyload: true
-pangu: true
 
 # Umami Analytics
 # See: https://umami.is/
 umami:
-  enable: true
-  script_url: https://stats.pinlyu.com/script.js
-  website_id: dfd4ef79-619d-4b55-b84e-981fd43cefa9
+  enable: false
+  script_url:
+  website_id:
   data_host_url: # <your umami script CDN url> https://github.com/umami-software/umami/issues/95
 
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
@@ -232,4 +227,4 @@ vendors:
 # Assets
 # css - local
 # js - only valid when vendors.internal is local
-images: /resources/img/ # root /img/ folder
+images: /statics/img/ # root /img/ folder

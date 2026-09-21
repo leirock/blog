@@ -4,9 +4,9 @@
 
 # Site
 title: 频率
-subtitle: 风卷过的起点
-description: 爱美食/看展览/夜猫子
-keywords: [blog, 博客, pinlyu, 频率, Dylan Zhang]
+subtitle: 愿你的频率，终被懂的人接收
+description: 此间有频率，等风也等你
+keywords: [blog, 博客, 频率]
 author: 班班
 language: zh-CN
 timezone: Asia/Shanghai
@@ -75,9 +75,8 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: life
+default_category: observer
 category_map:
-  生活: life
   观点: observer
   笔记: notes
 tag_map:
@@ -126,21 +125,22 @@ image_minifier:
 ## https://github.com/hexojs/hexo-renderer-marked
 marked:
   figcaption: true
+  lazyload: true # 给正文图片加 loading="lazy"（替代已废弃的主题 lazyload 选项）
 
 # 灰色滤镜
 gray_filter: false
 
 # 对象存储存储桶自定义域名
-cos_domain: https://cdn.pinlyu.com
+cos_domain: /statics
 
 # Artalk
 ## Config: https://artalk.js.org
-## Plugin: https://github.com/leirock/hexo-next-artalk
+## Plugin: https://github.com/aermisty/hexo-next-artalk
 artalk:
-  enable: true
-  server: https://comment.pinlyu.com
-  jsUrl: https://comment.pinlyu.com/dist/Artalk.js
-  cssUrl: https://comment.pinlyu.com/dist/Artalk.css
+  enable: false
+  server: https://comment.example.com
+  jsUrl: https://comment.example.com/dist/Artalk.js
+  cssUrl: https://comment.example.com/dist/Artalk.css
   site: 频率
   commentCount: true
   pvCount: false

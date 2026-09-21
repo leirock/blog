@@ -3,10 +3,6 @@
   <style>
     html {
       filter: grayscale(85%) saturate(80%);
-      -webkit-filter: grayscale(85%) saturate(80%);
-      -moz-filter: grayscale(85%) saturate(80%);
-      -ms-filter: grayscale(85%) saturate(80%);
-      -o-filter: grayscale(85%) saturate(80%);      
     }
     
     @media (prefers-color-scheme: light) {
@@ -19,8 +15,8 @@
 {% endif %}
 
 {### Font Family ###}
-<link rel="stylesheet" href="/resources/fonts/longcang/LongCang-Regular.css" >
-<link rel="stylesheet" href="/resources/fonts/lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css" >
+<link rel="stylesheet" href="{{ config.cos_domain }}/fonts/longcang/LongCang-Regular.css" >
+<link rel="stylesheet" href="{{ config.cos_domain }}/fonts/lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css" >
 
 {###
 <link rel="stylesheet" href="https://cdn.staticfile.net/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" >

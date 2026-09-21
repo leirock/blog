@@ -7,7 +7,7 @@ toc:
 {% tabs links %}
 
 <!-- tab 朋友们@fa-solid fa-link -->
-{% linklist friends %}
+{% linklist links %}
 <!-- endtab -->
 
 <!-- tab 申请收录@fa-solid fa-list-check -->
@@ -31,7 +31,7 @@ toc:
 名称: 频率
 简介: 风卷过的起点
 链接: https://pinlyu.com
-图标: https://weavatar.com/avatar/cc763511474fe24ffcc80257fb7cb970?s=200
+图标: https://cdn.sep.cc//avatar/cc763511474fe24ffcc80257fb7cb970?s=200
 ```
 <!-- endtab -->
 

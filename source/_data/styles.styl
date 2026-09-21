@@ -1,13 +1,3 @@
-/* 引入 prismjs 代码高亮样式 */
-/* 测试中，待删除
-@media (prefers-color-scheme: light) {
-  @import "prism.css"
-}
-@media (prefers-color-scheme: dark) {
-  @import "prism-okaidia.css"
-}
-*/
-
 /**********************************************************/
 /************************* 全站背景 ************************/
 /**********************************************************/
@@ -55,19 +45,16 @@ header.header, //顶部标题
   border-radius: $myradius;
 }
 
+/* 站点标题背景与圆角 */
 .site-brand-container {
   border-radius: $myradius $myradius 0 0;
+  background: url($site-brand-bg-url);
+  background-position: 70% 20%;
+  background-size: cover;
 
   +mobile() {
     border-radius: 0 0 $myradius $myradius;
   }
-}
-
-/* 站点标题背景 */
-.site-brand-container {
-  background: url($site-brand-bg-url);
-  background-position: 70% 20%;
-  background-size: cover;
 }
 
 /* 站点标题文字 */
@@ -357,11 +344,6 @@ blockquote {
 /********************* 图片与相册 **************************/
 /**********************************************************/
 
-/* 图片阴影圆角 */
-.posts-expand .post-body img {
-  /* border-radius: 4px; */
-}
-
 /* 图片标题 */
 figcaption {
   margin: -10px auto 1em;
@@ -394,6 +376,29 @@ figcaption {
 .album .card {
   overflow: hidden;
   transition: .3s ease-in-out;
+}
+
+/* 相册页内容区两侧留白收紧（原由 {% album %} 标签内联输出 <style>，改用 :has 后样式集中在这里） */
+.post-block:has(.album) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* 相册「加载更多」按钮（超过一屏时由 body-end.njk 动态插入） */
+.album-more {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 18px;
+  border: none;
+  border-radius: $myradius;
+  background: $btn-default-bg;
+  color: white;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    background: $btn-default-hover-bg;
+  }
 }
 
 
@@ -1134,10 +1139,8 @@ tbody tr {
 .emphasis-point {
   font-style: normal;
   -webkit-text-emphasis: '•';
-  -moz-text-emphasis: '•';
   text-emphasis: '•';
   -webkit-text-emphasis-position: under;
-  -moz-text-emphasis-position: under;
   text-emphasis-position: under;
 }
 

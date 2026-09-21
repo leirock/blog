@@ -1,208 +1,217 @@
-{### 锚点定位 
-{% if page.comments or post.comments %}
-  <script{{ pjax }} type="text/javascript">
-    if (window.location.hash) {
-      var checkExist = setInterval(function () {
-        if ($(window.location.hash).length) {
-          $('html, body').animate({
-            scrollTop: $(window.location.hash).offset().top - 90
-          }, 1000);
-          clearInterval(checkExist);
-        }
-      }, 100);
+{### 数据渲染脚本：友链 / 文艺清单 / 相册 ###}
+{### 三个组件都是「先输出空 div，再由 XHR 拉 json 渲染」，这里共用一个请求函数 ###}
+<script{{ pjax }} type="text/javascript">
+function fetchJson(url, onSuccess) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== 4) return;
+    if (xhr.status !== 200) {
+      // 不静默失败：json 缺失（常见于没跑构建脚本）时给出可排查的提示
+      console.warn('[data] 拉取失败（HTTP ' + xhr.status + '）：' + url);
+      return;
     }
-  </script>
-{% endif %}
-###}
+    try {
+      onSuccess(JSON.parse(xhr.responseText));
+    } catch (error) {
+      console.warn('[data] JSON 解析失败：' + url, error);
+    }
+  };
+  xhr.onerror = function () {
+    console.warn('[data] 网络错误：' + url);
+  };
+  xhr.send();
+}
+</script>
 
 {### 友链列表 ###}
 <script{{ pjax }} type="text/javascript">
-var linkLists = document.querySelectorAll(".link-list");
-
-linkLists.forEach(function(linkList) {
-  var listPath = linkList.getAttribute('json-src');
+document.querySelectorAll('.link-list').forEach(function (linkList) {
   var iconPath = linkList.getAttribute('icon-src');
-  
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', listPath, true);
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var data = JSON.parse(xhr.responseText);
-      
-      var li = "";
-      linkList.innerHTML = '';
 
-      for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
-        var info = data[infoIndex];
-        var labelWarn = info['warn'] ? '<span class="label warn">' + info['warn'] + '</span>' : '';
-        var labelInfo = info['info'] ? '<span class="label info">' + info['info'] + '</span>' : '';
+  fetchJson(linkList.getAttribute('json-src'), function (data) {
+    var li = '';
+    for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
+      var info = data[infoIndex];
+      var labelWarn = info['warn'] ? '<span class="label warn">' + info['warn'] + '</span>' : '';
+      var labelInfo = info['info'] ? '<span class="label info">' + info['info'] + '</span>' : '';
 
-        li += '<div class="link-list-container">';
-        li += '<img class="link-list-image" src="' + iconPath + info['logo'] + '">';
-        li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
-        li += '<p>' + info['intro'] + '</p>';
-        li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
-        li += '</div>';
-      }
-      
-      linkList.innerHTML = li;
+      li += '<div class="link-list-container">';
+      li += '<img loading="lazy" class="link-list-image" src="' + iconPath + info['logo'] + '">';
+      li += '<p>' + info['title'] + labelInfo + labelWarn + '</p>';
+      li += '<p>' + info['intro'] + '</p>';
+      li += '<a href="' + info['url'] + '" rel="noopener" target="_blank" data-pjax-state=""></a>';
+      li += '</div>';
     }
-  };
-  xhr.send();
+
+    linkList.innerHTML = li;
+  });
 });
 </script>
 
 {### 文艺清单 ###}
+{### 每个容器各自一个闭包，谁先返回就渲染谁自己的容器（原先共用 j 计数会串位） ###}
 <script{{ pjax }} type="text/javascript">
-var artList = document.querySelectorAll(".art-list");
-if (artList.length !== 0) {
-  var j = -1;
-  for (var i = 0; i < artList.length; i++) {
-    const listPath = artList[i].getAttribute('json-src');
-    const coverPath = artList[i].getAttribute('cover-src');
-    
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', listPath, true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        j++;
-        var data = JSON.parse(xhr.responseText);
-        var li = "";
-        
-        artList[j].innerHTML = '';
+document.querySelectorAll('.art-list').forEach(function (artList) {
+  var coverPath = artList.getAttribute('cover-src');
 
-        for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
-          var info = data[infoIndex];
-          
-          var title = info['title'];
-          if (info['pid']) {
-            title = '<a href="/posts/' + info['pid'] + '/">' + info['title'] + '</a>';
-          }
+  fetchJson(artList.getAttribute('json-src'), function (data) {
+    var li = '';
 
-          var author = info['author'] ? '<span class="author">' + info['author'] + '</span>' : '';
+    for (var infoIndex = 0; infoIndex < data.length; infoIndex++) {
+      var info = data[infoIndex];
 
-          var intro = info['intro'] ? info['intro'] : '';
-
-          var star = '';
-          if (info['score'] == null) {
-            star = '';
-          } else {
-            var colorStar = '';
-            var greyStar = '';
-            var int = Math.floor(info['score']); //整数部分
-            var fract = 0;
-            if (info['score'] % 1 !== 0) {
-              fract = 1;
-            }
-            for (var m = 0; m < int; m++) {
-              colorStar += '★';
-            }
-            if (fract !== 0) {
-              colorStar += '☆';
-            }
-            for (var m = 0; m < (5 - fract - int); m++) {
-              greyStar += '☆';
-            }
-            if (info['score'] !== 5) {
-              star = '<span class="star-score">' + colorStar + '<span class="grey-star">' + greyStar + '</span></span>';
-            } else {
-              star = '<span class="star-score">' + colorStar + '</span>';
-            }
-          }
-
-          li += '<div class="work">';
-          li += '<div class="work-cover" style="background-image:url(' + coverPath + info['cover'] + ')"></div>';
-          li += '<div class="work-meta">';
-          li += '<div class="work-meta-item title">' + title + '</div>';
-          li += '<div class="work-meta-item">' + author + star + '</div>';
-          li += '<div class="work-meta-item intro">' + intro + '</div>';
-          li += '</div></div>';
-        }
-        
-        artList[j].innerHTML = li;
+      var title = info['title'];
+      if (info['pid']) {
+        title = '<a href="/posts/' + info['pid'] + '/">' + info['title'] + '</a>';
       }
-    };
-    xhr.send();
-  }
-}
+
+      var author = info['author'] ? '<span class="author">' + info['author'] + '</span>' : '';
+
+      var intro = info['intro'] ? info['intro'] : '';
+
+      var star = '';
+      if (info['score'] == null) {
+        star = '';
+      } else {
+        var colorStar = '';
+        var greyStar = '';
+        var int = Math.floor(info['score']); //整数部分
+        var fract = 0;
+        if (info['score'] % 1 !== 0) {
+          fract = 1;
+        }
+        for (var m = 0; m < int; m++) {
+          colorStar += '★';
+        }
+        if (fract !== 0) {
+          colorStar += '☆';
+        }
+        for (var m = 0; m < (5 - fract - int); m++) {
+          greyStar += '☆';
+        }
+        if (info['score'] !== 5) {
+          star = '<span class="star-score">' + colorStar + '<span class="grey-star">' + greyStar + '</span></span>';
+        } else {
+          star = '<span class="star-score">' + colorStar + '</span>';
+        }
+      }
+
+      li += '<div class="work">';
+      li += '<div class="work-cover" style="background-image:url(' + coverPath + info['cover'] + ')"></div>';
+      li += '<div class="work-meta">';
+      li += '<div class="work-meta-item title">' + title + '</div>';
+      li += '<div class="work-meta-item">' + author + star + '</div>';
+      li += '<div class="work-meta-item intro">' + intro + '</div>';
+      li += '</div></div>';
+    }
+
+    artList.innerHTML = li;
+  });
+});
 </script>
 
 
 {### 相册 ###}
-{#
-<script src="https://cdn.jsdelivr.net/npm/minigrid@3.1.1/dist/minigrid.min.js" integrity="sha256-oexHY81/KuGogn0rnUzhYExxPnIyzC4ErClSXE+jFa8=" crossorigin="anonymous"></script>
-#}
-<script src="/resources/minigrid.min.js"></script>
+{### Minigrid 只在含相册的页面按需加载（grid-src 由 {% album %} 标签给出），不再全站引入 ###}
 <script{{ pjax }} type="text/javascript">
-var album = document.querySelector(".album");
-if (album) {
-  // 相册列表 JSON 数据
-  var imgDataPath = album.getAttribute('json-src');
-  // 照片存储路径
-  var imgPath = album.getAttribute('photo-src');
-  // 最多显示数量
-  var imgMaxNum = 50;
-  // 获取窗口大小以决定图片宽度
-  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  var imageWidth;
+(function () {
+  var album = document.querySelector('.album');
+  if (!album) return;
 
-  if (windowWidth < 768) {
-    imageWidth = 145; // 移动端图片宽度
-  } else {
-    imageWidth = 235;
+  var jsonUrl = album.getAttribute('json-src');     // 相册索引 json
+  var photoPath = album.getAttribute('photo-src');  // 照片存储路径
+  var gridSrc = album.getAttribute('grid-src');     // Minigrid 脚本地址
+  var pageSize = 50;                                // 每屏张数，超出部分点「加载更多」
+
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var imageWidth = windowWidth < 768 ? 145 : 235;   // 移动端窄一些
+
+  var state = { page: 0, data: [], grid: null, moreBtn: null };
+
+  function mountGrid() {
+    if (typeof window.Minigrid !== 'function') return;
+    // Minigrid 在构造时就把 item 列表固定下来了（内部 querySelectorAll 只跑一次），
+    // 所以追加图片后必须重建实例，否则新卡片不会被排布
+    state.grid = new Minigrid({ container: '.album', item: '.card', gutter: 12 });
+    state.grid.mount();
   }
 
-  // 生成相册
-  var linkDataPath = imgDataPath;
-  var photo = {
-    page: 1,
-    offset: imgMaxNum,
-    init: function () {
-      var that = this;
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", linkDataPath, true);
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
-          that.render(that.page, data);
-        }
-      };
-      xhr.send();
-    },
-    render: function (page, data) {
-      var begin = (page - 1) * this.offset;
-      var end = page * this.offset;
-      if (begin >= data.length) return;
-      var imgNameWithPattern, imgName, imageSize, imageX, imageY, li = "";
-      for (var i = begin; i < end && i < data.length; i++) {
-        imgNameWithPattern = data[i].split(' ')[1];
-        imgName = imgNameWithPattern.split('.')[0];
-        imageSize = data[i].split(' ')[0];
-        imageX = imageSize.split('.')[0];
-        imageY = imageSize.split('.')[1];
-        li += '<div class="card" style="width:' + imageWidth + 'px" >';
-        li += '<div class="album-photo" style="height:'+ imageWidth * imageY / imageX + 'px">';
-        li += '<a class="fancybox fancybox.image" href="' + imgPath + imgNameWithPattern + '" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="group" rel="group" data-caption="' + imgName + '" title="' +  imgName + '">';
-        li += '<img data-src="' + imgPath + imgNameWithPattern + '" src="' + imgPath + imgNameWithPattern + '" alt="' +  imgName + '" data-loaded="true">';
-        li += '</a>';
-        li += '</div>';
-        li += '</div>';
+  // resize 监听只在页面加载时注册一次，始终挂载最新实例，避免重复叠加监听器
+  window.addEventListener('resize', function () {
+    if (state.grid) state.grid.mount();
+  });
+
+  function updateMoreButton() {
+    var remain = state.data.length - state.page * pageSize;
+    if (remain <= 0) {
+      if (state.moreBtn) {
+        state.moreBtn.remove();
+        state.moreBtn = null;
       }
-      album.insertAdjacentHTML('beforeend', li);
-      this.minigrid();
-    },
-    minigrid: function () {
-      var grid = new Minigrid({
-        container: '.album',
-        item: '.card',
-        gutter: 12
-      });
-      grid.mount();
-      window.addEventListener('resize', function () {
-        grid.mount();
-      });
+      return;
     }
-  };
-  photo.init();
-}
+    if (!state.moreBtn) {
+      state.moreBtn = document.createElement('button');
+      state.moreBtn.type = 'button';
+      state.moreBtn.className = 'album-more';
+      state.moreBtn.addEventListener('click', renderPage);
+      // 放在网格容器之外，否则会被 Minigrid 当成一张卡片
+      album.insertAdjacentElement('afterend', state.moreBtn);
+    }
+    state.moreBtn.textContent = '加载更多（还有 ' + remain + ' 张）';
+  }
+
+  function renderPage() {
+    var begin = state.page * pageSize;
+    var end = Math.min(begin + pageSize, state.data.length);
+    var li = '';
+
+    for (var i = begin; i < end; i++) {
+      var imgNameWithPattern = state.data[i].split(' ')[1];
+      var imgName = imgNameWithPattern.split('.')[0];
+      var imageSize = state.data[i].split(' ')[0].split('.');   // "<宽>.<高>"
+      var imageX = Number(imageSize[0]);
+      var imageY = Number(imageSize[1]);
+
+      li += '<div class="card" style="width:' + imageWidth + 'px" >';
+      li += '<div class="album-photo" style="height:' + imageWidth * imageY / imageX + 'px">';
+      li += '<a class="fancybox fancybox.image" href="' + photoPath + imgNameWithPattern + '" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="group" rel="group" data-caption="' + imgName + '" title="' + imgName + '">';
+      li += '<img loading="lazy" data-src="' + photoPath + imgNameWithPattern + '" src="' + photoPath + imgNameWithPattern + '" alt="' + imgName + '" data-loaded="true">';
+      li += '</a>';
+      li += '</div>';
+      li += '</div>';
+    }
+
+    album.insertAdjacentHTML('beforeend', li);
+    state.page += 1;
+    mountGrid();
+    updateMoreButton();
+  }
+
+  function start(data) {
+    state.data = data || [];
+    state.page = 0;
+    album.innerHTML = '';
+    if (state.data.length === 0) {
+      console.warn('[album] 索引为空，请检查 ' + jsonUrl);
+      return;
+    }
+    renderPage();
+  }
+
+  if (typeof window.Minigrid === 'function') {
+    fetchJson(jsonUrl, start);
+  } else {
+    var script = document.createElement('script');
+    script.src = gridSrc;
+    script.onload = function () { fetchJson(jsonUrl, start); };
+    script.onerror = function () {
+      // 拿不到 Minigrid 也把图片显示出来，只是排布会退化成竖向列表
+      console.warn('[album] Minigrid 加载失败，退化为普通排列：' + gridSrc);
+      fetchJson(jsonUrl, start);
+    };
+    document.head.appendChild(script);
+  }
+})();
 </script>
